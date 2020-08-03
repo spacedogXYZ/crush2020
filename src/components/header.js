@@ -8,13 +8,10 @@ import {
   NavMenuButton,
   PrimaryNav,
 } from "@trussworks/react-uswds"
-import "@trussworks/react-uswds/lib/uswds.css"
 
 const navItems = [
-  <Link to={'/'} activeClassName="usa-current">
-    
-  </Link>,
-  <Link to={'/about'} activeClassName="usa-current">
+  <Link to={"/"} activeClassName="usa-current"></Link>,
+  <Link to={"/about"} activeClassName="usa-current">
     About
   </Link>,
 ]
@@ -23,7 +20,7 @@ const SiteHeader = ({ siteTitle }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
   const toggleMobileNav = () => {
-    setMobileNavOpen((prevOpen) => !prevOpen)
+    setMobileNavOpen(prevOpen => !prevOpen)
   }
 
   return (
@@ -31,7 +28,7 @@ const SiteHeader = ({ siteTitle }) => {
       <div className="usa-nav-container">
         <div className="usa-navbar">
           <Title>
-            <Link to={'/'}>{siteTitle}</Link>
+            <Link to={"/"}>{siteTitle}</Link>
           </Title>
           <NavMenuButton
             label="Menu"
