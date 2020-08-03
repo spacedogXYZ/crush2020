@@ -13,6 +13,10 @@ import Header from "./header"
 import Footer from "./footer"
 import "@trussworks/react-uswds/lib/uswds.css"
 
+// set up FontAwesome library
+// eslint-disable-next-line no-unused-vars
+import IconLibrary from "./icons"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -28,7 +32,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <Footer />
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   )
 }
