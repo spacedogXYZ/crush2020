@@ -1,42 +1,62 @@
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import {
+  Header,
+  Title,
+  NavMenuButton,
+  PrimaryNav,
+} from "@trussworks/react-uswds"
+import "@trussworks/react-uswds/lib/uswds.css"
 
-Header.propTypes = {
+const navItems = [
+  <Link to={'/'} activeClassName="usa-current">
+    
+  </Link>,
+  <Link to={'/about'} activeClassName="usa-current">
+    About
+  </Link>,
+]
+
+const SiteHeader = ({ siteTitle }) => {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen((prevOpen) => !prevOpen)
+  }
+
+  return (
+    <Header basic>
+      <div className="usa-nav-container">
+        <div className="usa-navbar">
+          <Title>
+            <Link to={'/'}>{siteTitle}</Link>
+          </Title>
+          <NavMenuButton
+            label="Menu"
+            onClick={toggleMobileNav}
+            className="usa-menu-btn"
+          />
+        </div>
+
+        <PrimaryNav
+          aria-label="Primary navigation"
+          items={navItems}
+          onToggleMobileNav={toggleMobileNav}
+          mobileExpanded={mobileNavOpen}
+        />
+      </div>
+    </Header>
+  )
+}
+
+SiteHeader.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+SiteHeader.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default SiteHeader
