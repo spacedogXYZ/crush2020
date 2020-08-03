@@ -8,7 +8,6 @@ import {
   GridContainer,
   Grid,
 } from '@trussworks/react-uswds'
-import "@trussworks/react-uswds/lib/index.css"
 
 import circleImg from '../images/circle-124.png'
 
