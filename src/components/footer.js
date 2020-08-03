@@ -2,30 +2,17 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import {
-  Button,
   Footer,
   Logo,
   SocialLinks,
 } from "@trussworks/react-uswds"
-import "@trussworks/react-uswds/lib/uswds.css"
-
-import "../styles/social-icons.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const returnToTop = (
-  <div className="grid-container usa-footer__return-to-top">
-    <Button type="button" unstyled>
-      Return to top
-    </Button>
-  </div>
-)
 
 const SiteFooter = ({siteTitle}) => {
   return (
     <Footer
     size="slim"
-    returnToTop={returnToTop}
     secondary={
       <div className="grid-row grid-gap">
         <Logo
@@ -38,21 +25,24 @@ const SiteFooter = ({siteTitle}) => {
               <a
                 key="twitter"
                 className="usa-social-link"
-                href="https://twitter.com">
+                href="https://twitter.com"
+                target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
                 <span>Twitter</span>
               </a>,
               <a
                 key="instagram"
                 className="usa-social-link"
-                href="https://instagram.com">
+                href="https://instagram.com"
+                target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
                 <span>Instagram</span>
               </a>,
               <a
                 key="facebook"
                 className="usa-social-link"
-                href="https://facebook.com">
+                href="https://facebook.com"
+                target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={['fab', 'facebook-f']} size="2x" />
                 <span>Facebook</span>
               </a>,
