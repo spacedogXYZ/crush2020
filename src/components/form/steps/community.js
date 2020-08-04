@@ -15,7 +15,7 @@ export function CommunityStep() {
       <Fieldset legend={"Extend your impact"}>
         <h2>Adopt a battleground district</h2>
         <h3>We need to keep the House and flip the Senate. Help win one of these races!</h3>
-        <USAMap />
+        <USAMap width="100%"/>
       </Fieldset>
     </Form>
   );

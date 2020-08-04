@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { GridContainer, Button } from "@trussworks/react-uswds"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { VoteStep, LocationStep, IssuesStep, SkillsStep, TimeStep, MoneyStep, CommunityStep, SignupStep } from "./steps"
 import { useFormState } from "./context"
@@ -68,7 +69,11 @@ function PlanForm() {
       {steps[currentStep]}
 
       <div className="nav-container">
-        {!isFirst && <Button outline onClick={() => goBack()}>Back</Button>}
+        {!isFirst && <Button outline onClick={() => goBack()}>
+          <FontAwesomeIcon icon={["fas", "arrow-left"]} />
+          &nbsp;
+          Back
+        </Button>}
 
         <Button
           type="submit"
@@ -83,6 +88,8 @@ function PlanForm() {
           }}
         >
           {isLast ? "Done" : "Next"}
+          &nbsp;
+          <FontAwesomeIcon icon={["fas", isLast ? "check" :"arrow-right"]} />
         </Button>
         <div className="progress-container">
           Step {currentStep + 1} of {steps.length}
