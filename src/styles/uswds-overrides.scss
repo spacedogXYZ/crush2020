@@ -20,3 +20,25 @@
 .site-content {
   flex-grow: 1;
 }
+
+// centered form
+.form-container {
+  form {
+    text-align: center;
+    margin-top: 20%;
+    max-width: 100%;
+
+    fieldset {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .nav-container {
+    text-align: center;
+  }
+
+  .progress-container {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

@@ -20,7 +20,7 @@ const IndexPage = () => (
             </span>
             Now it’s time to finish the job
           </h1>
-          <Link className="usa-button" to="/start">
+          <Link className="usa-button" to="/step">
             Let's Go
           </Link>
         </div>
