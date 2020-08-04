@@ -1,4 +1,4 @@
-.usa-social-link {
+.icon-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,18 @@
 
 .site-content {
   flex-grow: 1;
+}
+
+// re-create circle-124.png in css
+.usa-media-block__img.background-circle {
+  background: #0073C2;
+  border-radius: 50%;
+  width: 124px;
+  height: 124px;
+
+  svg {
+
+  }
 }
 
 // centered form

@@ -20,7 +20,7 @@ const SiteFooter = ({ siteTitle }) => {
               links={[
                 <a
                   key="twitter"
-                  className="usa-social-link"
+                  className="usa-social-link icon-center"
                   href="https://twitter.com"
                   target="_blank"
                   rel="noreferrer"
@@ -30,7 +30,7 @@ const SiteFooter = ({ siteTitle }) => {
                 </a>,
                 <a
                   key="instagram"
-                  className="usa-social-link"
+                  className="usa-social-link icon-center"
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer"
@@ -40,7 +40,7 @@ const SiteFooter = ({ siteTitle }) => {
                 </a>,
                 <a
                   key="facebook"
-                  className="usa-social-link"
+                  className="usa-social-link icon-center"
                   href="https://facebook.com"
                   target="_blank"
                   rel="noreferrer"

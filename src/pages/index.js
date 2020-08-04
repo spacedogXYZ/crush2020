@@ -5,8 +5,7 @@ import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 import { GridContainer, Grid } from "@trussworks/react-uswds"
-
-import circleImg from "../images/circle-124.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const IndexPage = () => (
   <Layout>
@@ -21,7 +20,7 @@ const IndexPage = () => (
             Now it’s time to finish the job
           </h1>
           <Link className="usa-button" to="/step">
-            Let's Go
+            Let's Go <FontAwesomeIcon icon={["fas", "arrow-right"]} />
           </Link>
         </div>
       </GridContainer>
@@ -31,72 +30,59 @@ const IndexPage = () => (
       <GridContainer>
         <Grid row gap className="usa-graphic-list__row">
           <Grid tablet={{ col: true }} className="usa-media-block">
-            <img
-              className="usa-media-block__img"
-              src={circleImg}
-              alt="Alt text"
-            />
+            <div className="usa-media-block__img background-circle icon-center">
+              <FontAwesomeIcon icon={["fas", "vote-yea"]} size="3x" />
+            </div>
             <div className="usa-media-block__body">
               <h2 className="usa-graphic-list__heading">
-                Graphic headings can vary.
+                Vote
               </h2>
               <p>
-                Graphic headings can be used a few different ways, depending on
-                what your landing page is for. Highlight your values, specific
-                program areas, or results.
+                Every vote matters, and this year it's really true.
+                Even if you live in a "safe state", send a message with your ballot.
               </p>
             </div>
           </Grid>
           <Grid tablet={{ col: true }} className="usa-media-block">
-            <img
-              className="usa-media-block__img"
-              src={circleImg}
-              alt="Alt text"
-            />
+             <div className="usa-media-block__img background-circle icon-center">
+              <FontAwesomeIcon icon={["fas", "calendar-times"]} size="3x" />
+            </div>
             <div className="usa-media-block__body">
               <h2 className="usa-graphic-list__heading">
-                Stick to 6 or fewer words.
+                Time
               </h2>
               <p>
-                Keep body text to about 30 words. They can be shorter, but try
-                to be somewhat balanced across all four. It creates a clean
-                appearance with good spacing.
+                Your skills and contributions can go a long way to help campaigns win
+                and build power with local organizations for the long haul.
               </p>
             </div>
           </Grid>
         </Grid>
         <Grid row gap className="usa-graphic-list__row">
           <Grid tablet={{ col: true }} className="usa-media-block">
-            <img
-              className="usa-media-block__img"
-              src={circleImg}
-              alt="Alt text"
-            />
+           <div className="usa-media-block__img background-circle icon-center">
+              <FontAwesomeIcon icon={["fas", "money-bill-wave"]} size="3x" />
+            </div>
             <div className="usa-media-block__body">
               <h2 className="usa-graphic-list__heading">
-                Never highlight anything without a goal.
+                Donations
               </h2>
               <p>
-                For anything you want to highlight here, understand what your
-                users know now, and what activity or impression you want from
-                them after they see it.
+                Money matters more than ever, and under-resourced campaigns keep track of their grassroots donors.
               </p>
             </div>
           </Grid>
           <Grid tablet={{ col: true }} className="usa-media-block">
-            <img
-              className="usa-media-block__img"
-              src={circleImg}
-              alt="Alt text"
-            />
+           <div className="usa-media-block__img background-circle icon-center">
+              <FontAwesomeIcon icon={["fas", "users"]} size="3x" />
+            </div>
             <div className="usa-media-block__body">
               <h2 className="usa-graphic-list__heading">
-                Could also have 2 or 6.
+                Connections
               </h2>
               <p>
-                In addition to your goal, find out your users’ goals. What do
-                they want to know or do that supports your mission? Use these
-                headings to show these.
+                There are competitive races all over the country.
+                Tell your friends and family, and help them make a plan of their own.
               </p>
             </div>
           </Grid>
