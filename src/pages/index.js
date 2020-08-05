@@ -19,7 +19,7 @@ const IndexPage = () => (
             </span>
             Now it’s time to finish the job
           </h1>
-          <Link className="usa-button" to="/step">
+          <Link className="usa-button bg-secondary hover:bg-secondary-dark" to="/step">
             Let's Go <FontAwesomeIcon icon={["fas", "arrow-right"]} />
           </Link>
         </div>
