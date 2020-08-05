@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
-import { Link, Button } from "@trussworks/react-uswds"
+import { Button } from "@trussworks/react-uswds"
 
 export function Plan() {
   return (

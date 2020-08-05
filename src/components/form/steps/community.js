@@ -32,7 +32,7 @@ export function CommunityStep() {
     // and outline them like other selectable buttons 
     let config = {}
     community.map(region => {
-      if (region == "DC") {
+      if (region === "DC") {
         // workaround for library weirdness with DC circle
         region = "DC2"
       }
