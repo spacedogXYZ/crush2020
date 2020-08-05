@@ -9,6 +9,8 @@ function formReducer(state, action) {
       return { ...state, vbm: action.payload };
     case "LOCATION_CHANGE":
       return { ...state, location: action.payload };
+    case "GEOCODE_CHANGE":
+      return { ...state, geocode: action.payload };
     case "TIME_CHANGE":
       return { ...state, time: action.payload };
     case "MONEY_CHANGE":
@@ -43,6 +45,7 @@ const initialState = {
   vbm: false,
 
   location: "",
+  geocode: {},
   issues: [],
   skills: [],
   time: 1,
