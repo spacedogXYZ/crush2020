@@ -25,7 +25,7 @@ const SiteFooter = ({ siteTitle }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
+                  <FontAwesomeIcon icon={["fab", "twitter"]} size="1x" />
                   <span>Twitter</span>
                 </a>,
                 <a
@@ -35,7 +35,7 @@ const SiteFooter = ({ siteTitle }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
+                  <FontAwesomeIcon icon={["fab", "instagram"]} size="1x" />
                   <span>Instagram</span>
                 </a>,
                 <a
@@ -45,7 +45,7 @@ const SiteFooter = ({ siteTitle }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FontAwesomeIcon icon={["fab", "facebook-f"]} size="2x" />
+                  <FontAwesomeIcon icon={["fab", "facebook-f"]} size="1x" />
                   <span>Facebook</span>
                 </a>,
               ]}
