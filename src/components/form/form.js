@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { navigate } from "gatsby"
 import { GridContainer, Button } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -47,21 +48,14 @@ function PlanForm() {
 
   if (state.isSubmitLoading) {
     return (
-      <div className="App">
+      <div>
         <p>Loading...</p>
       </div>
     );
   }
 
   if (state.isSubmissionReceived) {
-    return (
-      <div className="App">
-        <h1>Thanks for your submission!</h1>
-        <pre style={{ textAlign: "left" }}>
-          {JSON.stringify(state, null, 2)}
-        </pre>
-      </div>
-    );
+    navigate('/plan', state);
   }
 
   return (

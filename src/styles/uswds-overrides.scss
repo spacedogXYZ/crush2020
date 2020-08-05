@@ -55,7 +55,6 @@
 }
 
 // step specific issues
-
 .button-grid {
   width: 50%;
   min-width: 200px;
@@ -70,4 +69,9 @@
     opacity: 0.50;
     cursor: pointer;
   }
+}
+
+// weird...
+li.usa-card {
+  display: block;
 }
