@@ -1,7 +1,9 @@
 import React from "react"
 
-import { Form, Fieldset, Button } from "@trussworks/react-uswds"
+import { Form, Fieldset } from "@trussworks/react-uswds"
+
 import { useFormState } from "../context"
+import FormButton from "../buttons"
 
 export function IssuesStep() {
   const {
@@ -40,17 +42,17 @@ export function IssuesStep() {
   return (
     <Form>
       <Fieldset legend="What issues do you care most about?">
-      {availableIssues.map(issue => (
-        <Button outline key={issue} label={issue} name={issue}>
-          <input
-            name={issue}
-            id={issue}
-            value={issue}
-            onChange={() => handleChange(issue)}
-            checked={issues.includes(issue)}
+        <div className="button-grid">
+        {availableIssues.map(issue => (
+          <FormButton
+            key={issue}
+            text={issue}
+            value={true}
+            state={issues.includes(issue)}
+            action={e => handleChange(issue)}
           />
-        </Button>
-      ))}
+        ))}
+        </div>
       </Fieldset>
     </Form>
   );

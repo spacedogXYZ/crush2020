@@ -1,6 +1,7 @@
 import React, { createContext, useReducer, useContext } from "react";
 
 function formReducer(state, action) {
+  console.log(action)
   switch (action.type) {
     case "VOTE_REGISTERED_CHANGE":
       return { ...state, registered: action.payload };
@@ -15,11 +16,17 @@ function formReducer(state, action) {
     case "ISSUES_CHANGE":
       return { ...state, issues: action.payload };
     case "SKILLS_CHANGE":
-      return { ...state, issues: action.payload };
+      return { ...state, skills: action.payload };
+    case "COMMUNITY_CHANGE":
+      return { ...state, community: action.payload };
     case "NAME_CHANGE":
       return { ...state, name: action.payload };
     case "EMAIL_CHANGE":
       return { ...state, email: action.payload };
+    case "INSTAGRAM_CHANGE":
+      return { ...state, instagram: action.payload };
+    case "TWITTER_CHANGE":
+      return { ...state, twitter: action.payload };
     case "SUBMIT":
       return { ...state, isSubmitLoading: true };
     case "SUBMISSION_RECEIVED":
@@ -38,8 +45,8 @@ const initialState = {
   location: "",
   issues: [],
   skills: [],
-  time: 0,
-  money: 0,
+  time: 1,
+  money: 20,
   community: [],
 
   name: "",

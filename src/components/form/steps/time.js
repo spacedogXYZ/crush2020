@@ -17,7 +17,6 @@ export function TimeStep() {
           name="time"
           min={0}
           max={4}
-          defaultValue={2}
           list="range-list-id"
           value={time}
           onChange={e =>

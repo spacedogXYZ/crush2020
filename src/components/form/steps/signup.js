@@ -1,7 +1,8 @@
 import React from "react";
 
 import { useFormState } from "../context";
-import { Form, Fieldset, TextInput } from "@trussworks/react-uswds"
+import { Form, Fieldset, FormGroup, TextInput, Label } from "@trussworks/react-uswds"
+import { GridContainer, Grid } from "@trussworks/react-uswds"
 
 export function SignupStep() {
   const {
@@ -12,41 +13,59 @@ export function SignupStep() {
   return (
     <Form>
       <Fieldset legend={"Almost done!"}>
-        <TextInput
-          label="Name"
-          name="name"
-          onChange={e =>
-            dispatch({ type: "NAME_CHANGE", payload: e.target.value })
-          }
-          value={name}
-        />
+        <GridContainer>
+          <FormGroup>
+            <Grid row mobileLg={{col:8, offset: 2}}>
+              <Label htmlFor="name">Name</Label>
+              <TextInput
+                name="name"
+                onChange={e =>
+                  dispatch({ type: "NAME_CHANGE", payload: e.target.value })
+                }
+                value={name}
+              />
+            </Grid>
+          </FormGroup>
 
-        <TextInput
-          label="Email"
-          name="email"
-          onChange={e =>
-            dispatch({ type: "EMAIL_CHANGE", payload: e.target.value })
-          }
-          value={email}
-        />
+          <FormGroup>
+            <Grid row mobileLg={{col:8, offset: 2}}>
+              <Label htmlFor="email">Email</Label>
+              <TextInput
+                name="email"
+                onChange={e =>
+                  dispatch({ type: "EMAIL_CHANGE", payload: e.target.value })
+                }
+                value={email}
+              />
+            </Grid>
+          </FormGroup>
 
-        <TextInput
-          label="Twitter"
-          name="twitter"
-          onChange={e =>
-            dispatch({ type: "TWITTER_CHANGE", payload: e.target.value })
-          }
-          value={twitter}
-        />
+          <FormGroup>
+            <Grid row gap>
+              <Grid row mobileLg={{col:4, offset: 2}}>
+                <Label htmlFor="twitter">Twitter</Label>
+                <TextInput
+                  name="twitter"
+                  onChange={e =>
+                    dispatch({ type: "TWITTER_CHANGE", payload: e.target.value })
+                  }
+                  value={twitter}
+                />
+              </Grid>
 
-        <TextInput
-          label="Instagram"
-          name="instagram"
-          onChange={e =>
-            dispatch({ type: "INSTAGRAM_CHANGE", payload: e.target.value })
-          }
-          value={instagram}
-        />
+              <Grid row mobileLg={{col:4}}>
+                <Label htmlFor="instagram">Instagram</Label>
+                <TextInput
+                  name="instagram"
+                  onChange={e =>
+                    dispatch({ type: "INSTAGRAM_CHANGE", payload: e.target.value })
+                  }
+                  value={instagram}
+                />
+              </Grid>
+            </Grid>
+          </FormGroup>
+        </GridContainer>
       </Fieldset>
     </Form>
   );

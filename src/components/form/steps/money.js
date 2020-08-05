@@ -17,7 +17,6 @@ export function MoneyStep() {
           name="money"
           min={0}
           max={100}
-          defaultValue={20}
           value={money}
           onChange={e =>
             dispatch({ type: "MONEY_CHANGE", payload: e.target.value })

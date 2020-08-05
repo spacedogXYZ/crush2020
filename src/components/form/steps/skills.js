@@ -1,7 +1,9 @@
 import React from "react"
 
-import { Form, Fieldset, Button } from "@trussworks/react-uswds"
+import { Form, Fieldset } from "@trussworks/react-uswds"
+
 import { useFormState } from "../context"
+import FormButton from "../buttons"
 
 export function SkillsStep() {
   const {
@@ -40,17 +42,17 @@ export function SkillsStep() {
   return (
     <Form>
       <Fieldset legend="What are your skills?">
-      {availableSkills.map(skill => (
-        <Button outline key={skill} label={skill} name={skill}>
-          <input
-            name={skill}
-            id={skill}
-            value={skill}
-            onChange={() => handleChange(skill)}
-            checked={skills.includes(skill)}
+        <div className="button-grid">
+        {availableSkills.map(skill => (
+          <FormButton
+            key={skill}
+            text={skill}
+            value={true}
+            state={skills.includes(skill)}
+            action={e => handleChange(skill)}
           />
-        </Button>
-      ))}
+        ))}
+        </div>
       </Fieldset>
     </Form>
   );

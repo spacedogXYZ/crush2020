@@ -27,10 +27,6 @@
   border-radius: 50%;
   width: 124px;
   height: 124px;
-
-  svg {
-
-  }
 }
 
 // centered form
@@ -38,6 +34,9 @@
   form {
     text-align: center;
     margin-top: 20%;
+    &.margin-top-5pct {
+      margin-top: 5%;
+    }
     max-width: 100%;
 
     fieldset {
@@ -52,5 +51,23 @@
   .progress-container {
     margin-top: 1rem;
     text-align: center;
+  }
+}
+
+// step specific issues
+
+.button-grid {
+  width: 50%;
+  min-width: 200px;
+  margin: auto;
+}
+
+.us-state-map {
+  path {
+    pointer-events: all;
+  }
+  path:hover {
+    opacity: 0.50;
+    cursor: pointer;
   }
 }
