@@ -215,11 +215,11 @@ export function Plan({form}) {
         <Grid row>
           <Card gridLayout={{ tablet: { col: 4 } }}>
             <CardHeader>
-              <h3 className="usa-card__heading">Donate</h3>
+              <h3 className="usa-card__heading">Community</h3>
             </CardHeader>
             <CardBody>
               <p>
-                Get your friends involved in their areas, and they can make their own plan to Crush 2020.
+                Get your friends involved in {join_sentence(community_states)}, and they can make their own plan to Crush 2020.
               </p>
             </CardBody>
             <CardFooter>
