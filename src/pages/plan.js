@@ -3,11 +3,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
 
-const PlanPage = () => (
-  <Layout>
-    <SEO title="Your plan" />
-    <Plan />
-  </Layout>
-)
+const PlanPage = ({location}) => {
+  const { state } = location
+
+  return (
+    <Layout>
+      <SEO title="Your plan" />
+      <Plan form={state}/>
+    </Layout>
+  )
+}
 
 export default PlanPage

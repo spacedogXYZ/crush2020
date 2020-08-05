@@ -48,14 +48,14 @@ function PlanForm() {
 
   if (state.isSubmitLoading) {
     return (
-      <div>
+      <GridContainer className="form-container">
         <p>Loading...</p>
-      </div>
+      </GridContainer>
     );
   }
 
   if (state.isSubmissionReceived) {
-    navigate('/plan', state);
+    navigate('/plan/', { state: state });
   }
 
   return (

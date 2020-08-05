@@ -1,9 +1,30 @@
-import React from "react";
-
+import React from "react"
+import { navigate } from "gatsby"
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
 import { Button } from "@trussworks/react-uswds"
 
-export function Plan() {
+import { join_sentence } from "../../utils/strings"
+
+var us_states = require('us-state-codes')
+var slugify = require('slugify')
+
+export function Plan({form}) {
+  console.log(form)
+
+  if (!Object.keys(form).length) {
+    // no form, redirect
+    navigate('/step/')
+    return null;
+  }
+  
+  let state = form.geocode.address_components.state
+  let state_name = us_states.getStateNameByStateCode(state)
+  let state_slug = slugify(state_name)
+
+  let community_states = form.community.map(c => (
+    us_states.getStateNameByStateCode(c)
+  ))
+
   return (
     <Accordion items={[
     {
@@ -19,12 +40,31 @@ export function Plan() {
               </CardHeader>
               <CardBody>
                 <p>
-                  <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
-                    className="usa-button"
-                  >Double check with State</a>
-                  <a href="https://www.voteamerica.com/vote-by-mail/"
+                  { form.registered === "yes" && (
+                    <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
+                      className="usa-button"
+                    >Confirm with {state_name}</a>
+                  )}
+                  { form.registered === "not-sure" ? (
+                    <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
+                      className="usa-button"
+                    >Double check with State</a>
+                  ):(<></>)}
+                  { form.registered === "no" && (
+                    <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
+                      className="usa-button"
+                    >Register to Vote</a>
+                  )}
+                  { form.vbm === "yes" && (
+                    <a href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/`}
                     className="usa-button bg-secondary hover:bg-secondary-dark"
-                  >Sign up to Vote by Mail</a>
+                    >Sign up to Vote by Mail</a>
+                  )}
+                  { form.vbm === "not-sure" && (
+                    <a href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/#absentee-guide`}
+                    className="usa-button bg-secondary hover:bg-secondary-dark"
+                    >Learn more about Vote by Mail</a>
+                  )}
                 </p>
               </CardBody>
             </Card>
@@ -69,7 +109,7 @@ export function Plan() {
           <Grid row>
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
-                <h3 className="usa-card__heading">ST Governor</h3>
+                <h3 className="usa-card__heading">{state} Governor</h3>
               </CardHeader>
               <CardBody>
                 <ul>
@@ -80,7 +120,7 @@ export function Plan() {
 
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
-                <h3 className="usa-card__heading">ST Senate</h3>
+                <h3 className="usa-card__heading">{state} Senate</h3>
               </CardHeader>
               <CardBody>
                 <ul>
@@ -91,7 +131,7 @@ export function Plan() {
 
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
-                <h3 className="usa-card__heading">ST House</h3>
+                <h3 className="usa-card__heading">{state} House</h3>
               </CardHeader>
               <CardBody>
                 <ul>
@@ -159,7 +199,7 @@ export function Plan() {
             </CardBody>
             <CardFooter>
               <Button type="button" className="usa-button">
-                Give $10
+                Give ${form.money}
               </Button>
             </CardFooter>
           </Card>
@@ -192,7 +232,7 @@ export function Plan() {
         </GridContainer>
       )
     }]
-  }/>);
+  }/>)
 }
 
-export default Plan;
+export default Plan
