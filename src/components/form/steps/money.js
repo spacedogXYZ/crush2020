@@ -22,6 +22,14 @@ export function MoneyStep() {
             dispatch({ type: "MONEY_CHANGE", payload: e.target.value })
           }
         />
+        <ul className="usa-range range-slider-label">
+          <li>help in other ways</li>
+          <li>$20</li>
+          <li>$40</li>
+          <li>$60</li>
+          <li>$80</li>
+          <li>$100 or more</li>
+        </ul>
       </Fieldset>
     </Form>
   );

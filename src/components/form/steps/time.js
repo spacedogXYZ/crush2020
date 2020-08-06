@@ -16,20 +16,20 @@ export function TimeStep() {
           id="range-slider"
           name="time"
           min={0}
-          max={4}
-          list="range-list-id"
+          max={5}
           value={time}
           onChange={e =>
             dispatch({ type: "TIME_CHANGE", payload: e.target.value })
           }
         />
-        <datalist id="range-list-id">
-          <option>0</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </datalist>
+        <ul className="usa-range range-slider-label">
+          <li>help in other ways</li>
+          <li>at least once</li>
+          <li>a few hours a week</li>
+          <li>one weekend a month</li>
+          <li>every weekend</li>
+          <li>full-time</li>
+        </ul>
       </Fieldset>
     </Form>
   );

@@ -61,6 +61,19 @@
   margin: auto;
 }
 
+ul.range-slider-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+
+  li {
+    max-width: 15%;
+    display: block;
+    text-align: center;
+  }
+}
+
 .us-state-map {
   path {
     pointer-events: all;
