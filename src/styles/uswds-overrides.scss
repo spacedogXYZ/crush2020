@@ -77,10 +77,21 @@ ul.range-slider-label {
 .us-state-map {
   path {
     pointer-events: all;
+    stroke-width: 2;
+    stroke-linejoin: round;
   }
   path:hover {
     opacity: 0.50;
     cursor: pointer;
+  }
+}
+
+.__react_component_tooltip {
+  ul {
+    padding: 0 1.5em;
+    li {
+      text-align: left;
+    }
   }
 }
 
