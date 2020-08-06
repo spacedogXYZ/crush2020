@@ -1776,10 +1776,9 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@trussworks/react-uswds@^1.8.0":
+"@trussworks/react-uswds@https://github.com/trussworks/react-uswds.git":
   version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@trussworks/react-uswds/-/react-uswds-1.8.0.tgz#b686f5d70bd156f1a5e365db79b7cb9b85280eaa"
-  integrity sha512-7PJDUvk3eWQD69DiPsV9nHWK4p7ebWmMMkvPzoJS2XjJrVrPVzVdCfga7nBXYp1VfK5ICpDm0/VY0OB7DS8jhg==
+  resolved "https://github.com/trussworks/react-uswds.git#a6d0a0dee6b265ecff36168b61d2342f1d9067c4"
   dependencies:
     classnames "^2.2.6"
     dotenv "^8.2.0"

@@ -11,9 +11,11 @@ var slugify = require('slugify')
 export function Plan({form}) {
   console.log(form)
 
-  if (!Object.keys(form).length) {
+  if (!form || !Object.keys(form).length) {
     // no form, redirect
-    navigate('/step/')
+    if (typeof window !== `undefined`) {
+      navigate('/step/')
+    }
     return null;
   }
   
