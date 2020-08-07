@@ -3,7 +3,7 @@ import { navigate } from "gatsby"
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
 import { Button } from "@trussworks/react-uswds"
 
-import { join_sentence } from "../../utils/strings"
+import { joinSentence } from "../../utils/strings"
 
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
@@ -221,7 +221,7 @@ export function Plan({form}) {
             </CardHeader>
             <CardBody>
               <p>
-                Get your friends involved in {join_sentence(community_states)}, and they can make their own plan to Crush 2020.
+                Get your friends involved in {joinSentence(community_states)}, and they can make their own plan to Crush 2020.
               </p>
             </CardBody>
             <CardFooter>

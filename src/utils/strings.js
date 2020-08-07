@@ -1,7 +1,8 @@
-export function join_sentence(array) {
+export function joinSentence(array) {
   return array.reduce((text, value, i, array) => (
     text + (i < array.length - 1 ? ', ' : ' and ') + value)
-  );
+  )
+}
 
 export function capitalize(s) {
   if (typeof s !== 'string') { return '' }
