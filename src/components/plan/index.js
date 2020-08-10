@@ -3,12 +3,12 @@ import { navigate } from "gatsby"
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
 import { Button } from "@trussworks/react-uswds"
 
-import { joinSentence } from "../../utils/strings"
+import { joinSentence, padCode, parseName } from "../../utils/strings"
 
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
 
-export function Plan({form}) {
+export function Plan({form, candidates}) {
   console.log(form)
 
   if (!form || !Object.keys(form).length) {
@@ -19,13 +19,27 @@ export function Plan({form}) {
     return null;
   }
   
-  let state = form.geocode.address_components.state
-  let state_name = us_states.getStateNameByStateCode(state)
-  let state_slug = slugify(state_name)
+  const state = form.geocode.address_components.state
+  const state_name = us_states.getStateNameByStateCode(state)
+  const state_slug = slugify(state_name)
 
-  let community_states = form.community.map(c => (
+  const community_states = form.community.map(c => (
     us_states.getStateNameByStateCode(c)
   ))
+
+  const senate_candidates = candidates.filter(c => (
+    c.CAND_OFFICE_ST === state &&
+    c.CAND_OFFICE_DISTRICT === "00"
+  ))
+
+  const congressional_district = form.geocode.fields.congressional_districts[0]
+  const congressional_district_code = padCode(congressional_district.district_number)
+  let house_candidates = candidates.filter(c => (
+    c.CAND_OFFICE_ST === state &&
+    c.CAND_OFFICE_DISTRICT === congressional_district_code
+  ))
+
+  console.log(state, congressional_district_code)
 
   return (
     <Accordion items={[
@@ -91,7 +105,9 @@ export function Plan({form}) {
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>candidates</li>
+                  {senate_candidates.map(c => (
+                    <li key={c.CAND_ID}>{parseName(c.CAND_NAME)} ({c.CAND_PTY_AFFILIATION.slice(0,1)})</li>
+                  ))}
                 </ul>
               </CardBody>
             </Card>
@@ -102,7 +118,9 @@ export function Plan({form}) {
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>candidates</li>
+                  {house_candidates.map(c => (
+                    <li key={c.CAND_ID}>{parseName(c.CAND_NAME)} ({c.CAND_PTY_AFFILIATION.slice(0,1)})</li>
+                  ))}
                 </ul>
               </CardBody>
             </Card>
