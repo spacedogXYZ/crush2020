@@ -1776,10 +1776,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@trussworks/react-uswds@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@trussworks/react-uswds/-/react-uswds-1.8.0.tgz#b686f5d70bd156f1a5e365db79b7cb9b85280eaa"
-  integrity sha512-7PJDUvk3eWQD69DiPsV9nHWK4p7ebWmMMkvPzoJS2XjJrVrPVzVdCfga7nBXYp1VfK5ICpDm0/VY0OB7DS8jhg==
+"@trussworks/react-uswds@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@trussworks/react-uswds/-/react-uswds-1.9.0.tgz#db2b647f3d6724638176f04ea1eb623e2867b376"
+  integrity sha512-qP8oVD2MHN4RLnZOoSAzO5eNk03LnBAxFtq44t2OJf54ZaVzhYcUJqg/UDlqataR5SI+7aG+WSfmPm/aV9L7tg==
   dependencies:
     classnames "^2.2.6"
     dotenv "^8.2.0"
