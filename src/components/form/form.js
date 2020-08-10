@@ -63,14 +63,14 @@ function PlanForm() {
       {steps[currentStep]}
 
       <div className="nav-container">
-        {!isFirst && <Button outline onClick={() => goBack()}>
+        {!isFirst && <Button className="icon-left" outline onClick={() => goBack()}>
           <FontAwesomeIcon icon={["fas", "arrow-left"]} />
-          &nbsp;
           Back
         </Button>}
 
         <Button
           type="submit"
+          className="icon-right"
           onClick={e => {
             e.preventDefault();
 
@@ -82,7 +82,6 @@ function PlanForm() {
           }}
         >
           {isLast ? "Done" : "Next"}
-          &nbsp;
           <FontAwesomeIcon icon={["fas", isLast ? "check" :"arrow-right"]} />
         </Button>
         <div className="progress-container">

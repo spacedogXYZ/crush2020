@@ -56,9 +56,16 @@
 
 // step specific issues
 .button-grid {
-  width: 50%;
   min-width: 200px;
+  max-width: 620px;
   margin: auto;
+}
+
+button.icon-left svg {
+  margin-right: 10px;
+}
+button.icon-right svg {
+  margin-left: 10px;
 }
 
 ul.range-slider-label {

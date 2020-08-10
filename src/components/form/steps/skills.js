@@ -11,17 +11,17 @@ export function SkillsStep() {
     dispatch
   } = useFormState();
 
-  const availableSkills = [
-    "Writing",
-    "Texting",
-    "Chatting on the phone",
-    "Tweeting",
-    "Making videos",
-    "Instagram",
-    "I'm a lawyer",
-    "I can code",
-    "I'm bilingual"
-  ];
+  const allSkills = {
+    WRITING: {t: "Writing", i: "edit"},
+    TEXTING: {t: "Texting", i: "comment-dots"},
+    PHONE_CALLS: {t: "Chatting on the phone", i: "mobile-alt"},
+    TWEETING: {t: "Tweeting", i: ['fab', 'twitter-square']},
+    MAKING_VIDEOS: {t: "Making videos", i: "film"},
+    INSTAGRAM: {t: "Instagram", i: ['fab', 'instagram']},
+    LAWYER: {t: "I'm a lawyer", i: "balance-scale"},
+    CODER: {t: "I can code", i: "code"},
+    BILINGUAL: {t: "I'm bilingual", i: "sign-language"},
+  };
 
   const handleChange = skill => {
     const isSelected = skills.includes(skill);
@@ -43,10 +43,11 @@ export function SkillsStep() {
     <Form>
       <Fieldset legend="What are your skills?">
         <div className="button-grid">
-        {availableSkills.map(skill => (
+        {Object.keys(allSkills).map(skill => (
           <FormButton
             key={skill}
-            text={skill}
+            text={allSkills[skill].t}
+            icon={allSkills[skill].i}
             value={true}
             state={skills.includes(skill)}
             action={e => handleChange(skill)}
