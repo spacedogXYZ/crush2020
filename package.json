@@ -28,7 +28,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-tooltip": "^4.2.8",
-    "react-usa-map": "https://github.com/jlev/react-usa-map.git",
+    "@jlev/react-usa-map": "1.5.2",
     "slugify": "^1.4.5",
     "us-state-codes": "^1.1.2"
   },
