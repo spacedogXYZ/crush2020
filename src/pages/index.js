@@ -15,9 +15,9 @@ const IndexPage = () => (
         <div className="usa-hero__callout">
           <h1 className="usa-hero__heading">
             <span className="usa-hero__heading--alt">
-              We started with the midterms
+              We dominated the midterms.
             </span>
-            Now it’s time to finish the job
+            Let’s finish the job.
           </h1>
           <Link className="usa-button bg-secondary hover:bg-secondary-dark" to="/step">
             Let's Go <FontAwesomeIcon icon={["fas", "arrow-right"]} />
@@ -38,8 +38,7 @@ const IndexPage = () => (
                 Vote
               </h2>
               <p>
-                Every vote matters, and this year it's really true.
-                Even if you live in a "safe state", send a message with your ballot.
+                Every vote counts. Yes, even in your “safe” state. It’s a privilege &mdash; so use it.
               </p>
             </div>
           </Grid>
@@ -52,8 +51,7 @@ const IndexPage = () => (
                 Time
               </h2>
               <p>
-                Your skills and contributions can go a long way to help campaigns win
-                and build power with local organizations for the long haul.
+                Lending your special skills can make the difference between a campaign win and loss.
               </p>
             </div>
           </Grid>
@@ -68,7 +66,7 @@ const IndexPage = () => (
                 Donations
               </h2>
               <p>
-                Money matters more than ever, and under-resourced campaigns keep track of their grassroots donors.
+                With so many campaigns saying no to corporate money, your dollars mean more than ever.
               </p>
             </div>
           </Grid>
@@ -81,8 +79,7 @@ const IndexPage = () => (
                 Connections
               </h2>
               <p>
-                There are competitive races all over the country.
-                Tell your friends and family, and help them make a plan of their own.
+                Your world is more than what’s outside your window &mdash; engage the full scope of your network for lasting change.
               </p>
             </div>
           </Grid>

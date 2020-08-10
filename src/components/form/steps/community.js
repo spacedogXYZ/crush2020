@@ -137,7 +137,7 @@ export function CommunityStep() {
   return (
     <Form className="margin-top-5pct">
       <Fieldset legend={"Extend your impact!"}>
-        <h2>Help win competitive races in these states</h2>
+        <h2>Pick a tight race outside your area and help hold the House/flip the Senate</h2>
         <div data-tip data-for='map-tooltip'>
           <USAMap width="100%"
             customize={statesDisplay()}
