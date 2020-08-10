@@ -93,8 +93,8 @@ export function Plan({form, candidates}) {
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>Joe Biden</li>
-                  <li>Donald Trump</li>
+                  <li>Joe Biden (D)</li>
+                  <li>Donald Trump (R)</li>
                 </ul>
               </CardBody>
             </Card>
