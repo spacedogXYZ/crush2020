@@ -108,3 +108,15 @@ ul.range-slider-label {
 li.usa-card {
   display: block;
 }
+
+// only apply to naked uls
+.usa-card__body ul:not([class]) {
+  padding: 0 0 0 20px;
+}
+
+.rating-source {
+  display: block;
+  font-style: italic;
+  font-size: 0.9em;
+  color: gray;
+}

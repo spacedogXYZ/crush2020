@@ -25,6 +25,32 @@ const PlanPage = ({location}) => {
         nodes {
           district
           rating
+          updated
+        }
+      }
+
+      allSenateCookRatingCsv {
+        nodes {
+          state
+          rating
+          updated
+        }
+      }
+
+      allGovernorsCookRatingCsv {
+        nodes {
+          state
+          rating
+          updated
+        }
+      }
+
+      allStateChambersCsv {
+        nodes {
+          state
+          chamber
+          seats_up
+          margin
         }
       }
     }
@@ -34,8 +60,15 @@ const PlanPage = ({location}) => {
     <Layout>
       <SEO title="Your plan" />
       <Plan form={state}
-        candidates={planQuery.allFecCandidatesCsv.nodes}
-        ratings={planQuery.allHouseCookRatingCsv.nodes}
+        candidates={{
+          federal: planQuery.allFecCandidatesCsv.nodes
+        }}
+        ratings={{
+          senate: planQuery.allSenateCookRatingCsv.nodes,
+          house: planQuery.allHouseCookRatingCsv.nodes,
+          governor: planQuery.allGovernorsCookRatingCsv.nodes,
+          state_legislature: planQuery.allStateChambersCsv.nodes,
+        }}
       />
     </Layout>
   )

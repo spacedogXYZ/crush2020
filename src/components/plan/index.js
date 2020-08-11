@@ -8,8 +8,8 @@ import { joinSentence, padCode, parseName } from "../../utils/strings"
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
 
-export function Plan({form, candidates}) {
-  console.log(form)
+export function Plan({form, candidates, ratings}) {
+  console.log(form, candidates, ratings)
 
   if (!form || !Object.keys(form).length) {
     // no form, redirect
@@ -21,25 +21,33 @@ export function Plan({form, candidates}) {
   
   const state = form.geocode.address_components.state
   const state_name = us_states.getStateNameByStateCode(state)
-  const state_slug = slugify(state_name)
+  const state_slug = slugify(state_name).toLowerCase()
 
   const community_states = form.community.map(c => (
     us_states.getStateNameByStateCode(c)
   ))
 
-  const senate_candidates = candidates.filter(c => (
+  const senate_candidates = candidates.federal.filter(c => (
     c.CAND_OFFICE_ST === state &&
     c.CAND_OFFICE_DISTRICT === "00"
-  ))
+  )).sort((a, b) => (a.TTL_RECEIPTS < b.TTL_RECEIPTS))
+  .slice(0,2)
 
   const congressional_district = form.geocode.fields.congressional_districts[0]
   const congressional_district_code = padCode(congressional_district.district_number)
-  let house_candidates = candidates.filter(c => (
+  let house_candidates = candidates.federal.filter(c => (
     c.CAND_OFFICE_ST === state &&
     c.CAND_OFFICE_DISTRICT === congressional_district_code
-  ))
+  )).sort((a, b) => (a.TTL_RECEIPTS < b.TTL_RECEIPTS))
+  .slice(0,2)
+  // we don't actually have primary win/loss records
+  // so sort by amount raised and pick top two
 
-  console.log(state, congressional_district_code)
+  const senate_rating = ratings.senate.find(r => (r.state === state))
+  const house_rating = ratings.house.find(r => (r.district === `${state}-${congressional_district_code}`))
+  const governor_rating = ratings.governor.find(r => (r.state === state))
+  const state_senate_rating = ratings.state_legislature.find(r => (r.state === state && r.chamber === "upper"))
+  const state_house_rating = ratings.state_legislature.find(r => (r.state === state && r.chamber === "lower"))
 
   return (
     <Accordion items={[
@@ -93,12 +101,13 @@ export function Plan({form, candidates}) {
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>Joe Biden (D)</li>
-                  <li>Donald Trump (R)</li>
+                  <li>Joe Biden &amp; Kamala Harris (D)</li>
+                  <li>Donald Trump &amp; Mike Pence (R)</li>
                 </ul>
               </CardBody>
             </Card>
 
+            { senate_rating && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">US Senate</h3>
@@ -110,8 +119,16 @@ export function Plan({form, candidates}) {
                   ))}
                 </ul>
               </CardBody>
+              <CardFooter>
+                  Current rating: {senate_rating.rating}
+                  <div className="rating-source">
+                    Cook Political: {senate_rating.updated}
+                  </div>
+                </CardFooter>
             </Card>
+            )}
 
+            { house_rating && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">US House</h3>
@@ -123,10 +140,16 @@ export function Plan({form, candidates}) {
                   ))}
                 </ul>
               </CardBody>
+              <CardFooter>
+                Current rating: {house_rating.rating}
+                <div className="rating-source">
+                  Cook Political: {house_rating.updated}
+                </div>
+              </CardFooter>
             </Card>
-          </Grid>
+            )}
 
-          <Grid row>
+            { governor_rating && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} Governor</h3>
@@ -137,28 +160,35 @@ export function Plan({form, candidates}) {
                 </ul>
               </CardBody>
             </Card>
+            )}
 
+            { state_senate_rating && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} Senate</h3>
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>candidates</li>
+                  <li>{state_senate_rating.seats_up} seats are up</li>
+                  <li>Current margin: {state_senate_rating.margin}</li>
                 </ul>
               </CardBody>
             </Card>
+            )}
 
+            { state_house_rating && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} House</h3>
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>candidates</li>
+                  <li>{state_house_rating.seats_up} seats are up</li>
+                  <li>Current margin: {state_house_rating.margin}</li>
                 </ul>
               </CardBody>
             </Card>
+            )}
           </Grid>
       </GridContainer>)
     },{
