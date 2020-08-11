@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
-import { Button } from "@trussworks/react-uswds"
+import { Button, ButtonGroup } from "@trussworks/react-uswds"
 
 import { joinSentence, padCode, parseName } from "../../utils/strings"
 
@@ -55,7 +55,7 @@ export function Plan({form, candidates}) {
                 <h3 className="usa-card__heading">Your voter registration</h3>
               </CardHeader>
               <CardBody>
-                <p>
+                <ButtonGroup>
                   { form.registered === "yes" && (
                     <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
                       className="usa-button"
@@ -81,7 +81,7 @@ export function Plan({form, candidates}) {
                     className="usa-button bg-secondary hover:bg-secondary-dark"
                     >Learn more about Vote by Mail</a>
                   )}
-                </p>
+                </ButtonGroup>
               </CardBody>
             </Card>
           </Grid>     

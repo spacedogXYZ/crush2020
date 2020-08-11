@@ -8,7 +8,8 @@
     background-image: url('../images/voting-booth.jpg');
     background-position-y: 80%;
     background-size: cover;
-    padding: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 // sticky footer
@@ -45,8 +46,8 @@
     }
   }
 
-  .nav-container {
-    text-align: center;
+  .usa-button-group.nav-container {
+    justify-content: center;
   }
 
   .progress-container {
