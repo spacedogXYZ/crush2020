@@ -6,7 +6,11 @@ export function joinSentence(array) {
 
 export function capitalize(s) {
   if (typeof s !== 'string') { return '' }
-  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()
+  s = s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()
+  if (s.startsWith('Mc')) {
+    s = 'Mc'+s.charAt(2).toUpperCase()+s.slice(3)
+  }
+  return s
 }
 
 export function isCompetitive(rating) {
