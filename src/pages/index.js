@@ -17,7 +17,7 @@ const IndexPage = () => (
             <span className="usa-hero__heading--alt">
               We dominated the midterms.
             </span>
-            Let’s finish the job.
+            This year, let’s finish the job.
           </h1>
           <Link className="usa-button bg-secondary hover:bg-secondary-dark" to="/step">
             Let's Go <FontAwesomeIcon icon={["fas", "arrow-right"]} />
@@ -44,7 +44,7 @@ const IndexPage = () => (
           </Grid>
           <Grid tablet={{ col: true }} className="usa-media-block">
              <div className="usa-media-block__img background-circle icon-center">
-              <FontAwesomeIcon icon={["fas", "calendar-times"]} size="3x" />
+              <FontAwesomeIcon icon={["fas", "calendar-alt"]} size="3x" />
             </div>
             <div className="usa-media-block__body">
               <h2 className="usa-graphic-list__heading">
@@ -76,7 +76,7 @@ const IndexPage = () => (
             </div>
             <div className="usa-media-block__body">
               <h2 className="usa-graphic-list__heading">
-                Connections
+                Reach
               </h2>
               <p>
                 Your world is more than what’s outside your window &mdash; engage the full scope of your network for lasting change.

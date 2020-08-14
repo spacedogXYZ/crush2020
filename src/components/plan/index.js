@@ -72,22 +72,22 @@ export function Plan({form, candidates, ratings}) {
                   { form.registered === "not-sure" ? (
                     <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
                       className="usa-button"
-                    >Double check with State</a>
+                    >Double check with {state_name}</a>
                   ):(<></>)}
                   { form.registered === "no" && (
-                    <a href="https://www.voteamerica.com/am-i-registered-to-vote/"
+                    <a href="https://www.voteamerica.com/register-to-vote/"
                       className="usa-button"
                     >Register to Vote</a>
                   )}
                   { form.vbm === "yes" && (
                     <a href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/`}
                     className="usa-button bg-secondary hover:bg-secondary-dark"
-                    >Sign up to Vote by Mail</a>
+                    >{state_name} Vote by Mail Application</a>
                   )}
                   { form.vbm === "not-sure" && (
                     <a href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/#absentee-guide`}
                     className="usa-button bg-secondary hover:bg-secondary-dark"
-                    >Learn more about Vote by Mail</a>
+                    >Learn about Vote by Mail in {state_name}</a>
                   )}
                 </ButtonGroup>
               </CardBody>
@@ -257,15 +257,15 @@ export function Plan({form, candidates, ratings}) {
         </GridContainer>
       )
     },{
-      id: 'community',
-      title: 'Community',
+      id: 'reach',
+      title: 'Reach',
       expanded: true,
       content: (
         <GridContainer>
         <Grid row>
           <Card gridLayout={{ tablet: { col: 4 } }}>
             <CardHeader>
-              <h3 className="usa-card__heading">Community</h3>
+              <h3 className="usa-card__heading">Reach</h3>
             </CardHeader>
             <CardBody>
               <p>
