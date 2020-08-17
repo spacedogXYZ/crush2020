@@ -5,8 +5,6 @@
 }
 
 .index-hero {
-  border-bottom: 20px solid white;
-
   .usa-hero__callout {
     padding: 4rem 2rem;
   }
@@ -25,7 +23,9 @@
       min-height: 10rem;
   }
 
-  @media (min-width: 36em) {
+  @media (min-width: 530px) {
+    border-bottom: 20px solid white;
+
     .usa-hero__callout {
       max-width: 24rem;
       padding: 8rem 4rem;
