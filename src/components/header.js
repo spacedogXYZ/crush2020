@@ -5,9 +5,12 @@ import PropTypes from "prop-types"
 import {
   Header,
   Title,
+  Logo,
   NavMenuButton,
   PrimaryNav,
 } from "@trussworks/react-uswds"
+
+import logoImg from '../images/logo.png'
 
 const navItems = [
   <Link to={"/"} activeClassName="usa-current"></Link>,
@@ -28,7 +31,13 @@ const SiteHeader = ({ siteTitle }) => {
       <div className="usa-nav-container">
         <div className="usa-navbar">
           <Title>
-            <Link to={"/"}>{siteTitle}</Link>
+            <Link to={"/"}>
+              <Logo
+                image={
+                  <img className="usa-footer__logo-img" src={logoImg} alt="Crush2020" />
+                }
+              />
+            </Link>
           </Title>
           <NavMenuButton
             label="Menu"

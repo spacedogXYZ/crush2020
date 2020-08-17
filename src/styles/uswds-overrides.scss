@@ -4,12 +4,38 @@
     justify-content: center;
 }
 
-.usa-hero {
-    background-image: url('../images/voting-booth.jpg');
-    background-position-y: 80%;
-    background-size: cover;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+.index-hero {
+  border-bottom: 20px solid white;
+
+  .usa-hero__callout {
+    padding: 8rem 2rem;
+    // max-width: 10rem;
+  }
+
+  @media (min-width: 36em) {
+    .usa-hero__callout {
+      max-width: 24rem;
+      padding: 8rem 4rem;
+    }
+  }
+
+  .usa-hero-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background: #1D5AA0;
+  }
+
+  .usa-hero {
+      background-image: url('../images/voting-booth.png');
+      background-position-x: 100%;
+      background-size: cover;
+      min-height: 20rem;
+  }
+
+  @media (min-width: 80em) {
+    .usa-hero { min-height: 25rem; }
+  }
 }
 
 // sticky footer
@@ -21,6 +47,10 @@
 
 .site-content {
   flex-grow: 1;
+}
+
+.usa-footer__logo-img {
+  max-width: 10rem;
 }
 
 // re-create circle-124.png in css

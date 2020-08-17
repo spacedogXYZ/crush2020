@@ -10,20 +10,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section className="usa-hero">
-      <GridContainer>
-        <div className="usa-hero__callout">
-          <h1 className="usa-hero__heading">
-            <span className="usa-hero__heading--alt">
-              We dominated the midterms.
-            </span>
-            This year, let’s finish the job.
-          </h1>
-          <Link className="usa-button bg-secondary hover:bg-secondary-dark" to="/step">
-            Let's Go <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-          </Link>
-        </div>
-      </GridContainer>
+    <section className="index-hero">
+      <Grid row>
+        <Grid col className="flex-auto">
+          <div className="usa-hero__callout">
+            <h1 className="usa-hero__heading">
+              <span className="usa-hero__heading--alt">
+                We dominated the midterms.
+              </span>
+              This year, let’s finish the job.
+            </h1>
+            <Link className="usa-button bg-secondary hover:bg-secondary-dark" to="/step">
+              Let's Go <FontAwesomeIcon icon={["fas", "arrow-right"]} />
+            </Link>
+          </div>
+        </Grid>
+        <Grid col className="usa-hero-container">
+          <div className="usa-hero"></div>
+        </Grid>
+      </Grid>
     </section>
 
     <section className="usa-graphic-list usa-section usa-section--dark">
