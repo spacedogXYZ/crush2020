@@ -9,8 +9,6 @@ var us_states = require('us-state-codes')
 var slugify = require('slugify')
 
 export function Plan({form, candidates, ratings}) {
-  console.log(form, candidates, ratings)
-
   if (!form || !Object.keys(form).length) {
     // no form, redirect
     if (typeof window !== `undefined`) {

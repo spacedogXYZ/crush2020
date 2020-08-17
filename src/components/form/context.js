@@ -1,7 +1,6 @@
 import React, { createContext, useReducer, useContext } from "react";
 
 function formReducer(state, action) {
-  console.log(action)
   switch (action.type) {
     case "VOTE_REGISTERED_CHANGE":
       return { ...state, registered: action.payload };
