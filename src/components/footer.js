@@ -21,7 +21,7 @@ const SiteFooter = ({ siteTitle }) => {
                 <a
                   key="twitter"
                   className="usa-social-link icon-center"
-                  href="https://twitter.com"
+                  href="https://twitter.com/crush_2020/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -31,7 +31,7 @@ const SiteFooter = ({ siteTitle }) => {
                 <a
                   key="instagram"
                   className="usa-social-link icon-center"
-                  href="https://instagram.com"
+                  href="https://instagram.com/crush2020election/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -41,7 +41,7 @@ const SiteFooter = ({ siteTitle }) => {
                 <a
                   key="facebook"
                   className="usa-social-link icon-center"
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/crush2020election/"
                   target="_blank"
                   rel="noreferrer"
                 >
