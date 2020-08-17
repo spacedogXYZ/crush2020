@@ -8,15 +8,7 @@
   border-bottom: 20px solid white;
 
   .usa-hero__callout {
-    padding: 8rem 2rem;
-    // max-width: 10rem;
-  }
-
-  @media (min-width: 36em) {
-    .usa-hero__callout {
-      max-width: 24rem;
-      padding: 8rem 4rem;
-    }
+    padding: 4rem 2rem;
   }
 
   .usa-hero-container {
@@ -30,7 +22,17 @@
       background-image: url('../images/voting-booth.png');
       background-position-x: 100%;
       background-size: cover;
+      min-height: 10rem;
+  }
+
+  @media (min-width: 36em) {
+    .usa-hero__callout {
+      max-width: 24rem;
+      padding: 8rem 4rem;
+    }
+    .usa-hero {
       min-height: 20rem;
+    }
   }
 
   @media (min-width: 80em) {
