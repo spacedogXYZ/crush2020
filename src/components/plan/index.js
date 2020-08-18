@@ -22,7 +22,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
   const state_name = us_states.getStateNameByStateCode(state)
   const state_slug = slugify(state_name).toLowerCase()
 
-  const community_states = form.community.map(c => (
+  const reach_states = form.reach.map(c => (
     us_states.getStateNameByStateCode(c)
   ))
 
@@ -296,7 +296,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </CardHeader>
             <CardBody>
               <p>
-                Get your friends involved in {joinSentence(community_states)}, and they can make their own plan to Crush 2020.
+                Get your friends involved in {joinSentence(reach_states)}, and they can make their own plan to Crush 2020.
               </p>
             </CardBody>
             <CardFooter>

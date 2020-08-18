@@ -3,7 +3,7 @@ import { navigate } from "gatsby"
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { VoteStep, LocationStep, IssuesStep, SkillsStep, TimeStep, MoneyStep, CommunityStep, SignupStep } from "./steps"
+import { VoteStep, LocationStep, IssuesStep, SkillsStep, TimeStep, MoneyStep, ReachStep, SignupStep } from "./steps"
 import { useFormState } from "./context"
 
 function useFormProgress() {
@@ -29,7 +29,7 @@ function PlanForm() {
     <SkillsStep />,
     <TimeStep />,
     <MoneyStep />,
-    <CommunityStep />,
+    <ReachStep />,
     <SignupStep />
   ];
 

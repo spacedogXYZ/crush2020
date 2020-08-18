@@ -9,9 +9,9 @@ import { useFormState } from "../context"
 import { updateDict, useReferredState } from "../../../utils/object"
 import { capitalize, isCompetitive } from "../../../utils/strings"
 
-export function CommunityStep() {
+export function ReachStep() {
   const {
-    state: { community },
+    state: { reach },
     dispatch
   } = useFormState();
 
@@ -54,13 +54,13 @@ export function CommunityStep() {
 
   // re-sort results to hash by state and district
   const competitiveStates = {}
-  competitiveRaces.allStateElectoralCollegeCsv.nodes.forEach(r => {
-    if (isCompetitive(r.rating)) {
-      competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
-        presidential: r.rating
-      })
-    }
-  })
+  // competitiveRaces.allStateElectoralCollegeCsv.nodes.forEach(r => {
+  //   if (isCompetitive(r.rating)) {
+  //     competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
+  //       presidential: r.rating
+  //     })
+  //   }
+  // })
   competitiveRaces.allSenateCookRatingCsv.nodes.forEach(r => {
     if (isCompetitive(r.rating)) {
       competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
@@ -97,8 +97,8 @@ export function CommunityStep() {
       });
     });
 
-    // fill in selected states in community
-    community.forEach(region => {
+    // fill in selected states in ReachStep
+    reach.forEach(region => {
       if (region === "DC") {
         // workaround for library weirdness with DC circle
         region = "DC2"
@@ -115,17 +115,17 @@ export function CommunityStep() {
 
   const handleChange = event => {
     let region = event.target.dataset.name;
-    const isSelected = community.includes(region);
-    let payload = community;
+    const isSelected = reach.includes(region);
+    let payload = reach;
 
     if (isSelected) {
-      payload = community.filter(c => c !== region);
+      payload = reach.filter(c => c !== region);
     } else {
-      payload = [...community, region];
+      payload = [...reach, region];
     }
 
     dispatch({
-      type: "COMMUNITY_CHANGE",
+      type: "REACH_CHANGE",
       payload
     });
   };
@@ -137,7 +137,7 @@ export function CommunityStep() {
   return (
     <Form className="margin-top-5pct">
       <Fieldset legend={"Extend your impact!"}>
-        <h2>Pick a tight race outside your area and help hold the House/flip the Senate</h2>
+        <h2>Pick a tight race outside your area and help win big</h2>
         <div data-tip data-for='map-tooltip'>
           <USAMap width="100%"
             customize={statesDisplay()}

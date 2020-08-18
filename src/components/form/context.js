@@ -18,8 +18,8 @@ function formReducer(state, action) {
       return { ...state, issues: action.payload };
     case "SKILLS_CHANGE":
       return { ...state, skills: action.payload };
-    case "COMMUNITY_CHANGE":
-      return { ...state, community: action.payload };
+    case "REACH_CHANGE":
+      return { ...state, reach: action.payload };
     case "NAME_CHANGE":
       return { ...state, name: action.payload };
     case "EMAIL_CHANGE":
@@ -49,7 +49,7 @@ const initialState = {
   skills: [],
   time: 1,
   money: 20,
-  community: [],
+  reach: [],
 
   name: "",
   email: "",
