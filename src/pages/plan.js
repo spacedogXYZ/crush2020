@@ -53,6 +53,20 @@ const PlanPage = ({location}) => {
           margin
         }
       }
+
+      allMobilizeUsCsv(filter: {
+        org_type: {eq: "CAMPAIGN"},
+        race_type: {in: ["GOVERNOR","CONGRESSIONAL","SENATE"]}
+      }) {
+        nodes {
+          name
+          race_type
+          state
+          event_feed_url
+          district
+          candidate_name
+        }
+      }
     }
   `)
 
@@ -68,6 +82,9 @@ const PlanPage = ({location}) => {
           house: planQuery.allHouseCookRatingCsv.nodes,
           governor: planQuery.allGovernorsCookRatingCsv.nodes,
           state_legislature: planQuery.allStateChambersCsv.nodes,
+        }}
+        volunteer={{
+          mobilize: planQuery.allMobilizeUsCsv.nodes
         }}
       />
     </Layout>

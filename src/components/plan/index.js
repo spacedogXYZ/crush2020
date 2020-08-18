@@ -3,12 +3,12 @@ import { navigate } from "gatsby"
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 
-import { joinSentence, padCode, parseName } from "../../utils/strings"
+import { joinSentence, padCode, unpadCode, parseName, isCompetitive } from "../../utils/strings"
 
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
 
-export function Plan({form, candidates, ratings}) {
+export function Plan({form, candidates, ratings, volunteer}) {
   if (!form || !Object.keys(form).length) {
     // no form, redirect
     if (typeof window !== `undefined`) {
@@ -46,6 +46,18 @@ export function Plan({form, candidates, ratings}) {
   const governor_rating = ratings.governor.find(r => (r.state === state))
   const state_senate_rating = ratings.state_legislature.find(r => (r.state === state && r.chamber === "upper"))
   const state_house_rating = ratings.state_legislature.find(r => (r.state === state && r.chamber === "lower"))
+
+  const volunteer_senate = volunteer.mobilize.filter(o => (o.state === state && o.race_type === "SENATE"))
+  const volunteer_house = volunteer.mobilize.filter(o => (
+    o.state === state && o.race_type === "CONGRESSIONAL" && o.district === unpadCode(congressional_district_code))
+  )
+
+  // highest priority volunteer link
+  // senate first, then house, then org
+  const volunteer_link =
+    senate_rating && volunteer_senate ? volunteer_senate[0].event_feed_url :
+    house_rating && volunteer_house   ? volunteer_house[0].event_feed_url  : 
+                      'https://matched-organization.link';
 
   return (
     <Accordion items={[
@@ -202,13 +214,29 @@ export function Plan({form, candidates, ratings}) {
             </CardHeader>
             <CardBody>
               <ul>
-                <li>competitive campaigns</li>
+                { senate_rating && isCompetitive(senate_rating.rating) && (
+                  volunteer_senate ? (
+                      <li>Volunteer with {volunteer_senate[0].name}</li>
+                  ) : (
+                      <li>Volunteer with {senate_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
+                  )
+                )}
+
+                { house_rating && isCompetitive(house_rating.rating) && (
+                  volunteer_house ? (
+                      <li>Volunteer with {volunteer_house[0].name}</li>
+                  ) : (
+                      <li>Volunteer with {house_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
+                  )
+                )}
               </ul>
             </CardBody>
             <CardFooter>
-              <Button type="button" className="usa-button">
-                Sign up to canvass
-              </Button>
+              <a href={volunteer_link}>
+                <Button type="button" className="usa-button">
+                  Sign up to canvass
+                </Button>
+              </a>
             </CardFooter>
           </Card>
 

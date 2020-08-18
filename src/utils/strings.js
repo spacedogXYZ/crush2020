@@ -14,13 +14,19 @@ export function capitalize(s) {
 }
 
 export function isCompetitive(rating) {
+  if (typeof rating !== 'string') { return false }
   return (rating === "TOSS-UP" ||
-      rating.startsWith("LEAN")
+      rating.startsWith("LEAN") ||
+      rating.startsWith("LIKELY")
   )
 }
 
 export function padCode(number) {
   return String(number).padStart(2, '0')
+}
+
+export function unpadCode(code) {
+  return String(parseInt(code))
 }
 
 export function parseName(name) {
