@@ -34,13 +34,29 @@ export function Plan({form, candidates, ratings, volunteer}) {
 
   const congressional_district = form.geocode.fields.congressional_districts[0]
   const congressional_district_code = padCode(congressional_district.district_number)
-  let house_candidates = candidates.federal.filter(c => (
+  const house_candidates = candidates.federal.filter(c => (
     c.CAND_OFFICE_ST === state &&
     c.CAND_OFFICE_DISTRICT === congressional_district_code
   )).sort((a, b) => (a.TTL_RECEIPTS < b.TTL_RECEIPTS))
   .slice(0,2)
-  // we don't actually have primary win/loss records
+  // we don't actually have primary win/loss records from FEC
   // so sort by amount raised and pick top two
+
+  const governor_candidates = candidates.statewide.filter(c => (
+    c.Election_Jurisdiction === state &&
+    c.Office_Sought.startsWith("GOVERNOR")
+  )).sort((a, b) => (a.Total__ < b.Total__))
+  const state_sos_candidates = candidates.statewide.filter(c => (
+    c.Election_Jurisdiction === state &&
+    c.Office_Sought === "SECRETARY OF STATE"
+  )).sort((a, b) => (a.Total__ < b.Total__))
+  const state_ag_candidates = candidates.statewide.filter(c => (
+    c.Election_Jurisdiction === state &&
+    c.Office_Sought === "ATTORNEY GENERAL"
+  )).sort((a, b) => (a.Total__ < b.Total__))
+  // we do have win/loss from FollowTheMoney
+  // and have already filtered by it
+  // keep sorted to put more likely candidates at the top
 
   const senate_rating = ratings.senate.find(r => (r.state === state))
   const house_rating = ratings.house.find(r => (r.district === `${state}-${congressional_district_code}`))
@@ -167,7 +183,39 @@ export function Plan({form, candidates, ratings, volunteer}) {
               </CardHeader>
               <CardBody>
                 <ul>
-                  <li>candidates</li>
+                  {governor_candidates.map(c => (
+                    <li key={c.Candidate}>{parseName(c.Candidate)} ({c.Specific_Party.slice(0,1)})</li>
+                  ))}
+                </ul>
+              </CardBody>
+            </Card>
+            )}
+
+            { state_sos_candidates && (
+            <Card gridLayout={{ tablet: { col: 4 } }}>
+              <CardHeader>
+                <h3 className="usa-card__heading">{state} Secretary of State</h3>
+              </CardHeader>
+              <CardBody>
+                <ul>
+                  {state_sos_candidates.map(c => (
+                    <li key={c.Candidate}>{parseName(c.Candidate)} ({c.Specific_Party.slice(0,1)})</li>
+                  ))}
+                </ul>
+              </CardBody>
+            </Card>
+            )}
+
+            { state_ag_candidates && (
+            <Card gridLayout={{ tablet: { col: 4 } }}>
+              <CardHeader>
+                <h3 className="usa-card__heading">{state} Attorney General</h3>
+              </CardHeader>
+              <CardBody>
+                <ul>
+                  {state_ag_candidates.map(c => (
+                    <li key={c.Candidate}>{parseName(c.Candidate)} ({c.Specific_Party.slice(0,1)})</li>
+                  ))}
                 </ul>
               </CardBody>
             </Card>

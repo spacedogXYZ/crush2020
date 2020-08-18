@@ -21,6 +21,16 @@ const PlanPage = ({location}) => {
         }
       }
 
+      allStatewideCandidatesCsv {
+        nodes {
+          Candidate
+          Election_Jurisdiction
+          Office_Sought
+          Specific_Party
+          Total__
+        }
+      }
+
       allHouseCookRatingCsv {
         nodes {
           district
@@ -75,7 +85,8 @@ const PlanPage = ({location}) => {
       <SEO title="Your plan" />
       <Plan form={state}
         candidates={{
-          federal: planQuery.allFecCandidatesCsv.nodes
+          federal: planQuery.allFecCandidatesCsv.nodes,
+          statewide: planQuery.allStatewideCandidatesCsv.nodes,
         }}
         ratings={{
           senate: planQuery.allSenateCookRatingCsv.nodes,

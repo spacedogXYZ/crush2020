@@ -19,12 +19,14 @@ yarn start
 
 The matching system uses data from the following sources:
 - FEC: House and Senate candidate names and reported funds raised
+- FollowTheMoney.org: Statewide candidate names and funds raised
 - CookPolitical: House, Senate, Governor and Electoral College ratings
 - BallotPedia: State legislature seats up and current party margin
 - Mobilze.us: Volunteer links
 - ActBlue: Donation links
 
 No ownership over this data is claimed and it is included in the respository merely as a development convenience.
+Data from FollowTheMoney.org is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License by the National Institute on Money in State Politics.
 
 ## Deployment
 
