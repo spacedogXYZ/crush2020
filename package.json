@@ -30,6 +30,7 @@
     "react-helmet": "^6.1.0",
     "react-tooltip": "^4.2.8",
     "slugify": "^1.4.5",
+    "typeface-archivo": "^1.1.3",
     "us-state-codes": "^1.1.2"
   },
   "devDependencies": {

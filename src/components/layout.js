@@ -12,8 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "normalize.css/normalize.css"
-import "@trussworks/react-uswds/lib/uswds.css"
-import "../styles/uswds-overrides.scss"
+import "typeface-archivo"
+import "../styles/index.scss"
 
 // set up FontAwesome library
 // eslint-disable-next-line no-unused-vars
