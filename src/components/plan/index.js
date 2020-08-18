@@ -4,7 +4,7 @@ import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter 
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { joinSentence, padCode, unpadCode, parseName, isCompetitive } from "../../utils/strings"
+import { joinSentence, padCode, unpadCode, parseName, isCompetitive, isLikely } from "../../utils/strings"
 
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
@@ -70,11 +70,11 @@ export function Plan({form, candidates, ratings, volunteer}) {
   )
 
   // highest priority volunteer link
-  // senate first, then house, then org
+  // senate first, then house, then presidential
   const volunteer_link =
     senate_rating && volunteer_senate ? volunteer_senate[0].event_feed_url :
     house_rating && volunteer_house   ? volunteer_house[0].event_feed_url  : 
-                      'https://matched-organization.link';
+                      'https://www.mobilize.us/2020victory/';
 
   return (
     <Accordion items={[
@@ -263,7 +263,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </CardHeader>
             <CardBody>
               <ul>
-                { senate_rating && isCompetitive(senate_rating.rating) && (
+                { senate_rating && (isCompetitive(senate_rating.rating) || isLikely(senate_rating.rating)) && (
                   volunteer_senate ? (
                       <li>Volunteer with {volunteer_senate[0].name}</li>
                   ) : (
@@ -271,19 +271,23 @@ export function Plan({form, candidates, ratings, volunteer}) {
                   )
                 )}
 
-                { house_rating && isCompetitive(house_rating.rating) && (
+                { house_rating && (isCompetitive(house_rating.rating) || isLikely(house_rating.rating)) && (
                   volunteer_house ? (
                       <li>Volunteer with {volunteer_house[0].name}</li>
                   ) : (
                       <li>Volunteer with {house_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
                   )
                 )}
+
+                { !house_rating && !senate_rating && (
+                  <li>Volunteer with 2020 Victory</li>
+                )}
               </ul>
             </CardBody>
             <CardFooter>
               <a href={volunteer_link}>
                 <Button type="button" className="usa-button">
-                  Sign up to canvass
+                  Volunteer Virtually
                 </Button>
               </a>
             </CardFooter>

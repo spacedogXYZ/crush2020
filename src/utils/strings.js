@@ -16,9 +16,13 @@ export function capitalize(s) {
 export function isCompetitive(rating) {
   if (typeof rating !== 'string') { return false }
   return (rating === "TOSS-UP" ||
-      rating.startsWith("LEAN") ||
-      rating.startsWith("LIKELY")
+      rating.startsWith("LEAN")
   )
+}
+
+export function isLikely(rating) {
+  if (typeof rating !== 'string') { return false }
+  return rating.startsWith("LIKELY")
 }
 
 export function padCode(number) {
