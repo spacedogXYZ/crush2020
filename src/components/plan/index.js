@@ -2,6 +2,7 @@ import React from "react"
 import { navigate } from "gatsby"
 import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { joinSentence, padCode, unpadCode, parseName, isCompetitive } from "../../utils/strings"
 
@@ -63,7 +64,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
     <Accordion items={[
     {
       id: 'ballot',
-      title: 'Ballot',
+      title: (<><FontAwesomeIcon icon={["fas", "vote-yea"]} />&nbsp;Ballot</>),
       expanded: true,
       content: (
         <GridContainer>
@@ -203,7 +204,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
       </GridContainer>)
     },{
       id: 'time',
-      title: 'Time',
+      title: (<><FontAwesomeIcon icon={["fas", "calendar-alt"]}/>&nbsp;Time</>),
       expanded: true,
       content: (
         <GridContainer>
@@ -259,7 +260,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
       </GridContainer>)
     },{
       id: 'money',
-      title: 'Money',
+      title: (<><FontAwesomeIcon icon={["fas", "money-bill-wave"]} />&nbsp;Money</>),
       expanded: true,
       content: (
         <GridContainer>
@@ -284,7 +285,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
       )
     },{
       id: 'reach',
-      title: 'Reach',
+      title: <><FontAwesomeIcon icon={["fas", "users"]}/>&nbsp;Reach</>,
       expanded: true,
       content: (
         <GridContainer>

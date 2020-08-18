@@ -136,7 +136,16 @@ ul.range-slider-label {
   }
 }
 
-// weird...
+// plan components
+.usa-accordion__button {
+  background-color: #1a4480;
+  &:hover { background-color: #1a4480; color: white; }
+  color: white;
+}
+.usa-accordion__content {
+  background-color: #D8E8F6;
+}
+
 li.usa-card {
   display: block;
 }
@@ -152,3 +161,4 @@ li.usa-card {
   font-size: 0.9em;
   color: gray;
 }
+
