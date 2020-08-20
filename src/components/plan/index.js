@@ -19,7 +19,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
     return null;
   }
   
-  const state = form.geocode.address_components.state
+  const state = form.geocode.state
   const state_name = us_states.getStateNameByStateCode(state)
   const state_slug = slugify(state_name).toLowerCase()
 
@@ -33,8 +33,8 @@ export function Plan({form, candidates, ratings, volunteer}) {
   )).sort((a, b) => (a.TTL_RECEIPTS < b.TTL_RECEIPTS))
   .slice(0,2)
 
-  const congressional_district = form.geocode.fields.congressional_districts[0]
-  const congressional_district_code = padCode(congressional_district.district_number)
+  const congressional_district = form.geocode.cd
+  const congressional_district_code = padCode(congressional_district)
   const house_candidates = candidates.federal.filter(c => (
     c.CAND_OFFICE_ST === state &&
     c.CAND_OFFICE_DISTRICT === congressional_district_code
