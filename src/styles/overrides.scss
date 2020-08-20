@@ -23,6 +23,16 @@
       min-height: 10rem;
   }
 
+  .usa-hero__heading {
+    font-size: 1.5rem;
+    @include at-media("tablet") {
+      font-size: 1.8rem;
+    }
+    @include at-media("desktop") {
+      font-size: 2rem;
+    }
+  }
+
   @media (min-width: 530px) {
     border-bottom: 20px solid white;
 
@@ -53,6 +63,9 @@
 
 .usa-footer__logo-img {
   max-width: 12.5rem;
+  @include at-media("desktop") {
+    max-width: 15rem;
+  }
 }
 
 // re-create circle-124.png in css
@@ -67,14 +80,15 @@
 .form-container {
   form {
     text-align: center;
-    margin-top: 20%;
+    margin-top: calc(min(3rem, 20%));
+
     &.margin-top-5pct {
       margin-top: 5%;
     }
     max-width: 100%;
 
     fieldset {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -109,13 +123,21 @@ ul.range-slider-label {
   margin: 0;
 
   li {
-    max-width: 15%;
+    font-size: 0.9em;
+    max-width: 5rem;
     display: block;
     text-align: center;
+
+    @include at-media("desktop") {
+      max-width: 10rem;
+      font-size: 1em;
+    }
   }
 }
 
 .us-state-map {
+  height: auto;
+
   path {
     pointer-events: all;
     stroke-width: 2;
