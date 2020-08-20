@@ -5,6 +5,7 @@ import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { joinSentence, padCode, unpadCode, parseName, isCompetitive, isLikely } from "../../utils/strings"
+import { isEmpty } from "../../utils/object"
 
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
@@ -101,7 +102,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
                       className="usa-button"
                     >Double check with {state_name}</a>
                   ):(<></>)}
-                  { form.registered === "no" && (
+                  { (form.registered === "no" || isEmpty(form.registered)) && (
                     <a href="https://www.voteamerica.com/register-to-vote/"
                       className="usa-button"
                     >Register to Vote</a>
@@ -111,7 +112,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
                     className="usa-button bg-secondary hover:bg-secondary-dark"
                     >{state_name} Vote by Mail Application</a>
                   )}
-                  { form.vbm === "not-sure" && (
+                  { (form.vbm === "not-sure" || isEmpty(form.vbm)) && (
                     <a href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/#absentee-guide`}
                     className="usa-button bg-secondary hover:bg-secondary-dark"
                     >Learn about Vote by Mail in {state_name}</a>
@@ -134,7 +135,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
               </CardBody>
             </Card>
 
-            { senate_rating && (
+            { !isEmpty(senate_rating) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">US Senate</h3>
@@ -155,7 +156,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </Card>
             )}
 
-            { house_rating && (
+            { !isEmpty(house_rating) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">US House</h3>
@@ -176,7 +177,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </Card>
             )}
 
-            { governor_rating && (
+            { !isEmpty(governor_rating) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} Governor</h3>
@@ -191,7 +192,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </Card>
             )}
 
-            { state_sos_candidates && (
+            { !isEmpty(state_sos_candidates) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} Secretary of State</h3>
@@ -206,7 +207,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </Card>
             )}
 
-            { state_ag_candidates && (
+            { !isEmpty(state_ag_candidates) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} Attorney General</h3>
@@ -221,7 +222,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </Card>
             )}
 
-            { state_senate_rating && (
+            { !isEmpty(state_senate_rating) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} Senate</h3>
@@ -235,7 +236,7 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </Card>
             )}
 
-            { state_house_rating && (
+            { !isEmpty(state_house_rating) && (
             <Card gridLayout={{ tablet: { col: 4 } }}>
               <CardHeader>
                 <h3 className="usa-card__heading">{state} House</h3>
