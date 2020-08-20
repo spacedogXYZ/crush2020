@@ -25,7 +25,7 @@ const IndexPage = () => (
             </Link>
           </div>
         </Grid>
-        <Grid col className="usa-hero-container">
+        <Grid desktop={{ col: true }} className="usa-hero-container">
           <div className="usa-hero"></div>
         </Grid>
       </Grid>

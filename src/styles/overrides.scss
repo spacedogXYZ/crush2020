@@ -7,6 +7,15 @@
 .index-hero {
   .usa-hero__callout {
     padding: 4rem 2rem;
+    width: 100vw;
+    max-width: none;
+    @include at-media("tablet") {
+      padding: 4rem;
+    }
+    @include at-media("desktop") {
+      width: auto;
+      max-width: 22em;
+    }
   }
 
   .usa-hero-container {
@@ -17,10 +26,10 @@
   }
 
   .usa-hero {
-      // background-image: url('../images/voting-booth.png');
-      background-position-x: 100%;
-      background-size: cover;
-      min-height: 10rem;
+      min-height: 15rem;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
   }
 
   .usa-hero__heading {
@@ -31,22 +40,6 @@
     @include at-media("desktop") {
       font-size: 2rem;
     }
-  }
-
-  @media (min-width: 530px) {
-    border-bottom: 20px solid white;
-
-    .usa-hero__callout {
-      max-width: 24rem;
-      padding: 8rem 4rem;
-    }
-    .usa-hero {
-      min-height: 20rem;
-    }
-  }
-
-  @media (min-width: 80em) {
-    .usa-hero { min-height: 25rem; }
   }
 }
 
