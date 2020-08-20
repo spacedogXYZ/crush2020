@@ -42,7 +42,7 @@ export function IssuesStep() {
 
   return (
     <Form>
-      <Fieldset legend="What issues do you care most about?">
+      <Fieldset legend="What issues matter most to you?">
         <div className="button-grid">
         {Object.keys(allIssues).map(issue => (
           <FormButton

@@ -76,6 +76,13 @@
   height: 124px;
 }
 
+.usa-legend {
+  font-size: 1.5rem;
+  @include at-media("tablet") {
+    font-size: 2rem;
+  }
+}
+
 // centered form
 .form-container {
   form {
@@ -123,7 +130,7 @@ ul.range-slider-label {
   margin: 0;
 
   li {
-    font-size: 0.9em;
+    font-size: 0.8em;
     max-width: 5rem;
     display: block;
     text-align: center;

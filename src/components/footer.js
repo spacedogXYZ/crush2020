@@ -5,7 +5,7 @@ import { Footer, Logo, SocialLinks } from "@trussworks/react-uswds"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const SiteFooter = ({ siteTitle }) => {
+const SiteFooter = () => {
   return (
     <Footer
       size="slim"
@@ -13,7 +13,7 @@ const SiteFooter = ({ siteTitle }) => {
         <div className="grid-row grid-gap">
           <Logo
             medium
-            heading={<h3 className="usa-footer__logo-heading">{siteTitle}</h3>}
+            heading={<h3 className="usa-footer__logo-heading">CrushPAC 2020</h3>}
           />
           <div className="usa-footer__contact-links mobile-lg:grid-col-6">
             <SocialLinks

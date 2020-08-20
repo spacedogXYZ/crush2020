@@ -43,7 +43,7 @@ export function SignupStep() {
           <FormGroup>
             <Grid row gap>
               <Grid row mobileLg={{col:4, offset: 2}}>
-                <Label htmlFor="twitter">Twitter</Label>
+                <Label htmlFor="twitter">Twitter (optional)</Label>
                 <TextInput
                   name="twitter"
                   onChange={e =>
@@ -54,7 +54,7 @@ export function SignupStep() {
               </Grid>
 
               <Grid row mobileLg={{col:4}}>
-                <Label htmlFor="instagram">Instagram</Label>
+                <Label htmlFor="instagram">Instagram (optional)</Label>
                 <TextInput
                   name="instagram"
                   onChange={e =>
