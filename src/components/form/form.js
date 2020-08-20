@@ -33,8 +33,7 @@ function PlanForm() {
     <SignupStep />
   ];
 
-  const [currentStep, goForward, goBack] = useFormProgress();
-  const isFirst = currentStep === 0;
+  const [currentStep, goForward] = useFormProgress();
   const isLast = currentStep === steps.length - 1;
 
   function handleSubmit() {
@@ -63,13 +62,6 @@ function PlanForm() {
       {steps[currentStep]}
 
       <ButtonGroup className="nav-container">
-        {!isFirst && (
-          <Button className="icon-left" outline onClick={() => goBack()}>
-            <FontAwesomeIcon icon={["fas", "arrow-left"]} />
-            Back
-          </Button>
-        )}
-
         <Button
           type="submit"
           className="icon-right"
