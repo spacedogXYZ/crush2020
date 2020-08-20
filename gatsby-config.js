@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Crush2020`,
-    description: ``,
-    author: `@jlev`,
+    description: `We crushed the midterms. Now, let’s finish the job.`,
+    author: `@crush_2020`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
