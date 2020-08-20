@@ -15,5 +15,6 @@ function findOCDID(list, type) {
 
 export function matchOCDID(list, type) {
   // given a list of ocdids and a type to match, return that value
-  return parseOCDID(findOCDID(list, type))
+  let match = findOCDID(list, type)
+  return (match ? parseOCDID(match) : "")
 }
