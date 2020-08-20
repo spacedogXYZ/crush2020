@@ -18,7 +18,7 @@ const IndexPage = () => (
               <span className="usa-hero__heading--alt">
                 We crushed the midterms.
               </span>
-              This year, let’s finish the job.
+              Now, let’s finish the job.
             </h1>
             <Link className="usa-button bg-secondary hover:bg-secondary-dark" to="/step">
               Make a Plan <FontAwesomeIcon icon={["fas", "arrow-right"]} />

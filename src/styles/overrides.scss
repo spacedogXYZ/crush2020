@@ -6,6 +6,10 @@
 
 .index-hero {
   .usa-hero__callout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding: 4rem 2rem;
     width: 100vw;
     max-width: none;
@@ -14,7 +18,7 @@
     }
     @include at-media("desktop") {
       width: auto;
-      max-width: 22em;
+      max-width: 21em;
     }
   }
 
@@ -26,10 +30,13 @@
   }
 
   .usa-hero {
-      min-height: 15rem;
-      height: 100%;
       background-size: contain;
       background-repeat: no-repeat;
+      height: 100%;
+      min-height: 10rem;
+      @include at-media("tablet") {
+        min-height: 15rem;
+      }
   }
 
   .usa-hero__heading {
