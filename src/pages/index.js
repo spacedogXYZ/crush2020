@@ -16,7 +16,7 @@ const IndexPage = () => (
           <div className="usa-hero__callout">
             <h1 className="usa-hero__heading">
               <span className="usa-hero__heading--alt">
-                We dominated the midterms.
+                We crushed the midterms.
               </span>
               This year, let’s finish the job.
             </h1>
