@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+const { GATSBY_GOOGLE_MAPS_KEY } = process.env
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -68,7 +70,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script src={`https://maps.googleapis.com/maps/api/js?key=${GATSBY_GOOGLE_MAPS_KEY}&libraries=places`}></script>
+    </Helmet>
   )
 }
 

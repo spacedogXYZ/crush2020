@@ -11240,7 +11240,7 @@ prompts@^2.3.2:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -13812,11 +13812,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-
 typeface-archivo@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/typeface-archivo/-/typeface-archivo-1.1.3.tgz#22c86cde8c18de4b878687bbc856c1f2e2389d4a"
   integrity sha512-08zahBpkGVcsLZEJ5nHTQ1WPiZXIIcm9f/GQfUI4BGt3bOwQ3SJHsDTU/kFwEHE9HeuuRqjWXjnVfRnA/7Rx7Q==
+
 unbzip2-stream@^1.0.9:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/unbzip2-stream/-/unbzip2-stream-1.4.3.tgz#b0da04c4371311df771cdc215e87f2130991ace7"
@@ -14140,6 +14140,13 @@ use-callback-ref@^1.2.1, use-callback-ref@^1.2.3:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.2.4.tgz#d86d1577bfd0b955b6e04aaf5971025f406bea3c"
   integrity sha512-rXpsyvOnqdScyied4Uglsp14qzag1JIemLeTWGKbwpotWht57hbP78aNT+Q4wdFKQfQibbUX4fb6Qb4y11aVOQ==
+
+use-places-autocomplete@^1.3.10:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/use-places-autocomplete/-/use-places-autocomplete-1.3.10.tgz#2797ebb7f309aca8a60fe3ca8e3f2451b695c2a9"
+  integrity sha512-2WhezFliaLhfFX7NO12Y+gSzmdiml/l4KCyFKKk4cjtWR6mWTXuNs66ZJrm4beTRPBugngCyo2AmPy98AvlZpQ==
+  dependencies:
+    lodash.debounce "^4.0.8"
 
 use-sidecar@^1.0.1:
   version "1.0.3"

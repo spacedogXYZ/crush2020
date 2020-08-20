@@ -3,18 +3,81 @@ import React from "react";
 import { useFormState } from "../context";
 import { Form, Fieldset, TextInput } from "@trussworks/react-uswds"
 
-const Geocodio = require('geocodio-library-node');
-const { GATSBY_GEOCODIO_KEY } = process.env;
+import usePlacesAutocomplete from "use-places-autocomplete"
+import { matchOCDID } from "../../../utils/ocdid"
+
+
+const { GATSBY_GOOGLE_MAPS_KEY } = process.env
+const GOOGLE_CIVIC_API_URL = 'https://www.googleapis.com/civicinfo/v2/representatives'
 
 export function LocationStep() {
   const {
-    state: { location, geocode },
     dispatch
   } = useFormState();
 
-  const geocoder = new Geocodio(GATSBY_GEOCODIO_KEY);
-  geocoder.HTTP_HEADERS = null;
-  // unset headers which cause access-control issues in browser
+  const {
+    ready,
+    value,
+    suggestions: { status, data },
+    setValue,
+    clearSuggestions,
+  } = usePlacesAutocomplete({
+    requestOptions: {
+      componentRestrictions: {country: 'us'}, // only in the USA
+      types: ['geocode'] // restrict responses to addresses, not establishments
+    },
+    debounce: 300,
+  });
+
+  const handleInput = (e) => {
+    // Update the keyword of the input element
+    setValue(e.target.value);
+  };
+
+  const handleSelect = ({ description }) => () => {
+    // When user selects a place, we can replace the keyword without request data from API
+    // by setting the second parameter as "false"
+    setValue(description, false);
+    dispatch({ type: "LOCATION_CHANGE", payload: description })
+    clearSuggestions();
+
+    // Look up districts via Google Civic
+    fetch(GOOGLE_CIVIC_API_URL+`?key=${GATSBY_GOOGLE_MAPS_KEY}`
+      +`&address=${encodeURIComponent(description)}&includeOffices=false`)
+      .then((res) => res.json())
+      .then((data) => {
+        // extract city, state, zip from normalizedInput
+        let {normalizedInput: result} = data
+        // and cd, sldl and sldu from divisions
+        const { divisions } = data
+        const ocdids = Object.keys(divisions)
+        result['county'] = matchOCDID(ocdids, 'county')
+        result['cd'] = matchOCDID(ocdids, 'cd')
+        result['state_lower'] = matchOCDID(ocdids, 'sldl')
+        result['state_upper'] = matchOCDID(ocdids, 'sldu')
+        console.log('geocode', result);
+
+        dispatch({ type: "GEOCODE_CHANGE", payload: result })
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const renderSuggestions = () =>
+    data.map((suggestion) => {
+      const {
+        place_id,
+        structured_formatting: { main_text, secondary_text },
+      } = suggestion;
+
+      return (
+        <li key={place_id} onClick={handleSelect(suggestion)}>
+          <strong>{main_text}</strong> <small>{secondary_text}</small>
+        </li>
+      );
+    });
+
 
   return (
     <Form>
@@ -22,29 +85,12 @@ export function LocationStep() {
         <TextInput
           label="Location"
           name="location"
-          onChange={e =>
-            dispatch({ type: "LOCATION_CHANGE", payload: e.target.value })
-          }
-          onBlur={e=>{
-            geocoder.geocode(location,
-              ['cd', 'stateleg']
-            )
-            .then(response => {
-              if (response && response.results && response.results[0]) {
-                dispatch({ type: "GEOCODE_CHANGE", payload: response.results[0] })
-              } else {
-                // display error to user
-                console.error('no results for'+location)
-              }
-            })
-            .catch(response => {
-              // display error to user
-              // send to sentry?
-              console.error(response)
-            })
-          }}
-          value={location}
+          value={value}
+          onChange={handleInput}
+          disabled={!ready}
+          placeholder="Enter your home town or address. We only use this to find your voting district."
         />
+        {status === "OK" && <ul className="location-search">{renderSuggestions()}</ul>}
       </Fieldset>
     </Form>
   );
