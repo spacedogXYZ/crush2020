@@ -13,6 +13,7 @@ This site is built with Gatsby.js and the US Web Design System React components
 ```
 yarn install
 yarn start
+go to http://localhost:8000
 ```
 
 ## Data
@@ -31,3 +32,10 @@ Data from FollowTheMoney.org is licensed under a Creative Commons Attribution-No
 ## Deployment
 
 Crush2020.org is hosted on Netlify. Push to master and it'll go live in a few minutes.
+
+To work on the backend functions locally, install [netlify-cli](https://docs.netlify.com/cli/get-started/)
+
+```
+yarn backend
+go to http://localhost:8888
+```

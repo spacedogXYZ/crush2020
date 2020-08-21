@@ -1,0 +1,10 @@
+{
+  "name": "crush2020-functions",
+  "version": "0.0.1",
+  "main": "signup.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
