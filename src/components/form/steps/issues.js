@@ -57,7 +57,7 @@ export function IssuesStep() {
           />
         ))}
         </div>
-        <label for="button-grid">Choose up to 3</label>
+        <label htmlFor="button-grid">Choose up to 3</label>
       </Fieldset>
     </Form>
   );

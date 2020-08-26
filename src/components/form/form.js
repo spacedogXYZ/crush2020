@@ -51,7 +51,6 @@ function PlanForm() {
       },
       body: JSON.stringify(state),
     }).then((response) => {
-      console.log(response);
       if (!response.ok) {
         throw Error(response.statusText);
       }
