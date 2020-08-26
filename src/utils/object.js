@@ -39,7 +39,7 @@ export function isEmpty(value){
     });
   };
   return (
-    value == false
+    value === false
     || typeof value === 'undefined'
     || value == null
     || (typeof value === 'object' && isEmptyObject(value))

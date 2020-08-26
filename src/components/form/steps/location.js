@@ -55,7 +55,6 @@ export function LocationStep() {
         result['cd'] = matchOCDID(ocdids, 'cd')
         result['state_lower'] = matchOCDID(ocdids, 'sldl')
         result['state_upper'] = matchOCDID(ocdids, 'sldu')
-        console.log('geocode', result);
 
         dispatch({ type: "GEOCODE_CHANGE", payload: result })
       })
@@ -82,15 +81,26 @@ export function LocationStep() {
   return (
     <Form>
       <Fieldset legend={"Where are you registered to vote?"}>
-        <TextInput
-          label="Location"
-          name="location"
-          value={value}
-          onChange={handleInput}
-          disabled={!ready}
-          placeholder="Enter your home town or address. We only use this to find your voting district."
-        />
-        {status === "OK" && <ul className="location-search">{renderSuggestions()}</ul>}
+        <div role="combobox"
+            aria-haspopup="listbox"
+            aria-controls="location-suggestions"
+            aria-expanded={status === "OK" ? true : false}
+        >
+          <TextInput
+            label="Location"
+            name="location"
+            value={value}
+            onChange={handleInput}
+            disabled={!ready}
+            placeholder="Enter your home town or address. We only use this to find your voting district."
+            aria-autocomplete="list"
+          />
+          {status === "OK" && (
+            <ul className="location-search" role="listbox" id="location-suggestions">
+              {renderSuggestions()}
+            </ul>
+          )}
+        </div>
       </Fieldset>
     </Form>
   );
