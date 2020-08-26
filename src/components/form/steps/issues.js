@@ -31,7 +31,9 @@ export function IssuesStep() {
     if (isSelected) {
       payload = issues.filter(c => c !== issue);
     } else {
-      payload = [...issues, issue];
+      if (issues.length < 3) {
+        payload = [...issues, issue];
+      }
     }
 
     dispatch({
@@ -55,6 +57,7 @@ export function IssuesStep() {
           />
         ))}
         </div>
+        <label for="button-grid">Choose up to 3</label>
       </Fieldset>
     </Form>
   );

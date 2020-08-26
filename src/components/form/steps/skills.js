@@ -25,12 +25,14 @@ export function SkillsStep() {
 
   const handleChange = skill => {
     const isSelected = skills.includes(skill);
-    let payload = skill;
+    let payload = skills;
 
     if (isSelected) {
       payload = skills.filter(c => c !== skill);
     } else {
-      payload = [...skills, skill];
+      if (skills.length < 3) {
+        payload = [...skills, skill];
+      }
     }
 
     dispatch({
@@ -54,6 +56,7 @@ export function SkillsStep() {
           />
         ))}
         </div>
+        <label for="button-grid">Choose up to 3</label>
       </Fieldset>
     </Form>
   );

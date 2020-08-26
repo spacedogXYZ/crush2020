@@ -52,10 +52,10 @@ const initialState = {
   reach: [],
 
   contact: {
-    name: "",
-    email: "",
-    twitter: "",
-    instagram: "",
+    name: false,
+    email: false,
+    twitter: false,
+    instagram: false,
   },
 
   isSubmitLoading: false,

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { VoteStep, LocationStep, IssuesStep, SkillsStep, TimeStep, MoneyStep, ReachStep, SignupStep } from "./steps"
 import { useFormState } from "./context"
+import { isEmpty } from "../../utils/object"
 
 function useFormProgress() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -22,19 +23,22 @@ function useFormProgress() {
 
 function PlanForm() {
   const { dispatch, state } = useFormState();
+
+  // step and validation functions
   const steps = [
-    <VoteStep />,
-    <LocationStep />,
-    <IssuesStep />,
-    <SkillsStep />,
-    <TimeStep />,
-    <MoneyStep />,
-    <ReachStep />,
-    <SignupStep />
+    [<VoteStep />, (state) => (!isEmpty(state.registered) && !isEmpty(state.vbm))],
+    [<LocationStep />, (state) => (!isEmpty(state.geocode))],
+    [<IssuesStep />, (state) => (!isEmpty(state.issues) && state.issues.length <= 3)],
+    [<SkillsStep />, (state) => (!isEmpty(state.skills) && state.skills.length <= 3)],
+    [<TimeStep />, () => (true)],
+    [<MoneyStep />, () => (true)],
+    [<ReachStep />, () => (true)],
+    [<SignupStep />, (state) => (!isEmpty(state.contact.email))],
   ];
 
   const [currentStep, goForward] = useFormProgress();
   const isLast = currentStep === steps.length - 1;
+  const [validate, setValidate] = useState(false);
 
   function handleSubmit() {
     dispatch({ type: "SUBMIT" });
@@ -57,21 +61,28 @@ function PlanForm() {
     navigate('/plan/', { state: state });
   }
 
+  let [stepRender, stepValid] = steps[currentStep];
+  let isValid = stepValid(state);
+
   return (
     <GridContainer className="form-container">
-      {steps[currentStep]}
+      {stepRender}
 
       <ButtonGroup className="nav-container">
         <Button
           type="submit"
-          className="icon-right"
+          className={["icon-right", (validate && !isValid? 'usa-button--secondary':'')].join(' ')}
           onClick={e => {
             e.preventDefault();
+            setValidate(true);
 
-            if (isLast) {
-              handleSubmit();
-            } else {
-              goForward();
+            if (isValid) {
+              if (isLast) {
+                handleSubmit();
+              } else {
+                setValidate(false);
+                goForward();
+              }   
             }
           }}
         >
@@ -82,6 +93,11 @@ function PlanForm() {
       <div className="progress-container">
         Step {currentStep + 1} of {steps.length}
       </div>
+      {validate && !isValid && (
+        <div className="error-container">
+          Please select your answers
+        </div>
+      )}
       
     </GridContainer>
   );
