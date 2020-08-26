@@ -27,7 +27,7 @@ exports.handler = async function(event) {
   }
 
   const requiredFields = [
-   "name", "email", "geocode",
+   "name", "contact", "geocode",
   ];
 
   for (i in requiredFields) {
@@ -46,8 +46,8 @@ exports.handler = async function(event) {
   // send to action network
   let signup = {
     "person" : {
-      "family_name" : splitName(data.contact.name)[1],
-      "given_name" : splitName(data.contact.name)[0],
+      "family_name" : splitName(data.name)[1],
+      "given_name" : splitName(data.name)[0],
       "postal_addresses" : [ 
         {
           "address_lines" : [
@@ -64,7 +64,11 @@ exports.handler = async function(event) {
           "address" : data.contact.email,
           "status" : "subscribed"
         }
-      ]
+      ],
+      "custom_fields": {
+          "twitter": data.contact.twitter,
+          "instagram": data.contact.instagram
+      }
     },
     "triggers": {
       "autoresponse": {

@@ -21,7 +21,7 @@ function formReducer(state, action) {
     case "REACH_CHANGE":
       return { ...state, reach: action.payload };
     case "NAME_CHANGE":
-      return { ...state, contact: { ...state.contact, name: action.payload }};
+      return { ...state, name: action.payload };
     case "EMAIL_CHANGE":
       return { ...state, contact: { ...state.contact, email: action.payload }};
     case "INSTAGRAM_CHANGE":
@@ -51,8 +51,8 @@ const initialState = {
   money: 20,
   reach: [],
 
+  name: false,
   contact: {
-    name: false,
     email: false,
     twitter: false,
     instagram: false,
