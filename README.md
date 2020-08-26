@@ -12,7 +12,7 @@ This site is built with Gatsby.js and the US Web Design System React components
 
 ```
 yarn install
-yarn start
+yarn develop
 go to http://localhost:8000
 ```
 
@@ -36,6 +36,6 @@ Crush2020.org is hosted on Netlify. Push to master and it'll go live in a few mi
 To work on the backend functions locally, install [netlify-cli](https://docs.netlify.com/cli/get-started/)
 
 ```
-yarn backend
+yarn start
 go to http://localhost:8888
 ```
