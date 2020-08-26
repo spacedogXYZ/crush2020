@@ -337,7 +337,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
               <p>
                   Because you are on Twitter, we'll send you great content to repost.
               </p>
-              <a href="https://www.twitter.com/crush2020_/" target="_blank" rel="noreferrer">
+              <a href="https://twitter.com/intent/follow?screen_name=crush2020_" target="_blank" rel="noreferrer">
                 <Button type="button" className="usa-button">
                   Follow @Crush2020_
                 </Button>
@@ -365,7 +365,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
             </CardHeader>
             <CardBody>
               <p>
-                Early money goes a long way. Donate to {donate_link.name} monthly through the election.
+                Donate to {donate_link.name} monthly through the election.
               </p>
             </CardBody>
             <CardFooter>

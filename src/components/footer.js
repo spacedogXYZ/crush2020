@@ -21,7 +21,7 @@ const SiteFooter = () => {
                 <a
                   key="twitter"
                   className="usa-social-link icon-center"
-                  href="https://twitter.com/crush_2020/"
+                  href="https://twitter.com/crush2020_/"
                   target="_blank"
                   rel="noreferrer"
                 >
