@@ -10,7 +10,7 @@ import { isEmpty } from "../../utils/object"
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
 
-export function Plan({form, candidates, ratings, volunteer}) {
+export function Plan({form, candidates, ratings, volunteer, donate}) {
   if (!form || !Object.keys(form).length) {
     // no form, redirect
     if (typeof window !== `undefined`) {
@@ -65,17 +65,31 @@ export function Plan({form, candidates, ratings, volunteer}) {
   const state_senate_rating = ratings.state_legislature.find(r => (r.state === state && r.chamber === "upper"))
   const state_house_rating = ratings.state_legislature.find(r => (r.state === state && r.chamber === "lower"))
 
+  // volunteer links
   const volunteer_senate = volunteer.mobilize.filter(o => (o.state === state && o.race_type === "SENATE"))
   const volunteer_house = volunteer.mobilize.filter(o => (
     o.state === state && o.race_type === "CONGRESSIONAL" && o.district === unpadCode(congressional_district_code))
   )
-
-  // highest priority volunteer link
-  // senate first, then house, then presidential
+  const volunteer_gov = volunteer.mobilize.filter(o => (o.state === state && o.race_type === "GOVERNOR"))
+  // senate first, then house, then gov, then presidential
   const volunteer_link =
-    senate_rating && volunteer_senate ? volunteer_senate[0].event_feed_url :
-    house_rating && volunteer_house   ? volunteer_house[0].event_feed_url  : 
-                      'https://www.mobilize.us/2020victory/';
+    senate_rating && volunteer_senate ? volunteer_senate[0] :
+    house_rating && volunteer_house   ? volunteer_house[0]  : 
+    governor_rating && volunteer_gov   ? volunteer_gov[0]  : 
+      {name: "2020 Victory", event_feed_url : 'https://www.mobilize.us/2020victory/'};
+
+  // donate links
+  const donate_senate = donate.actblue.filter(e => (e.state === state && e.district === "Sen"))
+  const donate_house = donate.actblue.filter(e => (
+    e.state === state && e.district === congressional_district_code)
+  )
+  const donate_gov = donate.actblue.filter(e => (e.state === state && e.district === "Gov"))
+  // senate first, then house, then gov, then presidential
+  const donate_link = 
+    senate_rating && donate_senate ? donate_senate[0] :
+    house_rating && donate_house   ? donate_house[0]  :
+    governor_rating && donate_gov  ? donate_gov[0] :
+      {name: "Biden 2020", donation_url: 'https://secure.actblue.com/donate/biden2020'};
 
   return (
     <Accordion items={[
@@ -280,13 +294,21 @@ export function Plan({form, candidates, ratings, volunteer}) {
                   )
                 )}
 
+                { governor_rating && (isCompetitive(governor_rating.rating) || isLikely(governor_rating.rating)) && (
+                  volunteer_gov ? (
+                      <li>Volunteer with {volunteer_gov[0].name}</li>
+                  ) : (
+                      <li>Volunteer with {governor_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
+                  )
+                )}
+
                 { !house_rating && !senate_rating && (
                   <li>Volunteer with 2020 Victory</li>
                 )}
               </ul>
             </CardBody>
             <CardFooter>
-              <a href={volunteer_link}>
+              <a href={volunteer_link.event_feed_url} target="_blank" rel="noreferrer">
                 <Button type="button" className="usa-button">
                   Volunteer Virtually
                 </Button>
@@ -324,13 +346,15 @@ export function Plan({form, candidates, ratings, volunteer}) {
             </CardHeader>
             <CardBody>
               <p>
-                Early money goes a long way. Donate to your local candidate and causes with this customized form.
+                Early money goes a long way. Donate to {donate_link.name} monthly through the election.
               </p>
             </CardBody>
             <CardFooter>
-              <Button type="button" className="usa-button">
-                Give ${form.money}
-              </Button>
+              <a href={`${donate_link.donation_url}?amount=${form.money}&recurring=true`} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Give ${form.money}
+                </Button>
+              </a>
             </CardFooter>
           </Card>
         </Grid>

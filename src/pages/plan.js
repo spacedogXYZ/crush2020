@@ -77,6 +77,16 @@ const PlanPage = ({location}) => {
           candidate_name
         }
       }
+
+      allActblueCsv {
+        nodes {
+          id
+          name
+          state
+          district
+          donation_url
+        }
+      }
     }
   `)
 
@@ -96,6 +106,9 @@ const PlanPage = ({location}) => {
         }}
         volunteer={{
           mobilize: planQuery.allMobilizeUsCsv.nodes
+        }}
+        donate={{
+          actblue: planQuery.allActblueCsv.nodes
         }}
       />
     </Layout>

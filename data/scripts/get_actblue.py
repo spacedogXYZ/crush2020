@@ -36,6 +36,7 @@ def get_data(doc):
             year = entity.find("div", {"class": "race"}).contents[2].strip()
             name = entity.find("h3").get_text().strip()
             contribute = entity.find('a', {"class": "contribute"}, href=True)
+
             if (year != DESIRED_YEAR):
                 continue
             d = {
@@ -46,7 +47,10 @@ def get_data(doc):
                 d['state'] = location.split('-')[0]
                 d['district'] = location.split('-')[1]
             if contribute:
-                d['donation_url'] = contribute['href'].replace('?refcode=directory','')
+                redirect_url = contribute['href'].replace('?refcode=directory','')
+                # follow the redirect to get the final url
+                final_url = urllib.request.urlopen(redirect_url).geturl()
+                d['donation_url'] = final_url
             data.append(d)
         except (Exception,e):
             print(e)
