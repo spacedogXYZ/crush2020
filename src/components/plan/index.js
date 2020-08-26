@@ -4,7 +4,7 @@ import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter 
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { joinSentence, padCode, unpadCode, parseName, isCompetitive, isLikely } from "../../utils/strings"
+import { padCode, unpadCode, parseName, isCompetitive, isLikely, capitalize } from "../../utils/strings"
 import { isEmpty } from "../../utils/object"
 import { TIME_VALUES } from "../form/steps/time"
 
@@ -72,9 +72,24 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
   const volunteer_link =
     senate_rating && volunteer_senate ? volunteer_senate[0] :
     house_rating && volunteer_house   ? volunteer_house[0]  : 
-    governor_rating && volunteer_gov   ? volunteer_gov[0]  : 
+    governor_rating && volunteer_gov  ? volunteer_gov[0]  : 
       {name: "2020 Victory", event_feed_url : 'https://www.mobilize.us/2020victory/'};
   const volunteer_time = form.time ? TIME_VALUES[form.time] : 'in other ways';
+
+  // volunteer methods, defaults first
+  let volunteer_how = 'volunteer'
+  let volunteer_type = undefined;
+  if(form.skills.indexOf('PHONE_CALLS')) {
+    volunteer_how = 'make calls';
+    volunteer_type = 2;
+  } else if (form.skills.indexOf('TEXTING')) {
+      volunteer_how = 'text bank';
+  }
+  // mobilize event types:
+  // 1: canvass
+  // 2: phone bank
+  // 9: house parties
+  // 12: friend-to-friend outreach
 
   // donate links
   const donate_senate = donate.actblue.filter(e => (e.state === state && e.district === "Sen"))
@@ -321,9 +336,9 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
               </ul>
             </CardBody>
             <CardFooter>
-              <a href={volunteer_link.event_feed_url} target="_blank" rel="noreferrer">
+              <a href={`${volunteer_link.event_feed_url}?event_type=${volunteer_type}`} target="_blank" rel="noreferrer">
                 <Button type="button" className="usa-button">
-                  Volunteer Virtually
+                  {capitalize(volunteer_how)}
                 </Button>
               </a>
             </CardFooter>

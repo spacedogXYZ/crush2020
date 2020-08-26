@@ -5,23 +5,23 @@ import { Form, Fieldset } from "@trussworks/react-uswds"
 import { useFormState } from "../context"
 import FormButton from "../buttons"
 
+export const SKILLS_VALUES = {
+  WRITING: {t: "Writing", i: "edit"},
+  TEXTING: {t: "Texting", i: "comment-dots"},
+  PHONE_CALLS: {t: "Chatting on the phone", i: "mobile-alt"},
+  TWEETING: {t: "Tweeting", i: ['fab', 'twitter-square']},
+  MAKING_VIDEOS: {t: "Making videos", i: "film"},
+  INSTAGRAM: {t: "Instagram", i: ['fab', 'instagram']},
+  LAWYER: {t: "I'm a lawyer", i: "balance-scale"},
+  CODER: {t: "I can code", i: "code"},
+  BILINGUAL: {t: "I'm bilingual", i: "sign-language"},
+};
+
 export function SkillsStep() {
   const {
     state: { skills },
     dispatch
   } = useFormState();
-
-  const allSkills = {
-    WRITING: {t: "Writing", i: "edit"},
-    TEXTING: {t: "Texting", i: "comment-dots"},
-    PHONE_CALLS: {t: "Chatting on the phone", i: "mobile-alt"},
-    TWEETING: {t: "Tweeting", i: ['fab', 'twitter-square']},
-    MAKING_VIDEOS: {t: "Making videos", i: "film"},
-    INSTAGRAM: {t: "Instagram", i: ['fab', 'instagram']},
-    LAWYER: {t: "I'm a lawyer", i: "balance-scale"},
-    CODER: {t: "I can code", i: "code"},
-    BILINGUAL: {t: "I'm bilingual", i: "sign-language"},
-  };
 
   const handleChange = skill => {
     const isSelected = skills.includes(skill);
@@ -45,11 +45,11 @@ export function SkillsStep() {
     <Form>
       <Fieldset legend="What are your skills?">
         <div className="button-grid">
-        {Object.keys(allSkills).map(skill => (
+        {Object.keys(SKILLS_VALUES).map(skill => (
           <FormButton
             key={skill}
-            text={allSkills[skill].t}
-            icon={allSkills[skill].i}
+            text={SKILLS_VALUES[skill].t}
+            icon={SKILLS_VALUES[skill].i}
             value={true}
             state={skills.includes(skill)}
             action={e => handleChange(skill)}
