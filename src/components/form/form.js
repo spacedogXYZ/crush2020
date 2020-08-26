@@ -44,10 +44,22 @@ function PlanForm() {
   function handleSubmit() {
     dispatch({ type: "SUBMIT" });
 
-    // Simulated network request :)
-    setTimeout(() => {
+    fetch('/.netlify/functions/signup ', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(state),
+    }).then((response) => {
+      console.log(response);
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+    }).then(() => {
       dispatch({ type: "SUBMISSION_RECEIVED" });
-    }, 1500);
+    }).catch((err) => {
+      console.error(err)
+    })
   }
 
   if (state.isSubmitLoading) {
