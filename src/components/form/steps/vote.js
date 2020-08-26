@@ -19,7 +19,7 @@ export function VoteStep() {
           value="yes"
           state={registered}
           action={e =>
-            dispatch({ type: "VOTE_REGISTERED_CHANGE", payload: e.target.value })
+            dispatch({ type: "VOTE_REGISTERED_CHANGE", payload: "yes" })
           }
         />
         <FormButton
@@ -27,7 +27,7 @@ export function VoteStep() {
           value="no"
           state={registered}
           action={e =>
-            dispatch({ type: "VOTE_REGISTERED_CHANGE", payload: e.target.value })
+            dispatch({ type: "VOTE_REGISTERED_CHANGE", payload: "no" })
           }
         />
         <FormButton
@@ -35,7 +35,7 @@ export function VoteStep() {
           value="not-sure"
           state={registered}
           action={e =>
-            dispatch({ type: "VOTE_REGISTERED_CHANGE", payload: e.target.value })
+            dispatch({ type: "VOTE_REGISTERED_CHANGE", payload: "not-sure" })
           }
         />
       </Fieldset>
@@ -46,7 +46,7 @@ export function VoteStep() {
           value="yes"
           state={vbm}
           action={e =>
-            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: e.target.value })
+            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: "yes" })
           }
         />
         <FormButton
@@ -54,7 +54,7 @@ export function VoteStep() {
           value="no"
           state={vbm}
           action={e =>
-            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: e.target.value })
+            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: "no" })
           }
         />
         <FormButton
@@ -62,7 +62,7 @@ export function VoteStep() {
           value="not-sure"
           state={vbm}
           action={e =>
-            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: e.target.value })
+            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: "not-sure" })
           }
         />
       </Fieldset>
