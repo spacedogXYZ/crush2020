@@ -21,13 +21,13 @@ function formReducer(state, action) {
     case "REACH_CHANGE":
       return { ...state, reach: action.payload };
     case "NAME_CHANGE":
-      return { ...state, name: action.payload };
+      return { ...state, contact: { ...state.contact, name: action.payload }};
     case "EMAIL_CHANGE":
-      return { ...state, email: action.payload };
+      return { ...state, contact: { ...state.contact, email: action.payload }};
     case "INSTAGRAM_CHANGE":
-      return { ...state, instagram: action.payload };
+      return { ...state, contact: { ...state.contact, instagram: action.payload }};
     case "TWITTER_CHANGE":
-      return { ...state, twitter: action.payload };
+      return { ...state, contact: { ...state.contact, twitter: action.payload }};
     case "SUBMIT":
       return { ...state, isSubmitLoading: true };
     case "SUBMISSION_RECEIVED":
@@ -51,10 +51,12 @@ const initialState = {
   money: 20,
   reach: [],
 
-  name: "",
-  email: "",
-  twitter: "",
-  instagram: "",
+  contact: {
+    name: "",
+    email: "",
+    twitter: "",
+    instagram: "",
+  },
 
   isSubmitLoading: false,
   isSubmissionReceived: false

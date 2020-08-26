@@ -6,7 +6,7 @@ import { GridContainer, Grid } from "@trussworks/react-uswds"
 
 export function SignupStep() {
   const {
-    state: { name, email, twitter, instagram },
+    state: { name, contact },
     dispatch
   } = useFormState();
 
@@ -22,7 +22,7 @@ export function SignupStep() {
                 onChange={e =>
                   dispatch({ type: "NAME_CHANGE", payload: e.target.value })
                 }
-                value={name}
+                value={name ? name : ""}
               />
             </Grid>
           </FormGroup>
@@ -35,7 +35,7 @@ export function SignupStep() {
                 onChange={e =>
                   dispatch({ type: "EMAIL_CHANGE", payload: e.target.value })
                 }
-                value={email}
+                value={contact.email ? contact.email : ""}
               />
             </Grid>
           </FormGroup>
@@ -49,7 +49,7 @@ export function SignupStep() {
                   onChange={e =>
                     dispatch({ type: "TWITTER_CHANGE", payload: e.target.value })
                   }
-                  value={twitter}
+                  value={contact.twitter ? contact.twitter : ""}
                 />
               </Grid>
 
@@ -60,7 +60,7 @@ export function SignupStep() {
                   onChange={e =>
                     dispatch({ type: "INSTAGRAM_CHANGE", payload: e.target.value })
                   }
-                  value={instagram}
+                  value={contact.instagram ? contact.instagram : ""}
                 />
               </Grid>
             </Grid>

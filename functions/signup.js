@@ -46,8 +46,8 @@ exports.handler = async function(event) {
   // send to action network
   let signup = {
     "person" : {
-      "family_name" : splitName(data.name)[1],
-      "given_name" : splitName(data.name)[0],
+      "family_name" : splitName(data.contact.name)[1],
+      "given_name" : splitName(data.contact.name)[0],
       "postal_addresses" : [ 
         {
           "address_lines" : [
@@ -61,7 +61,7 @@ exports.handler = async function(event) {
       ],
       "email_addresses" : [ 
         { 
-          "address" : data.email,
+          "address" : data.contact.email,
           "status" : "subscribed"
         }
       ]

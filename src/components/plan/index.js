@@ -323,15 +323,32 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
               <h3 className="usa-card__heading">Social Media</h3>
             </CardHeader>
             <CardBody>
+              { form.contact.instagram && (<>
+                <p>
+                    Because you are on Instagram, we'll send you shareable graphics to repost.
+                </p>
+                <a href="https://www.instagram.com/crush2020election/" target="_blank" rel="noreferrer">
+                  <Button type="button" className="usa-button">
+                    Follow @Crush2020Election
+                  </Button>
+                </a>
+              </>)}
+              { form.contact.twitter && (<>
               <p>
-                Because you are on Instagram, we'll send you shareable graphics to repost.
+                  Because you are on Twitter, we'll send you great content to repost.
               </p>
+              <a href="https://www.twitter.com/crush2020_/" target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Follow @Crush2020_
+                </Button>
+              </a>
+              </>)}
+              { !form.contact.twitter && !form.contact.instagram && (
+                <p>
+                  We'll send you great content via email. Share with your friends!
+              </p>
+              )}
             </CardBody>
-            <CardFooter>
-              <Button type="button" className="usa-button">
-                Follow @Crush2020
-              </Button>
-            </CardFooter>
           </Card>
         </Grid>
       </GridContainer>)
