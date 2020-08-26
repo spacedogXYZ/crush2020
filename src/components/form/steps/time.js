@@ -3,6 +3,15 @@ import React from "react";
 import { Form, Fieldset, RangeInput } from "@trussworks/react-uswds"
 import { useFormState } from "../context"
 
+export const TIME_VALUES = [
+  'help in other ways',
+  'at least once',
+  'a few hours a week',
+  'one weekend a month',
+  'every weekend',
+  'full-time'
+]
+
 export function TimeStep() {
   const {
     state: { time },
@@ -23,12 +32,9 @@ export function TimeStep() {
           }
         />
         <ul className="usa-range range-slider-label">
-          <li>help in other ways</li>
-          <li>at least once</li>
-          <li>a few hours a week</li>
-          <li>one weekend a month</li>
-          <li>every weekend</li>
-          <li>full-time</li>
+          { TIME_VALUES.map((v, i) => (
+            <li key={i}>{v}</li>
+          ))}
         </ul>
       </Fieldset>
     </Form>

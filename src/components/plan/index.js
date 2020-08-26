@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { joinSentence, padCode, unpadCode, parseName, isCompetitive, isLikely } from "../../utils/strings"
 import { isEmpty } from "../../utils/object"
+import { TIME_VALUES } from "../form/steps/time"
 
 var us_states = require('us-state-codes')
 var slugify = require('slugify')
@@ -77,6 +78,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
     house_rating && volunteer_house   ? volunteer_house[0]  : 
     governor_rating && volunteer_gov   ? volunteer_gov[0]  : 
       {name: "2020 Victory", event_feed_url : 'https://www.mobilize.us/2020victory/'};
+  const volunteer_time = form.time ? TIME_VALUES[form.time] : 'in other ways';
 
   // donate links
   const donate_senate = donate.actblue.filter(e => (e.state === state && e.district === "Sen"))
@@ -280,7 +282,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
               <ul>
                 { senate_rating && (isCompetitive(senate_rating.rating) || isLikely(senate_rating.rating)) && (
                   volunteer_senate ? (
-                      <li>Volunteer with {volunteer_senate[0].name}</li>
+                      <li>Volunteer with {volunteer_senate[0].name} {volunteer_time}.</li>
                   ) : (
                       <li>Volunteer with {senate_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
                   )
@@ -288,7 +290,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
 
                 { house_rating && (isCompetitive(house_rating.rating) || isLikely(house_rating.rating)) && (
                   volunteer_house ? (
-                      <li>Volunteer with {volunteer_house[0].name}</li>
+                      <li>Volunteer with {volunteer_house[0].name} {volunteer_time}.</li>
                   ) : (
                       <li>Volunteer with {house_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
                   )
@@ -296,7 +298,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
 
                 { governor_rating && (isCompetitive(governor_rating.rating) || isLikely(governor_rating.rating)) && (
                   volunteer_gov ? (
-                      <li>Volunteer with {volunteer_gov[0].name}</li>
+                      <li>Volunteer with {volunteer_gov[0].name} {volunteer_time}.</li>
                   ) : (
                       <li>Volunteer with {governor_candidates.find(c => (c.CAND_PTY_AFFILIATION.startsWith("D")))}</li>
                   )
