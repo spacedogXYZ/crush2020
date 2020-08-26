@@ -10,4 +10,5 @@
 @import '~uswds/src/stylesheets/packages/_required.scss';
 
 @import 'uswds'; // <-- this goes at the end, contains USWDS CSS
+@import 'progress.scss';
 @import 'overrides.scss';

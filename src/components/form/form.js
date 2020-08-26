@@ -4,6 +4,7 @@ import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { VoteStep, LocationStep, IssuesStep, SkillsStep, TimeStep, MoneyStep, ReachStep, SignupStep } from "./steps"
+import ProgressBar from "./progress"
 import { useFormState } from "./context"
 import { isEmpty } from "../../utils/object"
 
@@ -66,6 +67,8 @@ function PlanForm() {
 
   return (
     <GridContainer className="form-container">
+      <ProgressBar value={currentStep} max={steps.length-1}  />
+
       {stepRender}
 
       <ButtonGroup className="nav-container">
@@ -90,9 +93,6 @@ function PlanForm() {
           <FontAwesomeIcon icon={["fas", isLast ? "check" :"arrow-right"]} />
         </Button>
       </ButtonGroup>
-      <div className="progress-container">
-        Step {currentStep + 1} of {steps.length}
-      </div>
       {validate && !isValid && (
         <div className="error-container">
           Please select your answers

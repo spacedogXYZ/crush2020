@@ -87,7 +87,7 @@
 .form-container {
   form {
     text-align: center;
-    margin-top: calc(min(3rem, 20%));
+    margin-top: calc(min(2rem, 20%));
 
     &.margin-top-5pct {
       margin-top: 5%;
@@ -104,7 +104,7 @@
   }
 
   .progress-container {
-    margin-top: 1rem;
+    margin: 1rem 0;
     text-align: center;
   }
 

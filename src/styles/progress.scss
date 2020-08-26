@@ -1,0 +1,29 @@
+// copied from VA fork of USWDS
+
+.progress-bar-segmented {
+    display: flex;
+    width: 50%;
+    @include at-media("desktop") {
+        max-width: 400px;
+    }
+    height: 6px;
+    margin: 2rem auto 1rem auto;
+}
+
+.progress-segment:first-child {
+    margin-left: 0;
+}
+
+.progress-segment {
+    content: "&nbsp;";
+    flex: 1;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #d6d7d9;
+}
+.progress-segment-complete {
+    background-color: #0071bb;
+}
+.progress-segment:last-child {
+    margin-right: 0;
+}
