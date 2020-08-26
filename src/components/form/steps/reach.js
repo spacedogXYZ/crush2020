@@ -7,7 +7,7 @@ import { Form, Fieldset } from "@trussworks/react-uswds"
 import { useFormState } from "../context"
 
 import { updateDict, useReferredState } from "../../../utils/object"
-import { capitalize, isCompetitive } from "../../../utils/strings"
+import { capitalize, isCompetitive, isLikely } from "../../../utils/strings"
 
 export function ReachStep() {
   const {
@@ -54,13 +54,13 @@ export function ReachStep() {
 
   // re-sort results to hash by state and district
   const competitiveStates = {}
-  // competitiveRaces.allStateElectoralCollegeCsv.nodes.forEach(r => {
-  //   if (isCompetitive(r.rating)) {
-  //     competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
-  //       presidential: r.rating
-  //     })
-  //   }
-  // })
+  competitiveRaces.allStateElectoralCollegeCsv.nodes.forEach(r => {
+    if (isCompetitive(r.rating)) {
+      competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
+        presidential: r.rating
+      })
+    }
+  })
   competitiveRaces.allSenateCookRatingCsv.nodes.forEach(r => {
     if (isCompetitive(r.rating)) {
       competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
@@ -75,23 +75,28 @@ export function ReachStep() {
       })
     }
   })
-  // TODO, figure out how to wrap these in an array
-  // competitiveRaces.allHouseCookRatingCsv.nodes.forEach(r => {
-  //   if (isCompetitive(r.rating)) {
-  //     let state = r.district.split('-')[0]
-  //     let houseRace = {}
-  //     houseRace[r] = r.rating
-  //     competitiveStates[state] = updateDict(competitiveStates, state, {
-  //       house: [...competitiveStates[state].house, [houseRace]]
-  //     })
-  //   }
-  // })
+  competitiveRaces.allHouseCookRatingCsv.nodes.forEach(r => {
+    if (isCompetitive(r.rating) || isLikely(r.rating)) {
+      let state = r.district.split('-')[0]
+      let houseRace = {}
+      houseRace[r.district] = r.rating
+      competitiveStates[state] = updateDict(competitiveStates, state, houseRace)
+    }
+  })
+
+  // use the overlap of presidential and senate to show outlines
+  const overlapStates = Object.entries(competitiveStates).map((o) => {
+    let s = o[1];
+    if(s.presidential || (s.senate === "TOSS-UP")) { return o[0] }
+    return false;
+  }, []).filter(x => x)
+
 
   const statesDisplay = () => {
     let config = {}
 
-    // outline competitive states like other selectable buttons 
-    Object.keys(competitiveStates).forEach(state => {
+    // outline overlap states like other selectable buttons 
+    overlapStates.forEach(state => {
       config[state] = updateDict(config, state, {
         stroke: "#005ea2"
       });
@@ -149,9 +154,13 @@ export function ReachStep() {
           <ReactTooltip id='map-tooltip' aria-haspopup='true'>
             <h3>Competitive Races in {hoverState.current}</h3>
             <ul>
-              { Object.keys(competitiveStates[hoverState.current]).map(k => (
-                <li key={k}>{capitalize(k)}: {competitiveStates[hoverState.current][k]}</li>
-              ))}
+              { Object.keys(competitiveStates[hoverState.current]).map(k => {
+                let name = (k.indexOf('-') > 0) ? k :capitalize(k);
+                let status = competitiveStates[hoverState.current][k];
+                return (
+                  <li key={k.toUpperCase()}>{name}: {status}</li>
+                )
+              })}
             </ul>
           </ReactTooltip>
         }

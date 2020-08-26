@@ -24,10 +24,6 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
   const state_name = us_states.getStateNameByStateCode(state)
   const state_slug = slugify(state_name).toLowerCase()
 
-  const reach_states = form.reach.map(c => (
-    us_states.getStateNameByStateCode(c)
-  ))
-
   const senate_candidates = candidates.federal.filter(c => (
     c.CAND_OFFICE_ST === state &&
     c.CAND_OFFICE_DISTRICT === "00"
@@ -92,6 +88,21 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
     house_rating && donate_house   ? donate_house[0]  :
     governor_rating && donate_gov  ? donate_gov[0] :
       {name: "Biden 2020", donation_url: 'https://secure.actblue.com/donate/biden2020'};
+
+  // links for reach states, senate and presidential only
+  const reach_states = form.reach.map(state => {
+    const senate_rating = ratings.senate.find(r => (r.state === state))
+    const donate_senate = donate.actblue.filter(e => (e.state === state && e.district === "Sen"))
+    const volunteer_senate = volunteer.mobilize.filter(o => (o.state === state && o.race_type === "SENATE"))
+    return {
+      name: us_states.getStateNameByStateCode(state),
+      race: senate_rating ? 'Senate' : 'Presidential',
+      volunteer: (senate_rating && volunteer_senate ? volunteer_senate[0] : 
+        {name: "2020 Victory", event_feed_url : 'https://www.mobilize.us/2020victory/'}),
+      donate: (senate_rating && donate_senate ? donate_senate[0] :
+        {name: "Biden 2020", donation_url: 'https://secure.actblue.com/donate/biden2020'})
+    }
+  }, []);
 
   return (
     <Accordion items={[
@@ -386,21 +397,34 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
       content: (
         <GridContainer>
         <Grid row>
-          <Card gridLayout={{ tablet: { col: 4 } }}>
+          { reach_states.map((s) => (
+            <Card gridLayout={{ tablet: { col: 4 } }}>
             <CardHeader>
-              <h3 className="usa-card__heading">Reach</h3>
+              <h3 className="usa-card__heading">{s.name}</h3>
             </CardHeader>
             <CardBody>
               <p>
-                Get your friends involved in {joinSentence(reach_states)}, and they can make their own plan to Crush 2020.
+                Help out in the {s.race} race in {s.name}.
               </p>
+
+              {s.volunteer && (
+              <a href={`${s.volunteer.event_feed_url}?is_virtual=true`} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Volunteer
+                </Button>
+              </a>
+              )}
+
+              {s.donate && (
+              <a href={`${s.donate.donation_url}`} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Donate
+                </Button>
+              </a>
+              )}
             </CardBody>
-            <CardFooter>
-              <Button type="button" className="usa-button">
-                Share
-              </Button>
-            </CardFooter>
           </Card>
+        ))}
         </Grid>
         </GridContainer>
       )
