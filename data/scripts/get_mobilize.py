@@ -23,6 +23,7 @@ with open('../mobilize-us.csv', 'w') as out_file:
 
     page = 1
     response = get_page(MOBILIZE_URL)
+    write_page(response, out_writer)
     print(response['count'], "results")
 
     while response['next']:
