@@ -123,7 +123,6 @@ const PlanPage = ({location}) => {
       movementvote: planQuery.allMovementvoteCsv.nodes,
     }
   });
-  console.log(plan)
 
   return (
     <Layout>

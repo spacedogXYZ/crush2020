@@ -85,6 +85,10 @@ function matchOrganization(state, issues, orgs) {
 
 export function makePlan(form, data) {
   const {candidates, ratings, volunteer, donate} = data
+  if (!form || !form.geocode) {
+    // can't make a plan without a location
+    return {}
+  }
   const state = form.geocode.state
 
   const senate_candidates = candidates.federal.filter(c => (
