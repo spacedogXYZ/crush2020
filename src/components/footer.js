@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import { Footer, Logo, SocialLinks } from "@trussworks/react-uswds"
 
@@ -15,6 +16,7 @@ const SiteFooter = () => {
             medium
             heading={<h3 className="usa-footer__logo-heading">CrushPAC 2020</h3>}
           />
+          
           <div className="usa-footer__contact-links mobile-lg:grid-col-6">
             <SocialLinks
               links={[
@@ -50,6 +52,7 @@ const SiteFooter = () => {
                 </a>,
               ]}
             />
+            <Link to={'/privacy'}>Privacy Policy</Link>
           </div>
         </div>
       }
