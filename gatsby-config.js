@@ -1,8 +1,10 @@
+const { GATSBY_GOOGLE_ANALYTICS_ID } = process.env
+
 module.exports = {
   siteMetadata: {
     title: `Crush2020`,
     description: `We crushed the midterms. Now, let’s finish the job.`,
-    author: `@crush_2020`,
+    author: `@jlev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,6 +36,15 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: GATSBY_GOOGLE_ANALYTICS_ID,
+        head: true,
+        anonymize: true,
+        respectDNT: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
