@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
 
-import { makePlan } from "../components/form/reducer"
+import { makePlan } from "../components/plan/reducer"
 
 const PlanPage = ({location}) => {
   const { state } = location
@@ -123,6 +123,7 @@ const PlanPage = ({location}) => {
       movementvote: planQuery.allMovementvoteCsv.nodes,
     }
   });
+  console.log(plan)
 
   return (
     <Layout>

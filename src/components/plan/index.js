@@ -284,38 +284,80 @@ export function Plan({form, plan}) {
               </a>
             </CardFooter>
           </Card>
+
+          { plan.money.donate_local && (
           <Card gridLayout={{ tablet: { col: 4 } }}>
             <CardHeader>
-              <h3 className="usa-card__heading">Cause</h3>
+              <h3 className="usa-card__heading">Local Cause</h3>
             </CardHeader>
             <CardBody>
               <p>
-                Donate to {plan.money.donate_org.name}. <em>Endorsed by <a href="http://movement.vote">Movement Voter Project</a></em>
+                Donate to {plan.money.donate_local.name}.
               </p>
-              { plan.money.donate_org.logo_url && (
+              { plan.money.donate_local.logo_url && (
                 <CardMedia exdent>
-                    <img src={plan.money.donate_org.logo_url} alt={`${plan.money.donate_org.name} logo`}/>
+                    <img src={plan.money.donate_local.logo_url} alt={`${plan.money.donate_local.name} logo`}/>
                 </CardMedia>
               )}
               <p>
-                {plan.money.donate_org.description}
+                {plan.money.donate_local.description}
               </p>
+              <p>{plan.money.donate_local.issues}</p>
+              <em>Endorsed by <a href="http://movement.vote">Movement Voter Project</a></em>
             </CardBody>
             <CardFooter>
-              {plan.money.donate_org.donation_url && (
-              <a href={`${plan.money.donate_org.donation_url}?amount=${form.money}`} target="_blank" rel="noreferrer">
+              {plan.money.donate_local.donation_url && (
+              <a href={`${plan.money.donate_local.donation_url}?amount=${form.money}`} target="_blank" rel="noreferrer">
                 <Button type="button" className="usa-button">
                   Give ${form.money}
                 </Button>
               </a>
               )}
-              <a href={plan.money.donate_org.website} target="_blank" rel="noreferrer">
+              <a href={plan.money.donate_local.website} target="_blank" rel="noreferrer">
                 <Button type="button" className="usa-button">
                   Learn More
                 </Button>
               </a>
             </CardFooter>
           </Card>
+          )}
+
+          { plan.money.donate_national && (
+          <Card gridLayout={{ tablet: { col: 4 } }}>
+            <CardHeader>
+              <h3 className="usa-card__heading">National Cause</h3>
+            </CardHeader>
+            <CardBody>
+              <p>
+                Donate to {plan.money.donate_national.name}.
+              </p>
+              { plan.money.donate_national.logo_url && (
+                <CardMedia exdent>
+                    <img src={plan.money.donate_national.logo_url} alt={`${plan.money.donate_national.name} logo`}/>
+                </CardMedia>
+              )}
+              <p>
+                {plan.money.donate_national.description}
+              </p>
+              <p>Issues: {plan.money.donate_local.issues}</p>
+              <em>Endorsed by <a href="http://movement.vote">Movement Voter Project</a></em>
+            </CardBody>
+            <CardFooter>
+              { plan.money.donate_national.donation_url && (
+              <a href={`${plan.money.donate_national.donation_url}?amount=${form.money}`} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Give ${form.money}
+                </Button>
+              </a>
+              )}
+              <a href={plan.money.donate_national.website} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Learn More
+                </Button>
+              </a>
+            </CardFooter>
+          </Card>
+          )}
         </Grid>
         </GridContainer>
       )

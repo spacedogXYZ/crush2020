@@ -46,6 +46,43 @@ function matchCandidate(state, district, candidates, ratings, volunteer) {
   return {name: "2020 Victory", event_feed_url : 'https://www.mobilize.us/2020victory/'};
 }
 
+function matchOrganization(state, issues, orgs) {
+  // given state, issues and organizations
+  // return a list of orgs in that state which match issue areas
+
+  return orgs.filter(o => {
+    if (o.state === state) {
+      let match = false;
+      if (issues.includes('ABORTION_RIGHTS')) {
+        match = match || o.issues.includes('Reproductive Justice')
+      }
+      if (issues.includes('ENVIRONMENT')) {
+        match = match || o.issues.includes('Climate / Environment')
+      }
+      if (issues.includes('LGBTQ')) {
+        match = match || o.issues.includes('LGBTQ')
+      }
+      if (issues.includes('VOTER_SUPPRESSION')) {
+        match = match || o.issues.includes('Voting Rights')
+      }
+      if (issues.includes('POLICE_BRUTALITY')) {
+        match = match || o.issues.includes('Racial Justice') // not quite...
+      }
+      if (issues.includes('IMMIGRATION')) {
+        match = match || o.issues.includes('Immigrant Rights')
+      }
+      if (issues.includes('HEALTH_CARE')) {
+        match = match || o.issues.includes('Healthcare')
+      }
+      if (issues.includes('MASS_INCARCERATION')) {
+        match = match || o.issues.includes('End Mass Criminalization')
+      }
+      return match
+    }
+    return false
+  })
+}
+
 export function makePlan(form, data) {
   const {candidates, ratings, volunteer, donate} = data
   const state = form.geocode.state
@@ -132,40 +169,11 @@ export function makePlan(form, data) {
 
   // match movement vote orgs with our issues
   // GUN_VIOLENCE, ABORTION_RIGHTS, ENVIRONMENT, LGBTQ, VOTER_SUPPRESSION, POLICE_BRUTALITY, IMMIGRATION, HEALTH_CARE, MASS_INCARCERATION,
-  const org_match = donate.movementvote.filter(o => {
-    if (o.state === state) {
-      let match = false;
-      if (form.issues.includes('ABORTION_RIGHTS')) {
-        match = match || o.issues.includes('Reproductive Justice')
-      }
-      if (form.issues.includes('ENVIRONMENT')) {
-        match = match || o.issues.includes('Climate / Environment')
-      }
-      if (form.issues.includes('LGBTQ')) {
-        match = match || o.issues.includes('LGBTQ')
-      }
-      if (form.issues.includes('VOTER_SUPPRESSION')) {
-        match = match || o.issues.includes('Voting Rights')
-      }
-      if (form.issues.includes('POLICE_BRUTALITY')) {
-        match = match || o.issues.includes('Racial Justice') // not quite...
-      }
-      if (form.issues.includes('IMMIGRATION')) {
-        match = match || o.issues.includes('Immigrant Rights')
-      }
-      if (form.issues.includes('HEALTH_CARE')) {
-        match = match || o.issues.includes('Healthcare')
-      }
-      if (form.issues.includes('MASS_INCARCERATION')) {
-        match = match || o.issues.includes('End Mass Criminalization')
-      }
-      return match
-    }
-    return false
-  })
-  // fall back to national orgs
-  // TODO 
-  const donate_org = org_match ? getRandom(org_match) : {};
+  const org_local_match = matchOrganization(state, form.issues, donate.movementvote)
+  const org_national_match = matchOrganization("", form.issues, donate.movementvote)
+  // there's usually more than one, so randomize
+  const donate_local = getRandom(org_local_match)
+  const donate_national = getRandom(org_national_match)
 
   // links for reach states, senate and presidential only
   const reach_states = form.reach.map(state => {
@@ -204,7 +212,8 @@ export function makePlan(form, data) {
     },
     money: {
       donate_candidate: donate_candidate,
-      donate_org: donate_org,
+      donate_local: donate_local,
+      donate_national: donate_national,
     },
     reach: {
       states: reach_states,
