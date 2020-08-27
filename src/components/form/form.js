@@ -34,7 +34,7 @@ function PlanForm() {
     [<TimeStep />, () => (true)],
     [<MoneyStep />, () => (true)],
     [<ReachStep />, () => (true)],
-    [<SignupStep />, (state) => (!isEmpty(state.contact.email))],
+    [<SignupStep />, (state) => (!isEmpty(state.name) && !isEmpty(state.contact.email))],
   ];
 
   const [currentStep, goForward] = useFormProgress();
