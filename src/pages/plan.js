@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
 
+import { makePlan } from "../components/form/reducer"
+
 const PlanPage = ({location}) => {
   const { state } = location
 
@@ -102,27 +104,31 @@ const PlanPage = ({location}) => {
     }
   `)
 
+  const plan = makePlan(state, {
+    candidates:{
+        federal: planQuery.allFecCandidatesCsv.nodes,
+        statewide: planQuery.allStatewideCandidatesCsv.nodes,
+      },
+    ratings:{
+      senate: planQuery.allSenateCookRatingCsv.nodes,
+      house: planQuery.allHouseCookRatingCsv.nodes,
+      governor: planQuery.allGovernorsCookRatingCsv.nodes,
+      state_legislature: planQuery.allStateChambersCsv.nodes,
+    },
+    volunteer:{
+      mobilize: planQuery.allMobilizeUsCsv.nodes
+    },
+    donate:{
+      actblue: planQuery.allActblueCsv.nodes,
+      movementvote: planQuery.allMovementvoteCsv.nodes,
+    }
+  });
+
   return (
     <Layout>
       <SEO title="Your plan" />
       <Plan form={state}
-        candidates={{
-          federal: planQuery.allFecCandidatesCsv.nodes,
-          statewide: planQuery.allStatewideCandidatesCsv.nodes,
-        }}
-        ratings={{
-          senate: planQuery.allSenateCookRatingCsv.nodes,
-          house: planQuery.allHouseCookRatingCsv.nodes,
-          governor: planQuery.allGovernorsCookRatingCsv.nodes,
-          state_legislature: planQuery.allStateChambersCsv.nodes,
-        }}
-        volunteer={{
-          mobilize: planQuery.allMobilizeUsCsv.nodes
-        }}
-        donate={{
-          actblue: planQuery.allActblueCsv.nodes,
-          movementvote: planQuery.allMovementvoteCsv.nodes,
-        }}
+        plan={plan}
       />
     </Layout>
   )
