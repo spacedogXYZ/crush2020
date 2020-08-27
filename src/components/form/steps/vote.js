@@ -8,8 +8,8 @@ import FormButton from "../buttons"
 export function VoteStep() {
   const {
     state: { registered, vbm },
-    dispatch
-  } = useFormState();
+    dispatch,
+  } = useFormState()
 
   return (
     <Form>
@@ -53,9 +53,7 @@ export function VoteStep() {
           text="No"
           value="no"
           state={vbm}
-          action={e =>
-            dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: "no" })
-          }
+          action={e => dispatch({ type: "VOTE_BY_MAIL_CHANGE", payload: "no" })}
         />
         <FormButton
           text="Not Sure"
@@ -67,7 +65,7 @@ export function VoteStep() {
         />
       </Fieldset>
     </Form>
-  );
+  )
 }
 
-export default VoteStep;
+export default VoteStep

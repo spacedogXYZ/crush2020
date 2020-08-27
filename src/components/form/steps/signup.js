@@ -1,21 +1,27 @@
-import React from "react";
+import React from "react"
 
-import { useFormState } from "../context";
-import { Form, Fieldset, FormGroup, TextInput, Label } from "@trussworks/react-uswds"
+import { useFormState } from "../context"
+import {
+  Form,
+  Fieldset,
+  FormGroup,
+  TextInput,
+  Label,
+} from "@trussworks/react-uswds"
 import { GridContainer, Grid } from "@trussworks/react-uswds"
 
 export function SignupStep() {
   const {
     state: { name, contact },
-    dispatch
-  } = useFormState();
+    dispatch,
+  } = useFormState()
 
   return (
     <Form>
       <Fieldset legend={"Almost done!"}>
         <GridContainer>
           <FormGroup>
-            <Grid row mobileLg={{col:8, offset: 2}}>
+            <Grid row mobileLg={{ col: 8, offset: 2 }}>
               <Label htmlFor="name">Name</Label>
               <TextInput
                 name="name"
@@ -28,7 +34,7 @@ export function SignupStep() {
           </FormGroup>
 
           <FormGroup>
-            <Grid row mobileLg={{col:8, offset: 2}}>
+            <Grid row mobileLg={{ col: 8, offset: 2 }}>
               <Label htmlFor="email">Email</Label>
               <TextInput
                 name="email"
@@ -42,23 +48,29 @@ export function SignupStep() {
 
           <FormGroup>
             <Grid row gap>
-              <Grid row mobileLg={{col:4, offset: 2}}>
+              <Grid row mobileLg={{ col: 4, offset: 2 }}>
                 <Label htmlFor="twitter">Twitter (optional)</Label>
                 <TextInput
                   name="twitter"
                   onChange={e =>
-                    dispatch({ type: "TWITTER_CHANGE", payload: e.target.value })
+                    dispatch({
+                      type: "TWITTER_CHANGE",
+                      payload: e.target.value,
+                    })
                   }
                   value={contact.twitter ? contact.twitter : ""}
                 />
               </Grid>
 
-              <Grid row mobileLg={{col:4}}>
+              <Grid row mobileLg={{ col: 4 }}>
                 <Label htmlFor="instagram">Instagram (optional)</Label>
                 <TextInput
                   name="instagram"
                   onChange={e =>
-                    dispatch({ type: "INSTAGRAM_CHANGE", payload: e.target.value })
+                    dispatch({
+                      type: "INSTAGRAM_CHANGE",
+                      payload: e.target.value,
+                    })
                   }
                   value={contact.instagram ? contact.instagram : ""}
                 />
@@ -68,7 +80,7 @@ export function SignupStep() {
         </GridContainer>
       </Fieldset>
     </Form>
-  );
+  )
 }
 
-export default SignupStep;
+export default SignupStep

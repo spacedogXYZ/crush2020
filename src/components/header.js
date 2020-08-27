@@ -11,7 +11,7 @@ import {
   PrimaryNav,
 } from "@trussworks/react-uswds"
 
-import logoImg from '../images/logo.png'
+import logoImg from "../images/logo.png"
 
 const navItems = [
   <Link to={"/about"} activeClassName="usa-current">
@@ -20,9 +20,13 @@ const navItems = [
   <Link to={"/methodology"} activeClassName="usa-current">
     Methodology
   </Link>,
-  <OutboundLink href="https://secure.actblue.com/donate/crush2020?ref=header" target="_blank" rel="noreferrer">
+  <OutboundLink
+    href="https://secure.actblue.com/donate/crush2020?ref=header"
+    target="_blank"
+    rel="noreferrer"
+  >
     Donate
-  </OutboundLink>
+  </OutboundLink>,
 ]
 
 const SiteHeader = ({ siteTitle }) => {
@@ -40,7 +44,11 @@ const SiteHeader = ({ siteTitle }) => {
             <Link to={"/"}>
               <Logo
                 image={
-                  <img className="usa-footer__logo-img" src={logoImg} alt="Crush2020" />
+                  <img
+                    className="usa-footer__logo-img"
+                    src={logoImg}
+                    alt="Crush2020"
+                  />
                 }
               />
             </Link>

@@ -6,7 +6,7 @@ import Plan from "../components/plan"
 
 import { makePlan } from "../components/plan/reducer"
 
-const PlanPage = ({location}) => {
+const PlanPage = ({ location }) => {
   const { state } = location
 
   const planQuery = useStaticQuery(graphql`
@@ -66,10 +66,12 @@ const PlanPage = ({location}) => {
         }
       }
 
-      allMobilizeUsCsv(filter: {
-        org_type: {eq: "CAMPAIGN"},
-        race_type: {in: ["GOVERNOR","CONGRESSIONAL","SENATE"]}
-      }) {
+      allMobilizeUsCsv(
+        filter: {
+          org_type: { eq: "CAMPAIGN" }
+          race_type: { in: ["GOVERNOR", "CONGRESSIONAL", "SENATE"] }
+        }
+      ) {
         nodes {
           name
           race_type
@@ -90,7 +92,7 @@ const PlanPage = ({location}) => {
         }
       }
 
-    allMovementvoteCsv {
+      allMovementvoteCsv {
         nodes {
           name
           state
@@ -105,31 +107,29 @@ const PlanPage = ({location}) => {
   `)
 
   const plan = makePlan(state, {
-    candidates:{
-        federal: planQuery.allFecCandidatesCsv.nodes,
-        statewide: planQuery.allStatewideCandidatesCsv.nodes,
-      },
-    ratings:{
+    candidates: {
+      federal: planQuery.allFecCandidatesCsv.nodes,
+      statewide: planQuery.allStatewideCandidatesCsv.nodes,
+    },
+    ratings: {
       senate: planQuery.allSenateCookRatingCsv.nodes,
       house: planQuery.allHouseCookRatingCsv.nodes,
       governor: planQuery.allGovernorsCookRatingCsv.nodes,
       state_legislature: planQuery.allStateChambersCsv.nodes,
     },
-    volunteer:{
-      mobilize: planQuery.allMobilizeUsCsv.nodes
+    volunteer: {
+      mobilize: planQuery.allMobilizeUsCsv.nodes,
     },
-    donate:{
+    donate: {
       actblue: planQuery.allActblueCsv.nodes,
       movementvote: planQuery.allMovementvoteCsv.nodes,
-    }
-  });
+    },
+  })
 
   return (
     <Layout>
       <SEO title="Your plan" />
-      <Plan form={state}
-        plan={plan}
-      />
+      <Plan form={state} plan={plan} />
     </Layout>
   )
 }

@@ -12,11 +12,11 @@ import { capitalize, isCompetitive, isLikely } from "../../../utils/strings"
 export function ReachStep() {
   const {
     state: { reach },
-    dispatch
-  } = useFormState();
+    dispatch,
+  } = useFormState()
 
-  const [ hoverState, setHoverState ] = useReferredState({current: null})
-  
+  const [hoverState, setHoverState] = useReferredState({ current: null })
+
   const competitiveRaces = useStaticQuery(graphql`
     query competitiveStatesQuery {
       allStateElectoralCollegeCsv {
@@ -50,34 +50,34 @@ export function ReachStep() {
         }
       }
     }
-  `);
+  `)
 
   // re-sort results to hash by state and district
   const competitiveStates = {}
   competitiveRaces.allStateElectoralCollegeCsv.nodes.forEach(r => {
     if (isCompetitive(r.rating)) {
       competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
-        presidential: r.rating
+        presidential: r.rating,
       })
     }
   })
   competitiveRaces.allSenateCookRatingCsv.nodes.forEach(r => {
     if (isCompetitive(r.rating)) {
       competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
-        senate: r.rating
+        senate: r.rating,
       })
     }
   })
   competitiveRaces.allGovernorsCookRatingCsv.nodes.forEach(r => {
     if (isCompetitive(r.rating)) {
       competitiveStates[r.state] = updateDict(competitiveStates, r.state, {
-        governor: r.rating
+        governor: r.rating,
       })
     }
   })
   competitiveRaces.allHouseCookRatingCsv.nodes.forEach(r => {
     if (isCompetitive(r.rating) || isLikely(r.rating)) {
-      let state = r.district.split('-')[0]
+      let state = r.district.split("-")[0]
       let houseRace = {}
       houseRace[r.district] = r.rating
       competitiveStates[state] = updateDict(competitiveStates, state, houseRace)
@@ -85,22 +85,25 @@ export function ReachStep() {
   })
 
   // use the overlap of presidential and senate to show outlines
-  const overlapStates = Object.entries(competitiveStates).map((o) => {
-    let s = o[1];
-    if(s.presidential || (s.senate === "TOSS-UP")) { return o[0] }
-    return false;
-  }, []).filter(x => x)
-
+  const overlapStates = Object.entries(competitiveStates)
+    .map(o => {
+      let s = o[1]
+      if (s.presidential || s.senate === "TOSS-UP") {
+        return o[0]
+      }
+      return false
+    }, [])
+    .filter(x => x)
 
   const statesDisplay = () => {
     let config = {}
 
-    // outline overlap states like other selectable buttons 
+    // outline overlap states like other selectable buttons
     overlapStates.forEach(state => {
       config[state] = updateDict(config, state, {
-        stroke: "#005ea2"
-      });
-    });
+        stroke: "#005ea2",
+      })
+    })
 
     // fill in selected states in ReachStep
     reach.forEach(region => {
@@ -110,30 +113,29 @@ export function ReachStep() {
       }
       config[region] = updateDict(config, region, {
         fill: "#005ea2",
-        stroke: "#1a4480"
-      });
+        stroke: "#1a4480",
+      })
     })
 
-    return config;
-  };
-
+    return config
+  }
 
   const handleChange = event => {
-    let region = event.target.dataset.name;
-    const isSelected = reach.includes(region);
-    let payload = reach;
+    let region = event.target.dataset.name
+    const isSelected = reach.includes(region)
+    let payload = reach
 
     if (isSelected) {
-      payload = reach.filter(c => c !== region);
+      payload = reach.filter(c => c !== region)
     } else {
-      payload = [...reach, region];
+      payload = [...reach, region]
     }
 
     dispatch({
       type: "REACH_CHANGE",
-      payload
-    });
-  };
+      payload,
+    })
+  }
 
   const handleHover = event => {
     setHoverState(event.target.dataset.name)
@@ -143,28 +145,31 @@ export function ReachStep() {
     <Form className="margin-top-5pct">
       <Fieldset legend={"Extend your impact!"}>
         <h2>Pick a tight race outside your area and help win big</h2>
-        <div data-tip data-for='map-tooltip'>
-          <USAMap width="100%"
+        <div data-tip data-for="map-tooltip">
+          <USAMap
+            width="100%"
             customize={statesDisplay()}
             onClick={handleChange}
             onMouseOver={handleHover}
           />
         </div>
-        { competitiveStates[hoverState.current] &&
-          <ReactTooltip id='map-tooltip' aria-haspopup='true'>
+        {competitiveStates[hoverState.current] && (
+          <ReactTooltip id="map-tooltip" aria-haspopup="true">
             <h3>Competitive Races in {hoverState.current}</h3>
             <ul>
-              { Object.keys(competitiveStates[hoverState.current]).map(k => {
-                let name = (k.indexOf('-') > 0) ? k :capitalize(k);
-                let status = competitiveStates[hoverState.current][k];
+              {Object.keys(competitiveStates[hoverState.current]).map(k => {
+                let name = k.indexOf("-") > 0 ? k : capitalize(k)
+                let status = competitiveStates[hoverState.current][k]
                 return (
-                  <li key={k.toUpperCase()}>{name}: {status}</li>
+                  <li key={k.toUpperCase()}>
+                    {name}: {status}
+                  </li>
                 )
               })}
             </ul>
           </ReactTooltip>
-        }
+        )}
       </Fieldset>
     </Form>
-  );
+  )
 }

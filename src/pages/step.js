@@ -8,7 +8,7 @@ const StartPage = () => (
   <Layout>
     <SEO title="Make a plan" />
     <FormProvider>
-        <PlanForm />
+      <PlanForm />
     </FormProvider>
   </Layout>
 )

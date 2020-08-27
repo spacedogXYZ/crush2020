@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 import { Form, Fieldset, RangeInput } from "@trussworks/react-uswds"
 import { useFormState } from "../context"
@@ -6,8 +6,8 @@ import { useFormState } from "../context"
 export function MoneyStep() {
   const {
     state: { money },
-    dispatch
-  } = useFormState();
+    dispatch,
+  } = useFormState()
 
   return (
     <Form>
@@ -32,5 +32,5 @@ export function MoneyStep() {
         </ul>
       </Fieldset>
     </Form>
-  );
+  )
 }

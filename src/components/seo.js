@@ -71,7 +71,9 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script src={`https://maps.googleapis.com/maps/api/js?key=${GATSBY_GOOGLE_MAPS_KEY}&libraries=places`}></script>
+      <script
+        src={`https://maps.googleapis.com/maps/api/js?key=${GATSBY_GOOGLE_MAPS_KEY}&libraries=places`}
+      ></script>
     </Helmet>
   )
 }

@@ -15,9 +15,11 @@ const SiteFooter = () => {
         <div className="grid-row grid-gap">
           <Logo
             medium
-            heading={<h3 className="usa-footer__logo-heading">CrushPAC 2020</h3>}
+            heading={
+              <h3 className="usa-footer__logo-heading">CrushPAC 2020</h3>
+            }
           />
-          
+
           <div className="usa-footer__contact-links mobile-lg:grid-col-6">
             <SocialLinks
               links={[
@@ -53,8 +55,14 @@ const SiteFooter = () => {
                 </OutboundLink>,
               ]}
             />
-            <Link to={'/privacy'}>Privacy Policy</Link>&nbsp;&nbsp;
-            <OutboundLink href="https://github.com/spacedogXYZ/crush2020" target="_blank" rel="noreferrer">Source Code</OutboundLink>
+            <Link to={"/privacy"}>Privacy Policy</Link>&nbsp;&nbsp;
+            <OutboundLink
+              href="https://github.com/spacedogXYZ/crush2020"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Source Code
+            </OutboundLink>
           </div>
         </div>
       }

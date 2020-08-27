@@ -1,42 +1,39 @@
-const fetch = require('node-fetch')
+const fetch = require("node-fetch")
 const { ACTION_NETWORK_URL } = process.env
 
 function splitName(name) {
   // tries to naively split first/last from single name
 
-  let parts = name.split(' ')
-  let first = parts.slice(0, 1).join(' ')
-  let last = parts.slice(1, parts.length).join(' ')
+  let parts = name.split(" ")
+  let first = parts.slice(0, 1).join(" ")
+  let last = parts.slice(1, parts.length).join(" ")
   return [first, last]
 }
 
-exports.handler = async function(event) {
+exports.handler = async function (event) {
   if (!event.body) {
     return {
-        statusCode: 400,
-        body: `post to this endpoint`
+      statusCode: 400,
+      body: `post to this endpoint`,
     }
   }
   var data
   try {
-    data = JSON.parse(event.body);
-  }
-  catch(err) {
+    data = JSON.parse(event.body)
+  } catch (err) {
     console.error(err)
-    return { statusCode: 400, body: 'invalid json'}
+    return { statusCode: 400, body: "invalid json" }
   }
 
-  const requiredFields = [
-   "name", "contact", "geocode",
-  ];
+  const requiredFields = ["name", "contact", "geocode"]
 
   for (i in requiredFields) {
     let f = requiredFields[i]
     if (!data[f]) {
       console.error(`${f} required`)
       return {
-          statusCode: 400,
-          body: `${f} is required`
+        statusCode: 400,
+        body: `${f} is required`,
       }
     }
   }
@@ -45,45 +42,43 @@ exports.handler = async function(event) {
 
   // send to action network
   let signup = {
-    "person" : {
-      "family_name" : splitName(data.name)[1],
-      "given_name" : splitName(data.name)[0],
-      "postal_addresses" : [ 
+    person: {
+      family_name: splitName(data.name)[1],
+      given_name: splitName(data.name)[0],
+      postal_addresses: [
         {
-          "address_lines" : [
-            data.geocode.line1
-          ],
-          "locality" : data.geocode.city,
-          "region" : data.geocode.state,
-          "postal_code" : data.geocode.zip,
-          "country" : "US" 
-        }
+          address_lines: [data.geocode.line1],
+          locality: data.geocode.city,
+          region: data.geocode.state,
+          postal_code: data.geocode.zip,
+          country: "US",
+        },
       ],
-      "email_addresses" : [ 
-        { 
-          "address" : data.contact.email,
-          "status" : "subscribed"
-        }
+      email_addresses: [
+        {
+          address: data.contact.email,
+          status: "subscribed",
+        },
       ],
-      "custom_fields": {
-          "twitter": data.contact.twitter,
-          "instagram": data.contact.instagram
-      }
+      custom_fields: {
+        twitter: data.contact.twitter,
+        instagram: data.contact.instagram,
+      },
     },
-    "triggers": {
-      "autoresponse": {
-        "enabled": true
-      }
-    }
+    triggers: {
+      autoresponse: {
+        enabled: true,
+      },
+    },
   }
   const response = await fetch(ACTION_NETWORK_URL, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(signup),
   })
-  if(response.ok) {
+  if (response.ok) {
     return {
       statusCode: 200,
       body: "Success!",
@@ -91,7 +86,7 @@ exports.handler = async function(event) {
   } else {
     return {
       statusCode: 500,
-      body: response.text()
+      body: response.text(),
     }
   }
 }

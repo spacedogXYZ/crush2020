@@ -19,6 +19,7 @@ go to http://localhost:8000
 ## Data
 
 The matching system uses data from the following sources:
+
 - FEC: House and Senate candidate names and reported funds raised
 - FollowTheMoney.org: Statewide candidate names and funds raised
 - CookPolitical: House, Senate, Governor and Electoral College ratings
