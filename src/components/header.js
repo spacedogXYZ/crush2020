@@ -13,7 +13,6 @@ import {
 import logoImg from '../images/logo.png'
 
 const navItems = [
-  <Link to={"/"} activeClassName="usa-current"></Link>,
   <Link to={"/about"} activeClassName="usa-current">
     About
   </Link>,

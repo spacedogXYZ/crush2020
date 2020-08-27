@@ -52,7 +52,8 @@ const SiteFooter = () => {
                 </a>,
               ]}
             />
-            <Link to={'/privacy'}>Privacy Policy</Link>
+            <Link to={'/privacy'}>Privacy Policy</Link>&nbsp;&nbsp;
+            <a href="https://github.com/spacedogXYZ/crush2020" target="_blank" rel="noreferrer">Source Code</a>
           </div>
         </div>
       }
