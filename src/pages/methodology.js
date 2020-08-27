@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -19,13 +20,13 @@ const AboutPage = () => (
       incorrect, please contact us at info@crush2020.org and we will work to make it right.</p>
       <p>Data provided from the following sources:</p>
       <ul>
-        <li><a href="https://www.fec.gov/data/browse-data/?tab=bulk-data">Federal Election Commission</a>: House and Senate candidate names and funds raised</li>
-        <li><a href="https://www.followthemoney.org">FollowTheMoney.org</a>: Statewide candidate names and funds raised</li>
-        <li><a href="https://cookpolitical.com">CookPolitical</a>: House, Senate, Governor and Electoral College ratings</li>
-        <li><a href="https://ballotpedia.org/">BallotPedia</a>: State legislature seats up and current party margin</li>
-        <li><a href="https://www.mobilize.us">Mobilize.us</a>: Volunteer links</li>
-        <li><a href="https://secure.actblue.com/directory/all/candidate/">ActBlue</a>: Candidate donation links</li>
-        <li><a href="https://movement.vote">Movement Voter Project</a>: Local and national power-building organizations</li>
+        <li><OutboundLink href="https://www.fec.gov/data/browse-data/?tab=bulk-data">Federal Election Commission</OutboundLink>: House and Senate candidate names and funds raised</li>
+        <li><OutboundLink href="https://www.followthemoney.org">FollowTheMoney.org</OutboundLink>: Statewide candidate names and funds raised</li>
+        <li><OutboundLink href="https://cookpolitical.com">CookPolitical</OutboundLink>: House, Senate, Governor and Electoral College ratings</li>
+        <li><OutboundLink href="https://ballotpedia.org/">BallotPedia</OutboundLink>: State legislature seats up and current party margin</li>
+        <li><OutboundLink href="https://www.mobilize.us">Mobilize.us</OutboundLink>: Volunteer links</li>
+        <li><OutboundLink href="https://secure.actblue.com/directory/all/candidate/">ActBlue</OutboundLink>: Candidate donation links</li>
+        <li><OutboundLink href="https://movement.vote">Movement Voter Project</OutboundLink>: Local and national power-building organizations</li>
     </ul>
     </GridContainer>
   </Layout>

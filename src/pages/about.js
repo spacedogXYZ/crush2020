@@ -1,5 +1,5 @@
 import React from "react"
-
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -23,7 +23,7 @@ const AboutPage = () => (
             <p>
               Marisa was previously a staff writer at Fusion and the Daily Dot, and continues to publish freelance writing about feminism, activism, and politics.
               She is a graduate of George Washington University&apos;s School of Media and Public Affairs and lives in Brooklyn.
-              Find her on Twitter <a href="https://twitter.com/marisakabas">@marisakabas</a>.
+              Find her on Twitter <OutboundLink href="https://twitter.com/marisakabas">@marisakabas</OutboundLink>.
             </p>
           </div>
         </Grid>
@@ -33,9 +33,9 @@ const AboutPage = () => (
             <h2 className="usa-graphic-list__heading">
               Josh Levinger, Technology Director
             </h2>
-            <p>Josh is the Commander of <a href="https://spacedog.xyz">Spacedog XYZ</a>. He has worked for twelve years at the intersection of technology and activism and specializes in building online organizing tools with offline impact.
+            <p>Josh is the Commander of <OutboundLink href="https://spacedog.xyz">Spacedog XYZ</OutboundLink>. He has worked for twelve years at the intersection of technology and activism and specializes in building online organizing tools with offline impact.
               He is a graduate of the Massachusetts Institute of Technology and MIT Media Lab and lives in Truckee CA.
-              Find him on Twitter <a href="https://twitter.com/jlev">@jlev</a>.
+              Find him on Twitter <OutboundLink href="https://twitter.com/jlev">@jlev</OutboundLink>.
             </p>
           </div>
         </Grid>

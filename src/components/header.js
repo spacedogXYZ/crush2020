@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import PropTypes from "prop-types"
 
 import {
@@ -19,9 +20,9 @@ const navItems = [
   <Link to={"/methodology"} activeClassName="usa-current">
     Methodology
   </Link>,
-  <a href="https://secure.actblue.com/donate/crush2020?ref=header" target="_blank" rel="noreferrer">
+  <OutboundLink href="https://secure.actblue.com/donate/crush2020?ref=header" target="_blank" rel="noreferrer">
     Donate
-  </a>
+  </OutboundLink>
 ]
 
 const SiteHeader = ({ siteTitle }) => {
