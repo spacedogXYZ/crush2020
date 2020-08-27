@@ -45,3 +45,7 @@ export function isEmpty(value){
     || (typeof value === 'object' && isEmptyObject(value))
   );
 }
+
+export function getRandom(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}

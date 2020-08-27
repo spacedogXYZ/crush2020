@@ -1,11 +1,11 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardFooter } from "@trussworks/react-uswds"
+import { Accordion, GridContainer, Grid, Card, CardHeader, CardBody, CardMedia, CardFooter } from "@trussworks/react-uswds"
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { padCode, unpadCode, parseName, isCompetitive, isLikely, capitalize } from "../../utils/strings"
-import { isEmpty } from "../../utils/object"
+import { isEmpty, getRandom } from "../../utils/object"
 import { TIME_VALUES } from "../form/steps/time"
 
 var us_states = require('us-state-codes')
@@ -103,6 +103,43 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
     house_rating && donate_house   ? donate_house[0]  :
     governor_rating && donate_gov  ? donate_gov[0] :
       {name: "Biden 2020", donation_url: 'https://secure.actblue.com/donate/biden2020'};
+
+  // match movement vote orgs with our issues
+  // GUN_VIOLENCE, ABORTION_RIGHTS, ENVIRONMENT, LGBTQ, VOTER_SUPPRESSION, POLICE_BRUTALITY, IMMIGRATION, HEALTH_CARE, MASS_INCARCERATION,
+  const org_match = donate.movementvote.filter(o => {
+    if (o.state === state) {
+      let match = false;
+      if (form.issues.includes('ABORTION_RIGHTS')) {
+        match = match || o.issues.includes('Reproductive Justice')
+      }
+      if (form.issues.includes('ENVIRONMENT')) {
+        match = match || o.issues.includes('Climate / Environment')
+      }
+      if (form.issues.includes('LGBTQ')) {
+        match = match || o.issues.includes('LGBTQ')
+      }
+      if (form.issues.includes('VOTER_SUPPRESSION')) {
+        match = match || o.issues.includes('Voting Rights')
+      }
+      if (form.issues.includes('POLICE_BRUTALITY')) {
+        match = match || o.issues.includes('Racial Justice') // not quite...
+      }
+      if (form.issues.includes('IMMIGRATION')) {
+        match = match || o.issues.includes('Immigrant Rights')
+      }
+      if (form.issues.includes('HEALTH_CARE')) {
+        match = match || o.issues.includes('Healthcare')
+      }
+      if (form.issues.includes('MASS_INCARCERATION')) {
+        match = match || o.issues.includes('End Mass Criminalization')
+      }
+      return match
+    }
+  })
+  // fall back to national orgs
+  // TODO 
+  const org_donate = org_match ? getRandom(org_match) : {};
+  console.log(org_match)
 
   // links for reach states, senate and presidential only
   const reach_states = form.reach.map(state => {
@@ -387,7 +424,7 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
         <Grid row>
           <Card gridLayout={{ tablet: { col: 4 } }}>
             <CardHeader>
-              <h3 className="usa-card__heading">Donate</h3>
+              <h3 className="usa-card__heading">Candidate</h3>
             </CardHeader>
             <CardBody>
               <p>
@@ -398,6 +435,38 @@ export function Plan({form, candidates, ratings, volunteer, donate}) {
               <a href={`${donate_link.donation_url}?amount=${form.money}&recurring=true`} target="_blank" rel="noreferrer">
                 <Button type="button" className="usa-button">
                   Give ${form.money}
+                </Button>
+              </a>
+            </CardFooter>
+          </Card>
+          <Card gridLayout={{ tablet: { col: 4 } }}>
+            <CardHeader>
+              <h3 className="usa-card__heading">Cause</h3>
+            </CardHeader>
+            <CardBody>
+              <p>
+                Donate to {org_donate.name}. <em>Endorsed by <a href="http://movement.vote">Movement Voter Project</a></em>
+              </p>
+              { org_donate.logo_url && (
+                <CardMedia exdent>
+                    <img src={org_donate.logo_url} />
+                </CardMedia>
+              )}
+              <p>
+                {org_donate.description}
+              </p>
+            </CardBody>
+            <CardFooter>
+              {org_donate.donation_url && (
+              <a href={`${org_donate.donation_url}?amount=${form.money}`} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Give ${form.money}
+                </Button>
+              </a>
+              )}
+              <a href={org_donate.website} target="_blank" rel="noreferrer">
+                <Button type="button" className="usa-button">
+                  Learn More
                 </Button>
               </a>
             </CardFooter>

@@ -87,6 +87,18 @@ const PlanPage = ({location}) => {
           donation_url
         }
       }
+
+    allMovementvoteCsv {
+        nodes {
+          name
+          state
+          issues
+          description
+          donation_url
+          logo_url
+          website
+        }
+      }
     }
   `)
 
@@ -108,7 +120,8 @@ const PlanPage = ({location}) => {
           mobilize: planQuery.allMobilizeUsCsv.nodes
         }}
         donate={{
-          actblue: planQuery.allActblueCsv.nodes
+          actblue: planQuery.allActblueCsv.nodes,
+          movementvote: planQuery.allMovementvoteCsv.nodes,
         }}
       />
     </Layout>
