@@ -17,6 +17,9 @@ const navItems = [
   <Link to={"/about"} activeClassName="usa-current">
     About
   </Link>,
+  <a href="https://secure.actblue.com/donate/crush2020?ref=header" target="_blank" rel="noreferrer">
+    Donate
+  </a>
 ]
 
 const SiteHeader = ({ siteTitle }) => {
