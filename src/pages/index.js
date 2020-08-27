@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Make a plan to defeat Trump" />
     <section className="index-hero">
       <Grid row>
         <Grid col className="flex-auto">
