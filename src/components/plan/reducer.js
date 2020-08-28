@@ -244,6 +244,9 @@ export function makePlan(form, data) {
   // 2: phone bank
   // 9: house parties
   // 12: friend-to-friend outreach
+  if (volunteer_candidate.event_feed_url.includes('mobilize.us') && !!volunteer_type) {
+    volunteer_candidate.event_feed_url += `?event_type=${volunteer_type}`
+  }
 
   // donate links
   const donate_senate = donate.actblue.filter(

@@ -291,7 +291,7 @@ export function Plan({ form, plan }) {
                   </CardBody>
                   <CardFooter>
                     <OutboundLink
-                      href={`${plan.time.volunteer_candidate.event_feed_url}?event_type=${plan.time.volunteer_type}`}
+                      href={`${plan.time.volunteer_candidate.event_feed_url}`}
                       target="_blank"
                       rel="noreferrer"
                     >
