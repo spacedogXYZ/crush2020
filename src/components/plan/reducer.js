@@ -96,8 +96,8 @@ function matchOrganization(state, issues, orgs) {
       if (issues.includes("VOTER_SUPPRESSION")) {
         match = match || o.issues.includes("Voting Rights")
       }
-      if (issues.includes("POLICE_BRUTALITY")) {
-        match = match || o.issues.includes("Racial Justice") // not quite...
+      if (issues.includes("RACIAL_JUSTICE")) {
+        match = match || o.issues.includes("Racial Justice")
       }
       if (issues.includes("IMMIGRATION")) {
         match = match || o.issues.includes("Immigrant Rights")

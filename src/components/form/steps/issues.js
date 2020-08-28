@@ -17,7 +17,7 @@ export function IssuesStep() {
     ENVIRONMENT: { t: "Environment/Climate", i: "globe-americas" },
     LGBTQ: { t: "LGBTQ+", i: "plus-square" },
     VOTER_SUPPRESSION: { t: "Voter Suppression", i: "vote-yea" },
-    POLICE_BRUTALITY: { t: "Police Brutality", i: "shield-alt" },
+    RACIAL_JUSTICE: { t: "Racial Justice", i: "shield-alt" },
     IMMIGRATION: { t: "Immigration", i: "passport" },
     HEALTH_CARE: { t: "Health Care", i: "user-md" },
     MASS_INCARCERATION: { t: "Mass Incarceration", i: "building" },
