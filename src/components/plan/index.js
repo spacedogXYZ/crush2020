@@ -279,12 +279,13 @@ export function Plan({ form, plan }) {
                     <h3 className="usa-card__heading">Volunteer</h3>
                   </CardHeader>
                   <CardBody>
-                    <ul>
-                      <li>
-                        Volunteer with {plan.time.volunteer_candidate.name}{" "}
-                        {plan.time.volunteer_time}.
-                      </li>
-                    </ul>
+                    <p>
+                      Volunteer with {plan.time.volunteer_candidate.name}{" "}
+                      {plan.time.volunteer_time}.
+                    </p>
+                    { plan.time.volunteer_candidate.description && (
+                      <p>{plan.time.volunteer_candidate.description}</p>
+                    )}
                   </CardBody>
                   <CardFooter>
                     <OutboundLink

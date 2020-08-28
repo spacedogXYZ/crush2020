@@ -188,22 +188,50 @@ export function makePlan(form, data) {
     house: house_rating,
     governor: governor_rating,
   }
-  const volunteer_candidate = matchCandidate(
+  let volunteer_candidate = matchCandidate(
     state,
     congressional_district_code,
     state_candidates,
     state_ratings,
     volunteer
   )
-  const volunteer_time = form.time ? TIME_VALUES[form.time] : "in other ways"
+  let volunteer_time = form.time ? TIME_VALUES[form.time] : "in other ways"
 
   // volunteer methods, defaults first
   let volunteer_how = "volunteer"
   let volunteer_type = undefined
-  if (form.skills.indexOf("PHONE_CALLS")) {
+  // special cases first
+  if (form.skills.includes("CODER")) {
+    volunteer_how = "Use your tech skills"
+    // override candidate
+    volunteer_candidate = {
+      name: "Tech for Campaigns",
+      event_feed_url: "https://www.techforcampaigns.org/volunteers",
+      description: "Tech for Campaigns provides opportunities to volunteer your skills in a meaningful and impactful way, turning political passion into hands-on involvement."
+    }
+    volunteer_time = "to help progressive candidates"
+  } else if (form.skills.includes("LAWYER")) {
+    volunteer_how = "Use your legal skills"
+    // override candidate
+    volunteer_candidate = {
+      name: "Election Protection Hotline",
+      event_feed_url: "https://wetheaction.org/projects/780-serve-as-an-election-protection-hotline-captain-remote",
+      description: "The national, nonpartisan Election Protection coalition works year-round to ensure that all voters have an equal opportunity to vote and have that vote count."
+    }
+    volunteer_time = "to answer voter questions on Election Day"
+  } else if (form.skills.includes("PHONE_CALLS")) {
+    // just set how and type
     volunteer_how = "make calls"
     volunteer_type = 2
-  } else if (form.skills.indexOf("TEXTING")) {
+  } else if (form.skills.includes("WRITING")) {
+    // override candidate
+    volunteer_candidate = {
+      name: "Vote Forward",
+      event_feed_url: "https://votefwd.org",
+      description: "Sending a Vote Forward letter is one of the easiest things you can do to increase turnout."
+    }
+    volunteer_how = "send postcards"
+  }else if (form.skills.includes("TEXTING")) {
     volunteer_how = "text bank"
   }
   // mobilize event types:
