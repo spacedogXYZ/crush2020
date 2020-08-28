@@ -260,16 +260,16 @@ export function makePlan(form, data) {
   )
   // senate first, then house, then gov, then presidential
   const donate_candidate =
-    senate_rating && donate_senate
+    senate_rating && isCompetitive(senate_rating.rating) && donate_senate
       ? donate_senate[0]
-      : house_rating && donate_house
+    : house_rating && (isCompetitive(house_rating.rating) || isLikely(house_rating.rating)) && donate_house
       ? donate_house[0]
-      : governor_rating && donate_gov
+    : governor_rating && isCompetitive(governor_rating.rating) && donate_gov
       ? donate_gov[0]
-      : {
-          name: "Biden 2020",
-          donation_url: "https://secure.actblue.com/donate/biden2020",
-        }
+    : {
+        name: "Biden 2020",
+        donation_url: "https://secure.actblue.com/donate/biden2020",
+      }
 
   // match movement vote orgs with our issues
   // GUN_VIOLENCE, ABORTION_RIGHTS, ENVIRONMENT, LGBTQ, VOTER_SUPPRESSION, POLICE_BRUTALITY, IMMIGRATION, HEALTH_CARE, MASS_INCARCERATION,
