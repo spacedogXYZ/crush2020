@@ -15,7 +15,7 @@ import {
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { parseName, capitalize } from "../../utils/strings"
+import { parseName, capitalize, firstSentence } from "../../utils/strings"
 import { isEmpty } from "../../utils/object"
 
 var us_states = require("us-state-codes")
@@ -143,7 +143,7 @@ export function Plan({ form, plan }) {
                     </CardBody>
                     <CardFooter>
                       Current rating: {plan.senate_rating.rating}
-                      <div className="rating-source">
+                      <div className="citation">
                         Cook Political: {plan.senate_rating.updated}
                       </div>
                     </CardFooter>
@@ -164,7 +164,7 @@ export function Plan({ form, plan }) {
                     </CardBody>
                     <CardFooter>
                       Current rating: {plan.ballot.house_rating.rating}
-                      <div className="rating-source">
+                      <div className="citation">
                         Cook Political: {plan.ballot.house_rating.updated}
                       </div>
                     </CardFooter>
@@ -301,10 +301,10 @@ export function Plan({ form, plan }) {
 
                 <Card gridLayout={{ tablet: { col: 4 } }}>
                   <CardHeader>
-                    <h3 className="usa-card__heading">Social Media</h3>
+                    <h3 className="usa-card__heading">Share</h3>
                   </CardHeader>
                   <CardBody>
-                    {form.contact.instagram && (
+                    {(form.skills.includes("INSTAGRAM") || form.contact.instagram) && (
                       <>
                         <p>
                           Because you are on Instagram, we'll send you shareable
@@ -321,11 +321,11 @@ export function Plan({ form, plan }) {
                         </OutboundLink>
                       </>
                     )}
-                    {form.contact.twitter && (
+                    {(form.skills.includes("TWITTER") || form.contact.twitter) && (
                       <>
                         <p>
                           Because you are on Twitter, we'll send you great
-                          content to repost.
+                          content to retweet.
                         </p>
                         <OutboundLink
                           href="https://twitter.com/intent/follow?screen_name=crush2020_"
@@ -391,45 +391,38 @@ export function Plan({ form, plan }) {
                       <h3 className="usa-card__heading">Local Cause</h3>
                     </CardHeader>
                     <CardBody>
-                      <p>Donate to {plan.money.donate_local.name}.</p>
+                      {<p>Donate to {plan.money.donate_local.name} to build power in {state_name}.</p>}
                       {plan.money.donate_local.logo_url && (
                         <CardMedia exdent>
-                          <img
-                            src={plan.money.donate_local.logo_url}
-                            alt={`${plan.money.donate_local.name} logo`}
-                          />
+                          <OutboundLink
+                            href={plan.money.donate_local.website}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              src={plan.money.donate_local.logo_url}
+                              alt={`${plan.money.donate_local.name} logo`}
+                            />
+                          </OutboundLink>
                         </CardMedia>
                       )}
-                      <p>{plan.money.donate_local.description}</p>
-                      <p>{plan.money.donate_local.issues}</p>
-                      <em>
-                        Endorsed by{" "}
-                        <OutboundLink href="http://movement.vote">
-                          Movement Voter Project
-                        </OutboundLink>
-                      </em>
+                      <p>{firstSentence(plan.money.donate_local.description)}</p>
+                      <div className="citation">
+                        Movement Voter Project
+                      </div>
                     </CardBody>
                     <CardFooter>
                       {plan.money.donate_local.donation_url && (
                         <OutboundLink
-                          href={`${plan.money.donate_local.donation_url}?amount=${form.money}`}
+                          href={`${plan.money.donate_local.donation_url}`}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <Button type="button" className="usa-button">
-                            Give ${form.money}
+                            Give
                           </Button>
                         </OutboundLink>
                       )}
-                      <OutboundLink
-                        href={plan.money.donate_local.website}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Button type="button" className="usa-button">
-                          Learn More
-                        </Button>
-                      </OutboundLink>
                     </CardFooter>
                   </Card>
                 )}
@@ -440,33 +433,35 @@ export function Plan({ form, plan }) {
                       <h3 className="usa-card__heading">National Cause</h3>
                     </CardHeader>
                     <CardBody>
-                      <p>Donate to {plan.money.donate_national.name}.</p>
+                      <p>Donate to {plan.money.donate_national.name} for national impact in 2021.</p>
                       {plan.money.donate_national.logo_url && (
                         <CardMedia exdent>
-                          <img
-                            src={plan.money.donate_national.logo_url}
-                            alt={`${plan.money.donate_national.name} logo`}
-                          />
+                          <OutboundLink
+                              href={plan.money.donate_national.website}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                            <img
+                              src={plan.money.donate_national.logo_url}
+                              alt={`${plan.money.donate_national.name} logo`}
+                            />
+                          </OutboundLink>
                         </CardMedia>
                       )}
-                      <p>{plan.money.donate_national.description}</p>
-                      <p>Issues: {plan.money.donate_local.issues}</p>
-                      <em>
-                        Endorsed by{" "}
-                        <OutboundLink href="http://movement.vote">
-                          Movement Voter Project
-                        </OutboundLink>
-                      </em>
+                      <p>{firstSentence(plan.money.donate_national.description)}</p>
+                      <div className="citation">
+                        Movement Voter Project
+                      </div>
                     </CardBody>
                     <CardFooter>
                       {plan.money.donate_national.donation_url && (
                         <OutboundLink
-                          href={`${plan.money.donate_national.donation_url}?amount=${form.money}`}
+                          href={`${plan.money.donate_national.donation_url}`}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <Button type="button" className="usa-button">
-                            Give ${form.money}
+                            Give
                           </Button>
                         </OutboundLink>
                       )}
@@ -475,9 +470,6 @@ export function Plan({ form, plan }) {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <Button type="button" className="usa-button">
-                          Learn More
-                        </Button>
                       </OutboundLink>
                     </CardFooter>
                   </Card>
@@ -505,7 +497,7 @@ export function Plan({ form, plan }) {
                     </CardHeader>
                     <CardBody>
                       <p>
-                        Help out in the {s.race} race in {s.name}.
+                        Help out in the {s.race} race in {s.name} from home.
                       </p>
 
                       {s.volunteer && (
@@ -515,7 +507,7 @@ export function Plan({ form, plan }) {
                           rel="noreferrer"
                         >
                           <Button type="button" className="usa-button">
-                            Volunteer
+                            Volunteer Remotely
                           </Button>
                         </OutboundLink>
                       )}

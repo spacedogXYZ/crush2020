@@ -143,8 +143,8 @@ export function ReachStep() {
 
   return (
     <Form className="margin-top-5pct">
-      <Fieldset legend={"Extend your impact!"}>
-        <h2>Pick a tight race outside your area and help win big</h2>
+      <Fieldset legend={"Where else can you help?"}>
+        <h2>Pick a competitive state and help win big nationally</h2>
         <div data-tip data-for="map-tooltip">
           <USAMap
             width="100%"

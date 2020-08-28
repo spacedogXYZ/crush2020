@@ -24,7 +24,7 @@ const IndexPage = () => (
               className="usa-button bg-secondary hover:bg-secondary-dark"
               to="/step"
             >
-              Make a Plan <FontAwesomeIcon icon={["fas", "arrow-right"]} />
+              Make a plan <FontAwesomeIcon icon={["fas", "arrow-right"]} />
             </Link>
           </div>
         </Grid>

@@ -47,3 +47,7 @@ export function parseName(name) {
   let [first, middle = ""] = parts[1].trim().split(" ")
   return `${capitalize(first)} ${middle.slice(0, 1)} ${capitalize(last)}`
 }
+
+export function firstSentence(string) {
+  return string.split('.')[0]+'.'
+}
