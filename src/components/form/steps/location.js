@@ -93,7 +93,7 @@ export function LocationStep() {
             value={value}
             onChange={handleInput}
             disabled={!ready}
-            placeholder="Enter your home town or address. We only use this to find your voting district."
+            placeholder="Enter your home address. We only use this to find your voting district."
             aria-autocomplete="list"
           />
           {status === "OK" && (

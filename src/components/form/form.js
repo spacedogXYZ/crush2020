@@ -37,7 +37,7 @@ function PlanForm() {
   // step and validation functions
   const steps = [
     [<VoteStep />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-    [<LocationStep />, state => !isEmpty(state.geocode)],
+    [<LocationStep />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd)],
     [
       <IssuesStep />,
       state => !isEmpty(state.issues) && state.issues.length <= 3,

@@ -19,7 +19,7 @@ export function useReferredState(initialValue) {
 }
 
 /**
- * Checks if value is empty. Deep-checks arrays and objects
+ * Checks if value is empty. Deep-checks arrays and objects, and zero-length strings
  * Note: isEmpty([]) == true, isEmpty({}) == true, isEmpty([{0:false},"",0]) == true, isEmpty({0:1}) == false
  * @param value
  * @returns {boolean}
@@ -44,7 +44,8 @@ export function isEmpty(value) {
     value === false ||
     typeof value === "undefined" ||
     value == null ||
-    (typeof value === "object" && isEmptyObject(value))
+    (typeof value === "object" && isEmptyObject(value)) ||
+    (typeof value === "string" && value.length === 0)
   )
 }
 
