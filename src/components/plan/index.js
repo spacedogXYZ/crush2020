@@ -15,7 +15,7 @@ import {
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { parseName, capitalize, firstSentence } from "../../utils/strings"
+import { parseName, capitalize, firstSentence, isCompetitive } from "../../utils/strings"
 import { isEmpty } from "../../utils/object"
 
 var us_states = require("us-state-codes")
@@ -153,21 +153,23 @@ export function Plan({ form, plan }) {
                 {!isEmpty(plan.ballot.house_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">US House</h3>
+                      <h3 className="usa-card__heading">US House {state}-{form.geocode.cd}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
                         {plan.ballot.house_candidates.map(c => (
-                          <Candidate data={c} />
+                          <Candidate key={c.name} data={c} />
                         ))}
                       </ul>
                     </CardBody>
+                    { isCompetitive(plan.ballot.house_rating.rating) && (
                     <CardFooter>
                       Current rating: {plan.ballot.house_rating.rating}
                       <div className="citation">
-                        Cook Political: {plan.ballot.house_rating.updated}
+                        Cook Political {plan.ballot.house_rating.updated}
                       </div>
                     </CardFooter>
+                    )}
                   </Card>
                 )}
 
