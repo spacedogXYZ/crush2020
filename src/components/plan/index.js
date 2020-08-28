@@ -222,7 +222,7 @@ export function Plan({ form, plan }) {
                   </Card>
                 )}
 
-                {!isEmpty(plan.ballot.state_senate_rating) && (
+               {/* {!isEmpty(plan.ballot.state_senate_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
                       <h3 className="usa-card__heading">{state} State Senate</h3>
@@ -269,7 +269,7 @@ export function Plan({ form, plan }) {
                       </div>
                     </CardFooter>
                   </Card>
-                )}
+                )}*/}
               </Grid>
             </GridContainer>
           ),
