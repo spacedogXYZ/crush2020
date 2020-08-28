@@ -63,14 +63,24 @@ exports.handler = async function (event) {
       custom_fields: {
         twitter: data.contact.twitter,
         instagram: data.contact.instagram,
+        time: data.time,
+        money: data.money,
       },
     },
+    add_tags: data.issues,
     triggers: {
       autoresponse: {
         enabled: true,
       },
     },
   }
+  if (data.registered === "no" || data.registered === "not-sure") {
+    signup.add_tags.push('NEEDS_TO_REGISTER')
+  }
+  if (data.vbm === "yes" || data.vbm === "not-sure") {
+    signup.add_tags.push('VBM_INTERESTED')
+  }
+  console.log(signup)
   const response = await fetch(ACTION_NETWORK_URL, {
     method: "POST",
     headers: {
