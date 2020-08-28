@@ -5,6 +5,7 @@ module.exports = {
     title: `Crush2020`,
     description: `We crushed the midterms. Now, let’s finish the job.`,
     author: `@jlev`,
+    siteUrl: 'https://crush2020.netlify.app',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
