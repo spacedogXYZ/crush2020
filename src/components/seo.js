@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import shareImg from "../images/share.png"
 
-const { GATSBY_GOOGLE_MAPS_KEY } = process.env
+const { GATSBY_GOOGLE_MAPS_KEY, GATSBY_FB_APP_ID } = process.env
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -58,6 +58,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: 'fb:app_id',
+          content: GATSBY_FB_APP_ID
         },
         {
           name: `twitter:card`,
