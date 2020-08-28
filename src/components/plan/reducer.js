@@ -124,11 +124,12 @@ export function makePlan(form, data) {
     // can't make a plan without a location
     return {}
   }
+
   const state = form.geocode.state
 
   const senate_candidates = candidates.federal
     .filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === "00")
-    .sort((a, b) => a.TTL_RECEIPTS < b.TTL_RECEIPTS)
+    .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
     .slice(0, 2)
 
   const congressional_district = form.geocode.cd
@@ -139,7 +140,7 @@ export function makePlan(form, data) {
         c.CAND_OFFICE_ST === state &&
         c.CAND_OFFICE_DISTRICT === congressional_district_code
     )
-    .sort((a, b) => a.TTL_RECEIPTS < b.TTL_RECEIPTS)
+    .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
     .slice(0, 2)
   // we don't actually have primary win/loss records from FEC
   // so sort by amount raised and pick top two
