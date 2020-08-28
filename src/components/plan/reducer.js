@@ -72,7 +72,7 @@ function matchCandidate(state, district, candidates, ratings, volunteer) {
   }
 
   return {
-    name: "2020 Victory",
+    name: "DNC 2020 Victory",
     event_feed_url: "https://www.mobilize.us/2020victory/",
   }
 }
@@ -303,7 +303,7 @@ export function makePlan(form, data) {
         senate_rating && volunteer_senate
           ? volunteer_senate[0]
           : {
-              name: "2020 Victory",
+              name: "DNC 2020 Victory",
               event_feed_url: "https://www.mobilize.us/2020victory/",
             },
       donate:

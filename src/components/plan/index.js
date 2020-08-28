@@ -144,7 +144,7 @@ export function Plan({ form, plan }) {
                     <CardFooter>
                       Current rating: {plan.senate_rating.rating}
                       <div className="citation">
-                        Cook Political: {plan.senate_rating.updated}
+                        Cook Political {plan.senate_rating.updated}
                       </div>
                     </CardFooter>
                   </Card>
@@ -225,7 +225,7 @@ export function Plan({ form, plan }) {
                 {!isEmpty(plan.ballot.state_senate_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">{state} Senate</h3>
+                      <h3 className="usa-card__heading">{state} State Senate</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
@@ -239,13 +239,18 @@ export function Plan({ form, plan }) {
                         </li>
                       </ul>
                     </CardBody>
+                    <CardFooter>
+                      <div className="citation">
+                        Ballotpedia Battleground
+                      </div>
+                    </CardFooter>
                   </Card>
                 )}
 
                 {!isEmpty(plan.ballot.state_house_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">{state} House</h3>
+                      <h3 className="usa-card__heading">{state} State House</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
@@ -258,6 +263,11 @@ export function Plan({ form, plan }) {
                         </li>
                       </ul>
                     </CardBody>
+                    <CardFooter>
+                      <div className="citation">
+                        Ballotpedia Battleground
+                      </div>
+                    </CardFooter>
                   </Card>
                 )}
               </Grid>
@@ -515,7 +525,7 @@ export function Plan({ form, plan }) {
                     </CardHeader>
                     <CardBody>
                       <p>
-                        Help out in the {s.race} race in {s.name} from home.
+                        Help win the {s.race} race in {s.name} from home.
                       </p>
 
                       {s.volunteer && (
@@ -525,7 +535,7 @@ export function Plan({ form, plan }) {
                           rel="noreferrer"
                         >
                           <Button type="button" className="usa-button">
-                            Volunteer Remotely
+                            Volunteer remotely
                           </Button>
                         </OutboundLink>
                       )}
