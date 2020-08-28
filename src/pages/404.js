@@ -9,8 +9,8 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <GridContainer>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <h1>Not Found</h1>
+      <p>We can&#39;t seem to find that page. &#9785;</p>
     </GridContainer>
   </Layout>
 )
