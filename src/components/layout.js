@@ -14,6 +14,7 @@ import Footer from "./footer"
 import "normalize.css/normalize.css"
 import "typeface-archivo"
 import "../styles/index.scss"
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 // set up FontAwesome library
 // eslint-disable-next-line no-unused-vars
