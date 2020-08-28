@@ -1,7 +1,7 @@
-const fetch = require("node-fetch")
 const { ACTION_NETWORK_URL } = process.env
+const axios = require("axios");
 
-function splitName(name) {
+var splitName = (name) => {
   // tries to naively split first/last from single name
 
   let parts = name.split(" ")
@@ -10,8 +10,9 @@ function splitName(name) {
   return [first, last]
 }
 
-exports.handler = async function (event) {
-  if (!event.body) {
+exports.handler = async (event) => {
+  const { body } = event
+  if (!body) {
     return {
       statusCode: 400,
       body: `post to this endpoint`,
@@ -19,7 +20,7 @@ exports.handler = async function (event) {
   }
   var data
   try {
-    data = JSON.parse(event.body)
+    data = JSON.parse(body)
   } catch (err) {
     console.error(err)
     return { statusCode: 400, body: "invalid json" }
@@ -80,23 +81,19 @@ exports.handler = async function (event) {
   if (data.vbm === "yes" || data.vbm === "not-sure") {
     signup.add_tags.push('VBM_INTERESTED')
   }
-  console.log(signup)
-  const response = await fetch(ACTION_NETWORK_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(signup),
-  })
-  if (response.ok) {
-    return {
-      statusCode: 200,
-      body: "Success!",
-    }
-  } else {
-    return {
-      statusCode: 500,
-      body: response.text(),
-    }
-  }
+  return axios.post(ACTION_NETWORK_URL, signup)
+    .then((res) => (
+      // blind ActionNetwork posts don't return any data
+      // assume successful if there's no error state
+      {
+        statusCode: 200,
+        body: "Success!",
+      })
+    ).catch((err) => (
+      {
+        statusCode: 500,
+        body: JSON.stringify(err.message),
+      }
+    ))
+  return result
 }
