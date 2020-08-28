@@ -80,8 +80,12 @@ function matchCandidate(state, district, candidates, ratings, volunteer) {
 function matchOrganization(state, issues, orgs) {
   // given state, issues and organizations
   // return a list of orgs in that state which match issue areas
+  // and have donation links
 
   return orgs.filter(o => {
+    if (!o.donation_url) {
+      return false
+    }
     if (o.state === state) {
       let match = false
       if (issues.includes("ABORTION_RIGHTS")) {

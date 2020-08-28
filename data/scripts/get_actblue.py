@@ -12,7 +12,7 @@ ACTBLUE_DIRECTORY = [
     "https://secure.actblue.com/directory/all/candidate/state-gov",
 ]    
 REQUEST_HEADERS = {'User-Agent' : "bot"}
-DESIRED_FIELDS = ['id', 'name', 'state', 'district', 'donation_url']
+DESIRED_FIELDS = ['id', 'name', 'state', 'district', 'website', 'donation_url', 'image_url']
 DESIRED_YEAR = "2020"
 
 
@@ -35,6 +35,8 @@ def get_data(doc):
             location = entity.find("div", {"class": "location"}).get_text().strip()
             year = entity.find("div", {"class": "race"}).contents[2].strip()
             name = entity.find("h3").get_text().strip()
+            image = entity.find("img", {"class": "photo"})
+            website = entity.find("ul", {"class": "nav-pills"})
             contribute = entity.find('a', {"class": "contribute"}, href=True)
 
             if (year != DESIRED_YEAR):
@@ -46,6 +48,10 @@ def get_data(doc):
             if location:
                 d['state'] = location.split('-')[0]
                 d['district'] = location.split('-')[1]
+            if website and website.get_text().strip():
+                d['website'] = website.find("a", href=True)['href']
+            if image:
+                d['image_url'] = image['src']
             if contribute:
                 redirect_url = contribute['href'].replace('?refcode=directory','')
                 # follow the redirect to get the final url

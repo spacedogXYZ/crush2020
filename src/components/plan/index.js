@@ -372,6 +372,21 @@ export function Plan({ form, plan }) {
                       Donate to {plan.money.donate_candidate.name} monthly
                       through the election.
                     </p>
+                    {plan.money.donate_candidate.image_url && (
+                        <CardMedia>
+                          <OutboundLink
+                            href={plan.money.donate_candidate.website}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              src={plan.money.donate_candidate.image_url}
+                              alt={plan.money.donate_candidate.name}
+                              className="very-small"
+                            />
+                          </OutboundLink>
+                        </CardMedia>
+                      )}
                   </CardBody>
                   <CardFooter>
                     <OutboundLink
@@ -521,6 +536,18 @@ export function Plan({ form, plan }) {
                         >
                           <Button type="button" className="usa-button">
                             Donate
+                          </Button>
+                        </OutboundLink>
+                      )}
+
+                      {s.donate && s.donate.website && (
+                        <OutboundLink
+                          href={`${s.donate.website}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <Button type="button" className="usa-button">
+                            Learn more
                           </Button>
                         </OutboundLink>
                       )}

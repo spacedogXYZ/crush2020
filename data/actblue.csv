@@ -1,617 +1,615 @@
-id,name,state,district,donation_url
-57256,Alyse Galvin,AK,AL,https://secure.actblue.com/donate/alyse-for-alaska-1
-88460,James Averhart,AL,01,https://secure.actblue.com/donate/james-averhart-1
-89509,Phyllis Harvey-Hall,AL,02,https://secure.actblue.com/donate/campaign-to-elect-phyllis-harvey-hall-2
-89263,Adia Winfrey,AL,03,https://secure.actblue.com/donate/committee-to-elect-dr--adia-winfrey-1
-90197,Rick Neighbors,AL,04,https://secure.actblue.com/donate/neighbors-helping-neighbors-1
-21825,Terri Sewell,AL,07,https://secure.actblue.com/donate/terrisewell
-89290,Joyce Elliott,AR,02,https://secure.actblue.com/donate/elliott-for-congress-main
-83310,Celeste Williams,AR,03,https://secure.actblue.com/donate/campaign-to-elect-celeste-williams-1
-86594,William Hanson,AR,04,https://secure.actblue.com/donate/william-hanson-for-congress-1
-40543,Tom O'Halleran,AZ,01,https://secure.actblue.com/donate/tom-o-halleran-1
-52546,Ann Kirkpatrick,AZ,02,https://secure.actblue.com/donate/kirkpatrick-for-congress-1
-12662,Raul Grijalva,AZ,03,https://secure.actblue.com/donate/raul-grijalva-2
-82182,Delina DiSanto,AZ,04,https://secure.actblue.com/donate/delina-disanto-for-congress-1
-52915,Joan Greene,AZ,05,https://secure.actblue.com/donate/joangreeneforcongress
-80975,Hiral Tipirneni,AZ,06,https://secure.actblue.com/donate/hiral-tipirneni-1
-36462,Ruben Gallego,AZ,07,https://secure.actblue.com/donate/ruben-gallego-2
-81534,Michael Muscato,AZ,08,https://secure.actblue.com/donate/muscato-for-congress-1
-53310,Greg Stanton,AZ,09,https://secure.actblue.com/donate/stanton-for-congress-1
-57197,Audrey Denney,CA,01,https://secure.actblue.com/donate/audrey-denney-for-congress-1
-32678,Jared Huffman,CA,02,https://secure.actblue.com/donate/jared-huffman-3
-22575,John Garamendi,CA,03,https://secure.actblue.com/donate/john-garamendi-3
-81472,Brynne Kennedy,CA,04,https://secure.actblue.com/donate/brynne-kennedy-for-congress-1
-12664,Mike Thompson,CA,05,https://secure.actblue.com/donate/mike-thompson-2
-12665,Doris Matsui,CA,06,https://secure.actblue.com/donate/doris-matsui-2
-22341,Ami Bera,CA,07,https://secure.actblue.com/donate/ami-bera-1
-81105,Chris Bubser,CA,08,https://secure.actblue.com/donate/chris-bubser-for-congress-1
-26585,Jerry McNerney,CA,09,https://secure.actblue.com/donate/jerry-mcnerney-4
-49974,Josh Harder,CA,10,https://secure.actblue.com/donate/harder-for-congress-1
-57256,Alyse Galvin,AK,AL,https://secure.actblue.com/donate/alyse-for-alaska-1
-88460,James Averhart,AL,01,https://secure.actblue.com/donate/james-averhart-1
-89509,Phyllis Harvey-Hall,AL,02,https://secure.actblue.com/donate/campaign-to-elect-phyllis-harvey-hall-2
-89263,Adia Winfrey,AL,03,https://secure.actblue.com/donate/committee-to-elect-dr--adia-winfrey-1
-90197,Rick Neighbors,AL,04,https://secure.actblue.com/donate/neighbors-helping-neighbors-1
-21825,Terri Sewell,AL,07,https://secure.actblue.com/donate/terrisewell
-89290,Joyce Elliott,AR,02,https://secure.actblue.com/donate/elliott-for-congress-main
-83310,Celeste Williams,AR,03,https://secure.actblue.com/donate/campaign-to-elect-celeste-williams-1
-86594,William Hanson,AR,04,https://secure.actblue.com/donate/william-hanson-for-congress-1
-40543,Tom O'Halleran,AZ,01,https://secure.actblue.com/donate/tom-o-halleran-1
-52546,Ann Kirkpatrick,AZ,02,https://secure.actblue.com/donate/kirkpatrick-for-congress-1
-12662,Raul Grijalva,AZ,03,https://secure.actblue.com/donate/raul-grijalva-2
-82182,Delina DiSanto,AZ,04,https://secure.actblue.com/donate/delina-disanto-for-congress-1
-52915,Joan Greene,AZ,05,https://secure.actblue.com/donate/joangreeneforcongress
-80975,Hiral Tipirneni,AZ,06,https://secure.actblue.com/donate/hiral-tipirneni-1
-36462,Ruben Gallego,AZ,07,https://secure.actblue.com/donate/ruben-gallego-2
-81534,Michael Muscato,AZ,08,https://secure.actblue.com/donate/muscato-for-congress-1
-53310,Greg Stanton,AZ,09,https://secure.actblue.com/donate/stanton-for-congress-1
-57197,Audrey Denney,CA,01,https://secure.actblue.com/donate/audrey-denney-for-congress-1
-32678,Jared Huffman,CA,02,https://secure.actblue.com/donate/jared-huffman-3
-22575,John Garamendi,CA,03,https://secure.actblue.com/donate/john-garamendi-3
-81472,Brynne Kennedy,CA,04,https://secure.actblue.com/donate/brynne-kennedy-for-congress-1
-12664,Mike Thompson,CA,05,https://secure.actblue.com/donate/mike-thompson-2
-12665,Doris Matsui,CA,06,https://secure.actblue.com/donate/doris-matsui-2
-22341,Ami Bera,CA,07,https://secure.actblue.com/donate/ami-bera-1
-81105,Chris Bubser,CA,08,https://secure.actblue.com/donate/chris-bubser-for-congress-1
-26585,Jerry McNerney,CA,09,https://secure.actblue.com/donate/jerry-mcnerney-4
-49974,Josh Harder,CA,10,https://secure.actblue.com/donate/harder-for-congress-1
-35948,Mark DeSaulnier,CA,11,https://secure.actblue.com/donate/mark-desaulnier-6
-12668,Nancy Pelosi,CA,12,https://secure.actblue.com/donate/nancy-pelosi-2
-79820,Shahid Buttar,CA,12,https://secure.actblue.com/donate/shahid-buttar-1
-12669,Barbara Lee,CA,13,https://secure.actblue.com/donate/barbara-lee-2
-18726,Jackie Speier,CA,14,https://secure.actblue.com/donate/jackie-speier-1
-35367,Eric Swalwell,CA,15,https://secure.actblue.com/donate/eric-swalwell-1
-12679,Jim Costa,CA,16,https://secure.actblue.com/donate/jim-costa-3
-47955,Ro Khanna,CA,17,https://secure.actblue.com/donate/ro-khanna-2
-12674,Anna Eshoo,CA,18,https://secure.actblue.com/donate/anna-eshoo-2
-78302,Rishi Kumar,CA,18,https://secure.actblue.com/donate/kumar-for-congress-1
-12676,Zoe Lofgren,CA,19,https://secure.actblue.com/donate/zoe-lofgren-3
-46758,Jimmy Panetta,CA,20,https://secure.actblue.com/donate/jimmy-panetta-1
-52013,TJ Cox,CA,21,https://secure.actblue.com/donate/tj-cox-for-congress-1
-83099,Phil Arballo,CA,22,https://secure.actblue.com/donate/phil-arballo-1
-84932,Kim Mangone,CA,23,https://secure.actblue.com/donate/committee-to-elect-kim-mangone-for-congress-1
-60356,Mary Helen Barro,CA,23,https://secure.actblue.com/donate/mary-hellen-barro-for-represantitive-1
-40776,Salud Carbajal,CA,24,https://secure.actblue.com/donate/salud-carbajal-1
-90880,Christy Smith,CA,25,https://secure.actblue.com/donate/christy-smith-1
-29029,Julia Brownley,CA,26,https://secure.actblue.com/donate/julia-brownley-3
-21630,Judy Chu,CA,27,https://secure.actblue.com/donate/judy-chu-1
-12683,Adam Schiff,CA,28,https://secure.actblue.com/donate/adam-schiff-2
-81660,Angelica Duenas,CA,29,https://secure.actblue.com/donate/angelica-duenas-for-congress-2020-1
-27597,Tony Cardenas,CA,29,https://secure.actblue.com/donate/tony-cardenas-1
-12681,Brad Sherman,CA,30,https://secure.actblue.com/donate/brad-sherman
-28647,Pete Aguilar,CA,31,https://secure.actblue.com/donate/pete-aguilar-1
-12692,Grace Napolitano,CA,32,https://secure.actblue.com/donate/grace-flores-napolitano-2
-36122,Ted Lieu,CA,33,https://secure.actblue.com/donate/ted-lieu-5
-84778,David Kim,CA,34,https://secure.actblue.com/donate/david-kim-2020-1
-47189,Jimmy Gomez,CA,34,https://secure.actblue.com/donate/jimmygomezforcongress
-36424,Norma Torres,CA,35,https://secure.actblue.com/donate/norma-torres-4
-28215,Raul Ruiz,CA,36,https://secure.actblue.com/donate/raul-ruiz-1
-24060,Karen Bass,CA,37,https://secure.actblue.com/donate/karen-bass-3
-12693,Linda Sanchez,CA,38,https://secure.actblue.com/donate/linda-sanchez-2
-89300,Michael Tolar,CA,38,https://secure.actblue.com/donate/michael-tolar--for-everyday-people-1
-52269,Gil Cisneros,CA,39,https://secure.actblue.com/donate/cisneros-for-congress-1
-12688,Lucille Roybal-Allard,CA,40,https://secure.actblue.com/donate/lucille-roybal-allard-2
-27422,Mark Takano,CA,41,https://secure.actblue.com/donate/mark-takano-1
-79752,Liam O'Mara,CA,42,https://secure.actblue.com/donate/liam-o-mara-for-congress
-12689,Maxine Waters,CA,43,https://secure.actblue.com/donate/maxine-waters-2
-39587,Nanette Barragan,CA,44,https://secure.actblue.com/donate/nanette-barragan-1
-49323,Katie Porter,CA,45,https://secure.actblue.com/donate/katie-porter-for-congress-1
-40044,Lou Correa,CA,46,https://secure.actblue.com/donate/support-lou
-28081,Alan Lowenthal,CA,47,https://secure.actblue.com/donate/alan-lowenthal-1
-48590,Harley Rouda,CA,48,https://secure.actblue.com/donate/harley-rouda-for-congress-1
-48661,Mike Levin,CA,49,https://secure.actblue.com/donate/levinforcongress
-49287,Ammar Campa-Najjar,CA,50,https://secure.actblue.com/donate/ammar-campanajjar-for-congress-1
-27264,Juan Vargas,CA,51,https://secure.actblue.com/donate/juan-vargas-4
-32161,Scott Peters,CA,52,https://secure.actblue.com/donate/scott-peters-1
-86941,Georgette Gomez,CA,53,https://secure.actblue.com/donate/georgette-gomez-for-congress-1
-86707,Sara Jacobs,CA,53,https://secure.actblue.com/donate/sara-jacobs-1
-12698,Diana DeGette,CO,01,https://secure.actblue.com/donate/diana-degette-2
-51509,Joe Neguse,CO,02,https://secure.actblue.com/donate/neguse-for-congress-1
-82591,Diane Mitsch Bush,CO,03,https://secure.actblue.com/donate/diane-mitsch-bush-2
-79825,Isaac McCorkle,CO,04,https://secure.actblue.com/donate/mccorkleforcolorado
-80999,Jillian Freeland,CO,05,https://secure.actblue.com/donate/freelandforcongress
-49588,Jason Crow,CO,06,https://secure.actblue.com/donate/jason-crow-for-congress-1
-12701,Ed Perlmutter,CO,07,https://secure.actblue.com/donate/ed-perlmutter-2
-12702,John Larson,CT,01,https://secure.actblue.com/donate/john-larson-3
-12703,Joe Courtney,CT,02,https://secure.actblue.com/donate/joe-courtney-2
-12704,Rosa DeLauro,CT,03,https://secure.actblue.com/donate/rosa-delauro-3
-17972,Jim Himes,CT,04,https://secure.actblue.com/donate/jim-himes
-63158,Jahana Hayes,CT,05,https://secure.actblue.com/donate/friends-of-jahana-hayes-1
-26131,Eleanor Holmes Norton,DC,AL,https://secure.actblue.com/donate/eleanor-holmes-norton-1
-41453,Lisa Blunt Rochester,DE,AL,https://secure.actblue.com/donate/lisa-blunt-rochester-for-congress-1
-80296,Phil Ehr,FL,01,https://secure.actblue.com/donate/ehr-for-congress-1
-98811,Kristy Thripp,FL,02,https://secure.actblue.com/donate/kristy-thripp
-91654,Adam Christensen,FL,03,https://secure.actblue.com/donate/adam-christensen-1
-88714,Donna Deegan,FL,04,https://secure.actblue.com/donate/donna-deegan-for-congress-1
-42659,Al Lawson,FL,05,https://secure.actblue.com/donate/al-lawson-for-congress-1
-83758,Clint Curtis,FL,06,https://secure.actblue.com/donate/clint-curtis-for-congress-1
-45157,Stephanie Murphy,FL,07,https://secure.actblue.com/donate/stephanie-murphy-1
-82897,Jim Kennedy,FL,08,https://secure.actblue.com/donate/jim-kennedy-for-congress-1
-40342,Darren Soto,FL,09,https://secure.actblue.com/donate/darrensoto-default
-40755,Val Demings,FL,10,https://secure.actblue.com/donate/val-demings-2
-62289,Dana Cottrell,FL,11,https://secure.actblue.com/donate/dana-cottrell-campaign-account-1
-41575,Kimberly Walker,FL,12,https://secure.actblue.com/donate/kimberly-walker-for-congress-1
-41366,Charlie Crist,FL,13,https://secure.actblue.com/donate/charlie-crist-1
-12708,Kathy Castor,FL,14,https://secure.actblue.com/donate/kathy-castor-2
-86618,Alan Cohn,FL,15,https://secure.actblue.com/donate/alan-cohn-2
-84744,Margaret Good,FL,16,https://secure.actblue.com/donate/margaret-good-for-congress-1
-39502,Allen Ellison,FL,17,https://secure.actblue.com/donate/allen-ellison-1
-96236,Pam Keith,FL,18,https://secure.actblue.com/donate/pamkeith_default
-86997,Cindy Banyai,FL,19,https://secure.actblue.com/donate/cindy-banyai-for-congress-1
-12714,Alcee Hastings,FL,20,https://secure.actblue.com/donate/alcee-hastings-2
-27113,Lois Frankel,FL,21,https://secure.actblue.com/donate/lois-frankel-1
-25934,Ted Deutch,FL,22,https://secure.actblue.com/donate/teddeutch
-12712,Debbie Wasserman Schultz,FL,23,https://secure.actblue.com/donate/debbie-wasserman-schultz-3
-23324,Frederica Wilson,FL,24,https://secure.actblue.com/donate/frederica-wilson-2
-52717,Debbie Mucarsel-Powell,FL,26,https://secure.actblue.com/donate/debbie-for-congress-1
-59709,Donna Shalala,FL,27,https://secure.actblue.com/donate/donna-shalala-for-congress-1
-95467,Joyce Griggs,GA,01,https://secure.actblue.com/donate/task-force-griggs-for-congress-1
-12715,Sanford Bishop,GA,02,https://secure.actblue.com/donate/sanford-bishop
-95830,Valbrun Almonord,GA,03,https://secure.actblue.com/donate/val-almonord-1
-12716,Hank Johnson,GA,04,https://secure.actblue.com/donate/hank-johnson-3
-92983,Barrington Martin,GA,05,https://secure.actblue.com/donate/barrington-ii-for-congress-2
-104295,Kwanza Hall,GA,05,https://secure.actblue.com/donate/kwanza-hall-for-congress-1
-103320,Nikema Williams,GA,05,https://secure.actblue.com/donate/nikema-for-congress-1
-104337,Robert Franklin,GA,05,https://secure.actblue.com/donate/franklin-for-congress--inc--1
-60214,Lucy McBath,GA,06,https://secure.actblue.com/donate/friends-of-lucy-mcbath-1
-51961,Carolyn Bourdeaux,GA,07,https://secure.actblue.com/donate/carolyn4congress
-101033,Lindsay Holliday,GA,08,https://secure.actblue.com/donate/lindsay-holliday-1
-90643,Devin Pandy,GA,09,https://secure.actblue.com/donate/devin-pandy-for-congress-1
-90886,Tabitha Johnson-Green,GA,10,https://secure.actblue.com/donate/tabitha-johnson-green-2
-87606,Dana Barrett,GA,11,https://secure.actblue.com/donate/dana-barrett-for-congress-1
-88077,Liz Johnson,GA,12,https://secure.actblue.com/donate/liz-johnson-for-congress-site
-12720,David Scott,GA,13,https://secure.actblue.com/donate/david-scott-2
-91703,Kevin Van Ausdal,GA,14,https://secure.actblue.com/donate/kevinforcongress2020
-85701,Michael San Nicolas,GU,AL,https://secure.actblue.com/donate/responsibleguam
-102913,Robert A. Underwood,GU,AL,https://secure.actblue.com/donate/committee-to-elect-robert-a--underwood-1
-64199,Ed Case,HI,01,https://secure.actblue.com/donate/case-for-congress-1
-76092,Kai Kahele,HI,02,https://secure.actblue.com/donate/kahele-for-congress-1
-49484,Abby Finkenauer,IA,01,https://secure.actblue.com/donate/finkenauer-for-congress-1
-82015,Rita Hart,IA,02,https://secure.actblue.com/donate/rita-hart-for-iowa-1
-51154,Cindy Axne,IA,03,https://secure.actblue.com/donate/cindy-axne-for-congress-1
-85472,J.D. Scholten,IA,04,https://secure.actblue.com/donate/scholten4iowa-campaign-committee-1
-89314,Rudy Soto,ID,01,https://secure.actblue.com/donate/rudy-for-congress-1
-63695,Aaron Swisher,ID,02,https://secure.actblue.com/donate/aaron-swisher-1
-12726,Bobby Rush,IL,01,https://secure.actblue.com/donate/bobby-rush-2
-33266,Robin Kelly,IL,02,https://secure.actblue.com/donate/robin-kelly-4
-49461,Marie Newman,IL,03,https://secure.actblue.com/donate/marie-newman-for-congress-1
-56120,Chuy Garcia,IL,04,https://secure.actblue.com/donate/chuy-garcia-1
-21495,Mike Quigley,IL,05,https://secure.actblue.com/donate/mike-quigley-1
-52051,Sean Casten,IL,06,https://secure.actblue.com/donate/casten-for-congress-1
-12731,Danny Davis,IL,07,https://secure.actblue.com/donate/danny-davis-2
-39535,Raja Krishnamoorthi,IL,08,https://secure.actblue.com/donate/raja-krishnamoorthi-2
-12733,Jan Schakowsky,IL,09,https://secure.actblue.com/donate/janice-schakowsky-2
-39499,Brad Schneider,IL,10,https://secure.actblue.com/donate/brad-schneider-1
-18068,Bill Foster,IL,11,https://secure.actblue.com/donate/bill-foster-1
-91133,Raymond Lenzi,IL,12,https://secure.actblue.com/donate/raymond-lenzi-1
-52125,Betsy Dirksen Londrigan,IL,13,https://secure.actblue.com/donate/betsy-dirksen-londrigan-for-congress-1
-52875,Lauren Underwood,IL,14,https://secure.actblue.com/donate/lauren-underwood-for-congress-1
-90638,Erika Weaver,IL,15,https://secure.actblue.com/donate/weaver-for-illinois-2
-86769,Dani Brzozowski,IL,16,https://secure.actblue.com/donate/dani-for-illinois-1
-27440,Cheri Bustos,IL,17,https://secure.actblue.com/donate/cheri-bustos-1
-89571,Frank Mrvan,IN,01,https://secure.actblue.com/donate/mrvanforcongress
-55229,Pat Hackett,IN,02,https://secure.actblue.com/donate/pat-hackett-for-congress-1
-89265,Chip Coldiron,IN,03,https://secure.actblue.com/donate/chip-coldiron-us-congressional-race-candidate-1
-52711,Joseph Mackey,IN,04,https://secure.actblue.com/donate/joe4hoosiers-1
-84027,Christina Hale,IN,05,https://secure.actblue.com/donate/hoosiers-for-hale-1
-63467,Jeannine Lake,IN,06,https://secure.actblue.com/donate/jeannine-lake-1
-18745,Andre Carson,IN,07,https://secure.actblue.com/donate/andre-carson-1
-88469,Thomasina Marsili,IN,08,https://secure.actblue.com/donate/hope-in-8-1
-92559,Andy Ruff,IN,09,https://secure.actblue.com/donate/friends-of-any-ruff-1
-85131,Kali Barnett,KS,01,https://secure.actblue.com/donate/kali-for-kansas-1
-91565,Michelle De La Isla,KS,02,https://secure.actblue.com/donate/michelle-for-kansas-1
-59308,Sharice Davids,KS,03,https://secure.actblue.com/donate/sharice-for-congress-1
-47628,Laura Lombard,KS,04,https://secure.actblue.com/donate/laura-lombard-1
-92779,James Rhodes,KY,01,https://secure.actblue.com/donate/rhodesforcongress-1
-59422,Hank Linderman,KY,02,https://secure.actblue.com/donate/hank4ky-1
-12743,John Yarmuth,KY,03,https://secure.actblue.com/donate/john-yarmuth-2
-81651,Alexandra Owensby,KY,04,https://secure.actblue.com/donate/alexandra-owensby-for-the-people-1
-94592,Matthew Best,KY,05,https://secure.actblue.com/donate/best-for-kentucky-1
-84935,Josh Hicks,KY,06,https://secure.actblue.com/donate/josh-hicks-for-congress-1
-23171,Cedric Richmond,LA,02,https://secure.actblue.com/donate/cedric-richmond-2
-65936,Rob Anderson,LA,03,https://secure.actblue.com/donate/anderson2020
-101902,Kenny Houston,LA,04,https://secure.actblue.com/donate/kenny-houston-for-congress
-101591,Ryan Trundle,LA,04,https://secure.actblue.com/donate/ryan-trundle-1
-87358,Brody Pierrottie,LA,05,https://secure.actblue.com/donate/brody-pierrottie-for-congress-1
-79230,Candy Christophe,LA,05,https://secure.actblue.com/donate/candy-christophe-for-congress-1
-102025,Martin Lemelle,LA,05,https://secure.actblue.com/donate/martin-lemelle-for-congress-1
-104933,Phillip Snowden,LA,05,https://secure.actblue.com/donate/phillip-snowden-campaign-1
-84383,Alex Morse,MA,01,https://secure.actblue.com/donate/committee-to-elect-alex-morse-2
-12748,Richard Neal,MA,01,https://secure.actblue.com/donate/richard-neal-2
-12749,James McGovern,MA,02,https://secure.actblue.com/donate/james-mcgovern-2
-54315,Lori Trahan,MA,03,https://secure.actblue.com/donate/lori-trahan-1
-87370,Alan Khazei,MA,04,https://secure.actblue.com/donate/khazei-for-congress-1
-87399,Becky Grossman,MA,04,https://secure.actblue.com/donate/becky-grossman-1
-92223,Ben Sigel,MA,04,https://secure.actblue.com/donate/bensigelforcongress
-96596,Christopher Zannetos,MA,04,https://secure.actblue.com/donate/zannetos-for-congress-committee-1
-88002,Dave Cavell,MA,04,https://secure.actblue.com/donate/cavell-for-congress-1
-92652,Herb Robinson,MA,04,https://secure.actblue.com/donate/herb-robinson-for-congress-1
-82398,Ihssane Leckey,MA,04,https://secure.actblue.com/donate/ihssane-leckey-1
-87776,Jake Auchincloss (MA 04),MA,04,https://secure.actblue.com/donate/jake-auchincloss-for-congress
-86461,Jesse Mermell,MA,04,https://secure.actblue.com/donate/the-committee-to-elect-jesse-mermell-1
-99364,Natalia Linos,MA,04,https://secure.actblue.com/donate/natalia-for-congress-1
-95847,Nick Matthew,MA,04,https://secure.actblue.com/donate/nickmatthew
-94616,Tom Shack III,MA,04,https://secure.actblue.com/donate/shackforcongress
-33552,Katherine Clark,MA,05,https://secure.actblue.com/donate/katherine-clark-3
-88380,Angus McQuilken,MA,06,https://secure.actblue.com/donate/angusforcongress
-81256,Jamie Zahlaway Belsito,MA,06,https://secure.actblue.com/donate/belsito-for-congress-1
-34714,Seth Moulton,MA,06,https://secure.actblue.com/donate/seth-moulton-3
-58361,Ayanna Pressley,MA,07,https://secure.actblue.com/donate/the-committee-to-elect-ayanna-pressley-1
-89223,Robbie Goldstein,MA,08,https://secure.actblue.com/donate/robbieforchange
-12755,Stephen Lynch,MA,08,https://secure.actblue.com/donate/stephen-lynch-2
-24487,Bill Keating,MA,09,https://secure.actblue.com/donate/bill-keating-1
-86022,Mia Mason,MD,01,https://secure.actblue.com/donate/friends-of-mia-mason-1
-12757,C.A. Dutch Ruppersberger,MD,02,https://secure.actblue.com/donate/c-a--dutch-ruppersberger-2
-12758,John Sarbanes,MD,03,https://secure.actblue.com/donate/john-sarbanes-2
-39407,Anthony Brown,MD,04,https://secure.actblue.com/donate/anthony-brown-5
-12760,Steny Hoyer,MD,05,https://secure.actblue.com/donate/steny-hoyer-2
-53925,David Trone,MD,06,https://secure.actblue.com/donate/david_trone
-94011,Kweisi Mfume,MD,07,https://secure.actblue.com/donate/mfumeforcongress
-39609,Jamie Raskin,MD,08,https://secure.actblue.com/donate/jamie-raskin-3
-17915,Chellie Pingree,ME,01,https://secure.actblue.com/donate/chellie-pingree-1
-53391,Jared Golden,ME,02,https://secure.actblue.com/donate/jared-golden-for-congress-1
-83708,Dana Ferguson,MI,01,https://secure.actblue.com/donate/friends-of-dana-ferguson-1
-84911,Bryan Berghoef,MI,02,https://secure.actblue.com/donate/bryan-berghoef-for-congress-1
-83805,Hillary Scholten,MI,03,https://secure.actblue.com/donate/scholten-for-congress-1
-58508,Jerry Hilliard,MI,04,https://secure.actblue.com/donate/friends-of-jerry-hilliard-1
-27733,Dan Kildee,MI,05,https://secure.actblue.com/donate/dan-kildee-1
-81052,Jon Hoadley,MI,06,https://secure.actblue.com/donate/jon-hoadley-for-congress
-90082,Gretchen Driskell,MI,07,https://secure.actblue.com/donate/gretchen-driskell-for-congress-2
-52171,Elissa Slotkin,MI,08,https://secure.actblue.com/donate/slotkin-for-congress-1
-56301,Andy Levin,MI,09,https://secure.actblue.com/donate/andy-levin-for-congress-1
-57752,Kimberly Bizon,MI,10,https://secure.actblue.com/donate/committee-to-elect-kimberly-bizon-1
-50031,Haley Stevens,MI,11,https://secure.actblue.com/donate/paid-for-by-haley-stevens-for-congress-1
-36436,Debbie Dingell,MI,12,https://secure.actblue.com/donate/debbie-dingell-1
-58823,Rashida Tlaib,MI,13,https://secure.actblue.com/donate/rashidaforcongress
-35635,Brenda Lawrence,MI,14,https://secure.actblue.com/donate/brenda-lawrence-2
-51997,Dan Feehan,MN,01,https://secure.actblue.com/donate/friends-of-dan-feehan-1
-52509,Angie Craig,MN,02,https://secure.actblue.com/donate/angie-craig-2
-50592,Dean Phillips,MN,03,https://secure.actblue.com/donate/dean-phillips-for-congress-1
-12772,Betty McCollum,MN,04,https://secure.actblue.com/donate/betty-mccollum-2
-64293,Ilhan Omar,MN,05,https://secure.actblue.com/donate/ilhan-for-congress-1
-87613,Tawnja Zahradka,MN,06,https://secure.actblue.com/donate/tawnja-for-congress
-12774,Collin Peterson,MN,07,https://secure.actblue.com/donate/collin-peterson-2
-87564,Quinn Nystrom,MN,08,https://secure.actblue.com/donate/quinn-nystrom-1
-49905,Cori Bush,MO,01,https://secure.actblue.com/donate/coribush18
-89785,Jill Schupp,MO,02,https://secure.actblue.com/donate/jill-schupp-for-congress-1
-87498,Lindsey Simmons,MO,04,https://secure.actblue.com/donate/simmons-for-missouri-1
-12779,Emanuel Cleaver,MO,05,https://secure.actblue.com/donate/emanuel-cleaver-3
-93369,Gena Ross for Congress,MO,06,https://secure.actblue.com/donate/gena-ross-1
-96902,Teresa Montseny,MO,07,https://secure.actblue.com/donate/montseny-for-congress-1
-82163,Kathy Ellis,MO,08,https://secure.actblue.com/donate/ellisforcongress
-24375,Kilili Sablan,MP,AL,https://secure.actblue.com/donate/kilili-sablan-1
-89464,Antonia Eliason,MS,01,https://secure.actblue.com/donate/antonia4ms1
-12780,Bennie Thompson,MS,02,https://secure.actblue.com/donate/bennie-thompson-3
-96458,Dorothy Benford,MS,03,https://secure.actblue.com/donate/dorothy-benford-1
-80906,Kathleen Williams,MT,AL,https://secure.actblue.com/donate/williams-for-montana-1
-12782,G.K. Butterfield,NC,01,https://secure.actblue.com/donate/g-k--butterfield-2
-89860,Deborah Ross,NC,02,https://secure.actblue.com/donate/deborah-ross-5
-96082,Daryl Farrow,NC,03,https://secure.actblue.com/donate/daryl-farrow-1
-12784,David Price,NC,04,https://secure.actblue.com/donate/david-price-2
-51862,David Wilson Brown,NC,05,https://secure.actblue.com/donate/dwb4congress
-55995,Kathy Manning,NC,06,https://secure.actblue.com/donate/kathy-manning-for-congress-1
-95695,Chris Ward,NC,07,https://secure.actblue.com/donate/chriswardforcongress2020
-91726,Patricia Timmons-Goodson,NC,08,https://secure.actblue.com/donate/patricia-timmons-goodson-for-congress-1
-41315,Christian Cano,NC,09,https://secure.actblue.com/donate/cano-for-congress-1
-90954,Cynthia Wallace,NC,09,https://secure.actblue.com/donate/cynthia-wallace-for-congress-1
-92786,David Parker,NC,10,https://secure.actblue.com/donate/vote-parker-1
-89427,"Morris ""Moe"" Davis",NC,11,https://secure.actblue.com/donate/morris--moe--davis-for-wnc-1
-34528,Alma Adams,NC,12,https://secure.actblue.com/donate/alma-adams-4
-79275,Scott Huffman,NC,13,https://secure.actblue.com/donate/huffmanfornc
-93274,Zach Raknerud,ND,AL,https://secure.actblue.com/donate/zach-for-north-dakota-1
-87200,Kate Bolz,NE,01,https://secure.actblue.com/donate/kate-bolz-for-congress-1
-51116,Kara Eastman,NE,02,https://secure.actblue.com/donate/kara-eastman-1
-96619,Mark Elworth,NE,03,https://secure.actblue.com/donate/mark-elworth-jr-for-us-representatives-1
-55526,Chris Pappas,NH,01,https://secure.actblue.com/donate/chris-pappas-for-congress-1
-22508,Annie Kuster,NH,02,https://secure.actblue.com/donate/ann-mclane-kuster-1
-36984,Donald Norcross,NJ,01,https://secure.actblue.com/donate/donald-norcross-1
-91742,Amy Kennedy,NJ,02,https://secure.actblue.com/donate/amy-kennedy-exploratory-committee-inc--1
-51703,Andy Kim,NJ,03,https://secure.actblue.com/donate/andy-kim-for-congress-1
-86140,Stephanie Schmid,NJ,04,https://secure.actblue.com/donate/stephanie-for-new-jersey-1
-39227,Josh Gottheimer,NJ,05,https://secure.actblue.com/donate/josh-gottheimer-1
-12793,"Frank Pallone, Jr",NJ,06,https://secure.actblue.com/donate/frank-pallone--jr-2
-54274,Tom Malinowski,NJ,07,https://secure.actblue.com/donate/tom-malinowski-1
-12798,Albio Sires,NJ,08,https://secure.actblue.com/donate/albio-sires-3
-12794,Bill Pascrell,NJ,09,https://secure.actblue.com/donate/bill-pascrell--jr-2
-29840,Donald Payne Jr,NJ,10,https://secure.actblue.com/donate/donald-payne-jr-1
-50715,Mikie Sherrill,NJ,11,https://secure.actblue.com/donate/mikie-sherrill-1
-36481,Bonnie Watson Coleman,NJ,12,https://secure.actblue.com/donate/bonnie-watson-coleman-2
-50216,Deb Haaland,NM,01,https://secure.actblue.com/donate/deb-haaland-for-congress-1
-57253,Xochitl Torres Small,NM,02,https://secure.actblue.com/donate/xochitl-torres-small
-81890,Teresa Leger Fernandez,NM,03,https://secure.actblue.com/donate/teresa-for-all-1
-27569,Dina Titus,NV,01,https://secure.actblue.com/donate/dina-titus-5
-88468,Patricia Ackerman,NV,02,https://secure.actblue.com/donate/ackerman4congress
-53666,Susie Lee,NV,03,https://secure.actblue.com/donate/susie-lee-for-nevada-1
-58027,Steven Horsford,NV,04,https://secure.actblue.com/donate/horsford-congressional-exploratory-committee-1
-84181,Nancy Goroff,NY,01,https://secure.actblue.com/donate/nancy-goroff-for-congress-1
-82326,Jackie Gordon,NY,02,https://secure.actblue.com/donate/jackie-gordon-1
-44566,Tom Suozzi,NY,03,https://secure.actblue.com/donate/suozzi-2016-1
-36101,Kathleen Rice,NY,04,https://secure.actblue.com/donate/kathleenrice-default
-12805,Gregory Meeks,NY,05,https://secure.actblue.com/donate/gregorymeeks
-29440,Grace Meng,NY,06,https://secure.actblue.com/donate/grace-meng-2
-12811,Nydia Velazquez,NY,07,https://secure.actblue.com/donate/nydia-velazquez-2
-28064,Hakeem Jeffries,NY,08,https://secure.actblue.com/donate/hakeem-jeffries-2
-12810,Yvette Clarke,NY,09,https://secure.actblue.com/donate/yvette-clarke-2
-12807,Jerry Nadler,NY,10,https://secure.actblue.com/donate/jerrold-nadler-donate
-52817,Max Rose,NY,11,https://secure.actblue.com/donate/max-rose-for-congress
-12812,Carolyn Maloney,NY,12,https://secure.actblue.com/donate/carolyn-maloney-2
-81403,Adriano Espaillat,NY,13,https://secure.actblue.com/donate/adriano-espaillat-7
-50295,Alexandria Ocasio-Cortez,NY,14,https://secure.actblue.com/donate/alexandria-ocasio-cortez-1
-81994,Chivona Renee Newsome,NY,15,https://secure.actblue.com/donate/chivona-renee-newsome-for-congress-1
-82793,Frangell Basora,NY,15,https://secure.actblue.com/donate/frangell-basora-for-new-york---15-1
-91425,Julio Pabón,NY,15,https://secure.actblue.com/donate/friends-of-julio-pab-n-1
-96289,Marlene Tapper,NY,15,https://secure.actblue.com/donate/marlene-j--tapper-for-congress-1
-85475,Melissa Mark-Viverito,NY,15,https://secure.actblue.com/donate/melissa-mark-viverito-for-the-bronx-1
-81508,Michael Blake,NY,15,https://secure.actblue.com/donate/michael-blake-for-congress-1
-80404,Ritchie Torres,NY,15,https://secure.actblue.com/donate/torres-for-congress-1
-81355,"Ruben Diaz, Sr.",NY,15,https://secure.actblue.com/donate/ruben-diaz-5
-87322,Ydanis Rodriguez,NY,15,https://secure.actblue.com/donate/ydanis-for-congress-1
-82251,Jamaal Bowman,NY,16,https://secure.actblue.com/donate/bowman-for-congress-1
-84300,Mondaire Jones,NY,17,https://secure.actblue.com/donate/mondaire-jones-1
-28903,Sean Patrick Maloney,NY,18,https://secure.actblue.com/donate/sean-patrick-maloney-2
-48297,Antonio Delgado,NY,19,https://secure.actblue.com/donate/delgado-for-congress-1
-20504,Paul Tonko,NY,20,https://secure.actblue.com/donate/paul-tonko-3
-51890,Tedra Cobb,NY,21,https://secure.actblue.com/donate/tedra-cobb-for-congress-1
-51809,Anthony Brindisi,NY,22,https://secure.actblue.com/donate/brindisi-for-congress-1
-53352,Tracy Mitrano,NY,23,https://secure.actblue.com/donate/tracy-mitrano-for-congress-1
-81291,Dana Balter,NY,24,https://secure.actblue.com/donate/dana-balter
-61253,Joe Morelle,NY,25,https://secure.actblue.com/donate/joe-morelle-for-congress-1
-12822,Brian Higgins,NY,26,https://secure.actblue.com/donate/brianhiggins
-57938,Nate McMurray,NY,27,https://secure.actblue.com/donate/nate-mcmurray-1
-83913,Kate Schroder,OH,01,https://secure.actblue.com/donate/kate-for-congress-1
-89864,Jaime Castle,OH,02,https://secure.actblue.com/donate/friends-of-jaime-castle-1
-28367,Joyce Beatty,OH,03,https://secure.actblue.com/donate/joyce-beatty-3
-84452,Shannon Freshour,OH,04,https://secure.actblue.com/donate/shannon-4-ohio-committee-1
-82113,Nick Rubando,OH,05,https://secure.actblue.com/donate/rubando-for-congress-1
-59429,Shawna Roberts,OH,06,https://secure.actblue.com/donate/shawna-roberts-1
-93795,Quentin Potter,OH,07,https://secure.actblue.com/donate/potter-for-oh-7th-1
-58427,Vanessa Enoch,OH,08,https://secure.actblue.com/donate/enoch-t-shirt
-12825,Marcy Kaptur,OH,09,https://secure.actblue.com/donate/marcy-kaptur-december
-85375,Desiree Tims,OH,10,https://secure.actblue.com/donate/friends-of-desiree-tims
-21225,Marcia Fudge,OH,11,https://secure.actblue.com/donate/marcia-fudge-1
-87751,Alaina Shearer,OH,12,https://secure.actblue.com/donate/alaina-shearer-for-congress
-12829,Tim Ryan,OH,13,https://secure.actblue.com/donate/tim-ryan-2
-87706,Hillary O'Connor Mueri,OH,14,https://secure.actblue.com/donate/hillary-o-connor-mueri-1
-89024,Joel Newby,OH,15,https://secure.actblue.com/donate/newby-for-congress-1
-86090,Aaron Godfrey,OH,16,https://secure.actblue.com/donate/godfrey2020
-88461,Kojo Asamoa-Caesar,OK,01,https://secure.actblue.com/donate/friends-of-kojo-asamoa-caesar-1
-87148,Danyell Lanier,OK,02,https://secure.actblue.com/donate/danyell-lanier-for-congress
-100089,Zoe Midyett,OK,03,https://secure.actblue.com/donate/midyett-2020-1
-62634,Mary M Brannon,OK,04,https://secure.actblue.com/donate/brannon4congress-1
-51908,Kendra Horn,OK,05,https://secure.actblue.com/donate/kendra-horn-for-congress-1
-27572,Suzanne Bonamici,OR,01,https://secure.actblue.com/donate/suzannebonamici-default
-96199,Alex Spenser,OR,02,https://secure.actblue.com/donate/alex-spenser-1
-12833,Earl Blumenauer,OR,03,https://secure.actblue.com/donate/earl-blumenauer-2
-12834,Peter DeFazio,OR,04,https://secure.actblue.com/donate/peterdefazio-default
-19012,Kurt Schrader,OR,05,https://secure.actblue.com/donate/kurt-schrader-3
-84910,Christina Finello,PA,01,https://secure.actblue.com/donate/christina-finello
-34024,Brendan Boyle,PA,02,https://secure.actblue.com/donate/brendan-boyle-4
-41543,Dwight Evans,PA,03,https://secure.actblue.com/donate/dwight-evans-for-congress-1
-59739,Madeleine Dean,PA,04,https://secure.actblue.com/donate/mad-4-pa-pac-1
-59086,Mary Gay Scanlon,PA,05,https://secure.actblue.com/donate/scanlon-for-congress-1
-49672,Chrissy Houlahan,PA,06,https://secure.actblue.com/donate/chrissy-houlahan-for-congress-1
-54683,Susan Wild,PA,07,https://secure.actblue.com/donate/susan-wild-for-congress-1
-28757,Matt Cartwright,PA,08,https://secure.actblue.com/donate/matt-cartwright-1
-53974,Gary Wegman,PA,09,https://secure.actblue.com/donate/gary-wegman-for-congress-1
-83043,Eugene DePasquale,PA,10,https://secure.actblue.com/donate/depasquale-for-pa-1
-88286,Sarah Hammond,PA,11,https://secure.actblue.com/donate/sarahforagnd
-98473,Lee Griffin,PA,12,https://secure.actblue.com/donate/lee-griffin-for-congress-1
-88146,Todd Rowley,PA,13,https://secure.actblue.com/donate/todd-rowley-for-congress
-93168,Bill Marx,PA,14,https://secure.actblue.com/donate/friends-to-elect-bill-marx-1
-101342,Robert Williams,PA,15,
-87847,Kristy Gnibus,PA,16,https://secure.actblue.com/donate/kristy-for-congress-1
-54851,Conor Lamb,PA,17,https://secure.actblue.com/donate/lamb-for-congress-1
-12845,Mike Doyle,PA,18,https://secure.actblue.com/donate/mike-doyle-2
-99391,Anibal Acevedo-Vila,PR,AL,https://secure.actblue.com/donate/anibal-comisionado-2020-1
-29930,David Cicilline,RI,01,https://secure.actblue.com/donate/david-cicilline-2
-101109,Dylan Conley,RI,02,https://secure.actblue.com/donate/dylan-conley-for-congress-1
-12848,Jim Langevin,RI,02,https://secure.actblue.com/donate/james-langevin-2
-52181,Joe Cunningham,SC,01,https://secure.actblue.com/donate/joe-cunningham-for-congress-2
-80792,Adair Boroughs,SC,02,https://secure.actblue.com/donate/adair-for-congress-1
-44448,Hosea Cleveland,SC,03,https://secure.actblue.com/donate/hosea-cleveland
-84188,Kim Nelson,SC,04,https://secure.actblue.com/donate/kim-nelson-for-congress-1
-93112,Moe Brown,SC,05,https://secure.actblue.com/donate/moe-brown-for-congress-1
-12850,Jim Clyburn,SC,06,https://secure.actblue.com/donate/jim-clyburn-2
-91408,Melissa Watson,SC,07,https://secure.actblue.com/donate/watson-for-congress-rtw
-95287,Blair Walsingham,TN,01,https://secure.actblue.com/donate/blair-for-tennessee-1
-82712,Renee Hoyos,TN,02,https://secure.actblue.com/donate/hoyos-for-congress
-99866,Meg Gorman,TN,03,https://secure.actblue.com/donate/meg-for-congress-1
-63218,Christopher Hale,TN,04,https://secure.actblue.com/donate/christopherhale
-12853,Jim Cooper,TN,05,https://secure.actblue.com/donate/jim-cooper-2
-104236,Christopher Finley,TN,06,
-104269,Christopher Finley,TN,06,https://secure.actblue.com/donate/finley-for-congress-1
-94629,Kiran Sreepada,TN,07,https://secure.actblue.com/donate/kiran-for-congress-1
-66572,Erika Stotts Pearson,TN,08,https://secure.actblue.com/donate/erika-stotts-pearson
-12856,Steve Cohen,TN,09,https://secure.actblue.com/donate/steve-cohen-2
-86653,Hank Gilbert,TX,01,https://secure.actblue.com/donate/hank-gilbert-for-congress-1
-90481,Sima Ladjevardian,TX,02,https://secure.actblue.com/donate/sima-for-texas-1
-87702,Lulu Seikaly,TX,03,https://secure.actblue.com/donate/lulu-for-texas-1
-88092,Russell Foster,TX,04,https://secure.actblue.com/donate/russellfostertx
-93378,Carolyn Salter,TX,05,https://secure.actblue.com/donate/carolyn-salter-for-congress
-81483,Stephen Daniel,TX,06,https://secure.actblue.com/donate/stephen-daniel-for-congress-1
-50220,Lizzie Fletcher,TX,07,https://secure.actblue.com/donate/elizabeth-pannill-fletcher-for-congress-1
-91154,Elizabeth Hernandez,TX,08,https://secure.actblue.com/donate/elizabeth-hernandez-for-congress-1
-12857,Al Green,TX,09,https://secure.actblue.com/donate/al-green-3
-56019,Mike Siegel,TX,10,https://secure.actblue.com/donate/siegel-for-congress-1
-88193,Jon Mark Hogg,TX,11,https://secure.actblue.com/donate/elect-a-hogg
-86942,Lisa Welch,TX,12,https://secure.actblue.com/donate/lisa-welch-for-office-1
-89531,Gus Trujillo,TX,13,https://secure.actblue.com/donate/gus-for-congress-1
-80616,Adrienne Bell,TX,14,https://secure.actblue.com/donate/bell14
-41816,Vicente Gonzalez,TX,15,https://secure.actblue.com/donate/vicente-gonzalez-for-u-s--congress-1
-53258,Veronica Escobar,TX,16,https://secure.actblue.com/donate/veronica-escobar-for-congress-1
-53840,Rick Kennedy,TX,17,https://secure.actblue.com/donate/richard-kennedy-1
-12861,Sheila Jackson Lee,TX,18,https://secure.actblue.com/donate/sheila-jackson-lee-2
-91573,Tom Watson,TX,19,https://secure.actblue.com/donate/tom-watson-for-congress-1
-27328,Joaquin Castro,TX,20,https://secure.actblue.com/donate/joaquin-castro-3
-84472,Wendy Davis,TX,21,https://secure.actblue.com/donate/wendy-davis-for-congress-1
-56710,Sri Kulkarni,TX,22,https://secure.actblue.com/donate/kulkarni-for-congress-1
-52708,Gina Ortiz Jones,TX,23,https://secure.actblue.com/donate/gina-ortiz-jones-for-congress-1
-80771,Candace Valenzuela,TX,24,https://secure.actblue.com/donate/candace-for-24-1
-80967,Julie Oliver,TX,25,https://secure.actblue.com/donate/julie-oliver-for-congress-1
-78478,Carol H Iannuzzi,TX,26,https://secure.actblue.com/donate/friends-of-carol-h-iannuzzi-1
-95999,Ricardo De La Fuente,TX,27,https://secure.actblue.com/donate/ricardo-de-la-fuente-1
-12867,Henry Cuellar,TX,28,https://secure.actblue.com/donate/henry-cuellar-2
-55747,Sylvia Garcia,TX,29,https://secure.actblue.com/donate/sylvia-garcia-1
-12869,Eddie Bernice Johnson,TX,30,https://secure.actblue.com/donate/eddie-bernice-johnson-2
-83833,Donna Imam,TX,31,https://secure.actblue.com/donate/vote-donna-us-congress-1
-49371,Colin Allred,TX,32,https://secure.actblue.com/donate/colin-allred-for-congress-1
-30124,Marc Veasey,TX,33,https://secure.actblue.com/donate/marc-veasey
-31549,Filemon Vela,TX,34,https://secure.actblue.com/donate/filemon-vela-1
-12865,Lloyd Doggett,TX,35,https://secure.actblue.com/donate/lloyd-doggett-3
-92040,Rashad Lewis,TX,36,https://secure.actblue.com/donate/lewis-for-congress-1
-93982,Darren Parry,UT,01,https://secure.actblue.com/donate/darren-parry-for-congress-1
-94545,Kael Weston,UT,02,https://secure.actblue.com/donate/weston-2020-1
-97703,Devin Thorpe,UT,03,https://secure.actblue.com/donate/friends-of-devin-thorpe-1
-55048,Ben McAdams,UT,04,https://secure.actblue.com/donate/friends-of-ben-mcadams-1
-92558,Qasim Rashid,VA,01,https://secure.actblue.com/donate/rashidforcongress
-56829,Elaine Luria,VA,02,https://secure.actblue.com/donate/elaine-for-congress-1
-12871,Bobby Scott,VA,03,https://secure.actblue.com/donate/bobby-scott-3
-43178,Donald McEachin,VA,04,https://secure.actblue.com/donate/mceachin-for-congress
-85224,Cameron Webb,VA,05,https://secure.actblue.com/donate/dr--cameron-webb-for-congress-1
-96173,Nicholas Betts,VA,06,https://secure.actblue.com/donate/nicholas-betts-for-congress-1
-51991,Abigail Spanberger,VA,07,https://secure.actblue.com/donate/spanberger_website
-36395,Don Beyer,VA,08,https://secure.actblue.com/donate/don-beyer-1
-49784,Jennifer Wexton,VA,10,https://secure.actblue.com/donate/wexton-for-congress-1
-19055,Gerry Connolly,VA,11,https://secure.actblue.com/donate/gerry-connolly-1
-43963,Stacey Plaskett,VI,AL,https://secure.actblue.com/donate/standwithstacey
-12874,Peter Welch,VT,AL,https://secure.actblue.com/donate/peter-welch-2
-28909,Suzan DelBene,WA,01,https://secure.actblue.com/donate/suzan-delbene-2
-84939,Jason Call,WA,02,https://secure.actblue.com/donate/call-for-congress
-12876,Rick Larsen,WA,02,https://secure.actblue.com/donate/ricklarsen-default
-84110,Carolyn Long,WA,03,https://secure.actblue.com/donate/elect-carolyn-long-1
-97961,Douglas McKinley,WA,04,https://secure.actblue.com/donate/douglas-mckinley-for-congress-1
-100800,Dave Wilson,WA,05,https://secure.actblue.com/donate/friends-of-dave-wilson-1
-29211,Derek Kilmer,WA,06,https://secure.actblue.com/donate/derek-kilmer-5
-42255,Pramila Jayapal,WA,07,https://secure.actblue.com/donate/pramila-for-congress-1
-52704,Kim Schrier,WA,08,https://secure.actblue.com/donate/schrier
-12880,Adam Smith,WA,09,https://secure.actblue.com/donate/adam-smith-3
-92840,Beth Doglio,WA,10,https://secure.actblue.com/donate/beth-doglio-for-congress-exploratory-committee-1
-90677,Marilyn Strickland,WA,10,https://secure.actblue.com/donate/strickland-for-washington-1
-92127,Roger Polack,WI,01,https://secure.actblue.com/donate/roger-for-wisconsin-1
-27823,Mark Pocan,WI,02,https://secure.actblue.com/donate/mark-pocan-3
-12882,Ron Kind,WI,03,https://secure.actblue.com/donate/ron-kind-2
-12883,Gwen Moore,WI,04,https://secure.actblue.com/donate/gwen-moore
-53499,Tom Palzewicz,WI,05,https://secure.actblue.com/donate/palzewicz-for-wisconsin-eom2
-87778,Jessica King,WI,06,https://secure.actblue.com/donate/jessica-king-for-wisconsin-1
-101934,Tricia Zunker,WI,07,https://secure.actblue.com/donate/tricia-zunker-1
-83811,Alan Gross,AK,Sen,https://secure.actblue.com/donate/dr--alan-gross-for-u-s--senate-1
-50702,Doug Jones,AL,Sen,https://secure.actblue.com/donate/doug-jones-1
-77516,Mark Kelly,AZ,Sen,https://secure.actblue.com/donate/service_usa1
-85998,John Hickenlooper,CO,Sen,https://secure.actblue.com/donate/john-hickenlooper-3
-23738,Chris Coons,DE,Sen,https://secure.actblue.com/donate/chris-coons-1
-88870,Jess Scarane,DE,Sen,https://secure.actblue.com/donate/jess-scarane-for-delaware
-86354,Jon Ossoff,GA,Sen,https://secure.actblue.com/donate/jon-ossoff-1
-82515,Theresa Greenfield,IA,Sen,https://secure.actblue.com/donate/theresa-greenfield-for-iowa-1
-94104,Paulette Jordan,ID,Sen,https://secure.actblue.com/donate/paulette-for-senate-2020-1
-325,Dick Durbin,IL,Sen,https://secure.actblue.com/donate/dick-durbin-1
-87842,Barbara Bollier,KS,Sen,https://secure.actblue.com/donate/bollier-for-kansas-1
-83930,Amy McGrath,KY,Sen,https://secure.actblue.com/donate/amy-mcgrath-1
-102988,Adrian Perkins,LA,Sen,https://secure.actblue.com/donate/perkins-for-louisiana-1
-83811,Alan Gross,AK,Sen,https://secure.actblue.com/donate/dr--alan-gross-for-u-s--senate-1
-50702,Doug Jones,AL,Sen,https://secure.actblue.com/donate/doug-jones-1
-77516,Mark Kelly,AZ,Sen,https://secure.actblue.com/donate/service_usa1
-85998,John Hickenlooper,CO,Sen,https://secure.actblue.com/donate/john-hickenlooper-3
-23738,Chris Coons,DE,Sen,https://secure.actblue.com/donate/chris-coons-1
-88870,Jess Scarane,DE,Sen,https://secure.actblue.com/donate/jess-scarane-for-delaware
-86354,Jon Ossoff,GA,Sen,https://secure.actblue.com/donate/jon-ossoff-1
-82515,Theresa Greenfield,IA,Sen,https://secure.actblue.com/donate/theresa-greenfield-for-iowa-1
-94104,Paulette Jordan,ID,Sen,https://secure.actblue.com/donate/paulette-for-senate-2020-1
-325,Dick Durbin,IL,Sen,https://secure.actblue.com/donate/dick-durbin-1
-87842,Barbara Bollier,KS,Sen,https://secure.actblue.com/donate/bollier-for-kansas-1
-83930,Amy McGrath,KY,Sen,https://secure.actblue.com/donate/amy-mcgrath-1
-102988,Adrian Perkins,LA,Sen,https://secure.actblue.com/donate/perkins-for-louisiana-1
-80870,Antoine Pierce,LA,Sen,https://secure.actblue.com/donate/antoine-pierce-1
-96572,Dartanyon A. Williams,LA,Sen,https://secure.actblue.com/donate/daw4us-crusade-1
-102826,Derrick Edwards,LA,Sen,https://secure.actblue.com/donate/the-committee-to-elect-attorney-derrick-edwards-1
-92750,Drew Knight,LA,Sen,https://secure.actblue.com/donate/drew-2020-l-l-c-1
-100216,Peter Wenstrup,LA,Sen,https://secure.actblue.com/donate/citizens-for-wenstrup-1
-33342,Ed Markey,MA,Sen,https://secure.actblue.com/donate/ed-markey-1
-86303,Joe Kennedy III,MA,Sen,https://secure.actblue.com/donate/kennedy-for-massachusetts-default
-83632,Sara Gideon,ME,Sen,https://secure.actblue.com/donate/sara-gideon-for-maine-1
-34101,Gary Peters,MI,Sen,https://secure.actblue.com/donate/gary-peters-2
-56662,Tina Smith,MN,Sen,https://secure.actblue.com/donate/tina-smith-1
-61081,Mike Espy,MS,Sen,https://secure.actblue.com/donate/mike-espy-for-senate-1
-95724,Steve Bullock,MT,Sen,https://secure.actblue.com/donate/friends-of-steve-bullock-1
-83460,Cal Cunningham,NC,Sen,https://secure.actblue.com/donate/cal-cunningham-for-us-senate-1
-18422,Jeanne Shaheen,NH,Sen,https://secure.actblue.com/donate/jeanne-shaheen-1
-92548,Cory Booker,NJ,Sen,https://secure.actblue.com/donate/cory-booker-2
-80890,Ben Ray Luján,NM,Sen,https://secure.actblue.com/donate/ben-ray-luj-n-1
-56454,Bethany Hall-Long,DE,Lt Gov,https://secure.actblue.com/donate/committee-to-elect-bethany-hall-long-1
-100155,Linda Lawson,IN,Lt Gov,https://secure.actblue.com/donate/lawson-for-indiana-1
-97265,Alissia Canady,MO,Lt Gov,https://secure.actblue.com/donate/canady
-77033,Yvonne Holley,NC,Lt Gov,https://secure.actblue.com/donate/holley-for-nc-1
-81970,Kathy Hochul,NY,Lt Gov,https://secure.actblue.com/donate/ltgovkathyhochul
-92464,Molly Gray,VT,Lt Gov,https://secure.actblue.com/donate/molly-for-vermont-1
-97187,Marko Liias,WA,Lt Gov,https://secure.actblue.com/donate/marko-for-washington-2
-90325,Jonathan Weinzapfel,IN,Atty Gen,https://secure.actblue.com/donate/weinzapfel-for-indiana-1
-39427,Thomas Quinn,MA,DA,https://secure.actblue.com/donate/thomas-quinn-1
-56454,Bethany Hall-Long,DE,Lt Gov,https://secure.actblue.com/donate/committee-to-elect-bethany-hall-long-1
-100155,Linda Lawson,IN,Lt Gov,https://secure.actblue.com/donate/lawson-for-indiana-1
-97265,Alissia Canady,MO,Lt Gov,https://secure.actblue.com/donate/canady
-77033,Yvonne Holley,NC,Lt Gov,https://secure.actblue.com/donate/holley-for-nc-1
-81970,Kathy Hochul,NY,Lt Gov,https://secure.actblue.com/donate/ltgovkathyhochul
-92464,Molly Gray,VT,Lt Gov,https://secure.actblue.com/donate/molly-for-vermont-1
-97187,Marko Liias,WA,Lt Gov,https://secure.actblue.com/donate/marko-for-washington-2
-90325,Jonathan Weinzapfel,IN,Atty Gen,https://secure.actblue.com/donate/weinzapfel-for-indiana-1
-39427,Thomas Quinn,MA,DA,https://secure.actblue.com/donate/thomas-quinn-1
-88165,Rich Finneran,MO,Atty Gen,https://secure.actblue.com/donate/finneran
-81131,Raph Graybill,MT,Atty Gen,https://secure.actblue.com/donate/raphgraybill
-41050,Josh Stein,NC,Atty Gen,https://secure.actblue.com/donate/josh-stein-2
-28585,Ellen Rosenblum,OR,Atty Gen,https://secure.actblue.com/donate/ellenrosenblum-default
-42107,Josh Shapiro,PA,Atty Gen,https://secure.actblue.com/donate/shapiro-for-pennsylvania-1
-40596,TJ Donovan,VT,Atty Gen,https://secure.actblue.com/donate/tj-donovan-2
-44453,Bob Ferguson,WA,Atty Gen,https://secure.actblue.com/donate/bob-ferguson-default
-84125,Sam Petsonk,WV,Atty Gen,https://secure.actblue.com/donate/petsonk-for-wv-1
-87460,Yinka Faleti,MO,Sec State,https://secure.actblue.com/donate/faletioriginal2
-82727,Bryce Bennett,MT,Sec State,https://secure.actblue.com/donate/bryce-bennett-for-secretary-of-state-1
-47633,Elaine Marshall,NC,Sec State,https://secure.actblue.com/donate/elaine-marshall-1
-85614,Jamie McLeod-Skinner,OR,Sec State,https://secure.actblue.com/donate/jamie-for-oregon-sos
-86239,Mark Hass,OR,Sec State,https://secure.actblue.com/donate/mark-hass
-98472,Shemia Fagan,OR,Sec State,https://secure.actblue.com/donate/committee-to-elect-shemia-fagan-1
-40358,Jim Condos,VT,Sec State,https://secure.actblue.com/donate/jim-condos-2
-90484,Gael Tarleton,WA,Sec State,https://secure.actblue.com/donate/gael
-40982,Natalie Tennant,WV,Sec State,https://secure.actblue.com/donate/natalie-tennant-5
-86974,Vicki Lorenz Englund,MO,Treas,https://secure.actblue.com/donate/citizens-for-vicki-lorenz-englund-1
-81163,Ronnie Chatterji,NC,Treas,https://secure.actblue.com/donate/ronnie-for-nc-1
-40294,Tobias Read,OR,Treas,https://secure.actblue.com/donate/tobias-read
-42434,Joe Torsella,PA,Treas,https://secure.actblue.com/donate/friends-of-joe-torsella-1
-32940,Beth Pearce,VT,Treas,https://secure.actblue.com/donate/beth-pearce-1
-97266,Mike Pellicciotti,WA,Treas,https://secure.actblue.com/donate/people-for-pellicciotti-1
-94141,John Perdue,WV,Treas,https://secure.actblue.com/donate/perdue-2020-1
-83955,Shane Morigeau,MT,Auditor,https://secure.actblue.com/donate/shaneformontana2020
-52570,Beth Wood,NC,Auditor,https://secure.actblue.com/donate/beth-wood-campaign-1
-93897,Patrick Hart,ND,Auditor,https://secure.actblue.com/donate/patrickhartforstateauditor
-103782,Nina Ahmad,PA,Auditor,https://secure.actblue.com/donate/nina-for-pa-2
-31913,Doug Hoffer,VT,Auditor,https://secure.actblue.com/donate/doug-hoffer-1
-44451,Mary Ann Claytor,WV,Auditor,https://secure.actblue.com/donate/the-committee-to-elect-mary-ann-claytor-as-west-virginia-s-1
-80612,Jenna Wadsworth,NC,Ag Comm,https://secure.actblue.com/donate/jenna-wadsworth-committee-1
-82812,Bob Beach,WV,Ag Comm,https://secure.actblue.com/donate/bob-beach-commissioner-of-agriculture-2020-1
-80926,Shea Stanfield,AZ,Corp Comm,https://secure.actblue.com/donate/elect-shea-stanfield-1
-98864,Ricardo Carlos Caballero,NM,01,https://secure.actblue.com/donate/committee-to-re-elect-ricardo-carlos-caballero-1
-82077,Kayode Abegunde,DE,Ins Comm,https://secure.actblue.com/donate/kayode-1
-93560,Trinidad Navarro,DE,Ins Comm,https://secure.actblue.com/donate/navarro-for-insurance-commissioner-1
-41375,Wayne Goodwin,NC,Ins Comm,https://secure.actblue.com/donate/wayne-goodwin-a
-81414,Hilary Franz,WA,Land Comm,https://secure.actblue.com/donate/friends-of-hilary-franz-2
-81756,Cynthia Hall,NM,Reg Comm,https://secure.actblue.com/donate/committee-to-elect-cynthia-hall-1
-102002,Remi Bald Eagle,SD,PUC Comm,https://secure.actblue.com/donate/remi-for-sd-1
-88088,Chrysta Castaneda,TX,RR Comm,https://secure.actblue.com/donate/chrysta-castaneda-1
-39132,Melissa Romano,MT,Super,https://secure.actblue.com/donate/melissa-romano-1
-82109,Chris Reykdal,WA,Super,https://secure.actblue.com/donate/friends-of-chris-reykdal-1
-103577,Tom Holmes,AL,SBE,https://secure.actblue.com/donate/tom-holmes-for-state-school-board-1-inc--1
-86316,Lisa Escárcega,CO,SBE,https://secure.actblue.com/donate/coloradans-for-lisa-esc-rcega-1
-95855,Mayling Simpson,CO,SBE,https://secure.actblue.com/donate/friends-of-mayling-1
-80063,Georgina Cecilia Perez,TX,SBE,https://secure.actblue.com/donate/georgina-c--perez-1
-80019,Michelle Palmer,TX,SBE,https://secure.actblue.com/donate/michelle-palmer-for-texas-ed-1
-95865,Brenda Davis,TX,SBE,https://secure.actblue.com/donate/brenda-davis-campaign-1
-84514,John Carney,DE,Gov,https://secure.actblue.com/donate/friends-for-john-carney-1
-84213,Woody Myers,IN,Gov,https://secure.actblue.com/donate/myers-for-governor-1
-85788,Nicole Galloway,MO,Gov,https://secure.actblue.com/donate/nicole-galloway-2
-83681,Mike Cooney,MT,Gov,https://secure.actblue.com/donate/cooney-for-montana-1
-41279,Roy Cooper,NC,Gov,https://secure.actblue.com/donate/roy-cooper-1
-92849,Shelley Lenz,ND,Gov,https://secure.actblue.com/donate/lenz-for-governor-2020
-88706,Andru Volinsky,NH,Gov,https://secure.actblue.com/donate/andru-volinsky-1
-86564,Dan Feltes,NH,Gov,https://secure.actblue.com/donate/dan-feltes-for-governor-1
-95347,Chris Peterson,UT,Gov,https://secure.actblue.com/donate/peterson-for-utah-1
-92330,David Zuckerman,VT,Gov,https://secure.actblue.com/donate/zuckerman-for-vt-1
-39743,Jay Inslee,WA,Gov,https://secure.actblue.com/donate/jay-inslee-4
-88008,Ben Salango,WV,Gov,https://secure.actblue.com/donate/ben-salango-for-wv-1
+id,name,state,district,website,donation_url,image_url
+57256,Alyse Galvin,AK,AL,http://www.alyse4alaska.com,https://secure.actblue.com/donate/alyse-for-alaska-1,
+88460,James Averhart,AL,01,,https://secure.actblue.com/donate/james-averhart-1,
+89509,Phyllis Harvey-Hall,AL,02,http://www.harveyhall2congress.com,https://secure.actblue.com/donate/campaign-to-elect-phyllis-harvey-hall-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89509.jpg
+89263,Adia Winfrey,AL,03,http://www.winfrey4congress.com,https://secure.actblue.com/donate/committee-to-elect-dr--adia-winfrey-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89263.jpg
+90197,Rick Neighbors,AL,04,http://neighbors4congress.com/,https://secure.actblue.com/donate/neighbors-helping-neighbors-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/90197.png
+21825,Terri Sewell,AL,07,https://sewellforcongress.com/,https://secure.actblue.com/donate/terrisewell,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/21825.jpg
+89290,Joyce Elliott,AR,02,https://www.joyceelliott.com,https://secure.actblue.com/donate/elliott-for-congress-main,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89290.jpeg
+83310,Celeste Williams,AR,03,,https://secure.actblue.com/donate/campaign-to-elect-celeste-williams-1,
+86594,William Hanson,AR,04,http://williamhansonforcongress.com,https://secure.actblue.com/donate/william-hanson-for-congress-1,
+40543,Tom O'Halleran,AZ,01,,https://secure.actblue.com/donate/tom-o-halleran-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40543.png
+52546,Ann Kirkpatrick,AZ,02,https://www.kirkpatrickforcongress.com/,https://secure.actblue.com/donate/kirkpatrick-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52546.jpeg
+12662,Raul Grijalva,AZ,03,http://www.standwithraul.com/,https://secure.actblue.com/donate/raul-grijalva-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12662.jpg
+82182,Delina DiSanto,AZ,04,http://www.delinadisanto.com,https://secure.actblue.com/donate/delina-disanto-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82182.jpg
+52915,Joan Greene,AZ,05,http://joangreeneaz.com/,https://secure.actblue.com/donate/joangreeneforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52915.jpg
+80975,Hiral Tipirneni,AZ,06,http://hiralforcongress.com,https://secure.actblue.com/donate/hiral-tipirneni-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80975.png
+36462,Ruben Gallego,AZ,07,http://www.GallegoForArizona.com,https://secure.actblue.com/donate/ruben-gallego-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36462.JPG
+81534,Michael Muscato,AZ,08,http://www.muscato4congress.com,https://secure.actblue.com/donate/muscato-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81534.jpeg
+53310,Greg Stanton,AZ,09,http://stantonforarizona.com,https://secure.actblue.com/donate/stanton-for-congress-1,
+57197,Audrey Denney,CA,01,http://www.audreyforcongress.com,https://secure.actblue.com/donate/audrey-denney-for-congress-1,
+32678,Jared Huffman,CA,02,http://www.jaredhuffman.com/,https://secure.actblue.com/donate/jared-huffman-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/32678.jpg
+22575,John Garamendi,CA,03,http://www.garamendi.org/,https://secure.actblue.com/donate/john-garamendi-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/22575.jpg
+81472,Brynne Kennedy,CA,04,,https://secure.actblue.com/donate/brynne-kennedy-for-congress-1,
+12664,Mike Thompson,CA,05,http://www.mikethompsonforcongress.com/,https://secure.actblue.com/donate/mike-thompson-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12664.gif
+12665,Doris Matsui,CA,06,http://www.matsuiforcongress.com/,https://secure.actblue.com/donate/doris-matsui-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12665.jpg
+22341,Ami Bera,CA,07,http://www.beraforcongress.com,https://secure.actblue.com/donate/ami-bera-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/22341.jpg
+81105,Chris Bubser,CA,08,http://www.chrisbubser.com,https://secure.actblue.com/donate/chris-bubser-for-congress-1,
+26585,Jerry McNerney,CA,09,http://www.jerrymcnerney.org/,https://secure.actblue.com/donate/jerry-mcnerney-4,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/26585.jpg
+49974,Josh Harder,CA,10,http://www.harderforcongress.com,https://secure.actblue.com/donate/harder-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49974.jpg
+57256,Alyse Galvin,AK,AL,http://www.alyse4alaska.com,https://secure.actblue.com/donate/alyse-for-alaska-1,
+88460,James Averhart,AL,01,,https://secure.actblue.com/donate/james-averhart-1,
+89509,Phyllis Harvey-Hall,AL,02,http://www.harveyhall2congress.com,https://secure.actblue.com/donate/campaign-to-elect-phyllis-harvey-hall-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89509.jpg
+89263,Adia Winfrey,AL,03,http://www.winfrey4congress.com,https://secure.actblue.com/donate/committee-to-elect-dr--adia-winfrey-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89263.jpg
+90197,Rick Neighbors,AL,04,http://neighbors4congress.com/,https://secure.actblue.com/donate/neighbors-helping-neighbors-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/90197.png
+21825,Terri Sewell,AL,07,https://sewellforcongress.com/,https://secure.actblue.com/donate/terrisewell,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/21825.jpg
+89290,Joyce Elliott,AR,02,https://www.joyceelliott.com,https://secure.actblue.com/donate/elliott-for-congress-main,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89290.jpeg
+83310,Celeste Williams,AR,03,,https://secure.actblue.com/donate/campaign-to-elect-celeste-williams-1,
+86594,William Hanson,AR,04,http://williamhansonforcongress.com,https://secure.actblue.com/donate/william-hanson-for-congress-1,
+40543,Tom O'Halleran,AZ,01,,https://secure.actblue.com/donate/tom-o-halleran-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40543.png
+52546,Ann Kirkpatrick,AZ,02,https://www.kirkpatrickforcongress.com/,https://secure.actblue.com/donate/kirkpatrick-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52546.jpeg
+12662,Raul Grijalva,AZ,03,http://www.standwithraul.com/,https://secure.actblue.com/donate/raul-grijalva-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12662.jpg
+82182,Delina DiSanto,AZ,04,http://www.delinadisanto.com,https://secure.actblue.com/donate/delina-disanto-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82182.jpg
+52915,Joan Greene,AZ,05,http://joangreeneaz.com/,https://secure.actblue.com/donate/joangreeneforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52915.jpg
+80975,Hiral Tipirneni,AZ,06,http://hiralforcongress.com,https://secure.actblue.com/donate/hiral-tipirneni-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80975.png
+36462,Ruben Gallego,AZ,07,http://www.GallegoForArizona.com,https://secure.actblue.com/donate/ruben-gallego-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36462.JPG
+81534,Michael Muscato,AZ,08,http://www.muscato4congress.com,https://secure.actblue.com/donate/muscato-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81534.jpeg
+53310,Greg Stanton,AZ,09,http://stantonforarizona.com,https://secure.actblue.com/donate/stanton-for-congress-1,
+57197,Audrey Denney,CA,01,http://www.audreyforcongress.com,https://secure.actblue.com/donate/audrey-denney-for-congress-1,
+32678,Jared Huffman,CA,02,http://www.jaredhuffman.com/,https://secure.actblue.com/donate/jared-huffman-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/32678.jpg
+22575,John Garamendi,CA,03,http://www.garamendi.org/,https://secure.actblue.com/donate/john-garamendi-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/22575.jpg
+81472,Brynne Kennedy,CA,04,,https://secure.actblue.com/donate/brynne-kennedy-for-congress-1,
+12664,Mike Thompson,CA,05,http://www.mikethompsonforcongress.com/,https://secure.actblue.com/donate/mike-thompson-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12664.gif
+12665,Doris Matsui,CA,06,http://www.matsuiforcongress.com/,https://secure.actblue.com/donate/doris-matsui-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12665.jpg
+22341,Ami Bera,CA,07,http://www.beraforcongress.com,https://secure.actblue.com/donate/ami-bera-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/22341.jpg
+81105,Chris Bubser,CA,08,http://www.chrisbubser.com,https://secure.actblue.com/donate/chris-bubser-for-congress-1,
+26585,Jerry McNerney,CA,09,http://www.jerrymcnerney.org/,https://secure.actblue.com/donate/jerry-mcnerney-4,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/26585.jpg
+49974,Josh Harder,CA,10,http://www.harderforcongress.com,https://secure.actblue.com/donate/harder-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49974.jpg
+35948,Mark DeSaulnier,CA,11,http://www.MarkDesaulnier.com,https://secure.actblue.com/donate/mark-desaulnier-6,
+12668,Nancy Pelosi,CA,12,http://www.speakerpelosi.com/,https://secure.actblue.com/donate/nancy-pelosi-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12668.gif
+79820,Shahid Buttar,CA,12,https://www.shahidforchange.us/,https://secure.actblue.com/donate/shahid-buttar-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/79820.jpg
+12669,Barbara Lee,CA,13,http://barbaraleeforcongress.org/,https://secure.actblue.com/donate/barbara-lee-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12669.jpg
+18726,Jackie Speier,CA,14,http://www.jackieforcongress.com/,https://secure.actblue.com/donate/jackie-speier-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/18726.gif
+35367,Eric Swalwell,CA,15,http://www.ericswalwell.com,https://secure.actblue.com/donate/eric-swalwell-1,
+12679,Jim Costa,CA,16,http://www.costaforcongress.com/,https://secure.actblue.com/donate/jim-costa-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12679.gif
+47955,Ro Khanna,CA,17,http://rokhanna.com,https://secure.actblue.com/donate/ro-khanna-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/47955.jpeg
+12674,Anna Eshoo,CA,18,http://www.annaeshoo4congress.com,https://secure.actblue.com/donate/anna-eshoo-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12674.gif
+78302,Rishi Kumar,CA,18,http://www.rishikumar.com/,https://secure.actblue.com/donate/kumar-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/78302.png
+12676,Zoe Lofgren,CA,19,http://www.lofgrenforcongress.com/,https://secure.actblue.com/donate/zoe-lofgren-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12676.gif
+46758,Jimmy Panetta,CA,20,,https://secure.actblue.com/donate/jimmy-panetta-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/46758.jpg
+52013,TJ Cox,CA,21,http://tjcoxforcongress.com,https://secure.actblue.com/donate/tj-cox-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52013.jpg
+83099,Phil Arballo,CA,22,,https://secure.actblue.com/donate/phil-arballo-1,
+84932,Kim Mangone,CA,23,http://mangoneforcongress.com,https://secure.actblue.com/donate/committee-to-elect-kim-mangone-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84932.jpg
+60356,Mary Helen Barro,CA,23,http://barrofor23.com,https://secure.actblue.com/donate/mary-hellen-barro-for-represantitive-1,
+40776,Salud Carbajal,CA,24,,https://secure.actblue.com/donate/salud-carbajal-1,
+90880,Christy Smith,CA,25,https://www.christyforcongress.org/,https://secure.actblue.com/donate/christy-smith-1,
+29029,Julia Brownley,CA,26,http://juliabrownley.com,https://secure.actblue.com/donate/julia-brownley-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/29029.png
+21630,Judy Chu,CA,27,http://judychu.org/,https://secure.actblue.com/donate/judy-chu-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/21630.jpg
+12683,Adam Schiff,CA,28,http://www.adamschiff.com/,https://secure.actblue.com/donate/adam-schiff-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12683.gif
+81660,Angelica Duenas,CA,29,https://www.angelica4congress.com/,https://secure.actblue.com/donate/angelica-duenas-for-congress-2020-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81660.jpg
+27597,Tony Cardenas,CA,29,http://www.tonycardenasforcongress.com,https://secure.actblue.com/donate/tony-cardenas-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27597.jpg
+12681,Brad Sherman,CA,30,http://www.bradsherman.com/,https://secure.actblue.com/donate/brad-sherman,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12681.gif
+28647,Pete Aguilar,CA,31,http://peteaguilar.com/,https://secure.actblue.com/donate/pete-aguilar-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28647.jpg
+12692,Grace Napolitano,CA,32,http://www.napolitanoforcongress.com,https://secure.actblue.com/donate/grace-flores-napolitano-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12692.png
+36122,Ted Lieu,CA,33,http://www.tedlieu.com,https://secure.actblue.com/donate/ted-lieu-5,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36122.jpg
+84778,David Kim,CA,34,,https://secure.actblue.com/donate/david-kim-2020-1,
+47189,Jimmy Gomez,CA,34,,https://secure.actblue.com/donate/jimmygomezforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/47189.jpg
+36424,Norma Torres,CA,35,http://www.NormaTorres.com,https://secure.actblue.com/donate/norma-torres-4,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36424.jpg
+28215,Raul Ruiz,CA,36,http://www.drraulruiz.com,https://secure.actblue.com/donate/raul-ruiz-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28215.png
+24060,Karen Bass,CA,37,http://www.karenbass.com,https://secure.actblue.com/donate/karen-bass-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/24060.jpg
+12693,Linda Sanchez,CA,38,http://www.voteforlinda.com/,https://secure.actblue.com/donate/linda-sanchez-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12693.gif
+89300,Michael Tolar,CA,38,http://facebook.com/Michael.Tolar6,https://secure.actblue.com/donate/michael-tolar--for-everyday-people-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89300.JPG
+52269,Gil Cisneros,CA,39,https://cisnerosforcongress.com/,https://secure.actblue.com/donate/cisneros-for-congress-1,
+12688,Lucille Roybal-Allard,CA,40,,https://secure.actblue.com/donate/lucille-roybal-allard-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12688.gif
+27422,Mark Takano,CA,41,http://www.marktakano.com,https://secure.actblue.com/donate/mark-takano-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27422.jpg
+79752,Liam O'Mara,CA,42,http://liamomara.org,https://secure.actblue.com/donate/liam-o-mara-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/79752.jpg
+12689,Maxine Waters,CA,43,,https://secure.actblue.com/donate/maxine-waters-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12689.JPG
+39587,Nanette Barragan,CA,44,http://www.barraganforcongress.com,https://secure.actblue.com/donate/nanette-barragan-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/39587.jpg
+49323,Katie Porter,CA,45,https://katieporter.com,https://secure.actblue.com/donate/katie-porter-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49323.png
+40044,Lou Correa,CA,46,http://www.loucorrea.com,https://secure.actblue.com/donate/support-lou,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40044.jpg
+28081,Alan Lowenthal,CA,47,,https://secure.actblue.com/donate/alan-lowenthal-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28081.jpg
+48590,Harley Rouda,CA,48,http://harleyforcongress.com/,https://secure.actblue.com/donate/harley-rouda-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/48590.jpeg
+48661,Mike Levin,CA,49,http://www.mikelevin.org,https://secure.actblue.com/donate/levinforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/48661.jpg
+49287,Ammar Campa-Najjar,CA,50,https://www.campacampaign.com/,https://secure.actblue.com/donate/ammar-campanajjar-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49287.jpg
+27264,Juan Vargas,CA,51,,https://secure.actblue.com/donate/juan-vargas-4,
+32161,Scott Peters,CA,52,http://www.scottpeters.com,https://secure.actblue.com/donate/scott-peters-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/32161.jpg
+86941,Georgette Gomez,CA,53,,https://secure.actblue.com/donate/georgette-gomez-for-congress-1,
+86707,Sara Jacobs,CA,53,,https://secure.actblue.com/donate/sara-jacobs-1,
+12698,Diana DeGette,CO,01,http://www.degette.com/,https://secure.actblue.com/donate/diana-degette-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12698.gif
+51509,Joe Neguse,CO,02,http://www.joeneguseforcongress.com,https://secure.actblue.com/donate/neguse-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51509.jpeg
+82591,Diane Mitsch Bush,CO,03,,https://secure.actblue.com/donate/diane-mitsch-bush-2,
+79825,Isaac McCorkle,CO,04,https://ike4co.com/,https://secure.actblue.com/donate/mccorkleforcolorado,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/79825.jpg
+80999,Jillian Freeland,CO,05,http://www.JillianFreeland.com,https://secure.actblue.com/donate/freelandforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80999.jpeg
+49588,Jason Crow,CO,06,https://jasoncrowforcongress.com,https://secure.actblue.com/donate/jason-crow-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49588.jpg
+12701,Ed Perlmutter,CO,07,http://www.perlmutterforcolorado.com,https://secure.actblue.com/donate/ed-perlmutter-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12701.gif
+12702,John Larson,CT,01,http://www.larsonforcongress.org/,https://secure.actblue.com/donate/john-larson-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12702.gif
+12703,Joe Courtney,CT,02,http://www.joecourtney.com/,https://secure.actblue.com/donate/joe-courtney-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12703.gif
+12704,Rosa DeLauro,CT,03,http://www.rosadelauro.com/,https://secure.actblue.com/donate/rosa-delauro-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12704.gif
+17972,Jim Himes,CT,04,http://himesforcongress.com,https://secure.actblue.com/donate/jim-himes,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/17972.jpg
+63158,Jahana Hayes,CT,05,http://www.jahanahayes.com,https://secure.actblue.com/donate/friends-of-jahana-hayes-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/63158.jpg
+26131,Eleanor Holmes Norton,DC,AL,http://www.nortonforcongress.org/,https://secure.actblue.com/donate/eleanor-holmes-norton-1,
+41453,Lisa Blunt Rochester,DE,AL,,https://secure.actblue.com/donate/lisa-blunt-rochester-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/41453.jpg
+80296,Phil Ehr,FL,01,http://EhrforCongress.com,https://secure.actblue.com/donate/ehr-for-congress-1,
+98811,Kristy Thripp,FL,02,https://twitter.com/KristyThripp,https://secure.actblue.com/donate/kristy-thripp,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/98811.jpg
+91654,Adam Christensen,FL,03,https://forthemanynotjustme.com/,https://secure.actblue.com/donate/adam-christensen-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/91654.png
+88714,Donna Deegan,FL,04,http://www.donnadeeganforcongress.com,https://secure.actblue.com/donate/donna-deegan-for-congress-1,
+42659,Al Lawson,FL,05,https://www.allawson.com/,https://secure.actblue.com/donate/al-lawson-for-congress-1,
+83758,Clint Curtis,FL,06,,https://secure.actblue.com/donate/clint-curtis-for-congress-1,
+45157,Stephanie Murphy,FL,07,http://www.stephaniemurphyforcongress.com/,https://secure.actblue.com/donate/stephanie-murphy-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/45157.jpg
+82897,Jim Kennedy,FL,08,,https://secure.actblue.com/donate/jim-kennedy-for-congress-1,
+40342,Darren Soto,FL,09,http://www.darrensoto.com,https://secure.actblue.com/donate/darrensoto-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40342.jpg
+40755,Val Demings,FL,10,http://www.valdemings.com,https://secure.actblue.com/donate/val-demings-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40755.jpg
+62289,Dana Cottrell,FL,11,https://dana2020.com/,https://secure.actblue.com/donate/dana-cottrell-campaign-account-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/62289.jpg
+41575,Kimberly Walker,FL,12,https://kimberlyforcongress.com,https://secure.actblue.com/donate/kimberly-walker-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/41575.jpg
+41366,Charlie Crist,FL,13,http://www.CharlieCrist.com,https://secure.actblue.com/donate/charlie-crist-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/41366.jpg
+12708,Kathy Castor,FL,14,http://castorforcongress.com/,https://secure.actblue.com/donate/kathy-castor-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12708.gif
+86618,Alan Cohn,FL,15,,https://secure.actblue.com/donate/alan-cohn-2,
+84744,Margaret Good,FL,16,http://Margaretgood.com,https://secure.actblue.com/donate/margaret-good-for-congress-1,
+39502,Allen Ellison,FL,17,http://www.ellisonforcongress.com,https://secure.actblue.com/donate/allen-ellison-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/39502.jpg
+96236,Pam Keith,FL,18,http://www.pamkeithFL.com,https://secure.actblue.com/donate/pamkeith_default,
+86997,Cindy Banyai,FL,19,https://www.cindybanyai.com/,https://secure.actblue.com/donate/cindy-banyai-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86997.jpg
+12714,Alcee Hastings,FL,20,http://www.alceeforcongress.com/,https://secure.actblue.com/donate/alcee-hastings-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12714.gif
+27113,Lois Frankel,FL,21,http://www.loisfrankelforcongress.com/,https://secure.actblue.com/donate/lois-frankel-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27113.jpg
+25934,Ted Deutch,FL,22,http://www.tedforcongress.com/,https://secure.actblue.com/donate/teddeutch,
+12712,Debbie Wasserman Schultz,FL,23,http://www.dwsforcongress.com/,https://secure.actblue.com/donate/debbie-wasserman-schultz-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12712.gif
+23324,Frederica Wilson,FL,24,http://FredericaWilsonforCongress.com,https://secure.actblue.com/donate/frederica-wilson-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/23324.jpg
+52717,Debbie Mucarsel-Powell,FL,26,https://debbiemucarselpowell.com/,https://secure.actblue.com/donate/debbie-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52717.jpg
+59709,Donna Shalala,FL,27,http://donnashalala.com,https://secure.actblue.com/donate/donna-shalala-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/59709.jpg
+95467,Joyce Griggs,GA,01,http://www.griggsforcongress.com,https://secure.actblue.com/donate/task-force-griggs-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/95467.png
+12715,Sanford Bishop,GA,02,http://www.sanfordbishop.com/,https://secure.actblue.com/donate/sanford-bishop,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12715.jpg
+95830,Valbrun Almonord,GA,03,http://www.almonordforcongress.com,https://secure.actblue.com/donate/val-almonord-1,
+12716,Hank Johnson,GA,04,http://www.hankforcongress.com/,https://secure.actblue.com/donate/hank-johnson-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12716.gif
+92983,Barrington Martin,GA,05,http://BarringtonVsCongress.com,https://secure.actblue.com/donate/barrington-ii-for-congress-2,
+104295,Kwanza Hall,GA,05,http://www.kwanzahall.com,https://secure.actblue.com/donate/kwanza-hall-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/104295.JPG
+103320,Nikema Williams,GA,05,,https://secure.actblue.com/donate/nikema-for-congress-1,
+104337,Robert Franklin,GA,05,http://www.franklinforcongress.net,https://secure.actblue.com/donate/franklin-for-congress--inc--1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/104337.jpg
+60214,Lucy McBath,GA,06,https://lucyforcongress.com/home/,https://secure.actblue.com/donate/friends-of-lucy-mcbath-1,
+51961,Carolyn Bourdeaux,GA,07,https://www.carolyn4congress.com/,https://secure.actblue.com/donate/carolyn4congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51961.jpg
+101033,Lindsay Holliday,GA,08,,https://secure.actblue.com/donate/lindsay-holliday-1,
+90643,Devin Pandy,GA,09,http://www.devinpandyforcongress.com,https://secure.actblue.com/donate/devin-pandy-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/90643.jpg
+90886,Tabitha Johnson-Green,GA,10,,https://secure.actblue.com/donate/tabitha-johnson-green-2,
+87606,Dana Barrett,GA,11,https://www.electdanabarrett.com,https://secure.actblue.com/donate/dana-barrett-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87606.jpeg
+88077,Liz Johnson,GA,12,https://www.lizjohnsonforcongress.com/,https://secure.actblue.com/donate/liz-johnson-for-congress-site,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88077.JPG
+12720,David Scott,GA,13,http://www.votedavidscottforcongress.com/home,https://secure.actblue.com/donate/david-scott-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12720.gif
+91703,Kevin Van Ausdal,GA,14,http://kevinvanausdal.com,https://secure.actblue.com/donate/kevinforcongress2020,
+85701,Michael San Nicolas,GU,AL,,https://secure.actblue.com/donate/responsibleguam,
+102913,Robert A. Underwood,GU,AL,,https://secure.actblue.com/donate/committee-to-elect-robert-a--underwood-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/102913.png
+64199,Ed Case,HI,01,http://www.edcase.com,https://secure.actblue.com/donate/case-for-congress-1,
+76092,Kai Kahele,HI,02,http://www.kaikahele.com,https://secure.actblue.com/donate/kahele-for-congress-1,
+49484,Abby Finkenauer,IA,01,http://abbyfinkenauer.com,https://secure.actblue.com/donate/finkenauer-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49484.jpg
+82015,Rita Hart,IA,02,,https://secure.actblue.com/donate/rita-hart-for-iowa-1,
+51154,Cindy Axne,IA,03,http://www.CindyAxneforCongress.com,https://secure.actblue.com/donate/cindy-axne-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51154.jpg
+85472,J.D. Scholten,IA,04,https://www.scholten4iowa.com,https://secure.actblue.com/donate/scholten4iowa-campaign-committee-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/85472.jpg
+89314,Rudy Soto,ID,01,http://rudysoto.us,https://secure.actblue.com/donate/rudy-for-congress-1,
+63695,Aaron Swisher,ID,02,,https://secure.actblue.com/donate/aaron-swisher-1,
+12726,Bobby Rush,IL,01,http://www.citizens4rush.com,https://secure.actblue.com/donate/bobby-rush-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12726.png
+33266,Robin Kelly,IL,02,http://www.robinkellyforcongress.org/,https://secure.actblue.com/donate/robin-kelly-4,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/33266.jpg
+49461,Marie Newman,IL,03,http://marienewmanforcongress.com,https://secure.actblue.com/donate/marie-newman-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49461.jpg
+56120,Chuy Garcia,IL,04,http://chuyforcongress.com,https://secure.actblue.com/donate/chuy-garcia-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/56120.jpg
+21495,Mike Quigley,IL,05,http://www.quigleyforcongress.com,https://secure.actblue.com/donate/mike-quigley-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/21495.jpg
+52051,Sean Casten,IL,06,http://www.castenforcongress.com,https://secure.actblue.com/donate/casten-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52051.jpg
+12731,Danny Davis,IL,07,http://davisforcongress.us/,https://secure.actblue.com/donate/danny-davis-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12731.gif
+39535,Raja Krishnamoorthi,IL,08,https://rajaforcongress.com/,https://secure.actblue.com/donate/raja-krishnamoorthi-2,
+12733,Jan Schakowsky,IL,09,http://www.janschakowsky.org/,https://secure.actblue.com/donate/janice-schakowsky-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12733.gif
+39499,Brad Schneider,IL,10,,https://secure.actblue.com/donate/brad-schneider-1,
+18068,Bill Foster,IL,11,http://www.billfoster.com/,https://secure.actblue.com/donate/bill-foster-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/18068.jpg
+91133,Raymond Lenzi,IL,12,http://lenziforcongress.org,https://secure.actblue.com/donate/raymond-lenzi-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/91133.jpg
+52125,Betsy Dirksen Londrigan,IL,13,http://www.betsydirksenlondrigan.com,https://secure.actblue.com/donate/betsy-dirksen-londrigan-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52125.jpg
+52875,Lauren Underwood,IL,14,http://www.underwoodforcongress.com,https://secure.actblue.com/donate/lauren-underwood-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52875.jpg
+90638,Erika Weaver,IL,15,https://www.WeaverForIllinois.com,https://secure.actblue.com/donate/weaver-for-illinois-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/90638.jpg
+86769,Dani Brzozowski,IL,16,http://www.daniforillinois.com,https://secure.actblue.com/donate/dani-for-illinois-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86769.jpg
+27440,Cheri Bustos,IL,17,http://www.cheribustos.com,https://secure.actblue.com/donate/cheri-bustos-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27440.jpg
+89571,Frank Mrvan,IN,01,http://www.mrvanforcongress.com,https://secure.actblue.com/donate/mrvanforcongress,
+55229,Pat Hackett,IN,02,https://pathackettforcongress.com,https://secure.actblue.com/donate/pat-hackett-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/55229.png
+89265,Chip Coldiron,IN,03,http://coldiron4congress.com,https://secure.actblue.com/donate/chip-coldiron-us-congressional-race-candidate-1,
+52711,Joseph Mackey,IN,04,http://joe4hoosiers.com,https://secure.actblue.com/donate/joe4hoosiers-1,
+84027,Christina Hale,IN,05,,https://secure.actblue.com/donate/hoosiers-for-hale-1,
+63467,Jeannine Lake,IN,06,https://www.jeannineleelakeforcongress.com/,https://secure.actblue.com/donate/jeannine-lake-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/63467.jpg
+18745,Andre Carson,IN,07,http://andrecarson.com/,https://secure.actblue.com/donate/andre-carson-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/18745.jpg
+88469,Thomasina Marsili,IN,08,,https://secure.actblue.com/donate/hope-in-8-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88469.jpeg
+92559,Andy Ruff,IN,09,http://AndyRuff.org,https://secure.actblue.com/donate/friends-of-any-ruff-1,
+85131,Kali Barnett,KS,01,,https://secure.actblue.com/donate/kali-for-kansas-1,
+91565,Michelle De La Isla,KS,02,http://michelleforkansas.com,https://secure.actblue.com/donate/michelle-for-kansas-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/91565.jpg
+59308,Sharice Davids,KS,03,http://www.shariceforcongress.com,https://secure.actblue.com/donate/sharice-for-congress-1,
+47628,Laura Lombard,KS,04,,https://secure.actblue.com/donate/laura-lombard-1,
+92779,James Rhodes,KY,01,http://www.rhodesforcongress.com,https://secure.actblue.com/donate/rhodesforcongress-1,
+59422,Hank Linderman,KY,02,http://www.hank4ky.com,https://secure.actblue.com/donate/hank4ky-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/59422.jpg
+12743,John Yarmuth,KY,03,http://www.yarmuthforcongress.com/,https://secure.actblue.com/donate/john-yarmuth-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12743.gif
+81651,Alexandra Owensby,KY,04,http://www.amowensby.com,https://secure.actblue.com/donate/alexandra-owensby-for-the-people-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81651.png
+94592,Matthew Best,KY,05,,https://secure.actblue.com/donate/best-for-kentucky-1,
+84935,Josh Hicks,KY,06,http://www.joshhicksforcongress.com,https://secure.actblue.com/donate/josh-hicks-for-congress-1,
+23171,Cedric Richmond,LA,02,http://www.cedricrichmond.com,https://secure.actblue.com/donate/cedric-richmond-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/23171.JPG
+65936,Rob Anderson,LA,03,https://www.robandersonforlouisiana.com/,https://secure.actblue.com/donate/anderson2020,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/65936.jpeg
+101902,Kenny Houston,LA,04,https://kennyhoustonforcongress.com,https://secure.actblue.com/donate/kenny-houston-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/101902.jpg
+101591,Ryan Trundle,LA,04,http://www.ryantrundle.com,https://secure.actblue.com/donate/ryan-trundle-1,
+87358,Brody Pierrottie,LA,05,,https://secure.actblue.com/donate/brody-pierrottie-for-congress-1,
+79230,Candy Christophe,LA,05,http://www.candychristophe.com,https://secure.actblue.com/donate/candy-christophe-for-congress-1,
+102025,Martin Lemelle,LA,05,http://www.martinlemelle.com,https://secure.actblue.com/donate/martin-lemelle-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/102025.jpg
+104933,Phillip Snowden,LA,05,https://www.phillipsnowdencampaign.com/,https://secure.actblue.com/donate/phillip-snowden-campaign-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/104933.jpg
+84383,Alex Morse,MA,01,,https://secure.actblue.com/donate/committee-to-elect-alex-morse-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84383.jpg
+12748,Richard Neal,MA,01,http://nealforcongress.com,https://secure.actblue.com/donate/richard-neal-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12748.jpg
+12749,James McGovern,MA,02,http://www.jimmcgovern.com/,https://secure.actblue.com/donate/james-mcgovern-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12749.jpg
+54315,Lori Trahan,MA,03,https://loritrahan.com,https://secure.actblue.com/donate/lori-trahan-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/54315.jpeg
+87370,Alan Khazei,MA,04,http://www.alankhazei.com,https://secure.actblue.com/donate/khazei-for-congress-1,
+87399,Becky Grossman,MA,04,,https://secure.actblue.com/donate/becky-grossman-1,
+92223,Ben Sigel,MA,04,http://www.bensigelforcongress.com,https://secure.actblue.com/donate/bensigelforcongress,
+96596,Christopher Zannetos,MA,04,http://www.zannetosforcongress.com,https://secure.actblue.com/donate/zannetos-for-congress-committee-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/96596.jpg
+88002,Dave Cavell,MA,04,http://davecavell.com,https://secure.actblue.com/donate/cavell-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88002.png
+92652,Herb Robinson,MA,04,https://herbrobinson.us,https://secure.actblue.com/donate/herb-robinson-for-congress-1,
+82398,Ihssane Leckey,MA,04,,https://secure.actblue.com/donate/ihssane-leckey-1,
+87776,Jake Auchincloss (MA 04),MA,04,https://jakeforma.com,https://secure.actblue.com/donate/jake-auchincloss-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87776.png
+86461,Jesse Mermell,MA,04,http://www.jessemermell.com,https://secure.actblue.com/donate/the-committee-to-elect-jesse-mermell-1,
+99364,Natalia Linos,MA,04,http://www.nataliaforcongress.com,https://secure.actblue.com/donate/natalia-for-congress-1,
+95847,Nick Matthew,MA,04,,https://secure.actblue.com/donate/nickmatthew,
+94616,Tom Shack III,MA,04,http://www.shackforcongress.com,https://secure.actblue.com/donate/shackforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/94616.png
+33552,Katherine Clark,MA,05,http://www.katherineclarkforcongress.com,https://secure.actblue.com/donate/katherine-clark-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/33552.png
+88380,Angus McQuilken,MA,06,http://angusforcongress.com,https://secure.actblue.com/donate/angusforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88380.jpg
+81256,Jamie Zahlaway Belsito,MA,06,http://www.belsitoforcongress.com,https://secure.actblue.com/donate/belsito-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81256.jpg
+34714,Seth Moulton,MA,06,http://www.sethmoulton.com,https://secure.actblue.com/donate/seth-moulton-3,
+58361,Ayanna Pressley,MA,07,https://ayannapressley.com/,https://secure.actblue.com/donate/the-committee-to-elect-ayanna-pressley-1,
+89223,Robbie Goldstein,MA,08,,https://secure.actblue.com/donate/robbieforchange,
+12755,Stephen Lynch,MA,08,http://www.stephenlynchforcongress.com,https://secure.actblue.com/donate/stephen-lynch-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12755.jpg
+24487,Bill Keating,MA,09,http://www.keatingforcongress.com,https://secure.actblue.com/donate/bill-keating-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/24487.jpg
+86022,Mia Mason,MD,01,http://miadmason.us,https://secure.actblue.com/donate/friends-of-mia-mason-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86022.jpg
+12757,C.A. Dutch Ruppersberger,MD,02,http://www.dutchforcongress.com/,https://secure.actblue.com/donate/c-a--dutch-ruppersberger-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12757.gif
+12758,John Sarbanes,MD,03,http://www.johnsarbanes.com,https://secure.actblue.com/donate/john-sarbanes-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12758.jpg
+39407,Anthony Brown,MD,04,http://www.anthonybrown.com,https://secure.actblue.com/donate/anthony-brown-5,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/39407.JPG
+12760,Steny Hoyer,MD,05,http://www.hoyerforcongress.com/,https://secure.actblue.com/donate/steny-hoyer-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12760.gif
+53925,David Trone,MD,06,http://davidtrone.com,https://secure.actblue.com/donate/david_trone,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/53925.jpg
+94011,Kweisi Mfume,MD,07,,https://secure.actblue.com/donate/mfumeforcongress,
+39609,Jamie Raskin,MD,08,,https://secure.actblue.com/donate/jamie-raskin-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/39609.jpg
+17915,Chellie Pingree,ME,01,http://pingreeforcongress.com/,https://secure.actblue.com/donate/chellie-pingree-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/17915.jpg
+53391,Jared Golden,ME,02,http://jaredgoldenforcongress.com,https://secure.actblue.com/donate/jared-golden-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/53391.jpg
+83708,Dana Ferguson,MI,01,http://www.FergusonForMichigan1.com,https://secure.actblue.com/donate/friends-of-dana-ferguson-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/83708.jpg
+84911,Bryan Berghoef,MI,02,http://www.bryanberghoef.com,https://secure.actblue.com/donate/bryan-berghoef-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84911.jpg
+83805,Hillary Scholten,MI,03,,https://secure.actblue.com/donate/scholten-for-congress-1,
+58508,Jerry Hilliard,MI,04,http://www.Jerryhilliardforcongress.com,https://secure.actblue.com/donate/friends-of-jerry-hilliard-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/58508.jpeg
+27733,Dan Kildee,MI,05,http://www.DanKildee.com,https://secure.actblue.com/donate/dan-kildee-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27733.jpg
+81052,Jon Hoadley,MI,06,,https://secure.actblue.com/donate/jon-hoadley-for-congress,
+90082,Gretchen Driskell,MI,07,,https://secure.actblue.com/donate/gretchen-driskell-for-congress-2,
+52171,Elissa Slotkin,MI,08,http://elissaforcongress.com,https://secure.actblue.com/donate/slotkin-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52171.jpg
+56301,Andy Levin,MI,09,,https://secure.actblue.com/donate/andy-levin-for-congress-1,
+57752,Kimberly Bizon,MI,10,http://electbizon2018.com,https://secure.actblue.com/donate/committee-to-elect-kimberly-bizon-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/57752.jpg
+50031,Haley Stevens,MI,11,,https://secure.actblue.com/donate/paid-for-by-haley-stevens-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50031.png
+36436,Debbie Dingell,MI,12,,https://secure.actblue.com/donate/debbie-dingell-1,
+58823,Rashida Tlaib,MI,13,https://rashidaforcongress.com/,https://secure.actblue.com/donate/rashidaforcongress,
+35635,Brenda Lawrence,MI,14,http://www.brendalawrence.com,https://secure.actblue.com/donate/brenda-lawrence-2,
+51997,Dan Feehan,MN,01,https://danfeehan.com,https://secure.actblue.com/donate/friends-of-dan-feehan-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51997.jpg
+52509,Angie Craig,MN,02,http://www.AngieCraig.com,https://secure.actblue.com/donate/angie-craig-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52509.jpg
+50592,Dean Phillips,MN,03,,https://secure.actblue.com/donate/dean-phillips-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50592.jpg
+12772,Betty McCollum,MN,04,http://www.mccollumforcongress.com/,https://secure.actblue.com/donate/betty-mccollum-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12772.jpg
+64293,Ilhan Omar,MN,05,http://ilhanomar.com,https://secure.actblue.com/donate/ilhan-for-congress-1,
+87613,Tawnja Zahradka,MN,06,http://tawnjaforcongress.com,https://secure.actblue.com/donate/tawnja-for-congress,
+12774,Collin Peterson,MN,07,http://www.petersonforcongress.com/,https://secure.actblue.com/donate/collin-peterson-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12774.gif
+87564,Quinn Nystrom,MN,08,https://quinnforcongress.com/,https://secure.actblue.com/donate/quinn-nystrom-1,
+49905,Cori Bush,MO,01,http://coribush.org,https://secure.actblue.com/donate/coribush18,
+89785,Jill Schupp,MO,02,,https://secure.actblue.com/donate/jill-schupp-for-congress-1,
+87498,Lindsey Simmons,MO,04,http://www.lindseysimmons.com,https://secure.actblue.com/donate/simmons-for-missouri-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87498.png
+12779,Emanuel Cleaver,MO,05,http://cleaverforcongress.com/,https://secure.actblue.com/donate/emanuel-cleaver-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12779.jpg
+93369,Gena Ross for Congress,MO,06,http://Rossforuscongress.com,https://secure.actblue.com/donate/gena-ross-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93369.png
+96902,Teresa Montseny,MO,07,http://www.montsenyforcongress.com/,https://secure.actblue.com/donate/montseny-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/96902.jpeg
+82163,Kathy Ellis,MO,08,http://www.ellisforcongress.com,https://secure.actblue.com/donate/ellisforcongress,
+24375,Kilili Sablan,MP,AL,http://www.kililiforcongress.com,https://secure.actblue.com/donate/kilili-sablan-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/24375.jpg
+89464,Antonia Eliason,MS,01,,https://secure.actblue.com/donate/antonia4ms1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89464.JPG
+12780,Bennie Thompson,MS,02,http://projectsredlaser.com/benniethompson/,https://secure.actblue.com/donate/bennie-thompson-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12780.gif
+96458,Dorothy Benford,MS,03,https://dorothydotbenfordforcongress.rocks/,https://secure.actblue.com/donate/dorothy-benford-1,
+80906,Kathleen Williams,MT,AL,https://kathleenformontana.com/,https://secure.actblue.com/donate/williams-for-montana-1,
+12782,G.K. Butterfield,NC,01,http://www.gkbutterfield.com/,https://secure.actblue.com/donate/g-k--butterfield-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12782.gif
+89860,Deborah Ross,NC,02,https://deborahross.com/,https://secure.actblue.com/donate/deborah-ross-5,
+96082,Daryl Farrow,NC,03,http://dtfarrow.com,https://secure.actblue.com/donate/daryl-farrow-1,
+12784,David Price,NC,04,http://www.priceforcongress.com/,https://secure.actblue.com/donate/david-price-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12784.gif
+51862,David Wilson Brown,NC,05,https://dwb4congress.com,https://secure.actblue.com/donate/dwb4congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51862.jpg
+55995,Kathy Manning,NC,06,https://www.kathymanningfornc.com/,https://secure.actblue.com/donate/kathy-manning-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/55995.jpg
+95695,Chris Ward,NC,07,http://www.chriswardforcongress.com,https://secure.actblue.com/donate/chriswardforcongress2020,
+91726,Patricia Timmons-Goodson,NC,08,,https://secure.actblue.com/donate/patricia-timmons-goodson-for-congress-1,
+41315,Christian Cano,NC,09,http://www.ChristianCano.com,https://secure.actblue.com/donate/cano-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/41315.jpg
+90954,Cynthia Wallace,NC,09,http://cynthiawallace.com,https://secure.actblue.com/donate/cynthia-wallace-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/90954.jpg
+92786,David Parker,NC,10,http://www.voteparker.com,https://secure.actblue.com/donate/vote-parker-1,
+89427,"Morris ""Moe"" Davis",NC,11,http://MoeDavisforCongress.com,https://secure.actblue.com/donate/morris--moe--davis-for-wnc-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/89427.JPG
+34528,Alma Adams,NC,12,http://almaadamsforcongress.com/,https://secure.actblue.com/donate/alma-adams-4,
+79275,Scott Huffman,NC,13,https://www.scotthuffman.com,https://secure.actblue.com/donate/huffmanfornc,
+93274,Zach Raknerud,ND,AL,https://www.zachfornd.com,https://secure.actblue.com/donate/zach-for-north-dakota-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93274.png
+87200,Kate Bolz,NE,01,,https://secure.actblue.com/donate/kate-bolz-for-congress-1,
+51116,Kara Eastman,NE,02,http://www.eastmanforcongress.com,https://secure.actblue.com/donate/kara-eastman-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51116.jpg
+96619,Mark Elworth,NE,03,,https://secure.actblue.com/donate/mark-elworth-jr-for-us-representatives-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/96619.jpg
+55526,Chris Pappas,NH,01,https://www.chrispappas.org,https://secure.actblue.com/donate/chris-pappas-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/55526.jpg
+22508,Annie Kuster,NH,02,http://www.kusterforcongress.com,https://secure.actblue.com/donate/ann-mclane-kuster-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/22508.jpg
+36984,Donald Norcross,NJ,01,http://www.donaldnorcrossforcongress.com,https://secure.actblue.com/donate/donald-norcross-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36984.jpg
+91742,Amy Kennedy,NJ,02,,https://secure.actblue.com/donate/amy-kennedy-exploratory-committee-inc--1,
+51703,Andy Kim,NJ,03,https://andykimforcongress.com/,https://secure.actblue.com/donate/andy-kim-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51703.jpg
+86140,Stephanie Schmid,NJ,04,,https://secure.actblue.com/donate/stephanie-for-new-jersey-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86140.jpg
+39227,Josh Gottheimer,NJ,05,,https://secure.actblue.com/donate/josh-gottheimer-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/39227.jpg
+12793,"Frank Pallone, Jr",NJ,06,,https://secure.actblue.com/donate/frank-pallone--jr-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12793.gif
+54274,Tom Malinowski,NJ,07,https://www.malinowskifornj.com,https://secure.actblue.com/donate/tom-malinowski-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/54274.jpg
+12798,Albio Sires,NJ,08,http://siresfornj.com,https://secure.actblue.com/donate/albio-sires-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12798.jpg
+12794,Bill Pascrell,NJ,09,http://billpascrell.com,https://secure.actblue.com/donate/bill-pascrell--jr-2,
+29840,Donald Payne Jr,NJ,10,http://paynejrforcongress.ngpvanhost.com/,https://secure.actblue.com/donate/donald-payne-jr-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/29840.jpg
+50715,Mikie Sherrill,NJ,11,http://www.mikiesherrill.com,https://secure.actblue.com/donate/mikie-sherrill-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50715.jpg
+36481,Bonnie Watson Coleman,NJ,12,http://www.bonnieforcongress.com,https://secure.actblue.com/donate/bonnie-watson-coleman-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36481.jpeg
+50216,Deb Haaland,NM,01,http://www.debforcongress.com,https://secure.actblue.com/donate/deb-haaland-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50216.jpg
+57253,Xochitl Torres Small,NM,02,,https://secure.actblue.com/donate/xochitl-torres-small,
+81890,Teresa Leger Fernandez,NM,03,https://www.teresalegerfernandez.com/,https://secure.actblue.com/donate/teresa-for-all-1,
+27569,Dina Titus,NV,01,http://www.dinatitus.com,https://secure.actblue.com/donate/dina-titus-5,
+88468,Patricia Ackerman,NV,02,http://ackerman4congress.com,https://secure.actblue.com/donate/ackerman4congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88468.JPG
+53666,Susie Lee,NV,03,https://susieleeforcongress.com/,https://secure.actblue.com/donate/susie-lee-for-nevada-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/53666.jpg
+58027,Steven Horsford,NV,04,http://www.stevenhorsford.com,https://secure.actblue.com/donate/horsford-congressional-exploratory-committee-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/58027.JPG
+84181,Nancy Goroff,NY,01,,https://secure.actblue.com/donate/nancy-goroff-for-congress-1,
+82326,Jackie Gordon,NY,02,,https://secure.actblue.com/donate/jackie-gordon-1,
+44566,Tom Suozzi,NY,03,http://www.suozziforcongress.com,https://secure.actblue.com/donate/suozzi-2016-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/44566.jpg
+36101,Kathleen Rice,NY,04,http://www.KathleenRice.com,https://secure.actblue.com/donate/kathleenrice-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36101.jpg
+12805,Gregory Meeks,NY,05,http://congressmangregorymeeks.com/,https://secure.actblue.com/donate/gregorymeeks,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12805.gif
+29440,Grace Meng,NY,06,http://www.gracefornewyork.com,https://secure.actblue.com/donate/grace-meng-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/29440.jpg
+12811,Nydia Velazquez,NY,07,http://www.reelectnydiavelazquez.com,https://secure.actblue.com/donate/nydia-velazquez-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12811.jpg
+28064,Hakeem Jeffries,NY,08,http://www.jeffriesforcongress.com,https://secure.actblue.com/donate/hakeem-jeffries-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28064.jpeg
+12810,Yvette Clarke,NY,09,http://www.voteyvette.com/,https://secure.actblue.com/donate/yvette-clarke-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12810.gif
+12807,Jerry Nadler,NY,10,http://www.jerrynadler.com/,https://secure.actblue.com/donate/jerrold-nadler-donate,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12807.gif
+52817,Max Rose,NY,11,http://www.maxroseforcongress.com,https://secure.actblue.com/donate/max-rose-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52817.jpg
+12812,Carolyn Maloney,NY,12,http://www.carolynmaloney.com/,https://secure.actblue.com/donate/carolyn-maloney-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12812.gif
+81403,Adriano Espaillat,NY,13,,https://secure.actblue.com/donate/adriano-espaillat-7,
+50295,Alexandria Ocasio-Cortez,NY,14,http://www.ocasiocortez.com,https://secure.actblue.com/donate/alexandria-ocasio-cortez-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50295.jpg
+81994,Chivona Renee Newsome,NY,15,http://chivonanewsomeforcongress.com,https://secure.actblue.com/donate/chivona-renee-newsome-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81994.jpeg
+82793,Frangell Basora,NY,15,,https://secure.actblue.com/donate/frangell-basora-for-new-york---15-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82793.jpg
+91425,Julio Pabón,NY,15,http://www.juliopabon.com,https://secure.actblue.com/donate/friends-of-julio-pab-n-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/91425.JPG
+96289,Marlene Tapper,NY,15,,https://secure.actblue.com/donate/marlene-j--tapper-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/96289.jpeg
+81508,Michael Blake,NY,15,,https://secure.actblue.com/donate/michael-blake-for-congress-1,
+80404,Ritchie Torres,NY,15,,https://secure.actblue.com/donate/torres-for-congress-1,
+81355,"Ruben Diaz, Sr.",NY,15,https://secure.actblue.com/donate/revdiaz2020,https://secure.actblue.com/donate/ruben-diaz-5,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81355.png
+87322,Ydanis Rodriguez,NY,15,,https://secure.actblue.com/donate/ydanis-for-congress-1,
+82251,Jamaal Bowman,NY,16,,https://secure.actblue.com/donate/bowman-for-congress-1,
+84300,Mondaire Jones,NY,17,https://mondaireforcongress.com,https://secure.actblue.com/donate/mondaire-jones-1,
+28903,Sean Patrick Maloney,NY,18,http://www.seanmaloney.com,https://secure.actblue.com/donate/sean-patrick-maloney-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28903.jpg
+48297,Antonio Delgado,NY,19,http://delgadoforcongress.com,https://secure.actblue.com/donate/delgado-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/48297.jpg
+20504,Paul Tonko,NY,20,http://www.paultonko.com/,https://secure.actblue.com/donate/paul-tonko-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/20504.jpg
+51890,Tedra Cobb,NY,21,http://www.tedracobb.com,https://secure.actblue.com/donate/tedra-cobb-for-congress-1,
+51809,Anthony Brindisi,NY,22,,https://secure.actblue.com/donate/brindisi-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51809.jpg
+53352,Tracy Mitrano,NY,23,http://tracymitranoforcongress.com,https://secure.actblue.com/donate/tracy-mitrano-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/53352.jpg
+81291,Dana Balter,NY,24,http://www.electdanabalter.com,https://secure.actblue.com/donate/dana-balter,
+61253,Joe Morelle,NY,25,http://votemorelle.com,https://secure.actblue.com/donate/joe-morelle-for-congress-1,
+12822,Brian Higgins,NY,26,http://www.higginsforcongress.com/,https://secure.actblue.com/donate/brianhiggins,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12822.gif
+57938,Nate McMurray,NY,27,https://votemcmurray.com,https://secure.actblue.com/donate/nate-mcmurray-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/57938.jpg
+83913,Kate Schroder,OH,01,,https://secure.actblue.com/donate/kate-for-congress-1,
+89864,Jaime Castle,OH,02,,https://secure.actblue.com/donate/friends-of-jaime-castle-1,
+28367,Joyce Beatty,OH,03,http://www.beattyforcongress.com,https://secure.actblue.com/donate/joyce-beatty-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28367.jpg
+84452,Shannon Freshour,OH,04,http://www.shannon4ohio.com,https://secure.actblue.com/donate/shannon-4-ohio-committee-1,
+82113,Nick Rubando,OH,05,https://www.facebook.com/RubandoForCongress/?notif_id=1556940593828848&notif_t=page_fan,https://secure.actblue.com/donate/rubando-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82113.jpg
+59429,Shawna Roberts,OH,06,https://www.shawnarobertsforcongress2018.org/,https://secure.actblue.com/donate/shawna-roberts-1,
+93795,Quentin Potter,OH,07,,https://secure.actblue.com/donate/potter-for-oh-7th-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93795.jpg
+58427,Vanessa Enoch,OH,08,https://www.enochforcongress.com,https://secure.actblue.com/donate/enoch-t-shirt,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/58427.png
+12825,Marcy Kaptur,OH,09,http://marcykaptur.com,https://secure.actblue.com/donate/marcy-kaptur-december,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12825.png
+85375,Desiree Tims,OH,10,http://www.timsforcongress.com,https://secure.actblue.com/donate/friends-of-desiree-tims,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/85375.jpeg
+21225,Marcia Fudge,OH,11,http://marcialfudge.com/,https://secure.actblue.com/donate/marcia-fudge-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/21225.JPG
+87751,Alaina Shearer,OH,12,,https://secure.actblue.com/donate/alaina-shearer-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87751.png
+12829,Tim Ryan,OH,13,http://www.timryanforcongress.com/,https://secure.actblue.com/donate/tim-ryan-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12829.jpg
+87706,Hillary O'Connor Mueri,OH,14,,https://secure.actblue.com/donate/hillary-o-connor-mueri-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87706.jpg
+89024,Joel Newby,OH,15,,https://secure.actblue.com/donate/newby-for-congress-1,
+86090,Aaron Godfrey,OH,16,http://www.godfreyforcongress.com,https://secure.actblue.com/donate/godfrey2020,
+88461,Kojo Asamoa-Caesar,OK,01,http://www.kojoforcongress.com,https://secure.actblue.com/donate/friends-of-kojo-asamoa-caesar-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88461.jpg
+87148,Danyell Lanier,OK,02,http://www.DanyellforCongress.com,https://secure.actblue.com/donate/danyell-lanier-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87148.JPG
+100089,Zoe Midyett,OK,03,https://www.midyett2020.com/,https://secure.actblue.com/donate/midyett-2020-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/100089.jpg
+62634,Mary M Brannon,OK,04,,https://secure.actblue.com/donate/brannon4congress-1,
+51908,Kendra Horn,OK,05,http://kendrahorn.com,https://secure.actblue.com/donate/kendra-horn-for-congress-1,
+27572,Suzanne Bonamici,OR,01,http://www.bonamiciforcongress.com,https://secure.actblue.com/donate/suzannebonamici-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27572.jpg
+96199,Alex Spenser,OR,02,https://spenser2020.com/,https://secure.actblue.com/donate/alex-spenser-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/96199.png
+12833,Earl Blumenauer,OR,03,https://www.earlblumenauer.com/,https://secure.actblue.com/donate/earl-blumenauer-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12833.jpeg
+12834,Peter DeFazio,OR,04,http://www.defazioforcongress.org/,https://secure.actblue.com/donate/peterdefazio-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12834.jpg
+19012,Kurt Schrader,OR,05,http://www.kurtschrader.com,https://secure.actblue.com/donate/kurt-schrader-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/19012.jpg
+84910,Christina Finello,PA,01,http://www.finelloforcongress.com,https://secure.actblue.com/donate/christina-finello,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84910.png
+34024,Brendan Boyle,PA,02,http://www.voteboyle.com,https://secure.actblue.com/donate/brendan-boyle-4,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/34024.jpg
+41543,Dwight Evans,PA,03,,https://secure.actblue.com/donate/dwight-evans-for-congress-1,
+59739,Madeleine Dean,PA,04,http://mad4pa.com,https://secure.actblue.com/donate/mad-4-pa-pac-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/59739.png
+59086,Mary Gay Scanlon,PA,05,,https://secure.actblue.com/donate/scanlon-for-congress-1,
+49672,Chrissy Houlahan,PA,06,https://www.chrissyhoulahanforcongress.com,https://secure.actblue.com/donate/chrissy-houlahan-for-congress-1,
+54683,Susan Wild,PA,07,,https://secure.actblue.com/donate/susan-wild-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/54683.png
+28757,Matt Cartwright,PA,08,http://www.CartwrightCongress.com,https://secure.actblue.com/donate/matt-cartwright-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28757.png
+53974,Gary Wegman,PA,09,http://www.garywegmanforcongress.com,https://secure.actblue.com/donate/gary-wegman-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/53974.jpg
+83043,Eugene DePasquale,PA,10,https://eugeneforcongress.com/,https://secure.actblue.com/donate/depasquale-for-pa-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/83043.png
+88286,Sarah Hammond,PA,11,http://sarahforus.com,https://secure.actblue.com/donate/sarahforagnd,
+98473,Lee Griffin,PA,12,http://www.leegriffinforcongress.com,https://secure.actblue.com/donate/lee-griffin-for-congress-1,
+88146,Todd Rowley,PA,13,http://www.toddrowleyforcongress.com,https://secure.actblue.com/donate/todd-rowley-for-congress,
+93168,Bill Marx,PA,14,http://www.billmarxforcongress.org,https://secure.actblue.com/donate/friends-to-elect-bill-marx-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93168.jpeg
+101342,Robert Williams,PA,15,,,
+87847,Kristy Gnibus,PA,16,http://www.kristyforcongress.com,https://secure.actblue.com/donate/kristy-for-congress-1,
+54851,Conor Lamb,PA,17,https://conorlamb.com/,https://secure.actblue.com/donate/lamb-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/54851.jpg
+12845,Mike Doyle,PA,18,http://www.mikedoyleforcongress.com/,https://secure.actblue.com/donate/mike-doyle-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12845.gif
+99391,Anibal Acevedo-Vila,PR,AL,http://www.acevedovila.com,https://secure.actblue.com/donate/anibal-comisionado-2020-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/99391.jpeg
+29930,David Cicilline,RI,01,http://www.cicilline.com,https://secure.actblue.com/donate/david-cicilline-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/29930.jpeg
+101109,Dylan Conley,RI,02,http://conleyforcongress.com,https://secure.actblue.com/donate/dylan-conley-for-congress-1,
+12848,Jim Langevin,RI,02,http://www.jimlangevin.com/,https://secure.actblue.com/donate/james-langevin-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12848.jpg
+52181,Joe Cunningham,SC,01,https://www.joecunninghamforcongress.com/,https://secure.actblue.com/donate/joe-cunningham-for-congress-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/52181.jpg
+80792,Adair Boroughs,SC,02,https://www.adairforcongress.com,https://secure.actblue.com/donate/adair-for-congress-1,
+44448,Hosea Cleveland,SC,03,http://www.voteclevelandforcongress.com,https://secure.actblue.com/donate/hosea-cleveland,
+84188,Kim Nelson,SC,04,http://www.kimnelsonforcongress.com,https://secure.actblue.com/donate/kim-nelson-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84188.jpg
+93112,Moe Brown,SC,05,,https://secure.actblue.com/donate/moe-brown-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93112.jpeg
+12850,Jim Clyburn,SC,06,http://clyburnforcongress.com/,https://secure.actblue.com/donate/jim-clyburn-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12850.gif
+91408,Melissa Watson,SC,07,,https://secure.actblue.com/donate/watson-for-congress-rtw,
+95287,Blair Walsingham,TN,01,http://blairforcongress.com,https://secure.actblue.com/donate/blair-for-tennessee-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/95287.jpg
+82712,Renee Hoyos,TN,02,,https://secure.actblue.com/donate/hoyos-for-congress,
+99866,Meg Gorman,TN,03,http://www.meg2020.com,https://secure.actblue.com/donate/meg-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/99866.jpg
+63218,Christopher Hale,TN,04,http://christopherhale.com,https://secure.actblue.com/donate/christopherhale,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/63218.jpg
+12853,Jim Cooper,TN,05,http://www.cooperforcongress.com/,https://secure.actblue.com/donate/jim-cooper-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12853.gif
+104236,Christopher Finley,TN,06,,,
+104269,Christopher Finley,TN,06,,https://secure.actblue.com/donate/finley-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/104269.jpg
+94629,Kiran Sreepada,TN,07,https://www.kiranforcongress.com,https://secure.actblue.com/donate/kiran-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/94629.png
+66572,Erika Stotts Pearson,TN,08,https://erikastottspearson.com/,https://secure.actblue.com/donate/erika-stotts-pearson,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/66572.jpg
+12856,Steve Cohen,TN,09,http://www.cohenforcongress.com/,https://secure.actblue.com/donate/steve-cohen-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12856.gif
+86653,Hank Gilbert,TX,01,http://hankfortexas.com,https://secure.actblue.com/donate/hank-gilbert-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86653.jpg
+90481,Sima Ladjevardian,TX,02,http://simaforTX.com,https://secure.actblue.com/donate/sima-for-texas-1,
+87702,Lulu Seikaly,TX,03,,https://secure.actblue.com/donate/lulu-for-texas-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87702.png
+88092,Russell Foster,TX,04,http://www.foster4texas.com,https://secure.actblue.com/donate/russellfostertx,
+93378,Carolyn Salter,TX,05,,https://secure.actblue.com/donate/carolyn-salter-for-congress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93378.png
+81483,Stephen Daniel,TX,06,http://stephendaniel.com,https://secure.actblue.com/donate/stephen-daniel-for-congress-1,
+50220,Lizzie Fletcher,TX,07,http://www.lizziefletcher.com,https://secure.actblue.com/donate/elizabeth-pannill-fletcher-for-congress-1,
+91154,Elizabeth Hernandez,TX,08,https://lizfortx8.com/,https://secure.actblue.com/donate/elizabeth-hernandez-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/91154.jpg
+12857,Al Green,TX,09,https://algreen.org/,https://secure.actblue.com/donate/al-green-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12857.gif
+56019,Mike Siegel,TX,10,http://www.siegelfortexas.org,https://secure.actblue.com/donate/siegel-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/56019.jpg
+88193,Jon Mark Hogg,TX,11,http://www.jonmarkhogg.com,https://secure.actblue.com/donate/elect-a-hogg,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88193.jpg
+86942,Lisa Welch,TX,12,http://lisawelch.org,https://secure.actblue.com/donate/lisa-welch-for-office-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86942.jpg
+89531,Gus Trujillo,TX,13,https://www.gustrujillo.com,https://secure.actblue.com/donate/gus-for-congress-1,
+80616,Adrienne Bell,TX,14,http://www.voteforbell.com,https://secure.actblue.com/donate/bell14,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80616.png
+41816,Vicente Gonzalez,TX,15,http://www.vicentegonzalez.com,https://secure.actblue.com/donate/vicente-gonzalez-for-u-s--congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/41816.png
+53258,Veronica Escobar,TX,16,http://www.veronicaescobar.com,https://secure.actblue.com/donate/veronica-escobar-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/53258.jpg
+53840,Rick Kennedy,TX,17,http://www.rickkennedyforcongress.com,https://secure.actblue.com/donate/richard-kennedy-1,
+12861,Sheila Jackson Lee,TX,18,http://www.sheilajacksonlee18.com/,https://secure.actblue.com/donate/sheila-jackson-lee-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12861.gif
+91573,Tom Watson,TX,19,http://TomWatsonforUSCongress.com,https://secure.actblue.com/donate/tom-watson-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/91573.png
+27328,Joaquin Castro,TX,20,http://www.castroforcongress.com,https://secure.actblue.com/donate/joaquin-castro-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27328.jpg
+84472,Wendy Davis,TX,21,,https://secure.actblue.com/donate/wendy-davis-for-congress-1,
+56710,Sri Kulkarni,TX,22,http://www.kulkarniforcongress.com,https://secure.actblue.com/donate/kulkarni-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/56710.png
+52708,Gina Ortiz Jones,TX,23,https://ginaortizjones.com/,https://secure.actblue.com/donate/gina-ortiz-jones-for-congress-1,
+80771,Candace Valenzuela,TX,24,http://www.candacefor24.com,https://secure.actblue.com/donate/candace-for-24-1,
+80967,Julie Oliver,TX,25,https://www.julieoliver.org/,https://secure.actblue.com/donate/julie-oliver-for-congress-1,
+78478,Carol H Iannuzzi,TX,26,http://carol4ushouse.com,https://secure.actblue.com/donate/friends-of-carol-h-iannuzzi-1,
+95999,Ricardo De La Fuente,TX,27,,https://secure.actblue.com/donate/ricardo-de-la-fuente-1,
+12867,Henry Cuellar,TX,28,http://www.henrycuellar.com/,https://secure.actblue.com/donate/henry-cuellar-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12867.gif
+55747,Sylvia Garcia,TX,29,http://sylviaforcongress.com/,https://secure.actblue.com/donate/sylvia-garcia-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/55747.jpg
+12869,Eddie Bernice Johnson,TX,30,http://www.ebjcampaign.com/,https://secure.actblue.com/donate/eddie-bernice-johnson-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12869.gif
+83833,Donna Imam,TX,31,,https://secure.actblue.com/donate/vote-donna-us-congress-1,
+49371,Colin Allred,TX,32,https://www.colinallred.com/,https://secure.actblue.com/donate/colin-allred-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49371.png
+30124,Marc Veasey,TX,33,http://www.marcveasey.com,https://secure.actblue.com/donate/marc-veasey,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/30124.jpg
+31549,Filemon Vela,TX,34,http://www.filemonvelaforcongress.com/,https://secure.actblue.com/donate/filemon-vela-1,
+12865,Lloyd Doggett,TX,35,https://www.votedoggett.com/,https://secure.actblue.com/donate/lloyd-doggett-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12865.gif
+92040,Rashad Lewis,TX,36,http://Lewis4congress.com,https://secure.actblue.com/donate/lewis-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/92040.png
+93982,Darren Parry,UT,01,,https://secure.actblue.com/donate/darren-parry-for-congress-1,
+94545,Kael Weston,UT,02,https://www.westonforcongress.com,https://secure.actblue.com/donate/weston-2020-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/94545.jpg
+97703,Devin Thorpe,UT,03,https://www.devinthorpe.com,https://secure.actblue.com/donate/friends-of-devin-thorpe-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/97703.jpg
+55048,Ben McAdams,UT,04,http://benmcadamsforcongress.com,https://secure.actblue.com/donate/friends-of-ben-mcadams-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/55048.jpg
+92558,Qasim Rashid,VA,01,http://www.rashidforva.com,https://secure.actblue.com/donate/rashidforcongress,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/92558.png
+56829,Elaine Luria,VA,02,http://www.elaineforcongress.com,https://secure.actblue.com/donate/elaine-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/56829.jpg
+12871,Bobby Scott,VA,03,http://www.bobbyscottforcongress.com/,https://secure.actblue.com/donate/bobby-scott-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12871.gif
+43178,Donald McEachin,VA,04,,https://secure.actblue.com/donate/mceachin-for-congress,
+85224,Cameron Webb,VA,05,,https://secure.actblue.com/donate/dr--cameron-webb-for-congress-1,
+96173,Nicholas Betts,VA,06,https://www.bettsforcongress.com/,https://secure.actblue.com/donate/nicholas-betts-for-congress-1,
+51991,Abigail Spanberger,VA,07,http://www.abigailspanberger.com,https://secure.actblue.com/donate/spanberger_website,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/51991.JPG
+36395,Don Beyer,VA,08,http://WWW.FRIENDSOFDONBEYER.COM,https://secure.actblue.com/donate/don-beyer-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/36395.jpg
+49784,Jennifer Wexton,VA,10,http://www.jenniferwexton.com,https://secure.actblue.com/donate/wexton-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/49784.jpg
+19055,Gerry Connolly,VA,11,http://gerryconnolly.com/,https://secure.actblue.com/donate/gerry-connolly-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/19055.jpg
+43963,Stacey Plaskett,VI,AL,http://plaskettforcongress.com,https://secure.actblue.com/donate/standwithstacey,
+12874,Peter Welch,VT,AL,http://www.welchforcongress.com/,https://secure.actblue.com/donate/peter-welch-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12874.gif
+28909,Suzan DelBene,WA,01,http://www.delbeneforcongress.com/content/id/1/Home,https://secure.actblue.com/donate/suzan-delbene-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28909.jpg
+84939,Jason Call,WA,02,https://www.callforcongress.com,https://secure.actblue.com/donate/call-for-congress,
+12876,Rick Larsen,WA,02,http://www.ricklarsen.org/,https://secure.actblue.com/donate/ricklarsen-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12876.gif
+84110,Carolyn Long,WA,03,https://www.electlong.com/,https://secure.actblue.com/donate/elect-carolyn-long-1,
+97961,Douglas McKinley,WA,04,https://dougmckinley2020.com/,https://secure.actblue.com/donate/douglas-mckinley-for-congress-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/97961.png
+100800,Dave Wilson,WA,05,http://www.ElectDaveWilson.com,https://secure.actblue.com/donate/friends-of-dave-wilson-1,
+29211,Derek Kilmer,WA,06,http://www.kilmerforcongress.com,https://secure.actblue.com/donate/derek-kilmer-5,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/29211.jpg
+42255,Pramila Jayapal,WA,07,http://www.pramilaforcongress.com/,https://secure.actblue.com/donate/pramila-for-congress-1,
+52704,Kim Schrier,WA,08,,https://secure.actblue.com/donate/schrier,
+12880,Adam Smith,WA,09,http://www.electadamsmith.com/,https://secure.actblue.com/donate/adam-smith-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12880.gif
+92840,Beth Doglio,WA,10,http://bethdoglio.com,https://secure.actblue.com/donate/beth-doglio-for-congress-exploratory-committee-1,
+90677,Marilyn Strickland,WA,10,,https://secure.actblue.com/donate/strickland-for-washington-1,
+92127,Roger Polack,WI,01,http://rogerforwisconsin.com,https://secure.actblue.com/donate/roger-for-wisconsin-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/92127.jpg
+27823,Mark Pocan,WI,02,http://www.pocanforcongress.com,https://secure.actblue.com/donate/mark-pocan-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/27823.jpg
+12882,Ron Kind,WI,03,http://ronkind.org/,https://secure.actblue.com/donate/ron-kind-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12882.jpg
+12883,Gwen Moore,WI,04,http://www.gwenmooreforcongress.com/,https://secure.actblue.com/donate/gwen-moore,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/12883.jpg
+53499,Tom Palzewicz,WI,05,https://www.tomforwi.com,https://secure.actblue.com/donate/palzewicz-for-wisconsin-eom2,
+87778,Jessica King,WI,06,http://jessicakingforwisconsin.com/,https://secure.actblue.com/donate/jessica-king-for-wisconsin-1,
+101934,Tricia Zunker,WI,07,https://triciaforwisconsin.com/,https://secure.actblue.com/donate/tricia-zunker-1,
+83811,Alan Gross,AK,Sen,,https://secure.actblue.com/donate/dr--alan-gross-for-u-s--senate-1,
+50702,Doug Jones,AL,Sen,http://www.dougjones.com,https://secure.actblue.com/donate/doug-jones-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50702.jpg
+77516,Mark Kelly,AZ,Sen,,https://secure.actblue.com/donate/service_usa1,
+85998,John Hickenlooper,CO,Sen,,https://secure.actblue.com/donate/john-hickenlooper-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/85998.png
+23738,Chris Coons,DE,Sen,http://www.chriscoons.com,https://secure.actblue.com/donate/chris-coons-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/23738.jpg
+88870,Jess Scarane,DE,Sen,http://jessfordelaware.com,https://secure.actblue.com/donate/jess-scarane-for-delaware,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88870.jpg
+86354,Jon Ossoff,GA,Sen,http://ElectJon.com,https://secure.actblue.com/donate/jon-ossoff-1,
+82515,Theresa Greenfield,IA,Sen,https://greenfieldforiowa.com/,https://secure.actblue.com/donate/theresa-greenfield-for-iowa-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82515.png
+94104,Paulette Jordan,ID,Sen,,https://secure.actblue.com/donate/paulette-for-senate-2020-1,
+325,Dick Durbin,IL,Sen,http://www.dickdurbin.com/home,https://secure.actblue.com/donate/dick-durbin-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/325.gif
+87842,Barbara Bollier,KS,Sen,,https://secure.actblue.com/donate/bollier-for-kansas-1,
+83930,Amy McGrath,KY,Sen,http://www.amymcgrath.com,https://secure.actblue.com/donate/amy-mcgrath-1,
+102988,Adrian Perkins,LA,Sen,,https://secure.actblue.com/donate/perkins-for-louisiana-1,
+83811,Alan Gross,AK,Sen,,https://secure.actblue.com/donate/dr--alan-gross-for-u-s--senate-1,
+50702,Doug Jones,AL,Sen,http://www.dougjones.com,https://secure.actblue.com/donate/doug-jones-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/50702.jpg
+77516,Mark Kelly,AZ,Sen,,https://secure.actblue.com/donate/service_usa1,
+85998,John Hickenlooper,CO,Sen,,https://secure.actblue.com/donate/john-hickenlooper-3,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/85998.png
+23738,Chris Coons,DE,Sen,http://www.chriscoons.com,https://secure.actblue.com/donate/chris-coons-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/23738.jpg
+88870,Jess Scarane,DE,Sen,http://jessfordelaware.com,https://secure.actblue.com/donate/jess-scarane-for-delaware,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88870.jpg
+86354,Jon Ossoff,GA,Sen,http://ElectJon.com,https://secure.actblue.com/donate/jon-ossoff-1,
+82515,Theresa Greenfield,IA,Sen,https://greenfieldforiowa.com/,https://secure.actblue.com/donate/theresa-greenfield-for-iowa-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82515.png
+94104,Paulette Jordan,ID,Sen,,https://secure.actblue.com/donate/paulette-for-senate-2020-1,
+325,Dick Durbin,IL,Sen,http://www.dickdurbin.com/home,https://secure.actblue.com/donate/dick-durbin-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/325.gif
+87842,Barbara Bollier,KS,Sen,,https://secure.actblue.com/donate/bollier-for-kansas-1,
+83930,Amy McGrath,KY,Sen,http://www.amymcgrath.com,https://secure.actblue.com/donate/amy-mcgrath-1,
+102988,Adrian Perkins,LA,Sen,,https://secure.actblue.com/donate/perkins-for-louisiana-1,
+80870,Antoine Pierce,LA,Sen,http://www.antoinepierce.com,https://secure.actblue.com/donate/antoine-pierce-1,
+96572,Dartanyon A. Williams,LA,Sen,https://DAW4US.com,https://secure.actblue.com/donate/daw4us-crusade-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/96572.png
+102826,Derrick Edwards,LA,Sen,http://www.voteDerrickEdwards.com,https://secure.actblue.com/donate/the-committee-to-elect-attorney-derrick-edwards-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/102826.jpg
+92750,Drew Knight,LA,Sen,http://Drew2020.com,https://secure.actblue.com/donate/drew-2020-l-l-c-1,
+100216,Peter Wenstrup,LA,Sen,,https://secure.actblue.com/donate/citizens-for-wenstrup-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/100216.jpg
+33342,Ed Markey,MA,Sen,http://www.edmarkey.org,https://secure.actblue.com/donate/ed-markey-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/33342.jpg
+86303,Joe Kennedy III,MA,Sen,,https://secure.actblue.com/donate/kennedy-for-massachusetts-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86303.jpg
+83632,Sara Gideon,ME,Sen,https://saragideon.com/,https://secure.actblue.com/donate/sara-gideon-for-maine-1,
+34101,Gary Peters,MI,Sen,http://www.petersformichigan.com,https://secure.actblue.com/donate/gary-peters-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/34101.jpeg
+56662,Tina Smith,MN,Sen,,https://secure.actblue.com/donate/tina-smith-1,
+61081,Mike Espy,MS,Sen,https://espyforsenate.com/,https://secure.actblue.com/donate/mike-espy-for-senate-1,
+95724,Steve Bullock,MT,Sen,https://stevebullock.com/,https://secure.actblue.com/donate/friends-of-steve-bullock-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/95724.jpg
+83460,Cal Cunningham,NC,Sen,,https://secure.actblue.com/donate/cal-cunningham-for-us-senate-1,
+18422,Jeanne Shaheen,NH,Sen,http://jeanneshaheen.org/,https://secure.actblue.com/donate/jeanne-shaheen-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/18422.jpeg
+92548,Cory Booker,NJ,Sen,http://www.corybooker.com,https://secure.actblue.com/donate/cory-booker-2,
+80890,Ben Ray Luján,NM,Sen,https://benrlujan.com/,https://secure.actblue.com/donate/ben-ray-luj-n-1,
+56454,Bethany Hall-Long,DE,Lt Gov,http://hall-long.com,https://secure.actblue.com/donate/committee-to-elect-bethany-hall-long-1,
+100155,Linda Lawson,IN,Lt Gov,,https://secure.actblue.com/donate/lawson-for-indiana-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/100155.jpg
+97265,Alissia Canady,MO,Lt Gov,http://www.CanadyforMissouri.com,https://secure.actblue.com/donate/canady,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/97265.jpg
+77033,Yvonne Holley,NC,Lt Gov,http://www.holleyfornc.com,https://secure.actblue.com/donate/holley-for-nc-1,
+81970,Kathy Hochul,NY,Lt Gov,,https://secure.actblue.com/donate/ltgovkathyhochul,
+92464,Molly Gray,VT,Lt Gov,,https://secure.actblue.com/donate/molly-for-vermont-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/92464.jpg
+97187,Marko Liias,WA,Lt Gov,,https://secure.actblue.com/donate/marko-for-washington-2,
+90325,Jonathan Weinzapfel,IN,Atty Gen,http://www.WeinzapfelforAG.com,https://secure.actblue.com/donate/weinzapfel-for-indiana-1,
+39427,Thomas Quinn,MA,DA,,https://secure.actblue.com/donate/thomas-quinn-1,
+56454,Bethany Hall-Long,DE,Lt Gov,http://hall-long.com,https://secure.actblue.com/donate/committee-to-elect-bethany-hall-long-1,
+100155,Linda Lawson,IN,Lt Gov,,https://secure.actblue.com/donate/lawson-for-indiana-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/100155.jpg
+97265,Alissia Canady,MO,Lt Gov,http://www.CanadyforMissouri.com,https://secure.actblue.com/donate/canady,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/97265.jpg
+77033,Yvonne Holley,NC,Lt Gov,http://www.holleyfornc.com,https://secure.actblue.com/donate/holley-for-nc-1,
+81970,Kathy Hochul,NY,Lt Gov,,https://secure.actblue.com/donate/ltgovkathyhochul,
+92464,Molly Gray,VT,Lt Gov,,https://secure.actblue.com/donate/molly-for-vermont-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/92464.jpg
+97187,Marko Liias,WA,Lt Gov,,https://secure.actblue.com/donate/marko-for-washington-2,
+90325,Jonathan Weinzapfel,IN,Atty Gen,http://www.WeinzapfelforAG.com,https://secure.actblue.com/donate/weinzapfel-for-indiana-1,
+39427,Thomas Quinn,MA,DA,,https://secure.actblue.com/donate/thomas-quinn-1,
+88165,Rich Finneran,MO,Atty Gen,,https://secure.actblue.com/donate/finneran,
+81131,Raph Graybill,MT,Atty Gen,http://raphgraybill.com,https://secure.actblue.com/donate/raphgraybill,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/81131.jpg
+41050,Josh Stein,NC,Atty Gen,http://www.joshstein.org/,https://secure.actblue.com/donate/josh-stein-2,
+28585,Ellen Rosenblum,OR,Atty Gen,http://www.ellenrosenblum.com,https://secure.actblue.com/donate/ellenrosenblum-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/28585.jpg
+42107,Josh Shapiro,PA,Atty Gen,,https://secure.actblue.com/donate/shapiro-for-pennsylvania-1,
+40596,TJ Donovan,VT,Atty Gen,http://www.donovanforvermont.com/,https://secure.actblue.com/donate/tj-donovan-2,
+44453,Bob Ferguson,WA,Atty Gen,http://www.electbobferguson.com,https://secure.actblue.com/donate/bob-ferguson-default,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/44453.jpg
+84125,Sam Petsonk,WV,Atty Gen,http://samforwv.com,https://secure.actblue.com/donate/petsonk-for-wv-1,
+87460,Yinka Faleti,MO,Sec State,http://www.yinkafaleti.com,https://secure.actblue.com/donate/faletioriginal2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/87460.JPG
+82727,Bryce Bennett,MT,Sec State,http://www.bennettformontana.com,https://secure.actblue.com/donate/bryce-bennett-for-secretary-of-state-1,
+47633,Elaine Marshall,NC,Sec State,http://www.elainemarshall.com,https://secure.actblue.com/donate/elaine-marshall-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/47633.jpg
+85614,Jamie McLeod-Skinner,OR,Sec State,https://jamiefororegon.com/,https://secure.actblue.com/donate/jamie-for-oregon-sos,
+86239,Mark Hass,OR,Sec State,https://www.markhass.com,https://secure.actblue.com/donate/mark-hass,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86239.jpg
+98472,Shemia Fagan,OR,Sec State,,https://secure.actblue.com/donate/committee-to-elect-shemia-fagan-1,
+40358,Jim Condos,VT,Sec State,http://www.jimcondos.com,https://secure.actblue.com/donate/jim-condos-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40358.JPG
+90484,Gael Tarleton,WA,Sec State,https://www.voteforgael.org,https://secure.actblue.com/donate/gael,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/90484.jpeg
+40982,Natalie Tennant,WV,Sec State,,https://secure.actblue.com/donate/natalie-tennant-5,
+86974,Vicki Lorenz Englund,MO,Treas,http://vickienglund.com,https://secure.actblue.com/donate/citizens-for-vicki-lorenz-englund-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86974.jpg
+81163,Ronnie Chatterji,NC,Treas,,https://secure.actblue.com/donate/ronnie-for-nc-1,
+40294,Tobias Read,OR,Treas,http://www.tobiasread.com/,https://secure.actblue.com/donate/tobias-read,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/40294.jpg
+42434,Joe Torsella,PA,Treas,http://joetorsella.com,https://secure.actblue.com/donate/friends-of-joe-torsella-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/42434.png
+32940,Beth Pearce,VT,Treas,http://www.bethpearce.com,https://secure.actblue.com/donate/beth-pearce-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/32940.jpg
+97266,Mike Pellicciotti,WA,Treas,https://electmikep.com,https://secure.actblue.com/donate/people-for-pellicciotti-1,
+94141,John Perdue,WV,Treas,http://www.perduefortreasurer.com,https://secure.actblue.com/donate/perdue-2020-1,
+83955,Shane Morigeau,MT,Auditor,,https://secure.actblue.com/donate/shaneformontana2020,
+52570,Beth Wood,NC,Auditor,http://www.bethwoodcampaign.com,https://secure.actblue.com/donate/beth-wood-campaign-1,
+93897,Patrick Hart,ND,Auditor,,https://secure.actblue.com/donate/patrickhartforstateauditor,
+103782,Nina Ahmad,PA,Auditor,http://www.ninaforpa.com,https://secure.actblue.com/donate/nina-for-pa-2,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/103782.png
+31913,Doug Hoffer,VT,Auditor,http://hofferforauditor.com/,https://secure.actblue.com/donate/doug-hoffer-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/31913.jpg
+44451,Mary Ann Claytor,WV,Auditor,http://www.facebook.com/standwithmaryann,https://secure.actblue.com/donate/the-committee-to-elect-mary-ann-claytor-as-west-virginia-s-1,
+80612,Jenna Wadsworth,NC,Ag Comm,http://Jennawadsworth.com,https://secure.actblue.com/donate/jenna-wadsworth-committee-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80612.jpg
+82812,Bob Beach,WV,Ag Comm,http://beachforwv.com,https://secure.actblue.com/donate/bob-beach-commissioner-of-agriculture-2020-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82812.jpeg
+80926,Shea Stanfield,AZ,Corp Comm,http://electsheastanfield.com,https://secure.actblue.com/donate/elect-shea-stanfield-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80926.jpg
+98864,Ricardo Carlos Caballero,NM,01,,https://secure.actblue.com/donate/committee-to-re-elect-ricardo-carlos-caballero-1,
+82077,Kayode Abegunde,DE,Ins Comm,https://electkayodefor2020deinsurancecommissioner.com/,https://secure.actblue.com/donate/kayode-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/82077.jpg
+93560,Trinidad Navarro,DE,Ins Comm,http://Trinidad-Navarro.com,https://secure.actblue.com/donate/navarro-for-insurance-commissioner-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/93560.jpeg
+41375,Wayne Goodwin,NC,Ins Comm,http://www.waynegoodwin.org,https://secure.actblue.com/donate/wayne-goodwin-a,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/41375.jpg
+81414,Hilary Franz,WA,Land Comm,http://www.hilaryfranz.com,https://secure.actblue.com/donate/friends-of-hilary-franz-2,
+81756,Cynthia Hall,NM,Reg Comm,https://www.facebook.com/CynthiaHallforPRC/,https://secure.actblue.com/donate/committee-to-elect-cynthia-hall-1,
+102002,Remi Bald Eagle,SD,PUC Comm,,https://secure.actblue.com/donate/remi-for-sd-1,
+88088,Chrysta Castaneda,TX,RR Comm,http://www.chrystafortexas.com,https://secure.actblue.com/donate/chrysta-castaneda-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88088.png
+39132,Melissa Romano,MT,Super,http://www.romanoformontana.com,https://secure.actblue.com/donate/melissa-romano-1,
+82109,Chris Reykdal,WA,Super,http://chrisreykdal.org,https://secure.actblue.com/donate/friends-of-chris-reykdal-1,
+103577,Tom Holmes,AL,SBE,http://www.HolmesforAlabama.com,https://secure.actblue.com/donate/tom-holmes-for-state-school-board-1-inc--1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/103577.jpg
+86316,Lisa Escárcega,CO,SBE,http://lisaescarcega.com,https://secure.actblue.com/donate/coloradans-for-lisa-esc-rcega-1,
+95855,Mayling Simpson,CO,SBE,https://www.maylingforschools.com,https://secure.actblue.com/donate/friends-of-mayling-1,
+80063,Georgina Cecilia Perez,TX,SBE,https://www.ginatxsboe1.com,https://secure.actblue.com/donate/georgina-c--perez-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80063.png
+80019,Michelle Palmer,TX,SBE,http://palmerfortexased.com,https://secure.actblue.com/donate/michelle-palmer-for-texas-ed-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/80019.PNG
+84514,John Carney,DE,Gov,https://johncarney.org/,https://secure.actblue.com/donate/friends-for-john-carney-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84514.png
+84213,Woody Myers,IN,Gov,https://www.drwoodymyers.com,https://secure.actblue.com/donate/myers-for-governor-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/84213.jpg
+85788,Nicole Galloway,MO,Gov,,https://secure.actblue.com/donate/nicole-galloway-2,
+83681,Mike Cooney,MT,Gov,,https://secure.actblue.com/donate/cooney-for-montana-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/83681.png
+41279,Roy Cooper,NC,Gov,http://www.roycooper.com/,https://secure.actblue.com/donate/roy-cooper-1,
+92849,Shelley Lenz,ND,Gov,https://www.lenz-vigfornd.com,https://secure.actblue.com/donate/lenz-for-governor-2020,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/92849.jpg
+88706,Andru Volinsky,NH,Gov,,https://secure.actblue.com/donate/andru-volinsky-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/88706.png
+86564,Dan Feltes,NH,Gov,https://danfeltesnh.com/,https://secure.actblue.com/donate/dan-feltes-for-governor-1,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/86564.png
+95347,Chris Peterson,UT,Gov,http://petersonforutah.com,https://secure.actblue.com/donate/peterson-for-utah-1,
+92330,David Zuckerman,VT,Gov,https://www.zuckermanforvt.com/,https://secure.actblue.com/donate/zuckerman-for-vt-1,
+39743,Jay Inslee,WA,Gov,http://jayinslee.com,https://secure.actblue.com/donate/jay-inslee-4,https://secure.actblue.com/x/object/actblue-images/entity/photos/thumb/39743.jpg
+88008,Ben Salango,WV,Gov,http://bensalango.com,https://secure.actblue.com/donate/ben-salango-for-wv-1,

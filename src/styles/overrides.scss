@@ -197,6 +197,14 @@ li.usa-card {
   display: block;
 }
 
+.usa-card .usa-card__img {
+  background-color: unset;
+
+  img.very-small {
+    max-width: 80px;
+  }
+}
+
 // only apply to naked uls
 .usa-card__body ul:not([class]) {
   padding: 0 0 0 20px;

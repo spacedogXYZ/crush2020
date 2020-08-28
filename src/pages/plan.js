@@ -88,7 +88,9 @@ const PlanPage = ({ location }) => {
           name
           state
           district
+          website
           donation_url
+          image_url
         }
       }
 
