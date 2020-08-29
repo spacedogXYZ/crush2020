@@ -15,7 +15,9 @@ exports.handler = async (event) => {
   if (!body) {
     return {
       statusCode: 400,
-      body: `post to this endpoint`,
+      body: JSON.stringify({
+        message: "post to this endpoint"
+      })
     }
   }
   var data
@@ -23,7 +25,12 @@ exports.handler = async (event) => {
     data = JSON.parse(body)
   } catch (err) {
     console.error(err)
-    return { statusCode: 400, body: "invalid json" }
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        message: "invalid json"
+      })
+    }
   }
 
   const requiredFields = ["name", "contact", "geocode"]
@@ -34,7 +41,9 @@ exports.handler = async (event) => {
       console.error(`${f} required`)
       return {
         statusCode: 400,
-        body: `${f} is required`,
+        body: JSON.stringify({
+          message: `${f} is required`
+        })
       }
     }
   }
@@ -88,7 +97,9 @@ exports.handler = async (event) => {
       // assume successful if there's no error state
       {
         statusCode: 200,
-        body: "Success!",
+        body: JSON.stringify({
+          message: "ok"
+        }),
       })
     ).catch((err) => (
       {
