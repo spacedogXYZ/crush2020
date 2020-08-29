@@ -406,7 +406,7 @@ export function Plan({ form, plan }) {
                       rel="noreferrer"
                     >
                       <Button type="button" className="usa-button">
-                        Give ${form.money}
+                        Give ${form.money} monthly
                       </Button>
                     </OutboundLink>
                   </CardFooter>
@@ -434,9 +434,11 @@ export function Plan({ form, plan }) {
                         </CardMedia>
                       )}
                       <p>{firstSentence(plan.money.donate_local.description)}</p>
+                      { plan.money.donate_local.hide_mvp ? (<></>) : (
                       <div className="citation">
                         Movement Voter Project
                       </div>
+                      )}
                     </CardBody>
                     <CardFooter>
                       {plan.money.donate_local.donation_url && (
@@ -476,9 +478,11 @@ export function Plan({ form, plan }) {
                         </CardMedia>
                       )}
                       <p>{firstSentence(plan.money.donate_national.description)}</p>
-                      <div className="citation">
-                        Movement Voter Project
-                      </div>
+                      { plan.money.donate_national.hide_mvp ? (<></>) : (
+                        <div className="citation">
+                          Movement Voter Project
+                        </div>
+                      )}
                     </CardBody>
                     <CardFooter>
                       {plan.money.donate_national.donation_url && (

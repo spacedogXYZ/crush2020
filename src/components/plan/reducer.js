@@ -72,8 +72,8 @@ function matchCandidate(state, district, candidates, ratings, volunteer) {
   }
 
   return {
-    name: "DNC 2020 Victory",
-    event_feed_url: "https://www.mobilize.us/2020victory/",
+    name: "Biden/Harris 2020",
+    event_feed_url: "https://go.joebiden.com/page/s/Distributed-volunteers",
   }
 }
 
@@ -82,7 +82,7 @@ function matchOrganization(state, issues, orgs) {
   // return a list of orgs in that state which match issue areas
   // and have donation links
 
-  return orgs.filter(o => {
+  let matches = orgs.filter(o => {
     if (!o.donation_url) {
       return false
     }
@@ -116,6 +116,33 @@ function matchOrganization(state, issues, orgs) {
     }
     return false
   })
+
+  if(state === "") {
+    // national overrides that aren't from MVP
+    if(issues.includes("GUN_VIOLENCE")) {
+      matches.push({
+        name: "March For Our Lives",
+        description: "March For Our Lives has hundreds of chapters around the country led by students who enact change on the local level.",
+        website: "https://marchforourlives.com/our-power-in-the-states/",
+        donation_url: "https://secure.everyaction.com/45zW1UMUqUycXs7bfGH8gA2",
+        logo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/March_For_Our_Lives.svg/320px-March_For_Our_Lives.svg.png",
+        hide_mvp: true,
+      })
+    }
+
+    if(issues.includes("VOTER_SUPPRESSION")) {
+      matches.push({
+        name: "Spread the Vote",
+        description: "Spread the Vote helps members of our communities empower themselves to be heard at the polls: with IDs, registration, education, and turnout.",
+        website: "https://www.spreadthevote.org/volunteer",
+        donation_url: "https://www.kindest.com/donate/spread-the-vote",
+        logo_url: "https://images.squarespace-cdn.com/content/5bf888c70dbda3e7f01335b3/1544655556721-2QL3RFZ2OG1CZGAR6W27/STV_logo_red.png?format=300w&content-type=image%2Fpng",
+        hide_mvp: true,
+      })
+    }
+  }
+
+  return matches
 }
 
 export function makePlan(form, data) {
