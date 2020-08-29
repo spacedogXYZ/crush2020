@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Location, Router, useLocation } from "@reach/router"
+import { Router, useLocation } from "@reach/router"
 import { navigate } from "gatsby"
 
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"

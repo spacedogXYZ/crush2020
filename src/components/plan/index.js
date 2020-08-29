@@ -136,7 +136,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.senate_candidates.map(c => (
-                          <Candidate data={c} />
+                          <Candidate key={c.CAND_ID} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -157,7 +157,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.house_candidates.map(c => (
-                          <Candidate key={c.name} data={c} />
+                          <Candidate key={c.CAND_ID} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -180,7 +180,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.governor_candidates.map(c => (
-                          <Candidate data={c} />
+                          <Candidate key={c.CAND_ID} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -197,7 +197,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.state_sos_candidates.map(c => (
-                          <Candidate data={c} />
+                          <Candidate key={c.CAND_ID} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -214,7 +214,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.state_ag_candidates.map(c => (
-                          <Candidate data={c} />
+                          <Candidate key={c.CAND_ID} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -518,7 +518,7 @@ export function Plan({ form, plan }) {
             <GridContainer>
               <Grid row>
                 {plan.reach.states.map(s => (
-                  <Card gridLayout={{ tablet: { col: 4 } }}>
+                  <Card key={s.name} gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
                       <h3 className="usa-card__heading">{s.name}</h3>
                     </CardHeader>

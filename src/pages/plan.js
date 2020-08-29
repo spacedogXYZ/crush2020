@@ -41,7 +41,7 @@ const PlanPage = ({ location }) => {
         setForm(parsed.data)
         setLoaded(true)
         // redirect to capture uid
-        navigate("/plan", { state: form })
+        navigate("/plan", { state: parsed.data })
       })
       .catch(err => {
         // unable to load
