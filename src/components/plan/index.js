@@ -531,6 +531,7 @@ export function Plan({ form, plan }) {
                         Help win the {s.race} race in {s.name} from home.
                       </p>
 
+                      <ButtonGroup>
                       {s.volunteer && (
                         <OutboundLink
                           href={`${s.volunteer.event_feed_url}?is_virtual=true`}
@@ -566,6 +567,7 @@ export function Plan({ form, plan }) {
                           </Button>
                         </OutboundLink>
                       )}
+                      </ButtonGroup>
                     </CardBody>
                   </Card>
                 ))}

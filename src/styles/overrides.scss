@@ -99,6 +99,10 @@
     }
   }
 
+  .usa-button {
+    margin-bottom: 0.75rem;
+  }
+
   .usa-button-group.nav-container {
     justify-content: center;
   }
@@ -118,6 +122,10 @@
   min-width: 200px;
   max-width: 620px;
   margin: auto;
+  & + label {
+    display: block;
+    margin-top: 1rem;
+  }
 }
 
 button.icon-left svg {
