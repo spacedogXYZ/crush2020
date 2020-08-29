@@ -9,6 +9,11 @@ ul.location-search {
     &:hover, &.hover {
       background: lightgray;
     }
+
+    &.citation, &.citation:hover {
+      text-align: right;
+      background: white;
+    }
   }
 }
 

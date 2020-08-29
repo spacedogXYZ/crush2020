@@ -6,6 +6,7 @@ import { Form, Fieldset, TextInput } from "@trussworks/react-uswds"
 
 import usePlacesAutocomplete from "use-places-autocomplete"
 import { matchOCDID } from "../../../utils/ocdid"
+import powered_by_google from "../../../images/powered_by_google.png"
 
 const { GATSBY_GOOGLE_MAPS_KEY } = process.env
 const GOOGLE_CIVIC_API_URL =
@@ -166,9 +167,9 @@ export function LocationStep() {
               role="listbox"
             >
               {renderSuggestions()}
-              {/*<li style={{ textAlign: "center" }}>
-                <img src="/images/powered_by_google/desktop/powered_by_google_on_white.png" alt="Powered by Google"/>
-              </li>*/}
+              <li className='citation'>
+                <img src={powered_by_google} alt="Powered by Google"/>
+              </li>
             </ul>
           )}
         </div>
