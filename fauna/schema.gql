@@ -1,0 +1,35 @@
+type Geocode @embedded {
+    city: String
+    state: String
+    zip: String
+    county: String
+    cd: String
+    state_lower: String
+    state_upper: String
+}
+
+type Contact @embedded {
+    email: String!
+    twitter: String
+    instagram: String
+}
+
+type Form {
+    registered: String
+    vbm: String
+
+    location: String
+    geocode: Geocode!
+    issues: [String]
+    skills: [String]
+    time: Int
+    money: Float
+    reach: [String]
+
+    name: String!
+    contact: Contact
+}
+
+type Query {
+    getForm: [Form!]!
+}

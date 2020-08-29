@@ -41,3 +41,5 @@ To work on the backend functions locally, install [netlify-cli](https://docs.net
 yarn start
 go to http://localhost:8888
 ```
+
+Submitted form data is stored in FaunaDB, and can be queried using their unique IDs. User contact data is stored in ActionNetwork, along with issue and interests as tags.
