@@ -72,7 +72,8 @@ const AboutPage = () => (
         personal information from a child under 13 without verification of
         parental consent, we will use all reasonable efforts to delete such
         information. If you believe we might have any information from or about
-        a child under 13, please contact us at privacy@crush2020.org.
+        a child under 13, please contact us at {" "}
+        <a href="mailto:privacy@crush2020.org?Subject=Underage%20User">privacy@crush2020.org</a>.
       </p>
 
       <h3>Required Disclosure</h3>

@@ -26,8 +26,9 @@ const AboutPage = () => (
       <p>
         We show you information from various sources, and endeavor to ensure
         that it is as accurate as possible. However, if you see something
-        incorrect, please contact us at info@crush2020.org and we will work to
-        make it right.
+        incorrect, please contact us at{" "}
+        <a href="mailto:info@crush2020.org?Subject=Incorrect%20Data">info@crush2020.org</a>
+        {" "}and we will work to make it right.
       </p>
       <p>Data provided from the following sources:</p>
       <ul>
