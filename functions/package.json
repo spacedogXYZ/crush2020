@@ -1,7 +1,7 @@
 {
   "name": "crush2020-functions",
   "version": "0.0.1",
-  "main": "signup.js",
+  "main": "index.js",
   "license": "MIT",
   "private": true,
   "dependencies": {

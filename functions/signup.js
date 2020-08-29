@@ -1,5 +1,5 @@
 const { ACTION_NETWORK_URL } = process.env
-const axios = require("axios");
+const axios = require("axios")
 
 var splitName = (name) => {
   // tries to naively split first/last from single name
