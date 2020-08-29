@@ -67,16 +67,20 @@ function useFormProgress() {
 
 function PlanForm() {
   const { dispatch, state } = useFormState()
-  const location = useLocation();
+  const location = useLocation()
+  const [currentStep, goForward] = useFormProgress()
+  const [validate, setValidate] = useState(false)
 
+  // start at first step
   if(location.pathname === "/form/" || location.pathname === "/form") {
     exists(window) && navigate("/form/vote")
   }
+  if(currentStep === 0 && (location.pathname.split("/").pop() !== "vote")) {
+    exists(window) && navigate("/form/vote")
+  }
 
-  const [currentStep, goForward] = useFormProgress()
   const isLast = currentStep === STEPS.length - 1
-  const [validate, setValidate] = useState(false)
-
+  
   function handleSubmit() {
     dispatch({ type: "SUBMIT" })
 
