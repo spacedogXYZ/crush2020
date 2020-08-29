@@ -27,13 +27,13 @@ const headers = {
 
 const STEPS = [
   [<VoteStep path="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-  [<LocationStep path="location"  />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd)],
+  [<LocationStep path="location" />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd)],
   [
     <IssuesStep path="issues"  />,
     state => !isEmpty(state.issues) && state.issues.length <= 3,
   ],
   [
-    <SkillsStep path="skills"  />,
+    <SkillsStep path="skills" />,
     state => !isEmpty(state.skills) && state.skills.length <= 3,
   ],
   [<TimeStep path="time" />, () => true],
@@ -50,16 +50,16 @@ function useFormProgress() {
 
   function goForward() {
     let nextIndex = currentStep + 1
+    setCurrentStep(nextIndex)
     let nextStep = STEPS[nextIndex]
     exists(window) && navigate(`/form/${nextStep[0].props.path}`)
-    setCurrentStep(nextIndex)
   }
 
   function goBack() {
     let prevIndex = currentStep - 1
-    let prevStep = STEPS[prevIndex]
-    exists(window) && navigate(`/form/${prevStep[0].props.path}`)
     setCurrentStep(prevIndex)
+    let prevStep = STEPS[prevIndex]
+    exists(window) && navigate(`/form/${prevStep[0].props.path}`) 
   }
 
   return [currentStep, goForward, goBack]
@@ -75,7 +75,10 @@ function PlanForm() {
   if(location.pathname === "/form/" || location.pathname === "/form") {
     exists(window) && navigate("/form/vote")
   }
-  if(currentStep === 0 && (location.pathname.split("/").pop() !== "vote")) {
+  // if we are in the form, but not on the first step (without a current step)
+  if(currentStep === 0 && 
+    (location.pathname.split("/")[0] === "form" && location.pathname.split("/").pop() !== "vote")
+  ) {
     exists(window) && navigate("/form/vote")
   }
 
