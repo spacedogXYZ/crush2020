@@ -10,11 +10,11 @@ export const SKILLS_VALUES = {
   TEXTING: { t: "Texting", i: "comment-dots" },
   PHONE_CALLS: { t: "Chatting on the phone", i: "mobile-alt" },
   TWEETING: { t: "Tweeting", i: ["fab", "twitter-square"] },
-  MAKING_VIDEOS: { t: "Making videos", i: "film" },
   INSTAGRAM: { t: "Instagram", i: ["fab", "instagram"] },
+  MAKING_VIDEOS: { t: "Making videos", i: "film" },
   LAWYER: { t: "I'm a lawyer", i: "balance-scale" },
   CODER: { t: "I can code", i: "code" },
-  BILINGUAL: { t: "I'm bilingual", i: "sign-language" },
+  ELECTION_DAY: { t: "I can work on Election Day", i: "person-booth" },
 }
 
 export function SkillsStep() {

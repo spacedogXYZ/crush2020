@@ -251,6 +251,15 @@ export function makePlan(form, data) {
       description: "The national, nonpartisan Election Protection coalition works year-round to ensure that all voters have an equal opportunity to vote and have that vote count."
     }
     volunteer_time = "to answer voter questions on Election Day"
+  } else if (form.skills.includes("ELECTION_DAY")) {
+    volunteer_how = "Sign up to work the polls"
+    // override candidate
+    volunteer_candidate = {
+      name: "Power the Polls",
+      event_feed_url: "https://www.powerthepolls.org",
+      description: "You can help make sure we have a safe, fair, efficient election for all voters, and potentially get paid to do it."
+    }
+    volunteer_time = "to be a poll worker on Election Day"
   } else if (form.skills.includes("PHONE_CALLS")) {
     // just set how and type
     volunteer_how = "make calls"
