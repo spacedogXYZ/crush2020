@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react"
 import { Router, useLocation } from "@reach/router"
 
 import { useStaticQuery, graphql, navigate } from "gatsby"
+import { window, exists } from 'browser-monads'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
@@ -21,7 +23,6 @@ const PlanPage = ({ location }) => {
   // try to pull state from location in redirect
   let { state } = location
   if (!isEmpty(state) && !loaded) {
-    console.log("setForm by redirect")
     setForm(state)
     setLoaded(true)
   }
@@ -41,12 +42,12 @@ const PlanPage = ({ location }) => {
         setForm(parsed.data)
         setLoaded(true)
         // redirect to capture uid
-        navigate("/plan", { state: parsed.data })
+        exists(window) && navigate("/plan", { state: parsed.data })
       })
       .catch(err => {
         // unable to load
         console.error(err)
-        navigate("/form")
+        exists(window) && navigate("/form")
       })
     }
   }, [uid])

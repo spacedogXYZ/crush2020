@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Router, useLocation } from "@reach/router"
 import { navigate } from "gatsby"
+import { window, exists } from 'browser-monads'
 
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -50,14 +51,14 @@ function useFormProgress() {
   function goForward() {
     let nextIndex = currentStep + 1
     let nextStep = STEPS[nextIndex]
-    navigate(`/form/${nextStep[0].props.path}`)
+    exists(window) && navigate(`/form/${nextStep[0].props.path}`)
     setCurrentStep(nextIndex)
   }
 
   function goBack() {
     let prevIndex = currentStep - 1
     let prevStep = STEPS[prevIndex]
-    navigate(`/form/${prevStep[0].props.path}`)
+    exists(window) && navigate(`/form/${prevStep[0].props.path}`)
     setCurrentStep(prevIndex)
   }
 
@@ -69,7 +70,7 @@ function PlanForm() {
   const location = useLocation();
 
   if(location.pathname === "/form/" || location.pathname === "/form") {
-    navigate("/form/vote")
+    exists(window) && navigate("/form/vote")
   }
 
   const [currentStep, goForward] = useFormProgress()
@@ -113,7 +114,7 @@ function PlanForm() {
   }
 
   if (state.isSubmissionReceived && state.uid) {
-    navigate("/plan", { state: state })
+    exists(window) && navigate("/plan", { state: state })
   }
 
   let [stepRender, stepValid] = STEPS[currentStep]
