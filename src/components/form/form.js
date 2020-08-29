@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { navigate } from "gatsby"
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { nanoid } from 'nanoid'
 
 import {
   VoteStep,
@@ -16,6 +17,10 @@ import {
 import ProgressBar from "./progress"
 import { useFormState } from "./context"
 import { isEmpty } from "../../utils/object"
+
+const headers = {
+  "Content-Type": "application/json",
+}
 
 function useFormProgress() {
   const [currentStep, setCurrentStep] = useState(0)
@@ -62,24 +67,29 @@ function PlanForm() {
   function handleSubmit() {
     dispatch({ type: "SUBMIT" })
 
-    fetch("/.netlify/functions/signup ", {
+    let submit = state
+    submit.uid = nanoid() // create a new key for each submission
+    fetch("/.netlify/functions/create-form ", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(state),
+      headers: headers,
+      body: JSON.stringify(submit),
+    }).then(response => {
+      return fetch("/.netlify/functions/signup ", {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(submit),
+      })
     })
-      .then(response => {
-        if (!response.ok) {
-          throw Error(response.statusText)
-        }
-      })
-      .then(() => {
-        dispatch({ type: "SUBMISSION_RECEIVED" })
-      })
-      .catch(err => {
-        console.error(err)
-      })
+    .then(response => {
+      if (!response.ok) {
+        throw Error(response.statusText)
+      } else {
+        dispatch({ type: "SUBMISSION_RECEIVED", payload: submit.uid})
+      }
+    })
+    .catch(err => {
+      console.error(err)
+    })
   }
 
   if (state.isSubmitLoading) {
@@ -90,8 +100,8 @@ function PlanForm() {
     )
   }
 
-  if (state.isSubmissionReceived) {
-    navigate("/plan/", { state: state })
+  if (state.isSubmissionReceived && state.uid) {
+    navigate(`/plan/${state.uid}`, { state: state })
   }
 
   let [stepRender, stepValid] = steps[currentStep]

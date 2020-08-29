@@ -5,7 +5,7 @@ var faunadb = require('faunadb'),
 var client = new faunadb.Client({ secret: FAUNA_SERVER_SECRET })
 
 exports.handler = async (event) => {
-  const { queryStringParameters: { id }} = event
+  const { queryStringParameters: { uid }} = event
   return client.query(
     q.Get(q.Ref(q.Collection('Form'), id))
   )

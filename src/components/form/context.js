@@ -37,7 +37,7 @@ function formReducer(state, action) {
     case "SUBMIT":
       return { ...state, isSubmitLoading: true }
     case "SUBMISSION_RECEIVED":
-      return { ...state, isSubmitLoading: false, isSubmissionReceived: true }
+      return { ...state, isSubmitLoading: false, isSubmissionReceived: true, uid: action.payload }
     default:
       throw new Error()
   }
@@ -46,6 +46,7 @@ function formReducer(state, action) {
 const FormContext = createContext()
 
 const initialState = {
+  uid: false,
   registered: false,
   vbm: false,
 

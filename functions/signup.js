@@ -62,6 +62,7 @@ exports.handler = async (event) => {
         },
       ],
       custom_fields: {
+        uid: data.uid,
         twitter: data.contact.twitter,
         instagram: data.contact.instagram,
         time: data.time,

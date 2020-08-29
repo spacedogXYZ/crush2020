@@ -15,6 +15,7 @@ type Contact @embedded {
 }
 
 type Form {
+    uid: ID
     registered: String
     vbm: String
 
