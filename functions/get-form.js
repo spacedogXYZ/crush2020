@@ -1,6 +1,6 @@
 const { FAUNA_SERVER_SECRET } = process.env
-var faunadb = require('faunadb'),
-  q = faunadb.query
+var faunadb = require('faunadb')
+var q = faunadb.query
 
 var client = new faunadb.Client({ secret: FAUNA_SERVER_SECRET })
 
