@@ -169,20 +169,6 @@ ul.range-slider-label {
   }
 }
 
-ul.location-search {
-  @include add-list-reset;
-  text-align: left;
-  border: 1px solid lightgray;
-  padding: 0.5rem;
-  li {
-    margin-top: 0.5rem;
-
-    &:hover {
-      background: lightgray;
-    }
-  }
-}
-
 // plan components
 .usa-accordion__button {
   background-color: #1a4480;
