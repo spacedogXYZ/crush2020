@@ -1,5 +1,4 @@
 import React from "react"
-import { navigate } from "gatsby"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import {
@@ -34,11 +33,11 @@ export function Plan({ form, plan }) {
     !plan ||
     !Object.keys(plan).length
   ) {
-    // no form, redirect
-    if (typeof window !== `undefined`) {
-      navigate("/form/")
-    }
-    return null
+    return (
+      <GridContainer className="form-container">
+        <p>Loading...</p>
+      </GridContainer>
+    )
   }
 
   const state = form.geocode.state

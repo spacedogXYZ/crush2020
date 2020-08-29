@@ -113,7 +113,7 @@ function PlanForm() {
   }
 
   if (state.isSubmissionReceived && state.uid) {
-    navigate("/plan/", { state: state })
+    navigate("/plan", { state: state })
   }
 
   let [stepRender, stepValid] = STEPS[currentStep]
@@ -140,7 +140,6 @@ function PlanForm() {
 
             if (isValid) {
               if (isLast) {
-                console.log('submit!')
                 handleSubmit()
               } else {
                 setValidate(false)

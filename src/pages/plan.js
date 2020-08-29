@@ -1,16 +1,55 @@
-import React from "react"
-import { Router } from "@reach/router"
+import React, { useState, useEffect } from "react"
+import { Router, useLocation } from "@reach/router"
 
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
 
-
+import { isEmpty } from "../utils/object"
 import { makePlan } from "../components/plan/reducer"
 
 const PlanPage = ({ location }) => {
-  const { state } = location
+  const [form, setForm] = useState({})
+  const [loaded, setLoaded] = useState(false)
+  const pathParts = useLocation().pathname.split('/')
+  var uid
+  if(pathParts.length > 2) {
+    uid = pathParts[2]
+  }
+
+  // try to pull state from location in redirect
+  let { state } = location
+  if (!isEmpty(state) && !loaded) {
+    console.log("setForm by redirect")
+    setForm(state)
+    setLoaded(true)
+  }
+
+  useEffect(() => {
+    if(uid) {
+      // get state from database
+      fetch(`/.netlify/functions/get-form?uid=${uid}`, {
+        method: "GET",
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw Error(response.statusText)
+        }
+        return response.json()
+      }).then(parsed => {
+        setForm(parsed.data)
+        setLoaded(true)
+        // redirect to capture uid
+        navigate("/plan", { state: form })
+      })
+      .catch(err => {
+        // unable to load
+        console.error(err)
+        navigate("/form")
+      })
+    }
+  }, [uid])
 
   const planQuery = useStaticQuery(graphql`
     query planQuery {
@@ -111,7 +150,7 @@ const PlanPage = ({ location }) => {
     }
   `)
 
-  const plan = makePlan(state, {
+  const plan = makePlan(form, {
     candidates: {
       federal: planQuery.allFecCandidatesCsv.nodes,
       statewide: planQuery.allStatewideCandidatesCsv.nodes,
@@ -135,7 +174,7 @@ const PlanPage = ({ location }) => {
     <Layout>
       <SEO title="Your plan" />
       <Router basepath="/plan">
-        <Plan default path="/" form={state} plan={plan} />
+        <Plan default path="/" form={form} plan={plan} />
       </Router>
     </Layout>
   )
