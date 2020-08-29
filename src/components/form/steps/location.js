@@ -46,7 +46,6 @@ export function LocationStep() {
   }
 
   const handleSelect = ({ description }) => () => {
-    console.log("handleSelect", description)
     // When user selects a place, we can replace the keyword without request data from API
     // by setting the second parameter as "false"
     setValue(description, false)
@@ -133,7 +132,7 @@ export function LocationStep() {
     })
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend={"Where are you registered to vote?"}>
         <div
           role="combobox"
@@ -154,7 +153,7 @@ export function LocationStep() {
             value={value}
             onChange={handleInput}
             onKeyDown={handleKeyDown}
-            onBlur={(e) => {/*console.log(value); return handleSelect(value)*/}}
+            onSubmit={e => e.preventDefault()}
             disabled={!ready}
             placeholder="Enter your home address. We only use this to find your voting district."
 

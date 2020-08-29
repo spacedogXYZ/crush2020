@@ -17,7 +17,7 @@ export function SignupStep() {
   } = useFormState()
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend={"Almost done!"}>
         <GridContainer>
           <FormGroup>

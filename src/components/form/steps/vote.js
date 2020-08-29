@@ -12,7 +12,7 @@ export function VoteStep() {
   } = useFormState()
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend={"Are you registered to vote?"}>
         <FormButton
           text="Yes"

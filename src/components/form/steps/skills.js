@@ -42,7 +42,7 @@ export function SkillsStep() {
   }
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend="What are your skills?">
         <div className="button-grid">
           {Object.keys(SKILLS_VALUES).map(skill => (

@@ -10,7 +10,7 @@ export function MoneyStep() {
   } = useFormState()
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend={"How much can you contribute each month?"}>
         <RangeInput
           id="range-slider"

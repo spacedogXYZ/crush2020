@@ -42,7 +42,7 @@ export function IssuesStep() {
   }
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend="What issues matter most to you?">
         <div className="button-grid">
           {Object.keys(allIssues).map(issue => (

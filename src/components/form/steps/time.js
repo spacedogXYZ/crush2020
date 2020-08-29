@@ -19,7 +19,7 @@ export function TimeStep() {
   } = useFormState()
 
   return (
-    <Form>
+    <Form onSubmit={e => e.preventDefault()}>
       <Fieldset legend={"How much time do you have?"}>
         <RangeInput
           id="range-slider"
