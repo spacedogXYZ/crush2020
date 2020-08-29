@@ -1,8 +1,11 @@
 import React from "react"
+import { Router } from "@reach/router"
+
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
+
 
 import { makePlan } from "../components/plan/reducer"
 
@@ -131,7 +134,9 @@ const PlanPage = ({ location }) => {
   return (
     <Layout>
       <SEO title="Your plan" />
-      <Plan form={state} plan={plan} />
+      <Router basepath="/plan">
+        <Plan default path="/" form={state} plan={plan} />
+      </Router>
     </Layout>
   )
 }

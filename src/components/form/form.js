@@ -1,5 +1,7 @@
 import React, { useState } from "react"
+import { Location, Router, useLocation } from "@reach/router"
 import { navigate } from "gatsby"
+
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { nanoid } from 'nanoid'
@@ -22,15 +24,41 @@ const headers = {
   "Content-Type": "application/json",
 }
 
+const STEPS = [
+  [<VoteStep path="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
+  [<LocationStep path="location"  />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd)],
+  [
+    <IssuesStep path="issues"  />,
+    state => !isEmpty(state.issues) && state.issues.length <= 3,
+  ],
+  [
+    <SkillsStep path="skills"  />,
+    state => !isEmpty(state.skills) && state.skills.length <= 3,
+  ],
+  [<TimeStep path="time" />, () => true],
+  [<MoneyStep path="money" />, () => true],
+  [<ReachStep path="reach" />, () => true],
+  [
+    <SignupStep path="signup" />,
+    state => !isEmpty(state.name) && !isEmpty(state.contact.email),
+  ],
+]
+
 function useFormProgress() {
   const [currentStep, setCurrentStep] = useState(0)
 
   function goForward() {
-    setCurrentStep(currentStep + 1)
+    let nextIndex = currentStep + 1
+    let nextStep = STEPS[nextIndex]
+    navigate(`/form/${nextStep[0].props.path}`)
+    setCurrentStep(nextIndex)
   }
 
   function goBack() {
-    setCurrentStep(currentStep - 1)
+    let prevIndex = currentStep - 1
+    let prevStep = STEPS[prevIndex]
+    navigate(`/form/${prevStep[0].props.path}`)
+    setCurrentStep(prevIndex)
   }
 
   return [currentStep, goForward, goBack]
@@ -38,30 +66,14 @@ function useFormProgress() {
 
 function PlanForm() {
   const { dispatch, state } = useFormState()
+  const location = useLocation();
 
-  // step and validation functions
-  const steps = [
-    [<VoteStep />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-    [<LocationStep />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd)],
-    [
-      <IssuesStep />,
-      state => !isEmpty(state.issues) && state.issues.length <= 3,
-    ],
-    [
-      <SkillsStep />,
-      state => !isEmpty(state.skills) && state.skills.length <= 3,
-    ],
-    [<TimeStep />, () => true],
-    [<MoneyStep />, () => true],
-    [<ReachStep />, () => true],
-    [
-      <SignupStep />,
-      state => !isEmpty(state.name) && !isEmpty(state.contact.email),
-    ],
-  ]
+  if(location.pathname === "/form/" || location.pathname === "/form") {
+    navigate("/form/vote")
+  }
 
   const [currentStep, goForward] = useFormProgress()
-  const isLast = currentStep === steps.length - 1
+  const isLast = currentStep === STEPS.length - 1
   const [validate, setValidate] = useState(false)
 
   function handleSubmit() {
@@ -94,24 +106,26 @@ function PlanForm() {
 
   if (state.isSubmitLoading) {
     return (
-      <GridContainer className="form-container">
+      <GridContainer className="form-container" path="submit">
         <p>Loading...</p>
       </GridContainer>
     )
   }
 
   if (state.isSubmissionReceived && state.uid) {
-    navigate(`/plan/${state.uid}`, { state: state })
+    navigate("/plan/", { state: state })
   }
 
-  let [stepRender, stepValid] = steps[currentStep]
+  let [stepRender, stepValid] = STEPS[currentStep]
   let isValid = stepValid(state)
 
   return (
     <GridContainer className="form-container">
-      <ProgressBar value={currentStep} max={steps.length - 1} />
+      <ProgressBar value={currentStep} max={STEPS.length - 1} />
 
-      {stepRender}
+      <Router basepath="/form">
+        {stepRender}
+      </Router>
 
       <ButtonGroup className="nav-container">
         <Button
@@ -126,6 +140,7 @@ function PlanForm() {
 
             if (isValid) {
               if (isLast) {
+                console.log('submit!')
                 handleSubmit()
               } else {
                 setValidate(false)

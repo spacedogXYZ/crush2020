@@ -22,7 +22,7 @@ const IndexPage = () => (
             </h1>
             <Link
               className="usa-button bg-secondary hover:bg-secondary-dark"
-              to="/step"
+              to="/form"
             >
               Make a plan <FontAwesomeIcon icon={["fas", "arrow-right"]} />
             </Link>

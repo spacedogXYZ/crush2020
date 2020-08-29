@@ -36,7 +36,7 @@ export function Plan({ form, plan }) {
   ) {
     // no form, redirect
     if (typeof window !== `undefined`) {
-      navigate("/step/")
+      navigate("/form/")
     }
     return null
   }
