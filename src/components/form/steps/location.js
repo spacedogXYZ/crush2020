@@ -69,7 +69,7 @@ export function LocationStep() {
         }
         const ocdids = Object.keys(divisions)
         result["county"] = matchOCDID(ocdids, "county")
-        result["cd"] = matchOCDID(ocdids, "cd")
+        result["cd"] = matchOCDID(ocdids, "cd") || "00"
         result["state_lower"] = matchOCDID(ocdids, "sldl")
         result["state_upper"] = matchOCDID(ocdids, "sldu")
 

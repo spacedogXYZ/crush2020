@@ -26,7 +26,7 @@ const headers = {
 
 const STEPS = [
   [<VoteStep path="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-  [<LocationStep path="location" />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd),
+  [<LocationStep path="location" />, state => !isEmpty(state.geocode),
     "Please select a location from the drop-down. Be specific, so we can find your voting district."
   ],
   [
