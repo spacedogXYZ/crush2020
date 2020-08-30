@@ -44,7 +44,7 @@ const STEPS = [
   [<ReachStep path="reach" />, () => true],
   [
     <SignupStep path="signup" />,
-    state => !isEmpty(state.name) && !isEmpty(state.contact.email),
+    state => !isEmpty(state.name) && !isEmpty(state.contact.email) && state.contact.email.includes("@"),
     "Please enter your name and email, so we can contact you about your plan."
   ],
 ]
