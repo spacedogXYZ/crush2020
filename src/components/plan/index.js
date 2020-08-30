@@ -25,6 +25,11 @@ const Candidate = ({ data }) => (
     {parseName(data.CAND_NAME)} ({data.CAND_PTY_AFFILIATION.slice(0, 1)})
   </li>
 )
+const StateCandidate = ({ data }) => (
+  <li key={data.Candidate}>
+    {parseName(data.Candidate)} ({data.Specific_Party.slice(0, 1)})
+  </li>
+)
 
 export function Plan({ form, plan }) {
   if (
@@ -195,7 +200,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.governor_candidates.map(c => (
-                          <Candidate key={c.CAND_ID} data={c} />
+                          <StateCandidate key={c.Candidate} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -212,7 +217,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.state_sos_candidates.map(c => (
-                          <Candidate key={c.CAND_ID} data={c} />
+                          <StateCandidate key={c.Candidate} data={c} />
                         ))}
                       </ul>
                     </CardBody>
@@ -229,7 +234,7 @@ export function Plan({ form, plan }) {
                     <CardBody>
                       <ul>
                         {plan.ballot.state_ag_candidates.map(c => (
-                          <Candidate key={c.CAND_ID} data={c} />
+                          <StateCandidate key={c.Candidate} data={c} />
                         ))}
                       </ul>
                     </CardBody>
