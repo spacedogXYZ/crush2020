@@ -16,7 +16,7 @@ const PlanPage = ({ location }) => {
   const [loaded, setLoaded] = useState(false)
   const pathParts = useLocation().pathname.split('/')
   var uid
-  if(pathParts.length > 2) {
+  if(pathParts.length >= 2) {
     uid = pathParts[2]
   }
 
@@ -49,8 +49,10 @@ const PlanPage = ({ location }) => {
         console.error(err)
         exists(window) && navigate("/form")
       })
+    } else if (isEmpty(form)) {
+      exists(window) && navigate("/form")
     }
-  }, [uid])
+  }, [uid, form])
 
   const planQuery = useStaticQuery(graphql`
     query planQuery {
