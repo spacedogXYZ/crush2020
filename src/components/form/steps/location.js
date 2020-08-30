@@ -63,6 +63,10 @@ export function LocationStep() {
         let { normalizedInput: result } = data
         // and cd, sldl and sldu from divisions
         const { divisions } = data
+        if (!divisions) {
+          console.error("unable to find google civic divisions for that address", description)
+          return false
+        }
         const ocdids = Object.keys(divisions)
         result["county"] = matchOCDID(ocdids, "county")
         result["cd"] = matchOCDID(ocdids, "cd")

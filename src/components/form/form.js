@@ -26,14 +26,18 @@ const headers = {
 
 const STEPS = [
   [<VoteStep path="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-  [<LocationStep path="location" />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd)],
+  [<LocationStep path="location" />, state => !isEmpty(state.geocode) && !isEmpty(state.geocode.cd),
+    "Please select a location from the drop-down. Be specific, so we can find your voting district."
+  ],
   [
     <IssuesStep path="issues"  />,
     state => !isEmpty(state.issues) && state.issues.length <= 3,
+    "Please select between one and three issues."
   ],
   [
     <SkillsStep path="skills" />,
     state => !isEmpty(state.skills) && state.skills.length <= 3,
+    "Please select between one and three skills."
   ],
   [<TimeStep path="time" />, () => true],
   [<MoneyStep path="money" />, () => true],
@@ -41,6 +45,7 @@ const STEPS = [
   [
     <SignupStep path="signup" />,
     state => !isEmpty(state.name) && !isEmpty(state.contact.email),
+    "Please enter your name and email, so we can contact you about your plan."
   ],
 ]
 
@@ -140,7 +145,7 @@ function PlanForm() {
     exists(window) && navigate("/plan", { state: state })
   }
 
-  let [stepRender, stepValid] = STEPS[currentStep]
+  let [stepRender, stepValid, stepError] = STEPS[currentStep]
   let isValid = stepValid(state)
 
   return (
@@ -177,7 +182,9 @@ function PlanForm() {
         </Button>
       </ButtonGroup>
       {validate && !isValid && (
-        <div className="error-container">Please select your answers</div>
+        <div className="error-container">
+          {stepError ? stepError : "Please select your answers"}
+        </div>
       )}
     </GridContainer>
   )
