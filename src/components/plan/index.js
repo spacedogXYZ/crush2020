@@ -44,7 +44,12 @@ export function Plan({ form, plan }) {
   const state_name = us_states.getStateNameByStateCode(state)
   const state_slug = slugify(state_name).toLowerCase()
 
-  return (
+
+  return (<>
+    <GridContainer>
+      <h2>Here's a personalized plan to crush the election with your Ballot, Time, Money &amp; Reach</h2>
+      <p>Don't worry, we'll also email you updates as we get close to Election Day.</p>
+    </GridContainer>
     <Accordion
       items={[
         {
@@ -587,7 +592,7 @@ export function Plan({ form, plan }) {
         },
       ]}
     />
-  )
+  </>)
 }
 
 export default Plan
