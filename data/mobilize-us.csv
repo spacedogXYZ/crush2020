@@ -871,7 +871,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 1133,League of Conservation Voters in Wisconsin,lcvwi,,COORDINATED,WI,,,https://www.mobilize.us/lcvwi/
 1134,United We Dream Action,unitedwedreamaction,,INDEPENDENT,,,,https://www.mobilize.us/unitedwedreamaction/
 1135,Student Action,studentaction,,COORDINATED,,,,https://www.mobilize.us/studentaction/
-1136,Wisconsin State Senate Democratic Committee,wisconsinsenatedemocraticcommittee,,COORDINATED,WI,,,https://www.mobilize.us/wisconsinsenatedemocraticcommittee/
 1137,New Florida Majority,newfloridamajority1,,INDEPENDENT,,,,https://www.mobilize.us/newfloridamajority1/
 1138,New Florida Majority,newfloridamajority,,INDEPENDENT,,,,https://www.mobilize.us/newfloridamajority/
 1139,Governor Roy Cooper,roycooper,GOVERNOR,CAMPAIGN,NC,,Roy Cooper,https://www.mobilize.us/roycooper/
@@ -2581,7 +2580,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3459,Erina Prom for MN House,erinapromformnhouse,,CAMPAIGN,,,,https://www.mobilize.us/erinapromformnhouse/
 3460,Gabinetona,gabinetona,,GOVERNMENT,,,,https://www.mobilize.us/gabinetona/
 3461,06820 VOC,06820voc,,C3,,,,https://www.mobilize.us/06820voc/
-3462,The People for Nikki Merritt,thepeoplefornikkimerritt,,CAMPAIGN,,,,https://www.mobilize.us/thepeoplefornikkimerritt/
+3462,Nikki Merritt for Georgia SD 9,thepeoplefornikkimerritt,,CAMPAIGN,,,,https://www.mobilize.us/thepeoplefornikkimerritt/
 3463,Common Defense - Demo,commondefensedemo,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/commondefensedemo/
 3464,Jonathan Kassa for State Representative,kassaforstaterep,,CAMPAIGN,,,,https://www.mobilize.us/kassaforstaterep/
 3465,Texas Democratic County Chair Association,texasdemocraticcountychairassociation,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/texasdemocraticcountychairassociation/
@@ -2791,7 +2790,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3680,Kind for Congress,kindforcongress,CONGRESSIONAL,CAMPAIGN,WI,3,Ron Kind,https://www.mobilize.us/kindforcongress/
 3681,Vote From Home 2020,votefromhome2020,,PAC,,,,https://www.mobilize.us/votefromhome2020/
 3682,VVL Dems & Friends,vvldemsfriends,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/vvldemsfriends/
-3683,Ammar Campa-Najjar for Congress,ammarcampanajjarforcongress,,CAMPAIGN,,,,https://www.mobilize.us/ammarcampanajjarforcongress/
+3683,Ammar Campa-Najjar for Congress,campanajjarforcongress,CONGRESSIONAL,CAMPAIGN,CA,50,Ammar Campa-Najjar,https://www.mobilize.us/campanajjarforcongress/
 3684,Dan Helm for Pinellas County Supervisor of Elections,danhelmforpinellascountysupervisorofelections,OTHER_LOCAL,CAMPAIGN,FL,,Dan Helm,https://www.mobilize.us/danhelmforpinellascountysupervisorofelections/
 3685,Mississippi Votes,mississippivotes,,C3,,,,https://www.mobilize.us/mississippivotes/
 3686,East County Rising,eastcountyrising,,PAC,,,,https://www.mobilize.us/eastcountyrising/
@@ -2839,7 +2838,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3735,Friends of Carlos for Assembly 2020,carlosforassembly,,CAMPAIGN,,,,https://www.mobilize.us/carlosforassembly/
 3736,Spencer Wetmore for House,spencerwetmoreforhouse,,CAMPAIGN,,,,https://www.mobilize.us/spencerwetmoreforhouse/
 3737,Fish swag Nw saving the salmon runs!,fishswagnwsavingthesalmonruns,,OTHER,,,,https://www.mobilize.us/fishswagnwsavingthesalmonruns/
-3738,Goroff for Congress,goroffforcongress,,CAMPAIGN,,,,https://www.mobilize.us/goroffforcongress/
+3738,Nancy Goroff for Congress,goroffforcongress,CONGRESSIONAL,CAMPAIGN,NY,1,Nancy Goroff,https://www.mobilize.us/goroffforcongress/
 3739,Living Healthy and Free,livinghealthyandfree,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/livinghealthyandfree/
 3740,Tri-City Volunteers,tricityvolunteers,,C3,,,,https://www.mobilize.us/tricityvolunteers/
 3741,Velazquez for Council,velazquezforcouncil,,CAMPAIGN,,,,https://www.mobilize.us/velazquezforcouncil/
@@ -2918,7 +2917,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3817,Lead Locally,leadlocally,,OTHER,,,,https://www.mobilize.us/leadlocally/
 3818,Wendy Davis for House District 45,wendydavisforhousedistrict45,,CAMPAIGN,,,,https://www.mobilize.us/wendydavisforhousedistrict45/
 3819,Melissa Watson for US Congress,melissawatsonforuscongress,,CAMPAIGN,,,,https://www.mobilize.us/melissawatsonforuscongress/
-3820,New Georgia Project Action Fund,newgeorgiaprojectactionfund,,C4,GA,,,https://www.mobilize.us/newgeorgiaprojectactionfund/
+3820,The New Georgia Project,thenewgeorgiaproject,,C4,GA,,,https://www.mobilize.us/thenewgeorgiaproject/
 3826,HOLMC,holmc,,C3,,,,https://www.mobilize.us/holmc/
 3827,Robinson For Balsz,robinsonforbalsz,,CAMPAIGN,,,,https://www.mobilize.us/robinsonforbalsz/
 3858,Remillard for NC House,remillardnchouse117,STATE_LEG,CAMPAIGN,NC,117,,https://www.mobilize.us/remillardnchouse117/
@@ -3162,7 +3161,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4137,Italian Americans for Biden/Harris,italianamericansforbidenharris,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/italianamericansforbidenharris/
 4138,Central Valley Empowerment Alliance,centralvalleyempowermentalliance,,C3,,,,https://www.mobilize.us/centralvalleyempowermentalliance/
 4139,Catch of the Day DC,catchofthedaydc,,C3,,,,https://www.mobilize.us/catchofthedaydc/
-4140,Bridge The Blue,bridgetheblue,,C3,,,,https://www.mobilize.us/bridgetheblue/
 4141,Compton Community College Federation of Employees Classified 3486A,comptoncommunitycollegefederationofemployeesclassified3486a,,UNION,,,,https://www.mobilize.us/comptoncommunitycollegefederationofemployeesclassified3486a/
 4142,Delta Forum Society,deltaforumsociety,,OTHER,,,,https://www.mobilize.us/deltaforumsociety/
 4143,DNYC,dnyc,,GOVERNMENT,,,,https://www.mobilize.us/dnyc/
@@ -3179,7 +3177,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4154,Bandera County Democratic Party,banderacountydemocraticparty,,PARTY_COMMITTEE,,,,https://www.mobilize.us/banderacountydemocraticparty/
 4155,HENRY,henry,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/henry/
 4156,Danyell Lanier for Congress,danyelllanierforcongress,,CAMPAIGN,,,,https://www.mobilize.us/danyelllanierforcongress/
-4157,Natali for Texas,natalifortexas,,CAMPAIGN,,,,https://www.mobilize.us/natalifortexas/
+4157,Natali for Texas,natalifortexas,STATE_LEG,CAMPAIGN,TX,,,https://www.mobilize.us/natalifortexas/
 4158,Kechara Soup Kitchen,kecharasoupkitchen,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/kecharasoupkitchen/
 4160,Elizabeth Hernandez for Congress,elizabethhernandezforcongress,,CAMPAIGN,TX,,,https://www.mobilize.us/elizabethhernandezforcongress/
 4189,Lucky,lucky,,OTHER,,,,https://www.mobilize.us/lucky/
@@ -3241,7 +3239,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4248,Built4Agility,built4agility,,C3,,,,https://www.mobilize.us/built4agility/
 4249,rrrrrrrrrrrrrr,rrrrrrrrrrrrrr,,UNION,,,,https://www.mobilize.us/rrrrrrrrrrrrrr/
 4250,Jim Barber for Senate,jimbarberforsenate,,CAMPAIGN,,,,https://www.mobilize.us/jimbarberforsenate/
-4251,"Red, Wine, and Blue",redwineandblue,,C4,,,,https://www.mobilize.us/redwineandblue/
+4251,"Red, Wine, and Blue",redwineblueusa,,C4,,,,https://www.mobilize.us/redwineblueusa/
 4252,Kim Bost for NC,bostfornc,STATE_LEG,CAMPAIGN,NC,96,,https://www.mobilize.us/bostfornc/
 4253,Brenda Wallace,brendawallace,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/brendawallace/
 4254,Amber Avis-Hinojosa for City Council District 8,amberavishinojosaforcitycouncildistrict8,,CAMPAIGN,,,,https://www.mobilize.us/amberavishinojosaforcitycouncildistrict8/
@@ -3331,17 +3329,17 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4341,Nick Roumel for Judge,nickroumelforjudge,OTHER_LOCAL,CAMPAIGN,MI,,Nick Roumel,https://www.mobilize.us/nickroumelforjudge/
 4342,PA Dems Early Vote,voteearlypa,,PARTY_COMMITTEE,PA,,,https://www.mobilize.us/voteearlypa/
 4343,YDSA Pittsburgh,ydsapittsburgh,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/ydsapittsburgh/
-4344,United Front,unitedfront,,OTHER,,,,https://www.mobilize.us/unitedfront/
+4344,Georgia Working Families Party,ga-wfp,,OTHER,,,,https://www.mobilize.us/ga-wfp/
 4345,Clint Barras for FL HD 120,clintbarrasforflhd120,,CAMPAIGN,,,,https://www.mobilize.us/clintbarrasforflhd120/
 4346,Canoga Park – Communities of Schools,canogaparkcos,,GOVERNMENT,CA,,,https://www.mobilize.us/canogaparkcos/
 4347,Cleveland – Communities of Schools,clevelandcos,,GOVERNMENT,CA,,,https://www.mobilize.us/clevelandcos/
 4348,Reseda – Communities of Schools,resedacos,,GOVERNMENT,CA,,,https://www.mobilize.us/resedacos/
 4349,Boyle Heights Community of Schools,boyleheightscos,,GOVERNMENT,CA,,,https://www.mobilize.us/boyleheightscos/
-4350,"M4BL, Rising Majority, WFP United Front",m4blrisingmajoritywfpunitedfront,,C4,,,,https://www.mobilize.us/m4blrisingmajoritywfpunitedfront/
+4350,South Carolina Working Families Party,sc-wfp,,C4,,,,https://www.mobilize.us/sc-wfp/
 4351,FLIP NC,flipnc,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/flipnc/
 4352,Team WINdiana! (IDP Coordinated Campaign),teamwindiana,,PARTY_COMMITTEE,,,,https://www.mobilize.us/teamwindiana/
 4353,Marie Woodson Campaign,mariewoodsoncampaign,,CAMPAIGN,,,,https://www.mobilize.us/mariewoodsoncampaign/
-4354,Voter Project Fund,voterprojectfund,,C3,PA,,,https://www.mobilize.us/voterprojectfund/
+4354,The Voter Project,thevoterproject,,C3,PA,,,https://www.mobilize.us/thevoterproject/
 4355,American Federation of Teachers,aft,,UNION,,,,https://www.mobilize.us/aft/
 4356,AFT Michigan,aftmichigan,,UNION,MI,,,https://www.mobilize.us/aftmichigan/
 4357,Terry Meza for Texas,terrymezafortexas,,CAMPAIGN,,,,https://www.mobilize.us/terrymezafortexas/
@@ -3361,3 +3359,74 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4371,Michele Knoll for HD-44,micheleknollforhd44,,CAMPAIGN,,,,https://www.mobilize.us/micheleknollforhd44/
 4372,Organizing to restore America's character and throw out President. Trump,organizingtorestoreamericascharacterandthrowoutpresidenttrump,,CAMPAIGN,,,,https://www.mobilize.us/organizingtorestoreamericascharacterandthrowoutpresidenttrump/
 4373,Committee To Elect Marc Arnett,committeetoelectmarcarnett,,CAMPAIGN,,,,https://www.mobilize.us/committeetoelectmarcarnett/
+4374,TDP Voter Protection,tdpvoterprotection,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/tdpvoterprotection/
+4376,Springfield volunteer,springfieldvolunteer,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/springfieldvolunteer/
+4377,Amy Padden For DA,amypaddenforda,,CAMPAIGN,,,,https://www.mobilize.us/amypaddenforda/
+4378,John Bucy for Texas House District 136,johnbucyfortexashousedistrict136,STATE_LEG,CAMPAIGN,TX,,John Bucy,https://www.mobilize.us/johnbucyfortexashousedistrict136/
+4379,Liz Becker for Senate,lizbeckerforsenate,,CAMPAIGN,,,,https://www.mobilize.us/lizbeckerforsenate/
+4380,Sigman for Florida SD9,sigmanforfloridasd9,,CAMPAIGN,,,,https://www.mobilize.us/sigmanforfloridasd9/
+4381,KS Senate District 30 Dems,kssenatedistrict30dems,,CAMPAIGN,,,,https://www.mobilize.us/kssenatedistrict30dems/
+4382,AZ LD25 Democrats,azld25democrats,,PARTY_COMMITTEE,,,,https://www.mobilize.us/azld25democrats/
+4383,Action Together Stark,actiontogetherstark,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/actiontogetherstark/
+4384,Esante-Joy McIntyre,esantejoymcintyre,,CAMPAIGN,,,,https://www.mobilize.us/esantejoymcintyre/
+4385,Organize for unity,organizeforunity,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/organizeforunity/
+4386,Organizing for Liberation,organizingforliberation,,C3,,,,https://www.mobilize.us/organizingforliberation/
+4387,Dr. Sandra Owens Consulting for Life,drsandraowensconsultingforlife,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/drsandraowensconsultingforlife/
+4388,Al-Maun Neighborly Needs Program,almaunneighborlyneedsprogram,,C3,,,,https://www.mobilize.us/almaunneighborlyneedsprogram/
+4389,HITS TEAM,hitsteam,,C3,,,,https://www.mobilize.us/hitsteam/
+4390,Gators Teach,gatorsteach,,OTHER,,,,https://www.mobilize.us/gatorsteach/
+4391,Tennessee College Democrats,tennesseecollegedemocrats,,PARTY_COMMITTEE,,,,https://www.mobilize.us/tennesseecollegedemocrats/
+4392,JohnsonBrook2020,johnsonbrook2020,,CAMPAIGN,,,,https://www.mobilize.us/johnsonbrook2020/
+4393,Down Home North Carolina,downhomenc,,C4,NC,,,https://www.mobilize.us/downhomenc/
+4394,New Jersey Organizing Project,NJorgnanizingproject,,C4,,,,https://www.mobilize.us/NJorgnanizingproject/
+4395,Mannion for State Senate,mannionforstatesenate-1,,CAMPAIGN,,,,https://www.mobilize.us/mannionforstatesenate-1/
+4396,Grayson County Democratic Party,graysoncountydemocraticparty,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/graysoncountydemocraticparty/
+4397,United Action for Idaho,unitedactionforID,,C4,,,,https://www.mobilize.us/unitedactionforID/
+4398,Cahill for school board,cahillforschoolboard,,CAMPAIGN,,,,https://www.mobilize.us/cahillforschoolboard/
+4399,Jesica Mackey for Richland  County Council,jesicamackeyforrichlandcountycouncil,,CAMPAIGN,,,,https://www.mobilize.us/jesicamackeyforrichlandcountycouncil/
+4400,Bashore for Joe,bashoreforjoe,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/bashoreforjoe/
+4401,PSJA Stronger Together!,psjastrongertogether,,CAMPAIGN,,,,https://www.mobilize.us/psjastrongertogether/
+4402,Committee To Elect Julie Akins,akins,,CAMPAIGN,,,,https://www.mobilize.us/akins/
+4403,Local Grassroots Org,localgrassrootsorg,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/localgrassrootsorg/
+4404,Willie Hilliard For City Council,williehilliardforcitycouncil,,CAMPAIGN,,,,https://www.mobilize.us/williehilliardforcitycouncil/
+4405,The Democratic Club of Greater Tracy,democratsofgreatertracy,,PARTY_COMMITTEE,,,,https://www.mobilize.us/democratsofgreatertracy/
+4406,Time Four Youth,timefouryouth,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/timefouryouth/
+4407,TJ Cox Phone Bank,tjcoxphonebank,,CAMPAIGN,,,,https://www.mobilize.us/tjcoxphonebank/
+4408,Democratic Senate Action Committee,democraticsenateactioncommittee,,PAC,,,,https://www.mobilize.us/democraticsenateactioncommittee/
+4409,Fight Hunger,fighthunger,,C4,,,,https://www.mobilize.us/fighthunger/
+4410,FIGHTING HUNGER,fightinghunger,,C4,,,,https://www.mobilize.us/fightinghunger/
+4411,Sea Island’s GOTV Committee,seaislandsgotvcommittee,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/seaislandsgotvcommittee/
+4412,Brewer’s Best,brewersbest,,CAMPAIGN,,,,https://www.mobilize.us/brewersbest/
+4413,Criminal Justice justice /policy reform with legal investigations,criminaljusticejusticepolicyreformwithlegalinvestigations,,OTHER,,,,https://www.mobilize.us/criminaljusticejusticepolicyreformwithlegalinvestigations/
+4414,Jordan Hibbs for ANC 6E04,jordanhibbsforanc6e04,,CAMPAIGN,,,,https://www.mobilize.us/jordanhibbsforanc6e04/
+4415,www.colgatedems.org,colgatecollegedemocrats,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/colgatecollegedemocrats/
+4416,Arizona Working Families Party,arizonaworkingfamiliesparty,,PARTY_COMMITTEE,AZ,,,https://www.mobilize.us/arizonaworkingfamiliesparty/
+4417,Black Politics Matter,blackpoliticsmatter,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/blackpoliticsmatter/
+4418,Nonorofit,nonorofit,,PARTY_COMMITTEE,,,,https://www.mobilize.us/nonorofit/
+4419,Brianna for Colorado,briannaforcolorado-1,,CAMPAIGN,,,,https://www.mobilize.us/briannaforcolorado-1/
+4420,Marie Rundle-Fiorvante,marierundlefiorvante,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/marierundlefiorvante/
+4421,teamangelaforsuperiorcourtclerk,teamangelaforsuperiorcourtclerk,,CAMPAIGN,,,,https://www.mobilize.us/teamangelaforsuperiorcourtclerk/
+4422,Kim 2021,kim2021,,CAMPAIGN,,,,https://www.mobilize.us/kim2021/
+4423,"Caprice Edmond for Pinellas County School Board, District 7",caprice,OTHER_LOCAL,CAMPAIGN,FL,,Caprice Edmond,https://www.mobilize.us/caprice/
+4424,Hollywood - Community of Schools,hollywoodcos,,GOVERNMENT,CA,,,https://www.mobilize.us/hollywoodcos/
+4425,HEET Crenshaw/Dorsey - Community of Schools,crenshawdorseycos,,GOVERNMENT,CA,,,https://www.mobilize.us/crenshawdorseycos/
+4426,West LA - Community of Schools,westlacos,,GOVERNMENT,CA,,,https://www.mobilize.us/westlacos/
+4427,Venice - Community of Schools,venicecos,,GOVERNMENT,CA,,,https://www.mobilize.us/venicecos/
+4428,Fairfax - Community of Schools,fairfaxcos,,GOVERNMENT,CA,,,https://www.mobilize.us/fairfaxcos/
+4429,HEET Washington - Community of Schools,heetwashingtoncos,,GOVERNMENT,CA,,,https://www.mobilize.us/heetwashingtoncos/
+4430,South Mid-City - Community of Schools,southmidcitycos,,GOVERNMENT,CA,,,https://www.mobilize.us/southmidcitycos/
+4431,LA Mid-City - Community of Schools,lamidcitycos,,GOVERNMENT,CA,,,https://www.mobilize.us/lamidcitycos/
+4432,Hamilton - Community of Schools,hamiltoncos,,GOVERNMENT,CA,,,https://www.mobilize.us/hamiltoncos/
+4433,Westchester - Community of Schools,westchestercos,,GOVERNMENT,CA,,,https://www.mobilize.us/westchestercos/
+4434,chinas,chinas,,GOVERNMENT,,,,https://www.mobilize.us/chinas/
+4435,WhiteEagle for Assembly,whiteeagleforassembly,STATE_LEG,CAMPAIGN,WI,,Amanda WhiteEagle,https://www.mobilize.us/whiteeagleforassembly/
+4436,Indivisible - Media City,indivisiblemediacity,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/indivisiblemediacity/
+4437,Migori county,migoricounty,,CAMPAIGN,,,,https://www.mobilize.us/migoricounty/
+4438,Raising Hope for homeless Americans Peoples corporation,raisinghopeforhomelessamericanspeoplescorporation,,C3,,,,https://www.mobilize.us/raisinghopeforhomelessamericanspeoplescorporation/
+4439,Bacelona,bacelona,,CAMPAIGN,,,,https://www.mobilize.us/bacelona/
+4440,The Rainbow pride foundation,therainbowpridefoundation,,C4,,,,https://www.mobilize.us/therainbowpridefoundation/
+4441,Makis Xenatos,makisxenatos,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/makisxenatos/
+4442,Back to Blue,backtoblue,,PARTY_COMMITTEE,,,,https://www.mobilize.us/backtoblue/
+4443,Florida Democratic Seniors Organizing Council,floridademocraticseniorsorganizingcouncil,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/floridademocraticseniorsorganizingcouncil/
+4444,Sunrise Movement Virginia,sunrisemovementvirginia,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/sunrisemovementvirginia/
+4445,Morgan Showen for Ohio,morganshowenforohio,,CAMPAIGN,,,,https://www.mobilize.us/morganshowenforohio/
