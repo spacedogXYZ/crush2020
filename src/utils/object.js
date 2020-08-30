@@ -4,6 +4,18 @@ export function updateDict(object, key, update) {
   return Object.assign(object[key] || {}, update)
 }
 
+export function groupBy(objectArray, property) {
+   return objectArray.reduce((acc, obj) => {
+      const key = obj[property];
+      if (!acc[key]) {
+         acc[key] = [];
+      }
+      // Add object to list for given key's value
+      acc[key].push(obj);
+      return acc;
+   }, {});
+}
+
 // way to get reference to useState setter, to call in other function
 // https://stackoverflow.com/a/62015336/264790
 export function useReferredState(initialValue) {

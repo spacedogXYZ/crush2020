@@ -4,7 +4,7 @@ import {
   isCompetitive,
   isLikely,
 } from "../../utils/strings"
-import { getRandom } from "../../utils/object"
+import { getRandom, groupBy } from "../../utils/object"
 import { TIME_VALUES } from "../form/steps/time"
 
 var us_states = require("us-state-codes")
@@ -145,6 +145,45 @@ function matchOrganization(state, issues, orgs) {
   return matches
 }
 
+function sortCandidates(candidates, state, district, type) {
+  // take a national list of candidates and returns just those relevant to state, district, type
+  // type should be either FEDERAL or STATEWIDE
+  if (type === "FEDERAL") {
+    // we don't actually have primary win/loss records from FEC
+    // use amount raised as a proxy (NB, this is not perfect)
+    if (["CA", "WA"].includes(state)) {
+      // jungle primaries, sort by amount raised and pick top two overall
+      return candidates.filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === district)
+        .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
+        .slice(0, 2)
+    } else {
+      // simulate a primary by sorting within party by amount raised
+      // and then pick the top from each party
+      const filtered_candidates = candidates.filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === district)
+      const parties = groupBy(filtered_candidates, "CAND_PTY_AFFILIATION")
+      const winners = Object.keys(parties).map((p) => {
+        let winner = parties[p].sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))[0]
+        return winner
+      })
+
+      return winners
+        .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
+        .slice(0, 2)
+      }
+  } else if (type === "STATEWIDE") {
+    // we do have win/loss from FollowTheMoney
+    // and have already filtered by it
+    // keep sorted to put more likely candidates at the top
+
+    return candidates.filter(
+      c =>
+        c.Election_Jurisdiction === state &&
+        c.Office_Sought.startsWith(district)
+    ).sort((a, b) => parseFloat(a.Total__) < parseFloat(b.Total__))
+    // but don't limit to top-two
+  }  
+}
+
 export function makePlan(form, data) {
   const { candidates, ratings, volunteer, donate } = data
   if (!form || !form.geocode) {
@@ -154,48 +193,18 @@ export function makePlan(form, data) {
 
   const state = form.geocode.state
 
-  const senate_candidates = candidates.federal
-    .filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === "00")
-    .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
-    .slice(0, 2)
+  const senate_candidates = sortCandidates(candidates.federal, state, "00", "FEDERAL")
 
   const congressional_district = form.geocode.cd
   const congressional_district_code = padCode(congressional_district)
-  const house_candidates = candidates.federal
-    .filter(
-      c =>
-        c.CAND_OFFICE_ST === state &&
-        c.CAND_OFFICE_DISTRICT === congressional_district_code
-    )
-    .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
-    .slice(0, 2)
-  // we don't actually have primary win/loss records from FEC
-  // so sort by amount raised and pick top two
 
-  const governor_candidates = candidates.statewide
-    .filter(
-      c =>
-        c.Election_Jurisdiction === state &&
-        c.Office_Sought.startsWith("GOVERNOR")
-    )
-    .sort((a, b) => a.Total__ < b.Total__)
-  const state_sos_candidates = candidates.statewide
-    .filter(
-      c =>
-        c.Election_Jurisdiction === state &&
-        c.Office_Sought === "SECRETARY OF STATE"
-    )
-    .sort((a, b) => a.Total__ < b.Total__)
-  const state_ag_candidates = candidates.statewide
-    .filter(
-      c =>
-        c.Election_Jurisdiction === state &&
-        c.Office_Sought === "ATTORNEY GENERAL"
-    )
-    .sort((a, b) => a.Total__ < b.Total__)
-  // we do have win/loss from FollowTheMoney
-  // and have already filtered by it
-  // keep sorted to put more likely candidates at the top
+  // 
+  const house_candidates = sortCandidates(candidates.federal, state, congressional_district_code, "FEDERAL")
+
+  const governor_candidates = sortCandidates(candidates.statewide, state, "GOVERNOR", "STATEWIDE")    
+  const state_sos_candidates = sortCandidates(candidates.statewide, state, "SECRETARY OF STATE", "STATEWIDE")
+  const state_ag_candidates = sortCandidates(candidates.statewide, state, "ATTORNEY GENERAL", "STATEWIDE")
+
 
   const senate_rating = ratings.senate.find(r => r.state === state)
   const house_rating = ratings.house.find(
