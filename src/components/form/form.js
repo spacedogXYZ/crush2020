@@ -1,7 +1,6 @@
-import React, { useState } from "react"
-import { Router, useLocation } from "@reach/router"
-import { navigate } from "gatsby"
-import { window, exists } from 'browser-monads'
+import React, { useState, useEffect } from "react"
+import { Router, useLocation, navigate } from "@reach/router"
+import { window, exists } from "browser-monads"
 
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -57,9 +56,13 @@ function useFormProgress() {
 
   function goBack() {
     let prevIndex = currentStep - 1
+    if (prevIndex < 0) { return false }
     setCurrentStep(prevIndex)
-    let prevStep = STEPS[prevIndex]
-    exists(window) && navigate(`/form/${prevStep[0].props.path}`) 
+    // don't actually navigate, because this is only called when by the popstate event
+    // triggered by a real browser back button
+
+    // let prevStep = STEPS[prevIndex]
+    // exists(window) && navigate(`/form/${prevStep[0].props.path}`) 
   }
 
   return [currentStep, goForward, goBack]
@@ -68,7 +71,7 @@ function useFormProgress() {
 function PlanForm() {
   const { dispatch, state } = useFormState()
   const location = useLocation()
-  const [currentStep, goForward] = useFormProgress()
+  const [currentStep, goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)
 
   // start at first step
@@ -81,6 +84,19 @@ function PlanForm() {
   ) {
     exists(window) && navigate("/form/vote")
   }
+
+  // make the back buttonw work as expected
+  useEffect(() => {
+    if(exists(window)) {
+      window.addEventListener('popstate', goBack);
+      // unfortunately there's no event for "pushstate"
+      // so we can't make forward work as well
+    }
+
+    return function cleanup() {
+      window.removeEventListener('popstate', goBack)
+    }
+  }, [goBack])
 
   const isLast = currentStep === STEPS.length - 1
   
