@@ -69,16 +69,20 @@ export function Plan({ form, plan }) {
                     <ButtonGroup>
                       {form.registered === "yes" && (
                         <OutboundLink
-                          href="https://www.voteamerica.com/am-i-registered-to-vote/"
+                          href={`https://www.voteamerica.com/am-i-registered-to-vote/?address1=${form.geocode.line1}&city=${form.geocode.city}&state=${state}&zipcode=${form.geocode.zip}&email=${form.contact.email}`}
                           className="usa-button"
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           Confirm with {state_name}
                         </OutboundLink>
                       )}
                       {form.registered === "not-sure" ? (
                         <OutboundLink
-                          href="https://www.voteamerica.com/am-i-registered-to-vote/"
+                          href={`https://www.voteamerica.com/am-i-registered-to-vote/?address1=${form.geocode.line1}&city=${form.geocode.city}&state=${state}&zipcode=${form.geocode.zip}&email=${form.contact.email}`}
                           className="usa-button"
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           Double check with {state_name}
                         </OutboundLink>
@@ -88,8 +92,10 @@ export function Plan({ form, plan }) {
                       {(form.registered === "no" ||
                         isEmpty(form.registered)) && (
                         <OutboundLink
-                          href="https://www.voteamerica.com/register-to-vote/"
+                          href={`https://www.voteamerica.com/register-to-vote/?address1=${form.geocode.line1}&city=${form.geocode.city}&state=${state}&zipcode=${form.geocode.zip}&email=${form.contact.email}`}
                           className="usa-button"
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           Register to Vote
                         </OutboundLink>
@@ -98,6 +104,8 @@ export function Plan({ form, plan }) {
                         <OutboundLink
                           href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/`}
                           className="usa-button bg-secondary hover:bg-secondary-dark"
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           {state_name} Vote by Mail Application
                         </OutboundLink>
@@ -106,6 +114,8 @@ export function Plan({ form, plan }) {
                         <OutboundLink
                           href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/#absentee-guide`}
                           className="usa-button bg-secondary hover:bg-secondary-dark"
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           Learn about Vote by Mail in {state_name}
                         </OutboundLink>
