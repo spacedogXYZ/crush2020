@@ -7,10 +7,10 @@ import { GridContainer } from "@trussworks/react-uswds"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Make a plan to defeat Trump" />
     <GridContainer>
-      <h1>Not Found</h1>
-      <p>We can&#39;t seem to find that page. &#9785;</p>
+      <h1>Hold up</h1>
+      <p>We're looking for that now...</p>
     </GridContainer>
   </Layout>
 )
