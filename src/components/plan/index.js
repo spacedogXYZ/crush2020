@@ -161,9 +161,9 @@ export function Plan({ form, plan }) {
                       </ul>
                     </CardBody>
                     <CardFooter>
-                      Current rating: {plan.senate_rating.rating}
+                      Current rating: {plan.ballot.senate_rating.rating}
                       <div className="citation">
-                        Cook Political {plan.senate_rating.updated}
+                        Cook Political {plan.ballot.senate_rating.updated}
                       </div>
                     </CardFooter>
                   </Card>
