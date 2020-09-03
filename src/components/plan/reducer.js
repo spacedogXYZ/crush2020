@@ -61,7 +61,7 @@ function matchCandidate(state, district, candidates, ratings, volunteer) {
       isLikely(ratings.governor.rating))
   ) {
     if (volunteer_gov) {
-      return volunteer_house[0]
+      return volunteer_gov[0]
     } else {
       return {
         name: candidates.governor.find(c =>
@@ -281,16 +281,27 @@ export function makePlan(form, data) {
       description: "Sending a Vote Forward letter is one of the easiest things you can do to increase turnout."
     }
     volunteer_how = "send postcards"
-  }else if (form.skills.includes("TEXTING")) {
+  } else if (form.skills.includes("TEXTING")) {
     volunteer_how = "text bank"
   }
+
+  if (!volunteer_candidate) {
+    // fall back to presidential
+    volunteer_candidate = {
+      name: "Biden/Harris 2020",
+      event_feed_url: "https://go.joebiden.com/page/s/Distributed-volunteers",
+    }
+  }
+
   // mobilize event types:
   // 1: canvass
   // 2: phone bank
   // 9: house parties
   // 12: friend-to-friend outreach
-  if (volunteer_candidate.event_feed_url.includes('mobilize.us') && !!volunteer_type) {
-    volunteer_candidate.event_feed_url += `?event_type=${volunteer_type}`
+  if (volunteer_candidate.event_feed_url &&
+    volunteer_candidate.event_feed_url.includes('mobilize.us')
+    && !!volunteer_type) {
+      volunteer_candidate.event_feed_url += `?event_type=${volunteer_type}`
   }
 
   // donate links
