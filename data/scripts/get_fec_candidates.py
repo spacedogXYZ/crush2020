@@ -60,9 +60,23 @@ in_file = zip_file.open(ZIP_NAME)
 in_lines = TextIOWrapper(in_file).readlines()
 in_reader = csv.DictReader(in_lines, dialect='piped', fieldnames=FULL_HEADERS)
 
+def remove_titles(name):
+    TITLES = ["MR", "MRS", "MS", "JR", "SR", 
+        "HON", "HONORABLE", "SENATOR", "COL",
+        "DR", "MD", "PHD", "PSY.D", "DDS"]
+    name_parts = name.split(" ")
+    if name_parts[-1].replace('.','') in TITLES:
+        if name_parts[-2].replace('.','').replace(',','') in TITLES:
+            return " ".join(name_parts[:-2])
+        return " ".join(name_parts[:-1])
+    else:
+        return name
+
 with open('../fec-candidates.csv', 'w') as out_file:
     out_writer = csv.DictWriter(out_file, fieldnames=DESIRED_HEADERS)
     out_writer.writeheader()
     for in_row in in_reader:
         out_row = {k: v for k, v in in_row.items() if k in DESIRED_HEADERS}
+        # replace name titles which screw up our display
+        out_row['CAND_NAME'] = remove_titles(out_row['CAND_NAME'])
         out_writer.writerow(out_row)
