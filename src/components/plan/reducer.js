@@ -4,7 +4,7 @@ import {
   isCompetitive,
   isLikely,
 } from "../../utils/strings"
-import { getRandom, groupBy } from "../../utils/object"
+import { getRandom, groupBy, sortDescending } from "../../utils/object"
 import { TIME_VALUES } from "../form/steps/time"
 
 var us_states = require("us-state-codes")
@@ -154,7 +154,7 @@ function sortCandidates(candidates, state, district, type) {
     if (["CA", "WA"].includes(state)) {
       // jungle primaries, sort by amount raised and pick top two overall
       return candidates.filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === district)
-        .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
+        .sort((a, b) => sortDescending(a.TTL_RECEIPTS, b.TTL_RECEIPTS))
         .slice(0, 2)
     } else {
       // simulate a primary by sorting within party by amount raised
@@ -162,12 +162,12 @@ function sortCandidates(candidates, state, district, type) {
       const filtered_candidates = candidates.filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === district)
       const parties = groupBy(filtered_candidates, "CAND_PTY_AFFILIATION")
       const winners = Object.keys(parties).map((p) => {
-        let winner = parties[p].sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))[0]
+        let winner = parties[p].sort((a, b) => sortDescending(a.TTL_RECEIPTS,b.TTL_RECEIPTS))[0]
         return winner
       })
 
       return winners
-        .sort((a, b) => parseFloat(a.TTL_RECEIPTS) < parseFloat(b.TTL_RECEIPTS))
+        .sort((a, b) => sortDescending(a.TTL_RECEIPTS, b.TTL_RECEIPTS))
         .slice(0, 2)
       }
   } else if (type === "STATEWIDE") {
@@ -179,7 +179,7 @@ function sortCandidates(candidates, state, district, type) {
       c =>
         c.Election_Jurisdiction === state &&
         c.Office_Sought.startsWith(district)
-    ).sort((a, b) => parseFloat(a.Total__) < parseFloat(b.Total__))
+    ).sort((a, b) => sortDescending(a.Total__, b.Total__))
     // but don't limit to top-two
   }  
 }

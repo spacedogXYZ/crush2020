@@ -64,3 +64,10 @@ export function isEmpty(value) {
 export function getRandom(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
+
+export function sortDescending(aString, bString) {
+  // js sorts by strings, so convert first to float then compare
+  let a = parseFloat(aString).valueOf()
+  let b = parseFloat(bString).valueOf()
+  return ((a > b) ? -1 : (a < b) ? 1 : 0)
+}
