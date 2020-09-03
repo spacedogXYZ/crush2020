@@ -365,7 +365,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 537,The Resurgent Left,theresurgentleft,,COORDINATED,,,,https://www.mobilize.us/theresurgentleft/
 538,Blue Wave Shorewood,bluewaveshorewood,,COORDINATED,,,,https://www.mobilize.us/bluewaveshorewood/
 539,Voters Not Politicians,vnp,,C4,,,,https://www.mobilize.us/vnp/
-540,Cathy Myers for Congress,cathyforcongress,,CAMPAIGN,WI,1,Cathy Myers,https://www.mobilize.us/cathyforcongress/
+540,Cathy Myers for Congress,cathyforcongress,CONGRESSIONAL,CAMPAIGN,WI,1,Cathy Myers,https://www.mobilize.us/cathyforcongress/
 541,Kitchen Table Party,ktp,,COORDINATED,,,,https://www.mobilize.us/ktp/
 542,Commit To Flip Blue,ctfb,,COORDINATED,,,,https://www.mobilize.us/ctfb/
 543,Virginia Democracy Forward-VADF,vadf,,COORDINATED,VA,,,https://www.mobilize.us/vadf/
@@ -1379,7 +1379,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 1806,Charlottesville Democrats,cvilledems,OTHER_LOCAL,CAMPAIGN,VA,,,https://www.mobilize.us/cvilledems/
 1807,Tom Adair for TX house district 67,tomadair,STATE_LEG,CAMPAIGN,TX,67,Tom Adair,https://www.mobilize.us/tomadair/
 1808,Committee to Elect Ray McKinnon,raymckinnon,OTHER_LOCAL,CAMPAIGN,NC,,Ray McKinnon,https://www.mobilize.us/raymckinnon/
-1818,Jon Hoadley for Congress,jonhoadleyforcongress,,CAMPAIGN,MI,,,https://www.mobilize.us/jonhoadleyforcongress/
+1818,Jon Hoadley for Congress,jonhoadleyforcongress,CONGRESSIONAL,CAMPAIGN,MI,,,https://www.mobilize.us/jonhoadleyforcongress/
 1821,March Forward - Nebraska,marchforwardne,,CAMPAIGN,NE,,,https://www.mobilize.us/marchforwardne/
 1823,March Forward - New York,marchforwardny,,CAMPAIGN,NY,,,https://www.mobilize.us/marchforwardny/
 1826,March Forward - North Carolina,marchforwardnc,,CAMPAIGN,NC,,,https://www.mobilize.us/marchforwardnc/
@@ -1515,7 +1515,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2017,NYC Elected Civilian Review Board,nycelectedcivilianreviewboard,,INDEPENDENT,,,,https://www.mobilize.us/nycelectedcivilianreviewboard/
 2018,Indivisible Worcester Maryland,Indivisibleworcestermaryland,,INDEPENDENT,,,,https://www.mobilize.us/Indivisibleworcestermaryland/
 2019,Collin County Democrats With Disabilities,collincountydemocratswithdisabilities,,PARTY_COMMITTEE,,,,https://www.mobilize.us/collincountydemocratswithdisabilities/
-2044,Sara Gideon for Senate,saragideon,,CAMPAIGN,ME,,Sara Gideon,https://www.mobilize.us/saragideon/
+2044,Sara Gideon for Senate,saragideon,SENATE,CAMPAIGN,ME,,Sara Gideon,https://www.mobilize.us/saragideon/
 2045,Rhode Island Political Cooperative,ripolcoop,,INDEPENDENT,,,,https://www.mobilize.us/ripolcoop/
 2077,Heidi Sloan for Congress,heidi,CONGRESSIONAL,CAMPAIGN,TX,25,Heidi Sloan,https://www.mobilize.us/heidi/
 2078,Deborah Poulalion Campaign,deb4elections,OTHER_STATEWIDE,CAMPAIGN,FL,,Deborah Poulalion,https://www.mobilize.us/deb4elections/
@@ -1527,7 +1527,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2113,Muscatine County Democrats,muscatinedemocrats,,PARTY_COMMITTEE,IA,,,https://www.mobilize.us/muscatinedemocrats/
 2115,Sam Vega for Congress,vegaforcongress,CONGRESSIONAL,CAMPAIGN,TX,24,Sam Vega,https://www.mobilize.us/vegaforcongress/
 2116,Beaufort County SC Democratic Party,beaufortcountyscdems,,CAMPAIGN,SC,,,https://www.mobilize.us/beaufortcountyscdems/
-2117,Lulu Seikaly for Congress,lulufortexas,,CAMPAIGN,TX,,,https://www.mobilize.us/lulufortexas/
+2117,Lulu Seikaly for Congress,lulufortexas,CONGRESSIONAL,CAMPAIGN,TX,,,https://www.mobilize.us/lulufortexas/
 2118,Xochil Peña Rodriguez Campaign,votepenarodriguez,SEC_STATE,CAMPAIGN,TX,19,Xochil Pena Rodriguez,https://www.mobilize.us/votepenarodriguez/
 2119,Freestone County Democrats,freestonecountytxdems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/freestonecountytxdems/
 2120,North Oakland Democratic Club,northoaklanddemocraticclub,OTHER_LOCAL,PARTY_COMMITTEE,MI,,,https://www.mobilize.us/northoaklanddemocraticclub/
@@ -1561,12 +1561,12 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2213,Eddie Mauro for Senate,mauroforsenate,SENATE,CAMPAIGN,IA,,Eddie Mauro,https://www.mobilize.us/mauroforsenate/
 2214,San Patricio County Democratic Party,sanpatriciocountydems,,CAMPAIGN,TX,,,https://www.mobilize.us/sanpatriciocountydems/
 2215,Burnet County Democratic Party,burnetcountydems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/burnetcountydems/
-2216,Committee to elect Laura Anthony,laura4senate,,CAMPAIGN,NC,,,https://www.mobilize.us/laura4senate/
+2216,Committee to elect Laura Anthony,laura4senate,STATE_LEG,CAMPAIGN,NC,,,https://www.mobilize.us/laura4senate/
 2217,Tom Green County Democratic Party,tomgreendems,,CAMPAIGN,TX,,,https://www.mobilize.us/tomgreendems/
 2218,Delia Garza for County Attorney,garzaforcountyattorney,OTHER_LOCAL,CAMPAIGN,TX,,Delia Garza,https://www.mobilize.us/garzaforcountyattorney/
 2220,South Jersey Progressive Democrats,sjpd,,GRASSROOTS_GROUP,NJ,,,https://www.mobilize.us/sjpd/
 2268,Allison Tant for State House,allisontant,STATE_LEG,CAMPAIGN,FL,9,,https://www.mobilize.us/allisontant/
-2269,Holden for Florida,holdenforflorida,,CAMPAIGN,FL,,,https://www.mobilize.us/holdenforflorida/
+2269,Holden for Florida,holdenforflorida,CONGRESSIONAL,CAMPAIGN,FL,,,https://www.mobilize.us/holdenforflorida/
 2270,NYC Census - The Bronx,nyccensusbronx,,GOVERNMENT,NY,,,https://www.mobilize.us/nyccensusbronx/
 2271,NYC Census - Brooklyn,nyccensusbrooklyn,,GOVERNMENT,NY,,,https://www.mobilize.us/nyccensusbrooklyn/
 2272,NYC Census - Manhattan,nyccensusmanhattan,,GOVERNMENT,NY,,,https://www.mobilize.us/nyccensusmanhattan/
@@ -1575,19 +1575,19 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2275,Bluffton Democratic Club,blufftondemocrats,,PARTY_COMMITTEE,SC,,,https://www.mobilize.us/blufftondemocrats/
 2276,Eric Hanke for Texas,hankefortexas,CONGRESSIONAL,CAMPAIGN,Tx,31,Eric Hanke,https://www.mobilize.us/hankefortexas/
 2278,Santa Cruz AZ Dems,santacruzazdems,,PARTY_COMMITTEE,AZ,,,https://www.mobilize.us/santacruzazdems/
-2279,Skidonenko for Texas,skidonenkofortx,,CAMPAIGN,TX,106,,https://www.mobilize.us/skidonenkofortx/
+2279,Skidonenko for Texas,skidonenkofortx,STATE_LEG,CAMPAIGN,TX,106,,https://www.mobilize.us/skidonenkofortx/
 2280,Henderson County TX Dems,hendersontxdems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/hendersontxdems/
 2281,Newton County Democratic Committee (Georgia),newtongadems,,PARTY_COMMITTEE,GA,,,https://www.mobilize.us/newtongadems/
 2283,ONECampaign for Michigan,onecampaignformichigan,,CAMPAIGN,MI,,,https://www.mobilize.us/onecampaignformichigan/
 2285,Texas Blue Action Democrats,blueactiondems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/blueactiondems/
-2287,Ruby Bodeker for Iowa,rubyforiowa,,CAMPAIGN,IA,,,https://www.mobilize.us/rubyforiowa/
+2287,Ruby Bodeker for Iowa,rubyforiowa,STATE_LEG,CAMPAIGN,IA,,,https://www.mobilize.us/rubyforiowa/
 2288,Phil Ehr for Congress,ehrforcongress,CONGRESSIONAL,CAMPAIGN,FL,1,Phil Ehr,https://www.mobilize.us/ehrforcongress/
 2289,California Democratic Party,cadems,,PARTY_COMMITTEE,CA,,,https://www.mobilize.us/cadems/
-2290,Cal Cunningham for Senate,cunninghamforsenate,,CAMPAIGN,NC,,,https://www.mobilize.us/cunninghamforsenate/
+2290,Cal Cunningham for Senate,cunninghamforsenate,SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/cunninghamforsenate/
 2292,Greenfield for Iowa,greenfieldforiowa,SENATE,CAMPAIGN,IA,,Theresa Greenfield,https://www.mobilize.us/greenfieldforiowa/
 2293,MJ Hegar for Texas,mjfortexas,SENATE,CAMPAIGN,TX,,MJ Hegar,https://www.mobilize.us/mjfortexas/
 2294,Jaime Harrison for Senate,harrisonforsenate,SENATE,CAMPAIGN,SC,,,https://www.mobilize.us/harrisonforsenate/
-2295,Ben Ray Luján for Senate,peopleforben,,CAMPAIGN,NM,,,https://www.mobilize.us/peopleforben/
+2295,Ben Ray Luján for Senate,peopleforben,SENATE,CAMPAIGN,NM,,,https://www.mobilize.us/peopleforben/
 2297,Minnesota Coordinated Campaign,mncoordinatedcampaign,SENATE,CAMPAIGN,MN,,,https://www.mobilize.us/mncoordinatedcampaign/
 2305,Gandhi for Congress,gandhiforcongress,CONGRESSIONAL,CAMPAIGN,TX,10,Pritesh Gandhi,https://www.mobilize.us/gandhiforcongress/
 2306,Caldwell NC Democratic Party,caldwellncdems,,PARTY_COMMITTEE,NC,,,https://www.mobilize.us/caldwellncdems/
@@ -1596,14 +1596,14 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2309,Paige Dixon for HD65,paigefortexas,STATE_LEG,CAMPAIGN,TX,65,Paige Dixon,https://www.mobilize.us/paigefortexas/
 2310,moyer2020.org,moyer2020,CONGRESSIONAL,CAMPAIGN,OH,10,Eric Moyer,https://www.mobilize.us/moyer2020/
 2311,Movement Voter Project,mvp,,C4,,,,https://www.mobilize.us/mvp/
-2314,Suraj Patel for New York,promiseofny,,CAMPAIGN,NY,12,Suraj Patel,https://www.mobilize.us/promiseofny/
+2314,Suraj Patel for New York,promiseofny,CONGRESSIONAL,CAMPAIGN,NY,12,Suraj Patel,https://www.mobilize.us/promiseofny/
 2315,Ohio Education Association,ohea,,UNION,OH,,,https://www.mobilize.us/ohea/
 2316,Sara Stapleton-Barrera for Texas,sarafortexas,STATE_SENATE,CAMPAIGN,TX,,,https://www.mobilize.us/sarafortexas/
-2317,Adem for Congress 2020,adem2020,,CAMPAIGN,NY,9,Adem Bunkeddeko,https://www.mobilize.us/adem2020/
+2317,Adem for Congress 2020,adem2020,CONGRESSIONAL,CAMPAIGN,NY,9,Adem Bunkeddeko,https://www.mobilize.us/adem2020/
 2318,Kate for Congress,kateforcongress,CONGRESSIONAL,CAMPAIGN,OH,1,Kate Schroder,https://www.mobilize.us/kateforcongress/
 2319,David Litt,DavidLitt,,OTHER,,,,https://www.mobilize.us/DavidLitt/
 2320,Brad Jenkins,bradjenkins,,OTHER,,,,https://www.mobilize.us/bradjenkins/
-2321,Angela Burns for Delray Beach Seat 4,angelaburns4seat4,,CAMPAIGN,FL,,,https://www.mobilize.us/angelaburns4seat4/
+2321,Angela Burns for Delray Beach Seat 4,angelaburns4seat4,STATE_LEG,CAMPAIGN,FL,,,https://www.mobilize.us/angelaburns4seat4/
 2322,Mobilize Communities Now,mcn,,C3,,,,https://www.mobilize.us/mcn/
 2324,Young Democrats of Illinois,youngdemsofillinois,,GRASSROOTS_GROUP,IL,,,https://www.mobilize.us/youngdemsofillinois/
 2325,Cristina for Texas,cristinafortexas,SENATE,CAMPAIGN,TX,,Cristina Tzintzún Ramirez,https://www.mobilize.us/cristinafortexas/
@@ -1667,7 +1667,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2429,Florida Organizing Together 2020,florida2020,,PAC,FL,,,https://www.mobilize.us/florida2020/
 2430,Pennsylvania Organizing Together 2020,pennsylvania2020,,PAC,PA,,,https://www.mobilize.us/pennsylvania2020/
 2431,Organizing Together North Carolina,nc2020,,PAC,NC,,,https://www.mobilize.us/nc2020/
-2434,Friends of Sara Tindall Ghazal,ghazalforgeorgia,,CAMPAIGN,GA,45,Sara Tindall Gazal,https://www.mobilize.us/ghazalforgeorgia/
+2434,Friends of Sara Tindall Ghazal,ghazalforgeorgia,STATE_LEG,CAMPAIGN,GA,45,Sara Tindall Gazal,https://www.mobilize.us/ghazalforgeorgia/
 2441,Fair Fight Action,fairfightaction,,C4,GA,,,https://www.mobilize.us/fairfightaction/
 2444,Salt Lake County Coordinated Campaign,slcoordinated,OTHER_LOCAL,CAMPAIGN,UT,,Jenny Wilson,https://www.mobilize.us/slcoordinated/
 2445,Matt Cartwright for Congress,cartwrightforcongress,CONGRESSIONAL,CAMPAIGN,PA,8,Matt Cartwright,https://www.mobilize.us/cartwrightforcongress/
@@ -1676,14 +1676,14 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2448,Jahana Hayes for Congress,hayesforcongress,CONGRESSIONAL,CAMPAIGN,CT,5,Jahana Hayes,https://www.mobilize.us/hayesforcongress/
 2449,Tom O'Halleran for Congress,tomforcongress,CONGRESSIONAL,CAMPAIGN,AZ,1,Tom O'Halleran,https://www.mobilize.us/tomforcongress/
 2450,Chris Pappas for Congress,pappasforcongress,CONGRESSIONAL,CAMPAIGN,NH,1,Chris Pappas,https://www.mobilize.us/pappasforcongress/
-2451,Hoyos for Congress,hoyosforcongress,,CAMPAIGN,TN,2,Renee Hoyos,https://www.mobilize.us/hoyosforcongress/
+2451,Hoyos for Congress,hoyosforcongress,CONGRESSIONAL,CAMPAIGN,TN,2,Renee Hoyos,https://www.mobilize.us/hoyosforcongress/
 2453,Sister District MA-RI Test,sisterdistrictmatemp,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/sisterdistrictmatemp/
 2467,Alpena County Democratic Party,alpenacountydemocrats,,PARTY_COMMITTEE,MI,,,https://www.mobilize.us/alpenacountydemocrats/
 2468,Angie Bado for Texas,badofortexas,STATE_LEG,CAMPAIGN,TX,,Angie Bado,https://www.mobilize.us/badofortexas/
-2469,Andy Meisner for Oakland County Executive,andy4exec,,CAMPAIGN,MI,,,https://www.mobilize.us/andy4exec/
+2469,Andy Meisner for Oakland County Executive,andy4exec,OTHER_LOCAL,CAMPAIGN,MI,,,https://www.mobilize.us/andy4exec/
 2470,Elect Mary Miller,electmarymiller,OTHER_LOCAL,CAMPAIGN,MD,,Mary Miller,https://www.mobilize.us/electmarymiller/
 2471,Friends of Stephanie Moore,friendsofstephaniemoore,OTHER_LOCAL,CAMPAIGN,MI,,,https://www.mobilize.us/friendsofstephaniemoore/
-2472,Rashid for Virginia,rashidforvirginia,,CAMPAIGN,VA,,,https://www.mobilize.us/rashidforvirginia/
+2472,Rashid for Virginia,rashidforvirginia,CONGRESSIONAL,CAMPAIGN,VA,,,https://www.mobilize.us/rashidforvirginia/
 2473,Vote Volosin,votevolosin,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/votevolosin/
 2474,Dr. Carolynn Zonia for Walton County Commissioner,zoniaforwaltoncounty,OTHER_LOCAL,CAMPAIGN,FL,,Carolynn Zonia,https://www.mobilize.us/zoniaforwaltoncounty/
 2475,Amani Johnson for Southfield,amani,OTHER_LOCAL,CAMPAIGN,MI,,,https://www.mobilize.us/amani/
@@ -1691,7 +1691,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2483,Lyles for HD 43,lylesforhd43,STATE_LEG,CAMPAIGN,FL,,,https://www.mobilize.us/lylesforhd43/
 2484,Tracey Kagan for Florida,kaganforflorida,STATE_LEG,CAMPAIGN,FL,,,https://www.mobilize.us/kaganforflorida/
 2485,Peters for Michigan,petersformichigan,SENATE,CAMPAIGN,MI,,Gary Peters,https://www.mobilize.us/petersformichigan/
-2486,Emily Leslie for GA 106,elect-emily,,CAMPAIGN,GA,106,Emily Leslie,https://www.mobilize.us/elect-emily/
+2486,Emily Leslie for GA 106,elect-emily,STATE_LEG,CAMPAIGN,GA,106,Emily Leslie,https://www.mobilize.us/elect-emily/
 2487,Meg Wheeler for State Senate,megwheeler,STATE_SENATE,CAMPAIGN,MA,8,Meg Wheeler,https://www.mobilize.us/megwheeler/
 2488,Progressive Caucus of NC Democratic Party,pcncdp,,PARTY_COMMITTEE,NC,,,https://www.mobilize.us/pcncdp/
 2489,Dan Besse for NC House,bessefornc,STATE_LEG,CAMPAIGN,NC,74,Dan Besse,https://www.mobilize.us/bessefornc/
@@ -1700,8 +1700,8 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2492,Paulette for Senate 2020,pauletteforsenate2020,SENATE,CAMPAIGN,CA,,Paulette Jordan,https://www.mobilize.us/pauletteforsenate2020/
 2493,Kennedy for Massachusetts,kennedyforma,SENATE,CAMPAIGN,MA,,Joe Kennedy III,https://www.mobilize.us/kennedyforma/
 2494,Amy McGrath for Senate,amymcgrath,SENATE,CAMPAIGN,KY,,Amy McGrath,https://www.mobilize.us/amymcgrath/
-2495,RD Huffstetler for Congress,huffstetlerforcongress,,CAMPAIGN,VA,5,RD Huffstetler,https://www.mobilize.us/huffstetlerforcongress/
-2496,Andrea Phillips  for Iowa House,phillipsforiowa,,CAMPAIGN,IA,,,https://www.mobilize.us/phillipsforiowa/
+2495,RD Huffstetler for Congress,huffstetlerforcongress,CONGRESSIONAL,CAMPAIGN,VA,5,RD Huffstetler,https://www.mobilize.us/huffstetlerforcongress/
+2496,Andrea Phillips  for Iowa House,phillipsforiowa,STATE_LEG,CAMPAIGN,IA,,,https://www.mobilize.us/phillipsforiowa/
 2497,Anna Eastman for 148,eastmanfor148,STATE_LEG,CAMPAIGN,TX,,,https://www.mobilize.us/eastmanfor148/
 2498,Michael Moore for Harris County Commissioner,mooreforcommissioner,OTHER_LOCAL,CAMPAIGN,TX,,,https://www.mobilize.us/mooreforcommissioner/
 2499,Life Aid Research Institute,lifeaid,,C3,,,,https://www.mobilize.us/lifeaid/
@@ -1727,7 +1727,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2521,Gila County Democrats,gilacountydems,,PARTY_COMMITTEE,AZ,,,https://www.mobilize.us/gilacountydems/
 2522,The Back To Blue Campaign,backtobluepa,,PARTY_COMMITTEE,PA,,,https://www.mobilize.us/backtobluepa/
 2524,VoteVets,votevets,,C4,,,,https://www.mobilize.us/votevets/
-2525,Isse for Senate,isseforsenate,,CAMPAIGN,MN,59,Suleiman Isse,https://www.mobilize.us/isseforsenate/
+2525,Isse for Senate,isseforsenate,STATE_SENATE,CAMPAIGN,MN,59,Suleiman Isse,https://www.mobilize.us/isseforsenate/
 2526,Persist Brooklyn,persistbrooklyn,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/persistbrooklyn/
 2527,Gerry Connolly,gerryconnolly,CONGRESSIONAL,CAMPAIGN,VA,11,Gerry Connolly,https://www.mobilize.us/gerryconnolly/
 2528,Kishan for DC Council,kishanfordc,OTHER_LOCAL,CAMPAIGN,DC,,Kishan Putta,https://www.mobilize.us/kishanfordc/
@@ -1743,7 +1743,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2538,Dan Williams for State Representative,dan4pa74,STATE_LEG,CAMPAIGN,PA,,,https://www.mobilize.us/dan4pa74/
 2539,Pima County Dems,pimacountydems,,PARTY_COMMITTEE,AZ,,,https://www.mobilize.us/pimacountydems/
 2540,Sarah for Iowa,sarahforiowa,STATE_SENATE,CAMPAIGN,IA,22,,https://www.mobilize.us/sarahforiowa/
-2541,State Senator Anna Caballero,statesenatorannacaballero,,CAMPAIGN,CA,12,State Senator Anna Caballero,https://www.mobilize.us/statesenatorannacaballero/
+2541,State Senator Anna Caballero,statesenatorannacaballero,STATE_SENATE,CAMPAIGN,CA,12,State Senator Anna Caballero,https://www.mobilize.us/statesenatorannacaballero/
 2542,Meals on Wheels of Southwest Ohio & Northern Kentucky,mow,,C3,,,,https://www.mobilize.us/mow/
 2543,Sierra Club Climate Voters,climatevoter,,C3,CA,,,https://www.mobilize.us/climatevoter/
 2544,Rural Nevada Democratic Caucus,ruralnevadadems,,PARTY_COMMITTEE,NV,,,https://www.mobilize.us/ruralnevadadems/
@@ -1901,8 +1901,8 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2699,Grassroots Toledo,grassrootstoledo,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/grassrootstoledo/
 2700,Northwest Arkansas DSA,northwestarkansasdsa,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/northwestarkansasdsa/
 2701,Bernie 2020 Vols,bernie2020vols,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/bernie2020vols/
-2702,Michael Marcantonio for NY State Assembly,michaelmarcantonio,,CAMPAIGN,NY,AD-12,Michael Marcantonio,https://www.mobilize.us/michaelmarcantonio/
-2704,Ann Ravel for State Senate District 15,ravelforstatesenate,,CAMPAIGN,CA,SD-15,Ann Ravel,https://www.mobilize.us/ravelforstatesenate/
+2702,Michael Marcantonio for NY State Assembly,michaelmarcantonio,STATE_LEG,CAMPAIGN,NY,12,Michael Marcantonio,https://www.mobilize.us/michaelmarcantonio/
+2704,Ann Ravel for State Senate District 15,ravelforstatesenate,STATE_SENATE,CAMPAIGN,CA,15,Ann Ravel,https://www.mobilize.us/ravelforstatesenate/
 2705,Scholten4Iowa,scholten4iowa,CONGRESSIONAL,CAMPAIGN,IA,IA-4,J.D. Scholten,https://www.mobilize.us/scholten4iowa/
 2706,Ronnie for NC,ronniefornc,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/ronniefornc/
 2707,Mangrum for NC,mangrumfornc,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/mangrumfornc/
@@ -1912,7 +1912,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2711,Josh Stein for Attorney General,joshstein,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/joshstein/
 2712,Justice Mark Davis Committee,keepjusticedavis,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/keepjusticedavis/
 2713,Cheri Beasley for Chief Justice,chiefjusticebeasley,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/chiefjusticebeasley/
-2714,Lucy Inman for Justice,lucyinmanforjustice,,CAMPAIGN,NC,,,https://www.mobilize.us/lucyinmanforjustice/
+2714,Lucy Inman for Justice,lucyinmanforjustice,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/lucyinmanforjustice/
 2715,Jessica Holmes for NC,holmesfornc,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/holmesfornc/
 2716,Styers for NC Court of Appeals,styersfornorthcarolina,OTHER_STATEWIDE,CAMPAIGN,NC,,,https://www.mobilize.us/styersfornorthcarolina/
 2717,Bridgeport Mutual Aid,bridgeportmutualaid,,OTHER,,,,https://www.mobilize.us/bridgeportmutualaid/
@@ -1927,7 +1927,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2727,WI Senate Dems,wisenatedems,,PARTY_COMMITTEE,WI,,,https://www.mobilize.us/wisenatedems/
 2728,Mobilize Webinars,webinars,,OTHER,,,,https://www.mobilize.us/webinars/
 2729,NV Dems - Voter Protection,nvdemsvopro,,PARTY_COMMITTEE,NV,,,https://www.mobilize.us/nvdemsvopro/
-2730,Arizona Legislative District 15,arizonald15,,CAMPAIGN,AZ,,,https://www.mobilize.us/arizonald15/
+2730,Arizona Legislative District 15,arizonald15,STATE_LEG,CAMPAIGN,AZ,,,https://www.mobilize.us/arizonald15/
 2731,Brynne Kennedy for Congress,brynneforcongress,CONGRESSIONAL,CAMPAIGN,CA,4,Brynne Kennedy,https://www.mobilize.us/brynneforcongress/
 2732,Feniks,feniks,,OTHER,,,,https://www.mobilize.us/feniks/
 2733,Councilman Coyle - Senior Check In,coyleseniorcheckin,,OTHER,,,,https://www.mobilize.us/coyleseniorcheckin/
@@ -1949,7 +1949,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2751,NYC Seniors,nycseniors,,GOVERNMENT,NY,,,https://www.mobilize.us/nycseniors/
 2752,NYC PEU,nycpeu,,GOVERNMENT,NY,,,https://www.mobilize.us/nycpeu/
 2753,Urban league of Louisiana,urbanleaguela,,C3,LA,,,https://www.mobilize.us/urbanleaguela/
-2754,Ilhan Omar for Congress,ilhanomar,,CAMPAIGN,MN,CD-5,Ilhan Omar,https://www.mobilize.us/ilhanomar/
+2754,Ilhan Omar for Congress,ilhanomar,CONGRESSIONAL,CAMPAIGN,MN,5,Ilhan Omar,https://www.mobilize.us/ilhanomar/
 2756,Christina Hale for Congress,haleforcongress,CONGRESSIONAL,CAMPAIGN,IN,5,Christina Hale,https://www.mobilize.us/haleforcongress/
 2757,Jill Schupp for Congress,schuppforcongress,CONGRESSIONAL,CAMPAIGN,MO,2,Jill Schupp,https://www.mobilize.us/schuppforcongress/
 2758,Eugene DePasquale for Congress,depasqualeforcongress,CONGRESSIONAL,CAMPAIGN,PA,10,Eugene DePasquale,https://www.mobilize.us/depasqualeforcongress/
@@ -1960,8 +1960,8 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2764,Southwest Georgia Project,swgaproject,,C3,GA,,,https://www.mobilize.us/swgaproject/
 2765,Delaware State Education Association,dsea,,UNION,DE,,,https://www.mobilize.us/dsea/
 2766,Meg Cameron for State Assembly,megforassembly,STATE_LEG,CAMPAIGN,NY,91,Meg Cameron,https://www.mobilize.us/megforassembly/
-2767,Eggman for Senate 2020,eggmanforsenate,,CAMPAIGN,CA,SD-5,Susan Eggman,https://www.mobilize.us/eggmanforsenate/
-2768,T'wina Nobles for State Senate,twinaforstatesenate,STATE_LEG,CAMPAIGN,WA,LD-28,T'wina Nobles,https://www.mobilize.us/twinaforstatesenate/
+2767,Eggman for Senate 2020,eggmanforsenate,STATE_SENATE,CAMPAIGN,CA,5,Susan Eggman,https://www.mobilize.us/eggmanforsenate/
+2768,T'wina Nobles for State Senate,twinaforstatesenate,STATE_LEG,CAMPAIGN,WA,28,T'wina Nobles,https://www.mobilize.us/twinaforstatesenate/
 2769,Justice Rebeca Martinez for Chief Justice Campaign,rebeca4chiefjustice,OTHER_LOCAL,CAMPAIGN,TX,,Rebeca Martinez,https://www.mobilize.us/rebeca4chiefjustice/
 2770,Brooks County Democratic Party,brookscountytxdems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/brookscountytxdems/
 2771,Somervell County TX Dems,somervellcountytxdems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/somervellcountytxdems/
@@ -1981,7 +1981,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2785,Democratic Women's Club of West Orange County,dwcfwestorange,,PARTY_COMMITTEE,FL,,,https://www.mobilize.us/dwcfwestorange/
 2786,Eddie for Texas,eddiefortexas,SENATE,CAMPAIGN,TX,,,https://www.mobilize.us/eddiefortexas/
 2787,Amanda Cappelletti for PA,amandaforpa,STATE_SENATE,CAMPAIGN,PA,,,https://www.mobilize.us/amandaforpa/
-2788,Dennis Carrion for City Council,carrionforcitycouncil,,CAMPAIGN,FL,,,https://www.mobilize.us/carrionforcitycouncil/
+2788,Dennis Carrion for City Council,carrionforcitycouncil,OTHER_LOCAL,CAMPAIGN,FL,,,https://www.mobilize.us/carrionforcitycouncil/
 2789,CL Townsend for Florida,cltownsendforflorida,,CAMPAIGN,FL,,,https://www.mobilize.us/cltownsendforflorida/
 2790,Webb County Democratic Party,webbcountytxdems,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/webbcountytxdems/
 2791,North Fulton GA Dems,northfultongadems,,PARTY_COMMITTEE,GA,,,https://www.mobilize.us/northfultongadems/
@@ -2023,7 +2023,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2835,Georgia Association of Educators,gae,,UNION,GA,,,https://www.mobilize.us/gae/
 2836,Jen Perelman for Congress,jen2020,CONGRESSIONAL,CAMPAIGN,FL,23,Jen Perelman,https://www.mobilize.us/jen2020/
 2837,Franccesca Cesti-Browne House District 115,franccescaforflorida,STATE_LEG,CAMPAIGN,FL,,,https://www.mobilize.us/franccescaforflorida/
-2838,Gepsie Metellus Miami-Dade County Commission 3,metellusforcountycommissioner,,CAMPAIGN,FL,,,https://www.mobilize.us/metellusforcountycommissioner/
+2838,Gepsie Metellus Miami-Dade County Commission 3,metellusforcountycommissioner,OTHER_LOCAL,CAMPAIGN,FL,,,https://www.mobilize.us/metellusforcountycommissioner/
 2839,Nancy Lawther for District 9,lawtherforschoolboard,OTHER_LOCAL,CAMPAIGN,FL,,,https://www.mobilize.us/lawtherforschoolboard/
 2840,Incarcerated Nation,incarceratednation,,OTHER,,,,https://www.mobilize.us/incarceratednation/
 2841,National LINKS Incorporated,nationallinks,,OTHER,,,,https://www.mobilize.us/nationallinks/
@@ -2128,8 +2128,8 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2940,Sierra Club Climate Voter West Virginia,climatevoterWV,,C3,WV,,,https://www.mobilize.us/climatevoterWV/
 2941,Sierra Club Climate Voter Wisconsin,climatevoterWI,,C3,WI,,,https://www.mobilize.us/climatevoterWI/
 2942,Sierra Club Climate Voter Wyoming,climatevoterWY,,C3,WY,,,https://www.mobilize.us/climatevoterWY/
-2943,Michele Oberholtzer,michele4rep,,CAMPAIGN,MI,4,Michele Oberholtzer,https://www.mobilize.us/michele4rep/
-2944,Boni Njenga for Hennepin County Commissioner,boninjenga4d5,,CAMPAIGN,MN,,,https://www.mobilize.us/boninjenga4d5/
+2943,Michele Oberholtzer,michele4rep,CONGRESSIONAL,CAMPAIGN,MI,4,Michele Oberholtzer,https://www.mobilize.us/michele4rep/
+2944,Boni Njenga for Hennepin County Commissioner,boninjenga4d5,OTHER_LOCAL,CAMPAIGN,MN,,,https://www.mobilize.us/boninjenga4d5/
 2945,Renee Richer for State Rep,richerforstaterep,STATE_LEG,CAMPAIGN,MI,,,https://www.mobilize.us/richerforstaterep/
 2946,Will Garcia for State Representative,willgarcia,STATE_LEG,CAMPAIGN,MI,,Will Garcia,https://www.mobilize.us/willgarcia/
 2947,Rebecca Bell-Metereau Campaign,voterebecca,OTHER_LOCAL,CAMPAIGN,TX,,Rebecca Bell-Metereau,https://www.mobilize.us/voterebecca/
@@ -2153,9 +2153,9 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2966,United Professional Organizers,upo,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/upo/
 2967,Indivisible Harlem,indivisibleharlem,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/indivisibleharlem/
 2968,Nevada State Democratic Convention,nevadastatedemconvention,,PARTY_COMMITTEE,NV,,,https://www.mobilize.us/nevadastatedemconvention/
-2969,Robbie Goldstein for Congress,goldsteinforcongress,,CAMPAIGN,MA,CD-8,Robbie Goldstein,https://www.mobilize.us/goldsteinforcongress/
+2969,Robbie Goldstein for Congress,goldsteinforcongress,CONGRESSIONAL,CAMPAIGN,MA,8,Robbie Goldstein,https://www.mobilize.us/goldsteinforcongress/
 2970,DPG Voter Protection,dpgvoterprotection,,PARTY_COMMITTEE,GA,,,https://www.mobilize.us/dpgvoterprotection/
-2971,Laurie Pohutsky for HD-19,pohutskyforhd19,,CAMPAIGN,MI,,,https://www.mobilize.us/pohutskyforhd19/
+2971,Laurie Pohutsky for HD-19,pohutskyforhd19,STATE_LEG,CAMPAIGN,MI,19,,https://www.mobilize.us/pohutskyforhd19/
 2972,State Representative Darrin Camilleri,darrincamilleri,STATE_LEG,CAMPAIGN,MI,23,,https://www.mobilize.us/darrincamilleri/
 2973,Nate Shannon for Michigan,shannonformichigan,STATE_LEG,CAMPAIGN,MI,,,https://www.mobilize.us/shannonformichigan/
 2974,Sheryl Kennedy for Michigan,kennedyformichigan,STATE_LEG,CAMPAIGN,MI,48,,https://www.mobilize.us/kennedyformichigan/
@@ -2185,9 +2185,9 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3010,Friends of Cheri Bustos,bustos,CONGRESSIONAL,CAMPAIGN,IL,17,Cheri Bustos,https://www.mobilize.us/bustos/
 3011,Mike Espy for Senate,espyforsenate,SENATE,CAMPAIGN,MS,,Mike Espy,https://www.mobilize.us/espyforsenate/
 3012,Linda Thompson Gonzalez for Florida House District 93,lindathompsongonzalez,STATE_LEG,CAMPAIGN,FL,93,Linda Thompson Gonzalez,https://www.mobilize.us/lindathompsongonzalez/
-3013,Beth Doglio for Congress,doglioforcongress,,CAMPAIGN,WA,CD-10,Beth Doglio,https://www.mobilize.us/doglioforcongress/
-3014,Committee to Elect Steve Owens,committeetoelectsteveowens,,CAMPAIGN,MA,LD-29,Steve Owens,https://www.mobilize.us/committeetoelectsteveowens/
-3015,Dave Cortese for Senate 2020,davecorteseforsenate,,CAMPAIGN,CA,SD-15,Dave Cortese,https://www.mobilize.us/davecorteseforsenate/
+3013,Beth Doglio for Congress,doglioforcongress,CONGRESSIONAL,CAMPAIGN,WA,10,Beth Doglio,https://www.mobilize.us/doglioforcongress/
+3014,Committee to Elect Steve Owens,committeetoelectsteveowens,,CAMPAIGN,MA,29,Steve Owens,https://www.mobilize.us/committeetoelectsteveowens/
+3015,Dave Cortese for Senate 2020,davecorteseforsenate,STATE_SENATE,CAMPAIGN,CA,15,Dave Cortese,https://www.mobilize.us/davecorteseforsenate/
 3016,MomsRising,momsrising,,OTHER,,,,https://www.mobilize.us/momsrising/
 3017,COVID Memorial,covidmemorial,,OTHER,,,,https://www.mobilize.us/covidmemorial/
 3018,Laveen Community Council,laveencc,,OTHER,,,,https://www.mobilize.us/laveencc/
@@ -2197,7 +2197,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3022,Ruby Powell-Dennis for TN State Representative District 97,rpowelldennis97,STATE_LEG,CAMPAIGN,TN,TN97,Ruby Powell-Dennis,https://www.mobilize.us/rpowelldennis97/
 3023,The Collective PAC,collectivepac,,PAC,,,,https://www.mobilize.us/collectivepac/
 3024,Massachusetts Teachers Association,massteacher,,UNION,MA,,,https://www.mobilize.us/massteacher/
-3025,Arizona Legislative District 23,arizonald23,,CAMPAIGN,AZ,,,https://www.mobilize.us/arizonald23/
+3025,Arizona Legislative District 23,arizonald23,STATE_LEG,CAMPAIGN,AZ,,,https://www.mobilize.us/arizonald23/
 3026,Vote Aiyash,voteaiyash,STATE_LEG,CAMPAIGN,MI,,,https://www.mobilize.us/voteaiyash/
 3027,Joshua Mast for Putnam County,mastforputnamcounty,OTHER_LOCAL,CAMPAIGN,FL,,,https://www.mobilize.us/mastforputnamcounty/
 3028,Camila Cabello,camilacabello,,OTHER,,,,https://www.mobilize.us/camilacabello/
@@ -2208,7 +2208,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3035,Warren Area Democratic Club,warrenareadems,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/warrenareadems/
 3036,Rainbow Democrats,rainbowdems,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/rainbowdems/
 3037,Envoys for Humanity,envoysforhumanity,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/envoysforhumanity/
-3038,Lindsey Simmons for Congress,lindseysimmonsforcongress,CONGRESSIONAL,CAMPAIGN,MO,CD-4,Lindsey Simmons,https://www.mobilize.us/lindseysimmonsforcongress/
+3038,Lindsey Simmons for Congress,lindseysimmonsforcongress,CONGRESSIONAL,CAMPAIGN,MO,4,Lindsey Simmons,https://www.mobilize.us/lindseysimmonsforcongress/
 3039,Village Independent Democrats,villagedems,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/villagedems/
 3040,Mobilize Robots,pleaseadvise,,UNION,,,,https://www.mobilize.us/pleaseadvise/
 3041,Pat Timmons-Goodson for Congress,patforcongress,CONGRESSIONAL,CAMPAIGN,NC,8,Patricia Timmons-Goodson,https://www.mobilize.us/patforcongress/
@@ -2235,10 +2235,10 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3064,Clint Curtis for Congress,clintcurtis,CONGRESSIONAL,CAMPAIGN,,6,Clint Curtis,https://www.mobilize.us/clintcurtis/
 3065,Elizabeth Beck for Texas,elizabethfortx,,CAMPAIGN,TX,,,https://www.mobilize.us/elizabethfortx/
 3066,Michigan Jewish Democrats,mijewishdems,,PARTY_COMMITTEE,MI,,,https://www.mobilize.us/mijewishdems/
-3067,Sam Edney for NC House,electsamedney,,CAMPAIGN,NC,,,https://www.mobilize.us/electsamedney/
+3067,Sam Edney for NC House,electsamedney,STATE_LEG,CAMPAIGN,NC,,,https://www.mobilize.us/electsamedney/
 3068,Richard Thripp for Congress,thrippforcongress,CONGRESSIONAL,CAMPAIGN,FL,6,,https://www.mobilize.us/thrippforcongress/
-3069,Perlmutter for Congress,ed4colorado,,CAMPAIGN,CO,CD-7,Ed Perlmutter,https://www.mobilize.us/ed4colorado/
-3070,Jessica Harrington for House District 64,jessicaharrington,,CAMPAIGN,FL,64,,https://www.mobilize.us/jessicaharrington/
+3069,Perlmutter for Congress,ed4colorado,CONGRESSIONAL,CAMPAIGN,CO,7,Ed Perlmutter,https://www.mobilize.us/ed4colorado/
+3070,Jessica Harrington for House District 64,jessicaharrington,STATE_LEG,CAMPAIGN,FL,64,,https://www.mobilize.us/jessicaharrington/
 3071,Michael Scott,mobilize-office-theme,,INDEPENDENT,,,,https://www.mobilize.us/mobilize-office-theme/
 3072,Trout Unlimited,troutunlimited,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/troutunlimited/
 3073,Seed the Vote,seedthevote,,PAC,,,,https://www.mobilize.us/seedthevote/
@@ -2246,21 +2246,21 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3075,Clean Energy for Biden,cleanenergy4biden,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/cleanenergy4biden/
 3077,Norfolk City Democratic Committee,norfolkcitydems,,PARTY_COMMITTEE,VA,,,https://www.mobilize.us/norfolkcitydems/
 3078,Mobilize Against Racism,against-racism,,INDEPENDENT,,,,https://www.mobilize.us/against-racism/
-3079,Dotie Joseph for FL HD 108,dotiejoseph,,CAMPAIGN,FL,108,,https://www.mobilize.us/dotiejoseph/
-3086,Tess Judge for State Senate,judgesd1,,CAMPAIGN,NC,,,https://www.mobilize.us/judgesd1/
-3087,Sarah Crawford for State Senate,crawfordsd18,,CAMPAIGN,NC,,,https://www.mobilize.us/crawfordsd18/
-3088,Helen Probst Mills for State Senate,helenforncsenate,,CAMPAIGN,NC,,,https://www.mobilize.us/helenforncsenate/
-3089,Donna Lake for State Senate,lakesd7,,CAMPAIGN,NC,,,https://www.mobilize.us/lakesd7/
-3090,JD Wooten for State Senate,jdwooten,,CAMPAIGN,NC,,,https://www.mobilize.us/jdwooten/
-3091,Terri LeGrand for State Senate,legrandsd31,,CAMPAIGN,NC,,,https://www.mobilize.us/legrandsd31/
+3079,Dotie Joseph for FL HD 108,dotiejoseph,STATE_LEG,CAMPAIGN,FL,108,,https://www.mobilize.us/dotiejoseph/
+3086,Tess Judge for State Senate,judgesd1,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/judgesd1/
+3087,Sarah Crawford for State Senate,crawfordsd18,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/crawfordsd18/
+3088,Helen Probst Mills for State Senate,helenforncsenate,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/helenforncsenate/
+3089,Donna Lake for State Senate,lakesd7,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/lakesd7/
+3090,JD Wooten for State Senate,jdwooten,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/jdwooten/
+3091,Terri LeGrand for State Senate,legrandsd31,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/legrandsd31/
 3092,myCOVIDmd,mycovidmd,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/mycovidmd/
 3093,Bywood Community Association,bywoodcommunity,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/bywoodcommunity/
 3094,Organized For Action,organizedforaction,,PAC,,,,https://www.mobilize.us/organizedforaction/
-3095,Harper Peterson for State Senate,harper4nc,,CAMPAIGN,,,,https://www.mobilize.us/harper4nc/
-3096,Kirk deViere for State Senate,kdeviere,,CAMPAIGN,,,,https://www.mobilize.us/kdeviere/
-3097,Allen Wellons for NC Senate,wellons4ncsenate,,CAMPAIGN,,,,https://www.mobilize.us/wellons4ncsenate/
-3098,Sam Searcy for State Senate,searcysd17,,CAMPAIGN,,,,https://www.mobilize.us/searcysd17/
-3099,Colorado Families First,cofamiliesfirst,,CAMPAIGN,CO,,,https://www.mobilize.us/cofamiliesfirst/
+3095,Harper Peterson for State Senate,harper4nc,STATE_SENATE,CAMPAIGN,,,,https://www.mobilize.us/harper4nc/
+3096,Kirk deViere for State Senate,kdeviere,STATE_SENATE,CAMPAIGN,,,,https://www.mobilize.us/kdeviere/
+3097,Allen Wellons for NC Senate,wellons4ncsenate,STATE_SENATE,CAMPAIGN,,,,https://www.mobilize.us/wellons4ncsenate/
+3098,Sam Searcy for State Senate,searcysd17,STATE_SENATE,CAMPAIGN,,,,https://www.mobilize.us/searcysd17/
+3099,Colorado Families First,cofamiliesfirst,STATE_SENATE,CAMPAIGN,CO,,,https://www.mobilize.us/cofamiliesfirst/
 3100,Tampa - Hillsborough Disability Advocate Volunteers w/ Disabilities,tampahillsboroughdisabilityadvocatevolunteerswdisabilities,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/tampahillsboroughdisabilityadvocatevolunteerswdisabilities/
 3101,The San Diego County Democratic Party,sandiegodems,,CAMPAIGN,CA,,,https://www.mobilize.us/sandiegodems/
 3102,Independent Progressive Organization of the 14th Ward,independentprogressiveorganizationofthe14thward,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/independentprogressiveorganizationofthe14thward/
@@ -2276,10 +2276,10 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3114,Lausd,lausd-1,,OTHER,,,,https://www.mobilize.us/lausd-1/
 3115,SFA Board,sfaboard,,C3,,,,https://www.mobilize.us/sfaboard/
 3116,JB21,jb21,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/jb21/
-3117,Adair for Congress,adairforcongress,,CAMPAIGN,SC,2,Adair Boroughs,https://www.mobilize.us/adairforcongress/
+3117,Adair for Congress,adairforcongress,CONGRESSIONAL,CAMPAIGN,SC,2,Adair Boroughs,https://www.mobilize.us/adairforcongress/
 3118,Mijente PAC,mijentepac,,PAC,,,,https://www.mobilize.us/mijentepac/
 3119,Business Volunteers,businessvolunteers,,OTHER,,,,https://www.mobilize.us/businessvolunteers/
-3120,Campaign to Elect Andrea Kelly Garrison,akg4us,,CAMPAIGN,,,,https://www.mobilize.us/akg4us/
+3120,Campaign to Elect Andrea Kelly Garrison,akg4us,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/akg4us/
 3121,Youth Vote with their Time,youthvotewiththeirtime,,OTHER,,,,https://www.mobilize.us/youthvotewiththeirtime/
 3122,Vote Yes for Alaskas Fair Share,voteyesforalaskasfairshare,,CAMPAIGN,,,,https://www.mobilize.us/voteyesforalaskasfairshare/
 3123,Fair Vote Philly,fairvotephilly,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/fairvotephilly/
@@ -2310,13 +2310,13 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3150,Together as One,togetherasone,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/togetherasone/
 3151,Support Black Businesses,supportblackbusinesses,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/supportblackbusinesses/
 3153,Team Dickason,teamdickason,,CAMPAIGN,MI,9,Keshia Dickason,https://www.mobilize.us/teamdickason/
-3154,Gretchen Piper For MN Senate,gretchenpiperformnsenate,,CAMPAIGN,,,,https://www.mobilize.us/gretchenpiperformnsenate/
+3154,Gretchen Piper For MN Senate,gretchenpiperformnsenate,STATE_SENATE,CAMPAIGN,,,,https://www.mobilize.us/gretchenpiperformnsenate/
 3155,College Democrats of NY,collegedemocratsofny,,PAC,,,,https://www.mobilize.us/collegedemocratsofny/
 3156,Native American Caucus of the NCDP,ncdemnac,,PARTY_COMMITTEE,NC,,,https://www.mobilize.us/ncdemnac/
 3157,Alberto4Medford,alberto4medford,,CAMPAIGN,,,,https://www.mobilize.us/alberto4medford/
 3158,Ashley Eason for Indiana,ashleyforindiana,STATE_SENATE,CAMPAIGN,IN,36,Ashley Eason,https://www.mobilize.us/ashleyforindiana/
 3159,Bandera County Democratic Chair Group,banderacountydemocraticchairgroup,,PARTY_COMMITTEE,,,,https://www.mobilize.us/banderacountydemocraticchairgroup/
-3161,Dave Cavell for Congress,davecavellforcongress,,CAMPAIGN,,,,https://www.mobilize.us/davecavellforcongress/
+3161,Dave Cavell for Congress,davecavellforcongress,CONGRESSIONAL,CAMPAIGN,MA,4,,https://www.mobilize.us/davecavellforcongress/
 3162,Register 4 Revolution,register4revolution,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/register4revolution/
 3163,Campus Farms East-Investined,campusfarmseastinvestined,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/campusfarmseastinvestined/
 3164,Demócratas Activaos,democratasactivaos,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/democratasactivaos/
@@ -2326,19 +2326,19 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3168,Voices of Women of Color,voicesofwomenofcolor,,CAMPAIGN,,,,https://www.mobilize.us/voicesofwomenofcolor/
 3170,EDF Action,edfaction,,C4,,,,https://www.mobilize.us/edfaction/
 3171,My Voice My Power,myvoicemypower,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/myvoicemypower/
-3172,"Ben Marcus for Florida State House, District 16",benforjax,,CAMPAIGN,FL,,,https://www.mobilize.us/benforjax/
+3172,"Ben Marcus for Florida State House, District 16",benforjax,STATE_LEG,CAMPAIGN,FL,,,https://www.mobilize.us/benforjax/
 3173,March For Our Lives ASU,marchforourlivesasu,,C4,,,,https://www.mobilize.us/marchforourlivesasu/
 3174,Team Suzanne,teamsuzanne,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/teamsuzanne/
 3175,Peach County Democrats,peachcountydemocrats,,CAMPAIGN,,,,https://www.mobilize.us/peachcountydemocrats/
 3176,Blue Wave 2020,bluewave2020,,CAMPAIGN,,,,https://www.mobilize.us/bluewave2020/
 3177,Biz Martin,bizmartin,,OTHER,,,,https://www.mobilize.us/bizmartin/
 3178,Eugene Oregon. Individual,eugeneoregonindividual,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/eugeneoregonindividual/
-3179,Stephanie 4TxHD73,stephanie4txhd73,,CAMPAIGN,,,,https://www.mobilize.us/stephanie4txhd73/
+3179,Stephanie 4TxHD73,stephanie4txhd73,STATE_LEG,CAMPAIGN,TX,73,,https://www.mobilize.us/stephanie4txhd73/
 3180,Tricia,tricia,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/tricia/
 3181,backtobluepa,backtobluepa-1,,PARTY_COMMITTEE,,,,https://www.mobilize.us/backtobluepa-1/
 3182,"New Safety, Honor & REAL Respect, ReFraming...",newsafetyhonorrealrespectreframing,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/newsafetyhonorrealrespectreframing/
 3183,Voters of Tomorrow,votersoftomorrow,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/votersoftomorrow/
-3184,Elect Tanisha Harris,electtanishaharris,STATE_LEG,CAMPAIGN,WA,LD-17,Tanisha Harris,https://www.mobilize.us/electtanishaharris/
+3184,Elect Tanisha Harris,electtanishaharris,STATE_LEG,CAMPAIGN,WA,17,Tanisha Harris,https://www.mobilize.us/electtanishaharris/
 3185,Committee to Elect Julie von Haefen,committeetoelectjulievonhaefen,,CAMPAIGN,,,,https://www.mobilize.us/committeetoelectjulievonhaefen/
 3186,Team Taddeo,teamtaddeo,,GOVERNMENT,,,,https://www.mobilize.us/teamtaddeo/
 3187,Team Erikka For DA,teamerikkaforda,,CAMPAIGN,,,,https://www.mobilize.us/teamerikkaforda/
@@ -2353,16 +2353,16 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3199,Elect NB/MV Democrats 2020,electnbmvdemocrats2020,,CAMPAIGN,,,,https://www.mobilize.us/electnbmvdemocrats2020/
 3200,Citizens 4 Action 2020,citizens4action2020,,CAMPAIGN,,,,https://www.mobilize.us/citizens4action2020/
 3201,Monroe County Positive Action Network,monroecountypositiveactionnetwork,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/monroecountypositiveactionnetwork/
-3202,Amani 2020,amani2020,CONGRESSIONAL,CAMPAIGN,NJ,CD-6,Amani Al-Khatahtbeh,https://www.mobilize.us/amani2020/
-3203,Rupande Mehta for NJ State Senate,rupandemehtafornjstatesenate,,CAMPAIGN,,,,https://www.mobilize.us/rupandemehtafornjstatesenate/
+3202,Amani 2020,amani2020,CONGRESSIONAL,CAMPAIGN,NJ,6,Amani Al-Khatahtbeh,https://www.mobilize.us/amani2020/
+3203,Rupande Mehta for NJ State Senate,rupandemehtafornjstatesenate,STATE_SENATE,CAMPAIGN,,,,https://www.mobilize.us/rupandemehtafornjstatesenate/
 3204,Edwards4LiveOak,edwards4liveoak,,CAMPAIGN,,,,https://www.mobilize.us/edwards4liveoak/
-3205,Jake Tonkel for San Jose City Council,jaketonkelforsanjosecitycouncil,,CAMPAIGN,,,,https://www.mobilize.us/jaketonkelforsanjosecitycouncil/
+3205,Jake Tonkel for San Jose City Council,jaketonkelforsanjosecitycouncil,OTHER_LOCAL,CAMPAIGN,,,,https://www.mobilize.us/jaketonkelforsanjosecitycouncil/
 3206,Smith for 17th LD Senate,smithforsenate,STATE_SENATE,CAMPAIGN,,17,Daniel Smith,https://www.mobilize.us/smithforsenate/
 3207,Abolish Olympia Police,abolisholympiapolice,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/abolisholympiapolice/
 3208,Arizona Legislative District 16,arizonald16,STATE_LEG,CAMPAIGN,AZ,,,https://www.mobilize.us/arizonald16/
 3209,Sandoval County Comms Team,sandovalcountycommsteam,,PARTY_COMMITTEE,,,,https://www.mobilize.us/sandovalcountycommsteam/
-3210,Bill Johnson for D9,billjohnsonford9,,CAMPAIGN,,,,https://www.mobilize.us/billjohnsonford9/
-3211,Julie Solis for Assembly,juliesolisforassembly,,CAMPAIGN,,,,https://www.mobilize.us/juliesolisforassembly/
+3210,Bill Johnson for D9,billjohnsonford9,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/billjohnsonford9/
+3211,Julie Solis for Assembly,juliesolisforassembly,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/juliesolisforassembly/
 3212,voteamercia NC,voteamercianc,,CAMPAIGN,,,,https://www.mobilize.us/voteamercianc/
 3213,Community Voices Heard,communityvoicesheard,,C3,,,,https://www.mobilize.us/communityvoicesheard/
 3214,Amplify Action,amplifyaction,,C4,,,,https://www.mobilize.us/amplifyaction/
@@ -2371,12 +2371,12 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3217,Our Voices,ourvoices,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/ourvoices/
 3218,BK Organizing,bkorganizing,,OTHER,,,,https://www.mobilize.us/bkorganizing/
 3219,Springfield Volunteers,springfieldvolunteers,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/springfieldvolunteers/
-3220,Mariah Phillips for Tennessee,mariah4tn,,CAMPAIGN,,,,https://www.mobilize.us/mariah4tn/
+3220,Mariah Phillips for Tennessee,mariah4tn,STATE_LEG,CAMPAIGN,TN,37,,https://www.mobilize.us/mariah4tn/
 3221,Fight for $15,FF$15,,UNION,,,,https://www.mobilize.us/FF$15/
-3222,Hurst4Rep,hurst4rep,,CAMPAIGN,MA,HD-9,Denise Hurst,https://www.mobilize.us/hurst4rep/
+3222,Hurst4Rep,hurst4rep,STATE_LEG,CAMPAIGN,MA,9,Denise Hurst,https://www.mobilize.us/hurst4rep/
 3223,Santiago For NC,santiagofornc,STATE_SENATE,CAMPAIGN,NC,,,https://www.mobilize.us/santiagofornc/
 3224,Sarah Eckhardt for Texas,eckhardtfortexas,STATE_SENATE,CAMPAIGN,TX,,,https://www.mobilize.us/eckhardtfortexas/
-3225,Vanna Howard for State Representative,vannahowardforstaterepresentative,,CAMPAIGN,,,,https://www.mobilize.us/vannahowardforstaterepresentative/
+3225,Vanna Howard for State Representative,vannahowardforstaterepresentative,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/vannahowardforstaterepresentative/
 3227,San Bernardino NAACP,sanbernardinonaacp,,C4,,,,https://www.mobilize.us/sanbernardinonaacp/
 3228,Elect Lynda Nash for Harker Heights City Council,electlyndanashforharkerheightscitycouncil,,CAMPAIGN,,,,https://www.mobilize.us/electlyndanashforharkerheightscitycouncil/
 3230,Greg Robinson for Tulsa Mayor,gregrobinsonfortulsamayor,OTHER_LOCAL,CAMPAIGN,OK,,Greg Robinson,https://www.mobilize.us/gregrobinsonfortulsamayor/
@@ -2393,13 +2393,13 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3246,Vote Su!,votesu,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/votesu/
 3247,Calm Meadows,calmmeadows,,OTHER,,,,https://www.mobilize.us/calmmeadows/
 3248,Naper Youth for Black Lives Matter,naperyouthforblacklivesmatter,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/naperyouthforblacklivesmatter/
-3249,"Joshua Hicks for State House, District 11",joshuahicksforstatehouse,,CAMPAIGN,FL,11,Joshua Hicks,https://www.mobilize.us/joshuahicksforstatehouse/
+3249,"Joshua Hicks for State House, District 11",joshuahicksforstatehouse,STATE_LEG,CAMPAIGN,FL,11,Joshua Hicks,https://www.mobilize.us/joshuahicksforstatehouse/
 3250,Minnesota Freedom Fund,minnesotafreedomfund,,C3,,,,https://www.mobilize.us/minnesotafreedomfund/
 3251,Crist for Congress,cristforcongress,CONGRESSIONAL,CAMPAIGN,FL,13,Charlie Crist,https://www.mobilize.us/cristforcongress/
 3252,Team Vick,teamvick,,CAMPAIGN,,,,https://www.mobilize.us/teamvick/
-3253,Margaret Good for Congress,goodforcongress,,CAMPAIGN,FL,16,,https://www.mobilize.us/goodforcongress/
+3253,Margaret Good for Congress,goodforcongress,CONGRESSIONAL,CAMPAIGN,FL,16,,https://www.mobilize.us/goodforcongress/
 3254,College Democrats of North Carolina,collegedemocratsofnorthcarolina,,PARTY_COMMITTEE,,,,https://www.mobilize.us/collegedemocratsofnorthcarolina/
-3255,Joy Chowdhury for State Assembly,joychowdhuryforstateassembly,,CAMPAIGN,,,,https://www.mobilize.us/joychowdhuryforstateassembly/
+3255,Joy Chowdhury for State Assembly,joychowdhuryforstateassembly,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/joychowdhuryforstateassembly/
 3256,F&C Consulting Group,fcconsultinggroup,,OTHER,,,,https://www.mobilize.us/fcconsultinggroup/
 3258,colleen lemkuil,colleenlemkuil,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/colleenlemkuil/
 3259,P LM,plm,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/plm/
@@ -2414,10 +2414,10 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3269,Cal Cunningham,calcunningham,,CAMPAIGN,,,,https://www.mobilize.us/calcunningham/
 3270,The BTA,thebta,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/thebta/
 3271,Douglas County Young Democrats,dcydne,,PARTY_COMMITTEE,,,,https://www.mobilize.us/dcydne/
-3272,Monique Worrell for State Attorney,moniqueworrellforstateattorney,,CAMPAIGN,,,,https://www.mobilize.us/moniqueworrellforstateattorney/
+3272,Monique Worrell for State Attorney,moniqueworrellforstateattorney,OTHER_STATEWIDE,CAMPAIGN,,,,https://www.mobilize.us/moniqueworrellforstateattorney/
 3273,Monique for State Attorney,moniqueforstateattorney,,CAMPAIGN,,,,https://www.mobilize.us/moniqueforstateattorney/
 3274,Joe Tate For State Representative,joetateforstaterepresentative,,CAMPAIGN,,,,https://www.mobilize.us/joetateforstaterepresentative/
-3275,Alaina Swope for State Representative,alainaswopeforstaterepresentative,,CAMPAIGN,,,,https://www.mobilize.us/alainaswopeforstaterepresentative/
+3275,Alaina Swope for State Representative,alainaswopeforstaterepresentative,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/alainaswopeforstaterepresentative/
 3276,BOLDer Future,bolderfuture,,CAMPAIGN,,,,https://www.mobilize.us/bolderfuture/
 3277,Steve Bullock,stevebullock,SENATE,CAMPAIGN,MT,,Steve Bullock,https://www.mobilize.us/stevebullock/
 3278,Willamette Education Service District,willametteeducationservicedistrict,,UNION,,,,https://www.mobilize.us/willametteeducationservicedistrict/
@@ -2439,9 +2439,9 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3311,KLK for Freedom,klkforfreedom,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/klkforfreedom/
 3312,Logic TCG,logictcg,,OTHER,,,,https://www.mobilize.us/logictcg/
 3313,Flagler Democratic Party,flaglerdemocraticparty,,CAMPAIGN,,,,https://www.mobilize.us/flaglerdemocraticparty/
-3314,Patrick Henry for State Representative District 26,patrickhenryforstaterepresentativedistrict26,,CAMPAIGN,,,,https://www.mobilize.us/patrickhenryforstaterepresentativedistrict26/
+3314,Patrick Henry for State Representative District 26,patrickhenryforstaterepresentativedistrict26,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/patrickhenryforstaterepresentativedistrict26/
 3315,SAAVETX,saavetx,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/saavetx/
-3316,sciu local union 73 political campaign,sciulocalunion73politicalcampaign,,CAMPAIGN,,,,https://www.mobilize.us/sciulocalunion73politicalcampaign/
+3316,sciu local union 73 political campaign,sciulocalunion73politicalcampaign,UNION,CAMPAIGN,,,,https://www.mobilize.us/sciulocalunion73politicalcampaign/
 3317,Georgia High School Democrats,georgiahighschooldemocrats,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/georgiahighschooldemocrats/
 3318,United Teachers Los Angeles (UTLA),utlaleadershipconference2020,,UNION,,,,https://www.mobilize.us/utlaleadershipconference2020/
 3319,Thomas Whitener for Kalamazoo County Treasurer,thomaswhitenerforkalamazoocountytreasurer,,CAMPAIGN,,,,https://www.mobilize.us/thomaswhitenerforkalamazoocountytreasurer/
@@ -2453,19 +2453,19 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3325,GraceAOG,graceaog,,C3,,,,https://www.mobilize.us/graceaog/
 3326,Racial Equality Now,racialequalitynow,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/racialequalitynow/
 3327,Battleground Iowa,battlegroundiowa,SENATE,CAMPAIGN,IA,,,https://www.mobilize.us/battlegroundiowa/
-3328,Deb Andraca for State Assembly,debandracaforstateassembly,,CAMPAIGN,,,,https://www.mobilize.us/debandracaforstateassembly/
+3328,Deb Andraca for State Assembly,debandracaforstateassembly,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/debandracaforstateassembly/
 3329,Shevrin Jones for State Senate,shev4senate,STATE_SENATE,CAMPAIGN,FL,,Shevrin Jones,https://www.mobilize.us/shev4senate/
-3330,Marlene Katz for Bucks County,marlenekatzforbuckscounty,,CAMPAIGN,PA,HD-29,Marlene Katz,https://www.mobilize.us/marlenekatzforbuckscounty/
+3330,Marlene Katz for Bucks County,marlenekatzforbuckscounty,,CAMPAIGN,PA,29,Marlene Katz,https://www.mobilize.us/marlenekatzforbuckscounty/
 3331,Asheville Rollers,ashevillerollers,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/ashevillerollers/
 3332,Alexsis Rodgers for Richmond Mayor,alexsisrodgersforrichmondmayor,OTHER_LOCAL,CAMPAIGN,VA,,Alexsis Rodgers,https://www.mobilize.us/alexsisrodgersforrichmondmayor/
-3333,Debbie Dingell for Congress.,dingellforcongress,,CAMPAIGN,,,,https://www.mobilize.us/dingellforcongress/
+3333,Debbie Dingell for Congress.,dingellforcongress,CONGRESSIONAL,CAMPAIGN,MI,12,,https://www.mobilize.us/dingellforcongress/
 3334,Rich for Commish!,richforcommish,OTHER_LOCAL,CAMPAIGN,MI,,Rich Eichholz,https://www.mobilize.us/richforcommish/
 3335,Cara Clemente for State Representative,caraclementeforstaterepresentative,STATE_LEG,CAMPAIGN,MI,,Cara Clemente,https://www.mobilize.us/caraclementeforstaterepresentative/
 3336,Kyra Bolden for State Representative,kyraboldenforstaterepresentative,STATE_LEG,CAMPAIGN,MI,,Kyra Bolden,https://www.mobilize.us/kyraboldenforstaterepresentative/
 3337,Gail Young for North Carolina,gailyoungnc,STATE_LEG,CAMPAIGN,NC,,,https://www.mobilize.us/gailyoungnc/
 3338,Running for Election,runningforelection,,CAMPAIGN,,,,https://www.mobilize.us/runningforelection/
 3339,Justice,justice,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/justice/
-3340,Carroll Fife For District 3,carrollfifefordistrict3,,CAMPAIGN,,,,https://www.mobilize.us/carrollfifefordistrict3/
+3340,Carroll Fife For District 3,carrollfifefordistrict3,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/carrollfifefordistrict3/
 3341,Omala Entertainment,omalaentertainment,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/omalaentertainment/
 3342,Bethel Austin City Services,cityservices,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/cityservices/
 3343,SICU LOCAL 73 MPO,siculocal73mpo,,OTHER,,,,https://www.mobilize.us/siculocal73mpo/
@@ -2474,7 +2474,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3346,Jen Richardson for Congress,jenrichardsonforcongress,,CAMPAIGN,,,,https://www.mobilize.us/jenrichardsonforcongress/
 3347,Defund NPD,defundnpd,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/defundnpd/
 3349,Hank Gilbert for U.S. House of Representatives District 1,hankgilbertforushouseofrepresentativesdistrict1,CONGRESSIONAL,CAMPAIGN,TX,,Hank Gilbert,https://www.mobilize.us/hankgilbertforushouseofrepresentativesdistrict1/
-3351,Jon Olson for MN,jonolsonformn,,CAMPAIGN,,,,https://www.mobilize.us/jonolsonformn/
+3351,Jon Olson for MN,jonolsonformn,STATE_SENATE,CAMPAIGN,MN,,,https://www.mobilize.us/jonolsonformn/
 3352,Young Africans for Biden,youngafricansforbiden,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/youngafricansforbiden/
 3354,Edison Red Cross,edisonredcross,,C3,,,,https://www.mobilize.us/edisonredcross/
 3355,Massachusetts Voter Table,massachusettsvotertable,,C3,,,,https://www.mobilize.us/massachusettsvotertable/
@@ -2484,12 +2484,12 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3359,Parliament Democratic Club,parliamentdemocraticclub,,CAMPAIGN,,,,https://www.mobilize.us/parliamentdemocraticclub/
 3360,Musicians for Joe Biden,musiciansforjoebiden,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/musiciansforjoebiden/
 3361,Silent No Longer TN,silentnolongertn,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/silentnolongertn/
-3362,Danielle for PA 155,danielleforpa155,,CAMPAIGN,,,,https://www.mobilize.us/danielleforpa155/
+3362,Danielle for PA 155,danielleforpa155,STATE_LEG,CAMPAIGN,PA,155,,https://www.mobilize.us/danielleforpa155/
 3363,Suzanne Hug for House LD25,suzannehugforhouseld25,,CAMPAIGN,,,,https://www.mobilize.us/suzannehugforhouseld25/
 3364,Black LGBT Lives Matter,blacklgbtlivesmatter,,C4,,,,https://www.mobilize.us/blacklgbtlivesmatter/
 3365,AFT,labordemo2,,UNION,,,,https://www.mobilize.us/labordemo2/
 3366,NAS,nas,,C3,,,,https://www.mobilize.us/nas/
-3367,Kayla Applegate for State Representative,kaylaapplegateforstaterepresentative,,CAMPAIGN,,,,https://www.mobilize.us/kaylaapplegateforstaterepresentative/
+3367,Kayla Applegate for State Representative,kaylaapplegateforstaterepresentative,STATE_LEG,CAMPAIGN,,,,https://www.mobilize.us/kaylaapplegateforstaterepresentative/
 3368,Sharon Audubon Center,audubonsharon,,C3,,,,https://www.mobilize.us/audubonsharon/
 3370,Edom Development Group,edomdevelopmentgroup,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/edomdevelopmentgroup/
 3372,Go Joe!,gojoe,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/gojoe/
@@ -2497,7 +2497,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3374,Downey Democrats,downeydemocrats,,OTHER,,,,https://www.mobilize.us/downeydemocrats/
 3375,#Fight4HER,fight4her,,C3,,,,https://www.mobilize.us/fight4her/
 3376,Jared West For Florida,jaredwestforflorida,,CAMPAIGN,,,,https://www.mobilize.us/jaredwestforflorida/
-3377,Jared West for State Rep - HD41,jaredwestforstaterephd41,,CAMPAIGN,,,,https://www.mobilize.us/jaredwestforstaterephd41/
+3377,Jared West for State Rep - HD41,jaredwestforstaterephd41,STATE_LEG,CAMPAIGN,FL,41,https://www.mobilize.us/jaredwestforstaterephd41/
 3378,Al Lawson for Congress,allawsonforcongress,CONGRESSIONAL,CAMPAIGN,FL,,Al Lawson,https://www.mobilize.us/allawsonforcongress/
 3379,Domonique Clemons for Genesee County Commissioner,domoniqueclemonsforgeneseecountycommissioner,,CAMPAIGN,,,,https://www.mobilize.us/domoniqueclemonsforgeneseecountycommissioner/
 3380,Vote Save Arizona,VSAArizona,,OTHER,AZ,,,https://www.mobilize.us/VSAArizona/
@@ -2507,13 +2507,13 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3384,Vote Save Pennsylvania,VSAPennsylvania,,OTHER,PA,,,https://www.mobilize.us/VSAPennsylvania/
 3385,Vote Save Wisconsin,VSAWisconsin,,OTHER,WI,,,https://www.mobilize.us/VSAWisconsin/
 3386,Bandera County Democratic Executive Committee,banderacountydemocraticexecutivecommittee,,PARTY_COMMITTEE,,,,https://www.mobilize.us/banderacountydemocraticexecutivecommittee/
-3388,Kathy Miller for CA State Assembly District 13,kathymillerforcastateassemblydistrict13,,CAMPAIGN,,,,https://www.mobilize.us/kathymillerforcastateassemblydistrict13/
+3388,Kathy Miller for CA State Assembly District 13,kathymillerforcastateassemblydistrict13,STATE_LEG,CAMPAIGN,CA,13,,https://www.mobilize.us/kathymillerforcastateassemblydistrict13/
 3389,Dr. Cameron Webb for Congress,webbforcongress,CONGRESSIONAL,CAMPAIGN,VA,5,Cameron Webb,https://www.mobilize.us/webbforcongress/
 3390,Hillary Scholten for Congress,scholtenforcongress,CONGRESSIONAL,CAMPAIGN,MI,3,Hillary Scholten,https://www.mobilize.us/scholtenforcongress/
 3391,Michelle De La Isla for Congress,michelleforkansas,CONGRESSIONAL,CAMPAIGN,KS,2,Michelle de la Isla,https://www.mobilize.us/michelleforkansas/
 3392,Asian Democrats of Central Texas,asiandemocratsofcentraltexas,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/asiandemocratsofcentraltexas/
 3393,Our Revolution Knoxville: The Next Chapter,ourrevolutionknoxvillethenextchapter,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/ourrevolutionknoxvillethenextchapter/
-3394,Kael Weston For Congress 2020,kaelwestonforcongress2020,,CAMPAIGN,,,,https://www.mobilize.us/kaelwestonforcongress2020/
+3394,Kael Weston For Congress 2020,kaelwestonforcongress2020,CONGRESSIONAL,CAMPAIGN,UT,2,,https://www.mobilize.us/kaelwestonforcongress2020/
 3395,Jack for Melrose,jackformelrose,,CAMPAIGN,,,,https://www.mobilize.us/jackformelrose/
 3396,Kalaheo High Class of 2000,kalaheohighclassof2000,,OTHER,,,,https://www.mobilize.us/kalaheohighclassof2000/
 3397,Derek Zoolander,derekzoolander,,INDEPENDENT,,,,https://www.mobilize.us/derekzoolander/
@@ -2651,7 +2651,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3533,Arapahoe County Democratic Party,arapahoedems,,C4,,,,https://www.mobilize.us/arapahoedems/
 3534,DemCast Focus 14,demcastfocus14,,C4,,,,https://www.mobilize.us/demcastfocus14/
 3535,"Erin Teran for Indio City Council, District 1",erinteranforindio,,CAMPAIGN,,,,https://www.mobilize.us/erinteranforindio/
-3536,Luisa Wakeman for Georgia,luisawakemanforgeorgia,,CAMPAIGN,GA,HD-43,Luisa Wakeman,https://www.mobilize.us/luisawakemanforgeorgia/
+3536,Luisa Wakeman for Georgia,luisawakemanforgeorgia,,CAMPAIGN,GA,43,Luisa Wakeman,https://www.mobilize.us/luisawakemanforgeorgia/
 3537,CHIRLA,chirla,,C4,,,,https://www.mobilize.us/chirla/
 3538,Women Talk Black,womentalkblack,,C3,,,,https://www.mobilize.us/womentalkblack/
 3539,Team Gounardes 2020,teamgounardes2020,,CAMPAIGN,,,,https://www.mobilize.us/teamgounardes2020/
@@ -2675,7 +2675,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3560,Rise Up Western Mass Indivisible,riseupwesternmassindivisible,,C3,,,,https://www.mobilize.us/riseupwesternmassindivisible/
 3561,Young Democrats of Georgia,youngdemocratsofgeorgia,,PARTY_COMMITTEE,,,,https://www.mobilize.us/youngdemocratsofgeorgia/
 3562,Blue Bench,bluebench,,PARTY_COMMITTEE,,,,https://www.mobilize.us/bluebench/
-3563,Jennifer O'Mara for State Rep.,jenniferomaraforstaterep,,CAMPAIGN,PA,LD-165,Jennifer O'Mara,https://www.mobilize.us/jenniferomaraforstaterep/
+3563,Jennifer O'Mara for State Rep.,jenniferomaraforstaterep,,CAMPAIGN,PA,165,Jennifer O'Mara,https://www.mobilize.us/jenniferomaraforstaterep/
 3564,NEMCSA FOOD,nemcsafood,,C3,,,,https://www.mobilize.us/nemcsafood/
 3565,CAMP BYOC TECH FUND,campbyoctechfund,,C3,,,,https://www.mobilize.us/campbyoctechfund/
 3566,Camp BYOC Fund Week,campbyocfundweek,,C3,,,,https://www.mobilize.us/campbyocfundweek/
@@ -2784,7 +2784,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3674,Dylan Conley for Congress,dylanconleyforcongress,,CAMPAIGN,,,,https://www.mobilize.us/dylanconleyforcongress/
 3675,"Varun's Test Org, The Best Org",varunstestorgthebestorg,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/varunstestorgthebestorg/
 3676,Memphis For Senate,memphisforsenate,,CAMPAIGN,,,,https://www.mobilize.us/memphisforsenate/
-3677,Mckinneyforld11,Mckinneyforld11,,CAMPAIGN,NE,LD-11,Terrell McKinney,https://www.mobilize.us/Mckinneyforld11/
+3677,Mckinneyforld11,Mckinneyforld11,,CAMPAIGN,NE,11,Terrell McKinney,https://www.mobilize.us/Mckinneyforld11/
 3678,Wendy for Sparks,wendyforsparks,OTHER_LOCAL,CAMPAIGN,,,Wendy Stolyarov,https://www.mobilize.us/wendyforsparks/
 3679,LaTondresse for Commissioner,latondresseforcommissioner,,CAMPAIGN,,,,https://www.mobilize.us/latondresseforcommissioner/
 3680,Kind for Congress,kindforcongress,CONGRESSIONAL,CAMPAIGN,WI,3,Ron Kind,https://www.mobilize.us/kindforcongress/
@@ -2824,7 +2824,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3720,Democracy Initiative,democracyinitiative,,C3,,,,https://www.mobilize.us/democracyinitiative/
 3721,Elaine Summerfield for Richmond City Council - 3rd District,elainesummerfieldforrichmondcitycouncil3rddistrict,,CAMPAIGN,,,,https://www.mobilize.us/elainesummerfieldforrichmondcitycouncil3rddistrict/
 3722,Friends for Didi Barrett,friendsfordidibarrett,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/friendsfordidibarrett/
-3723,Donna Deegan for Congress,donnadeeganforcongress,,CAMPAIGN,FL,CD-4,Donna Deegan,https://www.mobilize.us/donnadeeganforcongress/
+3723,Donna Deegan for Congress,donnadeeganforcongress,,CAMPAIGN,FL,4,Donna Deegan,https://www.mobilize.us/donnadeeganforcongress/
 3724,Prince for TX House District 5,lawyandaprincefortxhousedistrict5,,CAMPAIGN,,,,https://www.mobilize.us/lawyandaprincefortxhousedistrict5/
 3725,Emily For Colorado,emilyforcolorado,,CAMPAIGN,,,,https://www.mobilize.us/emilyforcolorado/
 3726,Detroit Action,detroitaction,,OTHER,,,,https://www.mobilize.us/detroitaction/
@@ -2950,7 +2950,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 3885,Elect John Gibson,electjohngibson,,CAMPAIGN,,,,https://www.mobilize.us/electjohngibson/
 3886,Navajo-Hopi Organizing Campaign,navajohopiorganizingcampaign,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/navajohopiorganizingcampaign/
 3887,Democratic Party of the San Fernando Valley,dpsfv,,PARTY_COMMITTEE,CA,,,https://www.mobilize.us/dpsfv/
-3888,Elect Emily 4 PA,electemily4pa,,CAMPAIGN,PA,SD-28,Emily Skopov,https://www.mobilize.us/electemily4pa/
+3888,Elect Emily 4 PA,electemily4pa,,CAMPAIGN,PA,28,Emily Skopov,https://www.mobilize.us/electemily4pa/
 3889,Democratic Party of Oregon,democraticpartyoforegon,,PARTY_COMMITTEE,,,,https://www.mobilize.us/democraticpartyoforegon/
 3890,Alan Roy for State Senate,alanroyforstatesenate,,CAMPAIGN,,,,https://www.mobilize.us/alanroyforstatesenate/
 3891,UTLA,utla,,UNION,,,,https://www.mobilize.us/utla/
@@ -3111,7 +3111,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4085,Vote Fwd,votefwd,,COORDINATED,,,,https://www.mobilize.us/votefwd/
 4086,Beaufort County Democrats,beaufortcountydemocrats,,PARTY_COMMITTEE,SC,,,https://www.mobilize.us/beaufortcountydemocrats/
 4087,(Calling Our) Bubbes for Biden,callingourbubbesforbiden,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/callingourbubbesforbiden/
-4089,Ihssane for Congress,ihssaneforcongress,,CAMPAIGN,MA,CD-4,Ihssane Lecky,https://www.mobilize.us/ihssaneforcongress/
+4089,Ihssane for Congress,ihssaneforcongress,,CAMPAIGN,MA,4,Ihssane Lecky,https://www.mobilize.us/ihssaneforcongress/
 4090,See the Future,seethefuture,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/seethefuture/
 4091,Team Zack Zappone,teamzackzappone,,CAMPAIGN,,,,https://www.mobilize.us/teamzackzappone/
 4092,Québec solidaire,quebecsolidaire,,PARTY_COMMITTEE,,,,https://www.mobilize.us/quebecsolidaire/
@@ -3356,7 +3356,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4368,Régionales,regionales,,CAMPAIGN,,,,https://www.mobilize.us/regionales/
 4369,Texas AFT United,texasaftunited,,UNION,,,,https://www.mobilize.us/texasaftunited/
 4370,Dianne Herrin for State Representative,herrinforpa,,CAMPAIGN,,,,https://www.mobilize.us/herrinforpa/
-4371,Michele Knoll for HD-44,micheleknollforhd44,,CAMPAIGN,,,,https://www.mobilize.us/micheleknollforhd44/
+4371,Michele Knoll for HD-44,micheleknollforhd44,STATE_LEG,CAMPAIGN,PA,44,,https://www.mobilize.us/micheleknollforhd44/
 4372,Organizing to restore America's character and throw out President. Trump,organizingtorestoreamericascharacterandthrowoutpresidenttrump,,CAMPAIGN,,,,https://www.mobilize.us/organizingtorestoreamericascharacterandthrowoutpresidenttrump/
 4373,Committee To Elect Marc Arnett,committeetoelectmarcarnett,,CAMPAIGN,,,,https://www.mobilize.us/committeetoelectmarcarnett/
 4374,TDP Voter Protection,tdpvoterprotection,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/tdpvoterprotection/
