@@ -161,12 +161,82 @@ function sortCandidates(candidates, state, district, type) {
       // and then pick the top from each party
       const filtered_candidates = candidates.filter(c => c.CAND_OFFICE_ST === state && c.CAND_OFFICE_DISTRICT === district)
       const parties = groupBy(filtered_candidates, "CAND_PTY_AFFILIATION")
-      const winners = Object.keys(parties).map((p) => {
+      const assumed_winners = Object.keys(parties).map((p) => {
         let winner = parties[p].sort((a, b) => sortDescending(a.TTL_RECEIPTS,b.TTL_RECEIPTS))[0]
         return winner
       })
 
-      return winners
+      // check known list of primary upsets
+      if (state === "CO" && district === "03") {
+        // Lauren Boebert defeated incumbent Scott Tipton in Rep primary
+        return [{
+          'CAND_NAME': 'BUSH, DIANE MITSCH',
+          'CAND_PTY_AFFILIATION': 'D'
+        },{
+          'CAND_NAME': 'BOEBERT, LAUREN',
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+      if (state === "IA" && district === "04") {
+        // Steve King lost to Randy Feenstra in Rep primary
+        return [{
+          'CAND_NAME': "SCHOLTEN, JAMES D.",
+          'CAND_PTY_AFFILIATION': 'D'
+        }, {
+          'CAND_NAME': "FEENSTRA, RANDALL",
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+      if (state === "IL" && district === "03") {
+        // Steve King lost to Randy Feenstra
+        return [{
+          'CAND_NAME': "NEWMAN, MARIE",
+          'CAND_PTY_AFFILIATION': 'D'
+        }, {
+          'CAND_NAME': "FRICILONE, MIKE",
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+      if (state === "NC" && district === "11") {
+        // Mark Meadows resigned to go to White House
+        // Madison Cawthorne won GOP nom
+        return [{
+          'CAND_NAME': "DAVIS, MORRIS",
+          'CAND_PTY_AFFILIATION': 'D'
+        }, {
+          'CAND_NAME': "CAWTHORN, DAVID MADISON",
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+      if (state === "NY" && district === "07") {
+        // Avery Periera dropped out, leaving Brian Kelley (who isn't in FEC data)
+        return [{
+          'CAND_NAME': "VELAZQUEZ, NYDIA M.",
+          'CAND_PTY_AFFILIATION': 'D'
+        }, {
+          'CAND_NAME': "KELLEY, BRIAN",
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+      if (state === "MO" && district === "01") {
+        // Cori Bush defeated incumbent Lacy Clay in Dem primary
+        return [{
+          'CAND_NAME': "BUSH, CORI",
+          'CAND_PTY_AFFILIATION': 'D'
+        }]
+      }
+      if (state === "VA" && district === "05") {
+        // Robert Good defeated Denver Riggleman in Rep primary
+        return [{
+          'CAND_NAME': "WEBB, BRYANT CAMERON",
+          'CAND_PTY_AFFILIATION': 'D'
+        }, {
+          'CAND_NAME': "GOOD, ROBERT",
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+
+      return assumed_winners
         .sort((a, b) => sortDescending(a.TTL_RECEIPTS, b.TTL_RECEIPTS))
         .slice(0, 2)
       }
