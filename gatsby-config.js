@@ -18,6 +18,38 @@ module.exports = {
     },
     `gatsby-transformer-csv`,
     {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'https://api.voteamerica.com/v1/election/field/',
+        rootKey: 'VoteAmericaStateField',
+        schemas:  {
+          VoteAmericaStateField: `
+            slug: String
+            long_name: String
+          `
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'https://api.voteamerica.com/v1/election/state/',
+        rootKey: 'VoteAmericaStateInformation',
+        schemas:  {
+          VoteAmericaStateInformation: `
+            text: String
+            field_type: VoteAmericaStateField @link(by: "slug")
+            modified_at: Date
+          `,
+          VoteAmericaState: `
+            name: String
+            code: ID
+            state_information: [VoteAmericaStateInformation]
+          `
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

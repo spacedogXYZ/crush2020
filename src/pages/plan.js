@@ -150,10 +150,32 @@ const PlanPage = ({ location }) => {
           website
         }
       }
+
+      allVoteAmericaStateInformation(filter: {state_information: {elemMatch: {field_type: {eq: "2020_general_election_date"}}}}) {
+        nodes {
+          code
+          state_information {
+            text
+            field_type
+          }
+        }
+      }
     }
   `)
 
+  // convert voteamerica state_information from list to hash
+  let voteAmericaObject = {}
+  planQuery.allVoteAmericaStateInformation.nodes.map(state => {
+    let state_info = {}
+    state.state_information.map(info => (
+      state_info[info.field_type] = info.text
+    ))
+    voteAmericaObject[state.code] = state_info
+    return true
+  })
+
   const plan = makePlan(form, {
+    vote: voteAmericaObject,
     candidates: {
       federal: planQuery.allFecCandidatesCsv.nodes,
       statewide: planQuery.allStatewideCandidatesCsv.nodes,

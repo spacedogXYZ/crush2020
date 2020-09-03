@@ -74,6 +74,12 @@ const AboutPage = () => (
           </OutboundLink>
           : Local and national power-building organizations
         </li>
+        <li>
+          <OutboundLink href="https://voteamerica.com">
+            VoteAmerica
+          </OutboundLink>
+          : Voter registration forms, deadlines, and vote-by-mail information
+        </li>
       </ul>
     </GridContainer>
   </Layout>

@@ -374,6 +374,7 @@ export function makePlan(form, data) {
 
   return {
     ballot: {
+      vote: data.vote[state],
       senate_candidates: senate_candidates,
       senate_rating: senate_rating,
       house_candidates: house_candidates,

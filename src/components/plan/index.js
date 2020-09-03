@@ -49,7 +49,6 @@ export function Plan({ form, plan }) {
   const state_name = us_states.getStateNameByStateCode(state)
   const state_slug = slugify(state_name).toLowerCase()
 
-
   return (<>
     <GridContainer>
       <h2>Here's a personalized plan to crush the election with your Ballot, Time, Money &amp; Reach</h2>
@@ -77,16 +76,16 @@ export function Plan({ form, plan }) {
                   </CardHeader>
                   <CardBody>
                     <ButtonGroup>
-                      {form.registered === "yes" && (
+                      {form.registered === "yes" && (<>
                         <OutboundLink
                           href={`https://www.voteamerica.com/am-i-registered-to-vote/?address1=${form.geocode.line1}&city=${form.geocode.city}&state=${state}&zipcode=${form.geocode.zip}&email=${form.contact.email}`}
                           className="usa-button"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Confirm with {state_name}
+                          Confirm with {state_name} {plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')}
                         </OutboundLink>
-                      )}
+                      </>)}
                       {form.registered === "not-sure" ? (
                         <OutboundLink
                           href={`https://www.voteamerica.com/am-i-registered-to-vote/?address1=${form.geocode.line1}&city=${form.geocode.city}&state=${state}&zipcode=${form.geocode.zip}&email=${form.contact.email}`}
@@ -94,7 +93,7 @@ export function Plan({ form, plan }) {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Double check with {state_name}
+                          Double check with {state_name} {plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')}
                         </OutboundLink>
                       ) : (
                         <></>
@@ -107,17 +106,24 @@ export function Plan({ form, plan }) {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Register to Vote
+                          Register to Vote {plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')}
                         </OutboundLink>
                       )}
-                      {form.vbm === "yes" && (
+                      {form.vbm === "yes" && plan.ballot.vote['vbm_universal'] === "True" ? (
+                        <OutboundLink
+                          href={plan.ballot.vote['official_info_vbm']}
+                          className="usa-button bg-secondary hover:bg-secondary-dark"
+                          target="_blank"
+                          rel="noreferrer"
+                        >All registered {state_name} residents can vote by mail</OutboundLink>
+                        ) : (
                         <OutboundLink
                           href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/`}
                           className="usa-button bg-secondary hover:bg-secondary-dark"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          {state_name} Vote by Mail Application
+                          Apply to Vote by Mail in {state} {plan.ballot.vote['2020_vbm_request_deadline_online'].replace('received', '')}
                         </OutboundLink>
                       )}
                       {(form.vbm === "not-sure" || isEmpty(form.vbm)) && (
