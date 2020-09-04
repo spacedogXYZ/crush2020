@@ -410,6 +410,7 @@ export function Plan({ form, plan }) {
           content: (
             <GridContainer>
               <Grid row>
+                {plan.money.donate_candidate && (
                 <Card gridLayout={{ tablet: { col: 4 } }}>
                   <CardHeader>
                     <h3 className="usa-card__heading">Candidate</h3>
@@ -447,6 +448,7 @@ export function Plan({ form, plan }) {
                     </OutboundLink>
                   </CardFooter>
                 </Card>
+                )}
 
                 {plan.money.donate_local && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
