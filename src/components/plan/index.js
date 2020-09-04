@@ -8,14 +8,15 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardMedia,
   CardFooter,
 } from "@trussworks/react-uswds"
 import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { parseName, capitalize, firstSentence, isCompetitive } from "../../utils/strings"
+import { parseName, capitalize, isCompetitive } from "../../utils/strings"
 import { isEmpty } from "../../utils/object"
+
+import { DonateCandidate, DonateOrg } from "./donate"
 
 var us_states = require("us-state-codes")
 var slugify = require("slugify")
@@ -30,6 +31,7 @@ const StateCandidate = ({ data }) => (
     {parseName(data.Candidate)} ({data.Specific_Party.slice(0, 1)})
   </li>
 )
+
 
 export function Plan({ form, plan }) {
   if (
@@ -411,138 +413,29 @@ export function Plan({ form, plan }) {
             <GridContainer>
               <Grid row>
                 {plan.money.donate_candidate && (
-                <Card gridLayout={{ tablet: { col: 4 } }}>
-                  <CardHeader>
-                    <h3 className="usa-card__heading">Candidate</h3>
-                  </CardHeader>
-                  <CardBody>
-                    <p>
-                      Donate to {plan.money.donate_candidate.name} monthly
-                      through the election.
-                    </p>
-                    {plan.money.donate_candidate.image_url && (
-                        <CardMedia>
-                          <OutboundLink
-                            href={plan.money.donate_candidate.website}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <img
-                              src={plan.money.donate_candidate.image_url}
-                              alt={plan.money.donate_candidate.name}
-                              className="very-small"
-                            />
-                          </OutboundLink>
-                        </CardMedia>
-                      )}
-                  </CardBody>
-                  <CardFooter>
-                    <OutboundLink
-                      href={`${plan.money.donate_candidate.donation_url}?amount=${form.money}&recurring=true`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Button type="button" className="usa-button">
-                        Give ${form.money} monthly
-                      </Button>
-                    </OutboundLink>
-                  </CardFooter>
-                </Card>
+                  <DonateCandidate
+                    donate_candidate={plan.money.donate_candidate}
+                    title={"Campaign"}
+                    pitch={"monthly through the election"}
+                    amount={form.money}
+                  />
                 )}
 
-                {plan.money.donate_local && (
-                  <Card gridLayout={{ tablet: { col: 4 } }}>
-                    <CardHeader>
-                      <h3 className="usa-card__heading">Local Cause</h3>
-                    </CardHeader>
-                    <CardBody>
-                      {<p>Donate to {plan.money.donate_local.name} to build power in {state_name}.</p>}
-                      {plan.money.donate_local.logo_url && (
-                        <CardMedia exdent>
-                          <OutboundLink
-                            href={plan.money.donate_local.website}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <img
-                              src={plan.money.donate_local.logo_url}
-                              alt={`${plan.money.donate_local.name} logo`}
-                            />
-                          </OutboundLink>
-                        </CardMedia>
-                      )}
-                      <p>{firstSentence(plan.money.donate_local.description)}</p>
-                      { plan.money.donate_local.hide_mvp ? (<></>) : (
-                      <div className="citation">
-                        Movement Voter Project
-                      </div>
-                      )}
-                    </CardBody>
-                    <CardFooter>
-                      {plan.money.donate_local.donation_url && (
-                        <OutboundLink
-                          href={`${plan.money.donate_local.donation_url}`}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <Button type="button" className="usa-button">
-                            Give
-                          </Button>
-                        </OutboundLink>
-                      )}
-                    </CardFooter>
-                  </Card>
-                )}
+                {plan.money.donate_local && plan.money.donate_local.map(donate_org => (
+                  <DonateOrg
+                    donate_org={donate_org}
+                    title={"Local Cause"}
+                    pitch={`to build power in ${state_name}`}
+                  />
+                ))}
 
-                {plan.money.donate_national && (
-                  <Card gridLayout={{ tablet: { col: 4 } }}>
-                    <CardHeader>
-                      <h3 className="usa-card__heading">National Cause</h3>
-                    </CardHeader>
-                    <CardBody>
-                      <p>Donate to {plan.money.donate_national.name} for national impact in 2021.</p>
-                      {plan.money.donate_national.logo_url && (
-                        <CardMedia exdent>
-                          <OutboundLink
-                              href={plan.money.donate_national.website}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                            <img
-                              src={plan.money.donate_national.logo_url}
-                              alt={`${plan.money.donate_national.name} logo`}
-                            />
-                          </OutboundLink>
-                        </CardMedia>
-                      )}
-                      <p>{firstSentence(plan.money.donate_national.description)}</p>
-                      { plan.money.donate_national.hide_mvp ? (<></>) : (
-                        <div className="citation">
-                          Movement Voter Project
-                        </div>
-                      )}
-                    </CardBody>
-                    <CardFooter>
-                      {plan.money.donate_national.donation_url && (
-                        <OutboundLink
-                          href={`${plan.money.donate_national.donation_url}`}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <Button type="button" className="usa-button">
-                            Give
-                          </Button>
-                        </OutboundLink>
-                      )}
-                      <OutboundLink
-                        href={plan.money.donate_national.website}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                      </OutboundLink>
-                    </CardFooter>
-                  </Card>
-                )}
+                {plan.money.donate_national && plan.money.donate_national.map(donate_org => (
+                    <DonateOrg
+                      donate_org={donate_org}
+                      title={"National Cause"}
+                      pitch={"for national impact in 2021"}
+                    />
+                ))}
               </Grid>
             </GridContainer>
           ),
