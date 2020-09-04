@@ -49,6 +49,14 @@ export function Plan({ form, plan }) {
   const state_name = us_states.getStateNameByStateCode(state)
   const state_slug = slugify(state_name).toLowerCase()
 
+  var reg_deadline, vbm_deadline
+  if (plan.ballot.vote['external_tool_ovr'] !== "") {
+    reg_deadline = plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')
+  } else {
+    reg_deadline = plan.ballot.vote['2020_registration_deadline_by_mail'].replace('received', '')
+  }
+  vbm_deadline = plan.ballot.vote['2020_vbm_request_deadline_online'].replace('received', '').replace('N/A', '')
+
   return (<>
     <GridContainer>
       <h2>Here's a personalized plan to crush the election with your Ballot, Time, Money &amp; Reach</h2>
@@ -83,7 +91,7 @@ export function Plan({ form, plan }) {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Confirm with {state_name} {plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')}
+                          Confirm with {state_name} {reg_deadline}
                         </OutboundLink>
                       </>)}
                       {form.registered === "not-sure" ? (
@@ -93,7 +101,7 @@ export function Plan({ form, plan }) {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Double check with {state_name} {plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')}
+                          Double check with {state_name} {reg_deadline}
                         </OutboundLink>
                       ) : (
                         <></>
@@ -106,25 +114,27 @@ export function Plan({ form, plan }) {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Register to Vote {plan.ballot.vote['2020_registration_deadline_online'].replace('received', '')}
+                          Register to Vote {reg_deadline}
                         </OutboundLink>
                       )}
-                      {form.vbm === "yes" && plan.ballot.vote['vbm_universal'] === "True" ? (
-                        <OutboundLink
-                          href={plan.ballot.vote['official_info_vbm']}
-                          className="usa-button bg-secondary hover:bg-secondary-dark"
-                          target="_blank"
-                          rel="noreferrer"
-                        >All registered {state_name} residents can vote by mail</OutboundLink>
-                        ) : (
-                        <OutboundLink
-                          href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/`}
-                          className="usa-button bg-secondary hover:bg-secondary-dark"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Apply to Vote by Mail in {state} {plan.ballot.vote['2020_vbm_request_deadline_online'].replace('received', '')}
-                        </OutboundLink>
+                      {(form.vbm === "yes" && (
+                        plan.ballot.vote['vbm_universal'] === "True" ? (
+                          <OutboundLink
+                            href={plan.ballot.vote['official_info_vbm']}
+                            className="usa-button bg-secondary hover:bg-secondary-dark"
+                            target="_blank"
+                            rel="noreferrer"
+                          >All registered {state_name} residents can vote by mail</OutboundLink>
+                          ) : (
+                          <OutboundLink
+                            href={`https://www.voteamerica.com/absentee-ballot-${state_slug}/`}
+                            className="usa-button bg-secondary hover:bg-secondary-dark"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Apply to Vote by Mail in {state} {vbm_deadline}
+                          </OutboundLink>
+                        ))
                       )}
                       {(form.vbm === "not-sure" || isEmpty(form.vbm)) && (
                         <OutboundLink
