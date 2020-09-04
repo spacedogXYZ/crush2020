@@ -1,4 +1,6 @@
 const { GATSBY_GOOGLE_ANALYTICS_ID } = process.env
+const { GATSBY_SENTRY_DSN } = process.env
+var sentryTracing = require('@sentry/tracing')
 
 module.exports = {
   siteMetadata: {
@@ -84,6 +86,18 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: GATSBY_SENTRY_DSN,
+        integrations: [
+          new sentryTracing.Integrations.BrowserTracing(),
+        ],
+        tracesSampleRate: 1.0,
+        environment: process.env.NODE_ENV,
+        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
