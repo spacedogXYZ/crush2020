@@ -96,6 +96,13 @@ module.exports = {
         tracesSampleRate: 1.0,
         environment: process.env.NODE_ENV,
         enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
+        beforeSend(event, hint) {
+          // Check if it is an exception, and if so, show the report dialog
+          if (event.exception) {
+            Sentry.showReportDialog({ eventId: event.event_id });
+          }
+          return event;
+        },
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
