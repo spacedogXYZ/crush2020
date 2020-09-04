@@ -3,6 +3,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import {
   Button,
+  ButtonGroup,
   Card,
   CardHeader,
   CardBody,
@@ -12,7 +13,12 @@ import {
 
 import { firstSentence } from "../../utils/strings"
 
-export const DonateOrg = ({ donate_org, title, pitch }) => (
+export const DonateOrg = ({ donate_org, title, pitch, onClickNext }) => {
+  if(!donate_org) {
+    return (<></>)
+  }
+
+  return (
   <Card gridLayout={{ tablet: { col: 4 } }}>
     <CardHeader>
       <h3 className="usa-card__heading">{title}</h3>
@@ -41,6 +47,7 @@ export const DonateOrg = ({ donate_org, title, pitch }) => (
       )}
     </CardBody>
     <CardFooter>
+      <ButtonGroup>
       {donate_org.donation_url && (
         <OutboundLink
           href={`${donate_org.donation_url}`}
@@ -52,9 +59,12 @@ export const DonateOrg = ({ donate_org, title, pitch }) => (
           </Button>
         </OutboundLink>
       )}
+      <Button type="button" className="usa-button--secondary" onClick={onClickNext}>Next</Button>
+      </ButtonGroup>
     </CardFooter>
   </Card>
-)
+  )
+}
 
 export const DonateCandidate = ({ donate_candidate, title, pitch, amount }) => (
   <Card gridLayout={{ tablet: { col: 4 } }}>

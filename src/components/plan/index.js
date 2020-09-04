@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import {
@@ -34,6 +34,9 @@ const StateCandidate = ({ data }) => (
 
 
 export function Plan({ form, plan }) {
+  const [donateOrgLocal, setDonateOrgLocal] = useState(0)
+  const [donateOrgNational, setDonateOrgNational] = useState(0)
+
   if (
     !form ||
     !Object.keys(form).length ||
@@ -58,6 +61,15 @@ export function Plan({ form, plan }) {
     reg_deadline = plan.ballot.vote['2020_registration_deadline_by_mail'].replace('received', '')
   }
   vbm_deadline = plan.ballot.vote['2020_vbm_request_deadline_online'].replace('received', '').replace('N/A', '')
+
+  function nextOrg(list, current, set) {
+    let next = current + 1
+    if (next >= list.length) {
+      // loop around
+      next = 0
+    }
+    set(next)
+  }
 
   return (<>
     <GridContainer>
@@ -421,21 +433,23 @@ export function Plan({ form, plan }) {
                   />
                 )}
 
-                {plan.money.donate_local && plan.money.donate_local.map(donate_org => (
+                {plan.money.donate_local && (
                   <DonateOrg
-                    donate_org={donate_org}
+                    donate_org={plan.money.donate_local[donateOrgLocal]}
                     title={"Local Cause"}
                     pitch={`to build power in ${state_name}`}
+                    onClickNext={() => nextOrg(plan.money.donate_local, donateOrgLocal, setDonateOrgLocal)}
                   />
-                ))}
+                )}
 
-                {plan.money.donate_national && plan.money.donate_national.map(donate_org => (
+                {plan.money.donate_national && (
                     <DonateOrg
-                      donate_org={donate_org}
+                      donate_org={plan.money.donate_national[donateOrgNational]}
                       title={"National Cause"}
                       pitch={"for national impact in 2021"}
+                      onClickNext={() => nextOrg(plan.money.donate_national, donateOrgNational, setDonateOrgNational)}
                     />
-                ))}
+                )}
               </Grid>
             </GridContainer>
           ),
