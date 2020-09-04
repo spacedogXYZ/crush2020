@@ -438,6 +438,7 @@ export function Plan({ form, plan }) {
                     donate_org={plan.money.donate_local[donateOrgLocal]}
                     title={"Local Cause"}
                     pitch={`to build power in ${state_name}`}
+                    showNext={(plan.money.donate_local.length > 1)}
                     onClickNext={() => nextOrg(plan.money.donate_local, donateOrgLocal, setDonateOrgLocal)}
                   />
                 )}
@@ -447,6 +448,7 @@ export function Plan({ form, plan }) {
                       donate_org={plan.money.donate_national[donateOrgNational]}
                       title={"National Cause"}
                       pitch={"for national impact in 2021"}
+                      showNext={(plan.money.donate_national.length > 1)}
                       onClickNext={() => nextOrg(plan.money.donate_national, donateOrgNational, setDonateOrgNational)}
                     />
                 )}

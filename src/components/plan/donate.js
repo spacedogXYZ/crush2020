@@ -13,7 +13,7 @@ import {
 
 import { firstSentence } from "../../utils/strings"
 
-export const DonateOrg = ({ donate_org, title, pitch, onClickNext }) => {
+export const DonateOrg = ({ donate_org, title, pitch, showNext, onClickNext }) => {
   if(!donate_org) {
     return (<></>)
   }
@@ -59,7 +59,9 @@ export const DonateOrg = ({ donate_org, title, pitch, onClickNext }) => {
           </Button>
         </OutboundLink>
       )}
-      <Button type="button" className="usa-button--secondary" onClick={onClickNext}>Next</Button>
+      {showNext && (
+        <Button type="button" className="usa-button--secondary" onClick={onClickNext}>Next</Button>
+      )}
       </ButtonGroup>
     </CardFooter>
   </Card>
