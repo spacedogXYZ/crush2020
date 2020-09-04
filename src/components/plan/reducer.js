@@ -270,11 +270,9 @@ export function makePlan(form, data) {
 
   // 
   const house_candidates = sortCandidates(candidates.federal, state, congressional_district_code, "FEDERAL")
-
   const governor_candidates = sortCandidates(candidates.statewide, state, "GOVERNOR", "STATEWIDE")    
   const state_sos_candidates = sortCandidates(candidates.statewide, state, "SECRETARY OF STATE", "STATEWIDE")
   const state_ag_candidates = sortCandidates(candidates.statewide, state, "ATTORNEY GENERAL", "STATEWIDE")
-
 
   const senate_rating = ratings.senate.find(r => r.state === state)
   const house_rating = ratings.house.find(
@@ -398,7 +396,6 @@ export function makePlan(form, data) {
       }
 
   // match movement vote orgs with our issues
-  // GUN_VIOLENCE, ABORTION_RIGHTS, ENVIRONMENT, LGBTQ, VOTER_SUPPRESSION, POLICE_BRUTALITY, IMMIGRATION, HEALTH_CARE, MASS_INCARCERATION,
   const org_local_match = matchOrganization(
     state,
     form.issues,
