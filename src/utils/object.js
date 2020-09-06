@@ -65,6 +65,15 @@ export function getRandom(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
 
+// https://stackoverflow.com/a/6274381/264790
+export function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 export function sortDescending(aString, bString) {
   // js sorts by strings, so convert first to float then compare
   let a = parseFloat(aString).valueOf()

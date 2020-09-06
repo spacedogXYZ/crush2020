@@ -4,7 +4,7 @@ import {
   isCompetitive,
   isLikely,
 } from "../../utils/strings"
-import { getRandom, groupBy, sortDescending } from "../../utils/object"
+import { shuffle, groupBy, sortDescending } from "../../utils/object"
 import { TIME_VALUES } from "../form/steps/time"
 
 var us_states = require("us-state-codes")
@@ -270,11 +270,9 @@ export function makePlan(form, data) {
 
   // 
   const house_candidates = sortCandidates(candidates.federal, state, congressional_district_code, "FEDERAL")
-
   const governor_candidates = sortCandidates(candidates.statewide, state, "GOVERNOR", "STATEWIDE")    
   const state_sos_candidates = sortCandidates(candidates.statewide, state, "SECRETARY OF STATE", "STATEWIDE")
   const state_ag_candidates = sortCandidates(candidates.statewide, state, "ATTORNEY GENERAL", "STATEWIDE")
-
 
   const senate_rating = ratings.senate.find(r => r.state === state)
   const house_rating = ratings.house.find(
@@ -398,7 +396,6 @@ export function makePlan(form, data) {
       }
 
   // match movement vote orgs with our issues
-  // GUN_VIOLENCE, ABORTION_RIGHTS, ENVIRONMENT, LGBTQ, VOTER_SUPPRESSION, POLICE_BRUTALITY, IMMIGRATION, HEALTH_CARE, MASS_INCARCERATION,
   const org_local_match = matchOrganization(
     state,
     form.issues,
@@ -409,9 +406,9 @@ export function makePlan(form, data) {
     form.issues,
     donate.movementvote
   )
-  // there's usually more than one, so randomize
-  const donate_local = getRandom(org_local_match)
-  const donate_national = getRandom(org_national_match)
+  // there's usually more than one, so shuffle and return entire list
+  const donate_local = shuffle(org_local_match)
+  const donate_national = shuffle(org_national_match)
 
   // links for reach states, senate and presidential only
   const reach_states = form.reach.map(state => {
