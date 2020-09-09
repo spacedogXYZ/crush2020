@@ -2,6 +2,8 @@ import React, { createContext, useReducer, useContext } from "react"
 
 function formReducer(state, action) {
   switch (action.type) {
+    case "SOURCE_CHANGE":
+      return { ...state, source: action.payload }
     case "VOTE_REGISTERED_CHANGE":
       return { ...state, registered: action.payload }
     case "VOTE_BY_MAIL_CHANGE":
@@ -47,6 +49,7 @@ const FormContext = createContext()
 
 const initialState = {
   uid: false,
+  source: '',
   registered: false,
   vbm: false,
 

@@ -84,6 +84,9 @@ exports.handler = async (event) => {
         enabled: true,
       },
     },
+    "action_network:referrer_data" : {
+      source: data.source,
+    }
   }
   if (data.registered === "no" || data.registered === "not-sure") {
     signup.add_tags.push('NEEDS_TO_REGISTER')

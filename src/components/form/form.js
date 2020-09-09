@@ -74,7 +74,7 @@ function useFormProgress() {
 }
 
 function PlanForm() {
-  const { dispatch, state } = useFormState()
+  const { state, dispatch } = useFormState()
   const location = useLocation()
   const [currentStep, goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)
@@ -90,7 +90,7 @@ function PlanForm() {
     exists(window) && navigate("/form/vote")
   }
 
-  // make the back buttonw work as expected
+  // make the back button work as expected
   useEffect(() => {
     if(exists(window)) {
       window.addEventListener('popstate', goBack);
@@ -102,6 +102,14 @@ function PlanForm() {
       window.removeEventListener('popstate', goBack)
     }
   }, [goBack])
+
+  useEffect(() => {
+    // capture source from url param
+    if (location.search && !state.source) {
+      let urlParams = new URLSearchParams(location.search)
+      dispatch({ type: "SOURCE_CHANGE", payload: urlParams.get('source')})
+    }
+  })
 
   const isLast = currentStep === STEPS.length - 1
   

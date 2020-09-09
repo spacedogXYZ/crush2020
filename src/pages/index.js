@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { window, exists } from "browser-monads"
 
 import { GridContainer, Grid } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -7,7 +8,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  // check for source param and forward to form
+  let source = undefined
+  if (exists(window) && window.location.search) {
+    let urlParams = new URLSearchParams(window.location.search)
+    source = urlParams.get('source')
+  }
+
+  return (
   <Layout>
     <SEO title="Make a plan to defeat Trump" />
     <section className="index-hero">
@@ -22,7 +31,7 @@ const IndexPage = () => (
             </h1>
             <Link
               className="usa-button bg-secondary hover:bg-secondary-dark"
-              to="/form/vote"
+              to={source ? `/form/vote?source=${source}` : "/form/vote"}
             >
               Make a plan <FontAwesomeIcon icon={["fas", "arrow-right"]} />
             </Link>
@@ -91,6 +100,7 @@ const IndexPage = () => (
       </GridContainer>
     </section>
   </Layout>
-)
+  )
+}
 
 export default IndexPage
