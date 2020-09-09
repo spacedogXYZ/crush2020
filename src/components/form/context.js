@@ -39,7 +39,7 @@ function formReducer(state, action) {
     case "SUBMISSION_RECEIVED":
       return { ...state, isSubmitLoading: false, isSubmissionReceived: true, uid: action.payload }
     default:
-      throw new Error()
+      throw new Error('invalid action.type in formReducer')
   }
 }
 

@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 import { Link } from "gatsby"
 
 import { GridContainer, Grid } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>

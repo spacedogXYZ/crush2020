@@ -151,7 +151,7 @@ const PlanPage = ({ location }) => {
         }
       }
 
-      allVoteAmericaStateInformation(filter: {state_information: {elemMatch: {field_type: {eq: "2020_general_election_date"}}}}) {
+      allVoteAmericaStateInformation {
         nodes {
           code
           state_information {
