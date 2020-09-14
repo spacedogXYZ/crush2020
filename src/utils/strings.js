@@ -30,8 +30,8 @@ export function isLikely(rating) {
   return rating.startsWith("LIKELY")
 }
 
-export function padCode(number) {
-  return String(number).padStart(2, "0")
+export function padCode(number, length=2, fill="0") {
+  return String(number).padStart(length, fill)
 }
 
 export function unpadCode(code) {
@@ -50,4 +50,41 @@ export function parseName(name) {
 
 export function firstSentence(string) {
   return string.split('.')[0]+'.'
+}
+
+export function ordinalWords(cardinal) {
+  // takes an integer and returns the ordinal description, works up to 100
+  // eg: 13 -> 'thirteenth'
+  var ordinals = [ 'zeroth', 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth',
+      'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth'
+  ];
+  var tens = {
+      20: 'twenty',
+      30: 'thirty',
+      40: 'forty',
+      50: 'fifty',
+      60: 'sixty',
+      70: 'seventy',
+      80: 'eighty',
+      90: 'ninety'
+  };
+  var ordinalTens = {
+      30: 'thirtieth',
+      40: 'fortieth',
+      50: 'fiftieth',
+      60: 'sixtieth',
+      70: 'seventieth',
+      80: 'eightieth',
+      90: 'ninetieth'
+  };
+
+  if( cardinal <= 20 ) {                    
+      return ordinals[ cardinal ];
+  }
+  
+  if( cardinal % 10 === 0 ) {
+      return ordinalTens[ cardinal ];
+  }
+  
+  return tens[ cardinal - ( cardinal % 10 ) ] + '-' + ordinals[ cardinal % 10 ];
 }

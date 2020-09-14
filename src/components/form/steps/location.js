@@ -5,7 +5,7 @@ import { useFormState } from "../context"
 import { Form, Fieldset, TextInput } from "@trussworks/react-uswds"
 
 import usePlacesAutocomplete from "use-places-autocomplete"
-import { matchOCDID } from "../../../utils/ocdid"
+import { matchOCDID } from "../../../utils/geography"
 import powered_by_google from "../../../images/powered_by_google.png"
 
 const { GATSBY_GOOGLE_MAPS_KEY } = process.env
