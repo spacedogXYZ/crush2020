@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { window, exists } from "browser-monads"
+import "url-search-params-polyfill"
 
 import { GridContainer, Grid } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

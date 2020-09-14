@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Router, useLocation, navigate } from "@reach/router"
 import { window, exists } from "browser-monads"
+import "url-search-params-polyfill"
 
 import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
