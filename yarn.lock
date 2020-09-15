@@ -1573,10 +1573,10 @@
     "@babel/runtime" "^7.7.2"
     regenerator-runtime "^0.13.3"
 
-"@jlev/react-usa-map@1.5.3-a":
-  version "1.5.3-a"
-  resolved "https://registry.yarnpkg.com/@jlev/react-usa-map/-/react-usa-map-1.5.3-a.tgz#dd09c57fc1fe8632a0a770c0e7422754de35e668"
-  integrity sha512-lAf4iJ/NC7jOIQ6hWuCPKt+W1z84juZYmeaOdBKAREYshN4FmpMDFLTnmzuHhbKXk4dHThFqDKM3rBOYzwZciQ==
+"@jlev/react-usa-map@1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@jlev/react-usa-map/-/react-usa-map-1.5.4.tgz#698dea5d124ef15b9e62ccc0da1c72426842444c"
+  integrity sha512-Pqanv8f61qThOmfrU1ZhY1m91NQbahn9u7FbAkZpKNx/8kLGrMmHCdDGnoNFJhnGA0/JF3YSbYHbnjtDIUs5Xg==
   dependencies:
     babel-runtime "^6.26.0"
 
