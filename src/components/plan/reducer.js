@@ -118,7 +118,7 @@ function matchOrganization(state, issues, orgs) {
   })
 
   if(state === "") {
-    // national overrides that aren't from MVP
+    // national additions that aren't from MVP
     if(issues.includes("GUN_VIOLENCE")) {
       matches.push({
         name: "March For Our Lives",
@@ -137,6 +137,15 @@ function matchOrganization(state, issues, orgs) {
         website: "https://www.spreadthevote.org/volunteer",
         donation_url: "https://www.kindest.com/donate/spread-the-vote",
         logo_url: "https://images.squarespace-cdn.com/content/5bf888c70dbda3e7f01335b3/1544655556721-2QL3RFZ2OG1CZGAR6W27/STV_logo_red.png?format=300w&content-type=image%2Fpng",
+        hide_mvp: true,
+      })
+
+      matches.push({
+        name: "We Got the Vote",
+        description: "WeGotTheVote helps returning citizens pay fines & fees to fully participate in the democratic process.",
+        website: "https://wegotthevote.org/",
+        donation_url: "https://wegotthevote.org/finesandfees/",
+        logo_url: "https://assets.wegotthevote.org/2019/04/WeGotTheVote-4C.svg",
         hide_mvp: true,
       })
     }
