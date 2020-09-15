@@ -14,6 +14,8 @@ def get_page(url):
 
 def write_page(response, writer):
     for row in response['data']:
+        if row['is_primary_campaign'] is True:
+            continue
         out_row = {k: v for k, v in row.items() if k in DESIRED_FIELDS}
         writer.writerow(out_row)
 
