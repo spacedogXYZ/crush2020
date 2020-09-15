@@ -55,6 +55,7 @@ export function firstSentence(string) {
 export function ordinalWords(cardinal) {
   // takes an integer and returns the ordinal description, works up to 100
   // eg: 13 -> 'thirteenth'
+  // modified from https://stackoverflow.com/a/15998146/264790
   var ordinals = [ 'zeroth', 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth',
       'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth'
   ];

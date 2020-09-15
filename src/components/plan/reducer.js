@@ -245,6 +245,7 @@ function sortCandidates(candidates, state, district, type) {
     // we do have win/loss from FollowTheMoney
     // and have already filtered by it
     // keep sorted to put more likely candidates at the top
+    // TODO, if candidates are "Pending Primary", simulate as above
 
     return candidates.filter(
       c =>
