@@ -56,8 +56,11 @@ export function stateLegDistrict(state, chamber, ocd) {
     let code = parts[0].replace('st', '').replace('nd', '').replace('rd', '').replace('th', '')
     let ordinal = capitalize(ordinalWords(parseInt(code)))
     let district = capitalize(parts.slice(1).join(' ').toUpperCase())
-
     return `${body} District ${ordinal} ${district}`
+  } else if (state === 'VT') {
+    // VT has named and sometimes numbered districts
+    let district = capitalize(ocd)
+    return `${body} District ${district}`
   } else {
     return `${body} District ${padCode(ocd, 3, "0")}`
   }
