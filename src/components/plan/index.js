@@ -203,7 +203,7 @@ export function Plan({ form, plan }) {
                 {!isEmpty(plan.ballot.house_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">US House {state}-{form.geocode.cd}</h3>
+                      <h3 className="usa-card__heading">US House {state}{(form.geocode.cd !== '00') ? (`-${form.geocode.cd}`) : (``)}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
@@ -275,7 +275,7 @@ export function Plan({ form, plan }) {
                {!isEmpty(plan.ballot.state_senate_candidates) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">{state} State {stateLegDistrict(state, 'UPPER', form.geocode.state_upper)}</h3>
+                      <h3 className="usa-card__heading">{state} State {stateLegDistrict(state, 'UPPER', form.geocode.state_upper).replace('District', '-')}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
@@ -295,7 +295,7 @@ export function Plan({ form, plan }) {
                 {!isEmpty(plan.ballot.state_house_candidates) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">{state} State {stateLegDistrict(state, 'LOWER', form.geocode.state_lower)}</h3>
+                      <h3 className="usa-card__heading">{state} State {stateLegDistrict(state, 'LOWER', form.geocode.state_lower).replace('District', '-')}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
