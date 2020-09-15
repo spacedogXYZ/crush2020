@@ -632,7 +632,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 879,Rise Up Memphis,riseupmemphis,,COORDINATED,TN,,,https://www.mobilize.us/riseupmemphis/
 880,Emma Collum for State Representative,emmacollumforstaterepresentative,STATE_LEG,CAMPAIGN,FL,93,Emma Collum,https://www.mobilize.us/emmacollumforstaterepresentative/
 882,Alfred for president,alfredforpresident,OTHER_LOCAL,CAMPAIGN,OH,,,https://www.mobilize.us/alfredforpresident/
-883,Beyonce for President,beyonceforus,SENATE,CAMPAIGN,TX,,,https://www.mobilize.us/beyonceforus/
 884,DeniAntionette Mazingo for CA AD 42,deniantionettemazingo_caassembly42,STATE_LEG,CAMPAIGN,CA,42,DeniAntionette Mazingo,https://www.mobilize.us/deniantionettemazingo_caassembly42/
 885,Indivisible Oregon,indivisibleoregon,,COORDINATED,OR,,,https://www.mobilize.us/indivisibleoregon/
 886,Vote Forward,voteforward,,COORDINATED,,,,https://www.mobilize.us/voteforward/
