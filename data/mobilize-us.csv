@@ -6,7 +6,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 6,Bridging the Political Divide,bridging-the-political-divide,,COORDINATED,,,,https://www.mobilize.us/bridging-the-political-divide/
 9,The Democratic National Committee,dnc,,PARTY_COMMITTEE,,,,https://events.democrats.org/
 17,EveryDistrict,everydistrict,,COORDINATED,,,,https://www.mobilize.us/everydistrict/
-19,Flippable,flippable,,COORDINATED,,,,https://www.mobilize.us/flippable/
 20,Friends of Joe Biden,friends-of-joe-biden,,OTHER,,,,https://www.mobilize.us/friends-of-joe-biden/
 36,Local Majority,local-majority,,COORDINATED,,,,https://www.mobilize.us/local-majority/
 39,National Democratic Redistricting Committee,ndrc,,COORDINATED,,,,https://www.mobilize.us/ndrc/
@@ -20,7 +19,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 53,Wall of Us,wall-of-us,,OTHER,,,,https://www.mobilize.us/wall-of-us/
 55,WofA,wofa,,COORDINATED,,,,https://www.mobilize.us/wofa/
 58,Women’s March,womens-march,,OTHER,,,,https://www.mobilize.us/womens-march/
-76,End Citizens United,end-citizens-united,,COORDINATED,,,,https://www.mobilize.us/end-citizens-united/
 93,Indivisible,indivisible,,INDEPENDENT,,,,https://www.mobilize.us/indivisible/
 104,Mom's Demand Action for Gun Sense,mom's-demand-action-for-gun-sense,,INDEPENDENT,,,,https://www.mobilize.us/mom's-demand-action-for-gun-sense/
 105,MoveOn,moveon,,INDEPENDENT,,,,https://www.mobilize.us/moveon/
@@ -1454,7 +1452,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 1993,California Calls,californiacalls,,C4,,,,https://www.mobilize.us/californiacalls/
 1994,Ranked Choice Voting Maryland,rcvmaryland,,INDEPENDENT,,,,https://www.mobilize.us/rcvmaryland/
 2008,DC College Democrats,dccd,,COORDINATED,,,,https://www.mobilize.us/dccd/
-2009,Cori Bush for Congress,coribush,CONGRESSIONAL,CAMPAIGN,MO,1,Cori Bush,https://www.mobilize.us/coribush/
 2010,Action PAC,actionpac,,PAC,,,,https://www.mobilize.us/actionpac/
 2014,The Fairness Project,fairnessproject,,C4,,,,https://www.mobilize.us/fairnessproject/
 2015,Justin Rodriguez,commishjrod,OTHER_LOCAL,CAMPAIGN,TX,,,https://www.mobilize.us/commishjrod/
@@ -1464,7 +1461,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2019,Collin County Democrats With Disabilities,collincountydemocratswithdisabilities,,PARTY_COMMITTEE,,,,https://www.mobilize.us/collincountydemocratswithdisabilities/
 2044,Sara Gideon for Senate,saragideon,SENATE,CAMPAIGN,ME,,Sara Gideon,https://www.mobilize.us/saragideon/
 2045,Rhode Island Political Cooperative,ripolcoop,,INDEPENDENT,,,,https://www.mobilize.us/ripolcoop/
-2077,Heidi Sloan for Congress,heidi,CONGRESSIONAL,CAMPAIGN,TX,25,Heidi Sloan,https://www.mobilize.us/heidi/
 2078,Deborah Poulalion Campaign,deb4elections,OTHER_STATEWIDE,CAMPAIGN,FL,,Deborah Poulalion,https://www.mobilize.us/deb4elections/
 2079,Ann Howard for Travis County Commissioner,annforcommissioner,OTHER_LOCAL,CAMPAIGN,TX,,Ann Howard,https://www.mobilize.us/annforcommissioner/
 2080,Akilah Bacy for Texas (House District 138),bacyfortexas,STATE_LEG,CAMPAIGN,TX,138,Akilah Bacy,https://www.mobilize.us/bacyfortexas/
@@ -1683,7 +1679,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 2554,Feeding Texas,feedingtexas,,OTHER,,,,https://www.mobilize.us/feedingtexas/
 2555,Girls for Gender Equity,girlsforgenderequity,,OTHER,,,,https://www.mobilize.us/girlsforgenderequity/
 2556,Village Exchange Center,villageexchangecenter,,OTHER,,,,https://www.mobilize.us/villageexchangecenter/
-2557,Show Me Change,missouri,,CAMPAIGN,MO,,Nicole Galloway,https://www.mobilize.us/missouri/
 2558,Census Counts,civilrights,,C3,,,,https://www.mobilize.us/civilrights/
 2559,Vets For The People,vets-for-the-people,,PAC,AZ,,,https://www.mobilize.us/vets-for-the-people/
 2560,Colorado Working Families Party,co-wfp,,PAC,CO,,,https://www.mobilize.us/co-wfp/
@@ -3082,8 +3077,8 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4145,21st District Democratic Team,21stdistrictdemocraticteam,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/21stdistrictdemocraticteam/
 4146,Mask Sewing Project,masksewingproject,,C3,,,,https://www.mobilize.us/masksewingproject/
 4147,SRCDC Mask Sewing Project,srcdcmasksewingproject,,C3,,,,https://www.mobilize.us/srcdcmasksewingproject/
-4148,Kansas City for Biden/Harris,kansascityforbidenharris,,CAMPAIGN,,,,https://www.mobilize.us/kansascityforbidenharris/
-4149,The Zoom Where It Happens,zoomwhereithappens,,C4,,,,https://www.mobilize.us/zoomwhereithappens/
+4148,Kansas City for Biden/Harris,kansascityforbidenharris,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/kansascityforbidenharris/
+4149,Zoom Where It Happens,zoomwhereithappens,,C4,,,,https://www.mobilize.us/zoomwhereithappens/
 4150,Pacific Pride Foundation,pacificpridefoundation,,C3,,,,https://www.mobilize.us/pacificpridefoundation/
 4151,Pooja for Austin,poojaforaustin,,CAMPAIGN,,,,https://www.mobilize.us/poojaforaustin/
 4152,Sito,sito,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/sito/
@@ -3098,7 +3093,7 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4190,2050 Now,2050now,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/2050now/
 4191,Nick,nick,,OTHER,,,,https://www.mobilize.us/nick/
 4192,Lean on McLean,leanonmclean,,CAMPAIGN,,,,https://www.mobilize.us/leanonmclean/
-4193,BIDEN FOR FLORIDA PUBLIC TRANSPORTATION,bidenforfloridapublictransportation,,OTHER,,,,https://www.mobilize.us/bidenforfloridapublictransportation/
+4193,BIDEN FOR FLORIDA PUBLIC TRANSPORTATION,bidenforfloridapublictransportation,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/bidenforfloridapublictransportation/
 4194,Experience Sharing Platform,experiencesharingplatform,,OTHER,,,,https://www.mobilize.us/experiencesharingplatform/
 4195,Kathy Braatz for Tarrant County Commissioner Precinct 3,kathybraatzfortarrantcountycommissionerprecinct3,,PARTY_COMMITTEE,TX,,,https://www.mobilize.us/kathybraatzfortarrantcountycommissionerprecinct3/
 4196,North Carolina Community Garden Partners,northcarolinacommunitygardenpartners,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/northcarolinacommunitygardenpartners/
@@ -3430,7 +3425,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4535,Friends of Kathy Hinkfuss,kathyhinkfussforassembly,STATE_LEG,CAMPAIGN,WI,,Kathy Hinkfuss,https://www.mobilize.us/kathyhinkfussforassembly/
 4536,Event Group Chat,eventgroupchat,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/eventgroupchat/
 4538,angela COURTNEY,angelacourtney,,PARTY_COMMITTEE,,,,https://www.mobilize.us/angelacourtney/
-4539,testtesttest,testtesttest,,C4,,,,https://www.mobilize.us/testtesttest/
 4540,JoAnn 2020 for State Representative,joann2020forstaterepresentative,,CAMPAIGN,,,,https://www.mobilize.us/joann2020forstaterepresentative/
 4541,Tracey Simpson,traceysimpson,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/traceysimpson/
 4542,Melissa Malcolm,melissamalcolm,,PARTY_COMMITTEE,,,,https://www.mobilize.us/melissamalcolm/
@@ -3612,7 +3606,6 @@ id,name,slug,race_type,org_type,state,district,candidate_name,event_feed_url
 4822,Strickland for Washington,stricklandforwashington,,CAMPAIGN,,,,https://www.mobilize.us/stricklandforwashington/
 4823,WomenNow,womennow,,OTHER,,,,https://www.mobilize.us/womennow/
 4824,The House of Oshun,thehouseofoshun,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/thehouseofoshun/
-4825,"This is kokomeh unique children's foundation, our vision is to change lives through education, but s",thisiskokomehuniquechildrensfoundationourvisionistochangelivesthrougheducationbuts,,C4,,,,https://www.mobilize.us/thisiskokomehuniquechildrensfoundationourvisionistochangelivesthrougheducationbuts/
 4826,Hire Blind Initiative,hireblindinitiative,,OTHER,,,,https://www.mobilize.us/hireblindinitiative/
 4827,TracyDems,tracydems,,GRASSROOTS_GROUP,,,,https://www.mobilize.us/tracydems/
 4828,A&R Development and Acquisitions,ardevelopmentandacquisitions,,OTHER,,,,https://www.mobilize.us/ardevelopmentandacquisitions/
