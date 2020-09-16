@@ -52,6 +52,10 @@ export function firstSentence(string) {
   return string.split('.')[0]+'.'
 }
 
+export function hasAlpha(string) {
+  return string.match(/[a-z]/i);
+}
+
 export function ordinalWords(cardinal) {
   // takes an integer and returns the ordinal description, works up to 100
   // eg: 13 -> 'thirteenth'

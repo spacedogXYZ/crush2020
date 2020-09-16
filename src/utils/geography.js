@@ -1,4 +1,4 @@
-import { padCode, ordinalWords, capitalize } from "./strings"
+import { padCode, ordinalWords, capitalize, hasAlpha } from "./strings"
 
 
 function parseOCDID(ocdid) {
@@ -43,12 +43,6 @@ export function stateLegDistrict(state, chamber, ocd) {
   if(state === 'AK' && chamber === 'UPPER') {
     // AK SENATE has lettered districts
     return `${body} District ${ocd}`
-  } else if (state === 'NH' && chamber === 'LOWER') {
-    // NH HOUSE has named and numbered districts
-    let parts = ocd.split('_')
-    let code = parts.pop()
-    let district = parts.join(' ').toUpperCase()
-    return `${body} District ${district} ${code}`
   } else if (state === 'MA') {
     // MA HOUSE and SENATE have named districts with wicked long ordinal codes
     // eg TWENTY-SEVENTH MIDDLESEX, which google has as 27th_middlesex
@@ -57,6 +51,21 @@ export function stateLegDistrict(state, chamber, ocd) {
     let ordinal = capitalize(ordinalWords(parseInt(code)))
     let district = capitalize(parts.slice(1).join(' ').toUpperCase())
     return `${body} District ${ordinal} ${district}`
+  } else if (state === 'MN') {
+    // MN has 3-digit numbers and then sometimes letters
+    if (hasAlpha(ocd)) {
+      let letter = hasAlpha(ocd)[0].toUpperCase()
+      let number = padCode(ocd.slice(0,-1), 3)
+      return `${body} District ${number}${letter}`
+    } else {
+      return `${body} District ${ocd}`
+    }
+  } else if (state === 'NH' && chamber === 'LOWER') {
+    // NH HOUSE has named and numbered districts
+    let parts = ocd.split('_')
+    let code = parts.pop()
+    let district = parts.join(' ').toUpperCase()
+    return `${body} District ${district} ${code}`
   } else if (state === 'VT') {
     // VT has named and sometimes numbered districts
     let district = capitalize(ocd)
