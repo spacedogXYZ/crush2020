@@ -42,7 +42,7 @@ const AboutPage = () => (
           <OutboundLink href="https://www.followthemoney.org">
             FollowTheMoney.org
           </OutboundLink>
-          : Statewide candidate names and funds raised
+          : Statewide and state legislative candidate names and funds raised
         </li>
         <li>
           <OutboundLink href="https://cookpolitical.com">

@@ -78,6 +78,16 @@ const PlanPage = ({ location }) => {
         }
       }
 
+      allStateLegCandidatesCsv {
+        nodes {
+          Candidate
+          Election_Jurisdiction
+          Office_Sought
+          Specific_Party
+          Total__
+        }
+      }
+
       allHouseCookRatingCsv {
         nodes {
           district
@@ -179,12 +189,13 @@ const PlanPage = ({ location }) => {
     candidates: {
       federal: planQuery.allFecCandidatesCsv.nodes,
       statewide: planQuery.allStatewideCandidatesCsv.nodes,
+      stateleg: planQuery.allStateLegCandidatesCsv.nodes,
     },
     ratings: {
       senate: planQuery.allSenateCookRatingCsv.nodes,
       house: planQuery.allHouseCookRatingCsv.nodes,
       governor: planQuery.allGovernorsCookRatingCsv.nodes,
-      state_legislature: planQuery.allStateChambersCsv.nodes,
+      stateleg: planQuery.allStateChambersCsv.nodes,
     },
     volunteer: {
       mobilize: planQuery.allMobilizeUsCsv.nodes,

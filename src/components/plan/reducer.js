@@ -5,6 +5,7 @@ import {
   isLikely,
 } from "../../utils/strings"
 import { shuffle, groupBy, sortDescending } from "../../utils/object"
+import { stateLegDistrict } from "../../utils/geography"
 import { TIME_VALUES } from "../form/steps/time"
 
 var us_states = require("us-state-codes")
@@ -156,7 +157,7 @@ function matchOrganization(state, issues, orgs) {
 
 function sortCandidates(candidates, state, district, type) {
   // take a national list of candidates and returns just those relevant to state, district, type
-  // type should be either FEDERAL or STATEWIDE
+  // type should be in [FEDERAL, STATEWIDE, STATELEG]
   if (type === "FEDERAL") {
     // we don't actually have primary win/loss records from FEC
     // use amount raised as a proxy (NB, this is not perfect)
@@ -249,15 +250,16 @@ function sortCandidates(candidates, state, district, type) {
         .sort((a, b) => sortDescending(a.TTL_RECEIPTS, b.TTL_RECEIPTS))
         .slice(0, 2)
       }
-  } else if (type === "STATEWIDE") {
+  } else if (type === "STATEWIDE" || type === "STATELEG") {
     // we do have win/loss from FollowTheMoney
     // and have already filtered by it
     // keep sorted to put more likely candidates at the top
+    // TODO, if candidates are "Pending Primary", simulate as above
 
     return candidates.filter(
       c =>
         c.Election_Jurisdiction === state &&
-        c.Office_Sought.startsWith(district)
+        c.Office_Sought === district
     ).sort((a, b) => sortDescending(a.Total__, b.Total__))
     // but don't limit to top-two
   }  
@@ -275,31 +277,37 @@ export function makePlan(form, data) {
   const senate_candidates = sortCandidates(candidates.federal, state, "00", "FEDERAL")
 
   const congressional_district = form.geocode.cd
-  const congressional_district_code = padCode(congressional_district)
+  const congressional_district_code = padCode(congressional_district, 2, "0")
+  const state_house_district = stateLegDistrict(form.geocode.state, 'LOWER', form.geocode.state_lower).toUpperCase()
+  const state_senate_district = stateLegDistrict(form.geocode.state, 'UPPER', form.geocode.state_upper).toUpperCase()
 
   // 
   const house_candidates = sortCandidates(candidates.federal, state, congressional_district_code, "FEDERAL")
   const governor_candidates = sortCandidates(candidates.statewide, state, "GOVERNOR", "STATEWIDE")    
   const state_sos_candidates = sortCandidates(candidates.statewide, state, "SECRETARY OF STATE", "STATEWIDE")
   const state_ag_candidates = sortCandidates(candidates.statewide, state, "ATTORNEY GENERAL", "STATEWIDE")
+  const state_house_candidates = sortCandidates(candidates.stateleg, state, state_house_district, "STATELEG")
+  const state_senate_candidates = sortCandidates(candidates.stateleg, state, state_senate_district, "STATELEG")
 
   const senate_rating = ratings.senate.find(r => r.state === state)
   const house_rating = ratings.house.find(
     r => r.district === `${state}-${congressional_district_code}`
   )
   const governor_rating = ratings.governor.find(r => r.state === state)
-  const state_senate_rating = ratings.state_legislature.find(
-    r => r.state === state && r.chamber === "upper"
-  )
-  const state_house_rating = ratings.state_legislature.find(
-    r => r.state === state && r.chamber === "lower"
-  )
+  // const state_senate_rating = ratings.state_legislature.find(
+  //   r => r.state === state && r.chamber.toUpperCase() === "UPPER"
+  // )
+  // const state_house_rating = ratings.state_legislature.find(
+  //   r => r.state === state && r.chamber.toUpperCase() === "LOWER"
+  // )
 
   // volunteer links
   const state_candidates = {
     senate: senate_candidates,
     house: house_candidates,
     governor: governor_candidates,
+    stateleg_lower: state_house_candidates,
+    stateleg_upper: state_senate_candidates
   }
   const state_ratings = {
     senate: senate_rating,
@@ -459,8 +467,8 @@ export function makePlan(form, data) {
       governor_candidates: governor_candidates,
       state_sos_candidates: state_sos_candidates,
       state_ag_candidates: state_ag_candidates,
-      state_house_rating: state_house_rating,
-      state_senate_rating: state_senate_rating,
+      state_house_candidates: state_house_candidates,
+      state_senate_candidates: state_senate_candidates,
     },
     time: {
       volunteer_time: volunteer_time,

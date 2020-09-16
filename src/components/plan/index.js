@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { parseName, capitalize, isCompetitive } from "../../utils/strings"
 import { isEmpty } from "../../utils/object"
+import { stateLegDistrict } from "../../utils/geography"
 
 import { DonateCandidate, DonateOrg } from "./donate"
 
@@ -202,7 +203,7 @@ export function Plan({ form, plan }) {
                 {!isEmpty(plan.ballot.house_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">US House {state}-{form.geocode.cd}</h3>
+                      <h3 className="usa-card__heading">US House {state}{(form.geocode.cd !== '00') ? (`-${form.geocode.cd}`) : (``)}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
@@ -271,54 +272,45 @@ export function Plan({ form, plan }) {
                   </Card>
                 )}
 
-               {/* {!isEmpty(plan.ballot.state_senate_rating) && (
+               {!isEmpty(plan.ballot.state_senate_candidates) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">{state} State Senate</h3>
+                      <h3 className="usa-card__heading">{state} State {stateLegDistrict(state, 'UPPER', form.geocode.state_upper).replace('District', '-')}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
-                        <li>
-                          {plan.ballot.state_senate_rating.seats_up} seats are
-                          up
-                        </li>
-                        <li>
-                          Current margin:{" "}
-                          {plan.ballot.state_senate_rating.margin}
-                        </li>
+                        {plan.ballot.state_senate_candidates.map(c => (
+                          <StateCandidate key={c.Candidate} data={c} />
+                        ))}
                       </ul>
                     </CardBody>
-                    <CardFooter>
+                    {/*<CardFooter>
                       <div className="citation">
                         Ballotpedia Battleground
                       </div>
-                    </CardFooter>
+                    </CardFooter>*/}
                   </Card>
                 )}
 
-                {!isEmpty(plan.ballot.state_house_rating) && (
+                {!isEmpty(plan.ballot.state_house_candidates) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
-                      <h3 className="usa-card__heading">{state} State House</h3>
+                      <h3 className="usa-card__heading">{state} State {stateLegDistrict(state, 'LOWER', form.geocode.state_lower).replace('District', '-')}</h3>
                     </CardHeader>
                     <CardBody>
                       <ul>
-                        <li>
-                          {plan.ballot.state_house_rating.seats_up} seats are up
-                        </li>
-                        <li>
-                          Current margin:{" "}
-                          {plan.ballot.state_house_rating.margin}
-                        </li>
+                        {plan.ballot.state_house_candidates.map(c => (
+                          <StateCandidate key={c.Candidate} data={c} />
+                        ))}
                       </ul>
                     </CardBody>
-                    <CardFooter>
+                    {/*<CardFooter>
                       <div className="citation">
                         Ballotpedia Battleground
                       </div>
-                    </CardFooter>
+                    </CardFooter>*/}
                   </Card>
-                )}*/}
+                )}
               </Grid>
             </GridContainer>
           ),
