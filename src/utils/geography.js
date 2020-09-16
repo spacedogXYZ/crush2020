@@ -21,7 +21,7 @@ export function matchOCDID(list, type) {
 
 export function stateLegBody(state, chamber) {
   // get the name of the upper or lower legislative body for a given state
-  const LOWER_ASSEMBLY = ['CA', 'NY', 'WI']
+  const LOWER_ASSEMBLY = ['CA', 'NY', 'NV', 'WI']
 
   if (chamber === 'UPPER') {
     return 'Senate'
