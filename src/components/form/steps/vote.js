@@ -2,14 +2,14 @@ import React from "react"
 
 import { Form, Fieldset } from "@trussworks/react-uswds"
 
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 import FormButton from "../buttons"
 
 export function VoteStep() {
   const {
     state: { registered, vbm },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   return (
     <Form onSubmit={e => e.preventDefault()}>

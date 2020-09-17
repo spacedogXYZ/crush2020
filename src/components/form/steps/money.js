@@ -1,13 +1,13 @@
 import React from "react"
 
 import { Form, Fieldset, RangeInput } from "@trussworks/react-uswds"
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 
 export function MoneyStep() {
   const {
     state: { money },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   return (
     <Form onSubmit={e => e.preventDefault()}>

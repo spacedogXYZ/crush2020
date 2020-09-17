@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import React, { useState } from "react"
 
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 import { Form, Fieldset, TextInput } from "@trussworks/react-uswds"
 
 import usePlacesAutocomplete from "use-places-autocomplete"
@@ -16,7 +16,7 @@ let cachedVal = ""
 const acceptedKeys = [38, 40, 13, 27]
 
 export function LocationStep() {
-  const { dispatch } = useFormState()
+  const { dispatch } = useAppState()
 
   const [currIndex, setCurrIndex] = useState(null)
   const {

@@ -18,7 +18,7 @@ import {
   SignupStep,
 } from "./steps"
 import ProgressBar from "./progress"
-import { useFormState } from "./context"
+import { useAppState } from "../../state/context"
 import { isEmpty } from "../../utils/object"
 
 const headers = {
@@ -75,7 +75,7 @@ function useFormProgress() {
 }
 
 function PlanForm() {
-  const { state, dispatch } = useFormState()
+  const { state, dispatch } = useAppState()
   const location = useLocation()
   const [currentStep, goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)

@@ -4,7 +4,7 @@ import USAMap from "@jlev/react-usa-map"
 import ReactTooltip from "react-tooltip"
 
 import { Form, Fieldset } from "@trussworks/react-uswds"
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 
 import { updateDict, useReferredState } from "../../../utils/object"
 import { capitalize, isCompetitive, isLikely } from "../../../utils/strings"
@@ -13,7 +13,7 @@ export function ReachStep() {
   const {
     state: { reach },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   const [hoverState, setHoverState] = useReferredState({ current: null })
 

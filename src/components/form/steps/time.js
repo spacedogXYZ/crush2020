@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Form, Fieldset, RangeInput } from "@trussworks/react-uswds"
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 
 export const TIME_VALUES = [
   "help in other ways",
@@ -16,7 +16,7 @@ export function TimeStep() {
   const {
     state: { time },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   return (
     <Form onSubmit={e => e.preventDefault()}>
