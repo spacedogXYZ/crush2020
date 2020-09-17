@@ -2,14 +2,14 @@ import React from "react"
 
 import { Form, Fieldset } from "@trussworks/react-uswds"
 
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 import FormButton from "../buttons"
 
 export function IssuesStep() {
   const {
     state: { issues },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   const allIssues = {
     GUN_VIOLENCE: { t: "Gun Violence", i: "exclamation-triangle" },
