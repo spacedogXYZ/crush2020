@@ -54,7 +54,7 @@ const AboutPage = () => (
           storage, so you can come back to your plan later.
         </li>
         <li>
-          If you donate to us, ActBlue may receive your biliing details, and the
+          If you donate to us, ActBlue may receive your biling details, and the
           amount donated to CrushPAC may become public record.
         </li>
       </ul>

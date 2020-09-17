@@ -52,7 +52,7 @@ const AboutPage = () => (
         </li>
         <li>
           <OutboundLink href="https://ballotpedia.org/">
-            BallotPedia
+            Ballotpedia
           </OutboundLink>
           : State legislature seats up and current party margin
         </li>
