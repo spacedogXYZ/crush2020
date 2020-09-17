@@ -162,7 +162,7 @@ function PlanForm() {
       <ProgressBar value={currentStep} max={STEPS.length - 1} />
 
       <Router basepath="/form">
-        {stepRender}
+        { STEPS.map(([stepRender]) => stepRender) }
       </Router>
 
       <ButtonGroup className="nav-container">
