@@ -51,19 +51,17 @@ const STEPS = [
 ]
 
 function useFormProgress() {
-  const [currentStep, setCurrentStep] = useState(0)
-
-  function goForward() {
+  function goForward(currentStep, dispatch) {
     let nextIndex = currentStep + 1
-    setCurrentStep(nextIndex)
+    dispatch({ type: "STEP_CHANGE", payload: nextIndex})
     let nextStep = STEPS[nextIndex]
     exists(window) && navigate(`/form/${nextStep[0].props.path}`)
   }
 
-  function goBack() {
+  function goBack(currentStep, dispatch) {
     let prevIndex = currentStep - 1
     if (prevIndex < 0) { return false }
-    setCurrentStep(prevIndex)
+    dispatch({ type: "STEP_CHANGE", payload: prevIndex})
     // don't actually navigate, because this is only called when by the popstate event
     // triggered by a real browser back button
 
@@ -71,14 +69,16 @@ function useFormProgress() {
     // exists(window) && navigate(`/form/${prevStep[0].props.path}`) 
   }
 
-  return [currentStep, goForward, goBack]
+  return [goForward, goBack]
 }
 
 function PlanForm() {
-  const { state, dispatch } = useAppState()
+  const {state, dispatch} = useAppState()
   const location = useLocation()
-  const [currentStep, goForward, goBack] = useFormProgress()
+  const [goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)
+
+  let currentStep = state.step
 
   // start at first step
   if(location.pathname === "/form/" || location.pathname === "/form") {
@@ -181,7 +181,7 @@ function PlanForm() {
                 handleSubmit()
               } else {
                 setValidate(false)
-                goForward()
+                goForward(currentStep, dispatch)
               }
             }
           }}

@@ -2,6 +2,8 @@ import React, { createContext, useReducer, useContext } from "react"
 
 function reducer(state, action) {
   switch (action.type) {
+    case "STEP_CHANGE":
+      return { ...state, step: action.payload }
     case "SOURCE_CHANGE":
       return { ...state, source: action.payload }
     case "VOTE_REGISTERED_CHANGE":
@@ -48,6 +50,7 @@ function reducer(state, action) {
 export const Context = createContext()
 
 const initialState = {
+  step: 0,
   uid: false,
   source: '',
   registered: false,
