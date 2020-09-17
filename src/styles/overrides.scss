@@ -4,6 +4,17 @@
     justify-content: center;
 }
 
+.usa-nav__primary-item {
+  a.usa-button {
+    background-color: #005ea2;
+    color: white;
+    &:hover {
+      background-color: #1a4480;
+      color: white;
+    }
+  }
+}
+
 .index-hero {
   .usa-hero__callout {
     display: flex;

@@ -21,6 +21,7 @@ const navItems = [
     Methodology
   </Link>,
   <OutboundLink
+    className="usa-button"
     href="https://secure.actblue.com/donate/crush2020?ref=header"
     target="_blank"
     rel="noreferrer"
