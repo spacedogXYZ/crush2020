@@ -2,7 +2,7 @@ import React from "react"
 
 import { Form, Fieldset } from "@trussworks/react-uswds"
 
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 import FormButton from "../buttons"
 
 export const SKILLS_VALUES = {
@@ -21,7 +21,7 @@ export function SkillsStep() {
   const {
     state: { skills },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   const handleChange = skill => {
     const isSelected = skills.includes(skill)

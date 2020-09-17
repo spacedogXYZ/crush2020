@@ -18,7 +18,7 @@ import {
   SignupStep,
 } from "./steps"
 import ProgressBar from "./progress"
-import { useFormState } from "./context"
+import { useAppState } from "../../state/context"
 import { isEmpty } from "../../utils/object"
 
 const headers = {
@@ -26,44 +26,42 @@ const headers = {
 }
 
 const STEPS = [
-  [<VoteStep path="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-  [<LocationStep path="location" />, state => !isEmpty(state.geocode),
+  [<VoteStep path="vote" key="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
+  [<LocationStep path="location" key="location" />, state => !isEmpty(state.geocode),
     "Please select a location from the drop-down. Be specific, so we can find your voting district."
   ],
   [
-    <IssuesStep path="issues"  />,
+    <IssuesStep path="issues" key="issues" />,
     state => !isEmpty(state.issues) && state.issues.length <= 3,
     "Please select between one and three issues."
   ],
   [
-    <SkillsStep path="skills" />,
+    <SkillsStep path="skills" key="skills" />,
     state => !isEmpty(state.skills) && state.skills.length <= 3,
     "Please select between one and three skills."
   ],
-  [<TimeStep path="time" />, () => true],
-  [<MoneyStep path="money" />, () => true],
-  [<ReachStep path="reach" />, () => true],
+  [<TimeStep path="time" key="time" />, () => true],
+  [<MoneyStep path="money" key="money" />, () => true],
+  [<ReachStep path="reach" key="reach" />, () => true],
   [
-    <SignupStep path="signup" />,
+    <SignupStep path="signup" key="signup" />,
     state => !isEmpty(state.name) && !isEmpty(state.contact.email) && state.contact.email.includes("@"),
     "Please enter your name and email, so we can contact you about your plan."
   ],
 ]
 
 function useFormProgress() {
-  const [currentStep, setCurrentStep] = useState(0)
-
-  function goForward() {
+  function goForward(currentStep, dispatch) {
     let nextIndex = currentStep + 1
-    setCurrentStep(nextIndex)
+    dispatch({ type: "STEP_CHANGE", payload: nextIndex})
     let nextStep = STEPS[nextIndex]
     exists(window) && navigate(`/form/${nextStep[0].props.path}`)
   }
 
-  function goBack() {
+  function goBack(currentStep, dispatch) {
     let prevIndex = currentStep - 1
     if (prevIndex < 0) { return false }
-    setCurrentStep(prevIndex)
+    dispatch({ type: "STEP_CHANGE", payload: prevIndex})
     // don't actually navigate, because this is only called when by the popstate event
     // triggered by a real browser back button
 
@@ -71,38 +69,44 @@ function useFormProgress() {
     // exists(window) && navigate(`/form/${prevStep[0].props.path}`) 
   }
 
-  return [currentStep, goForward, goBack]
+  return [goForward, goBack]
 }
 
 function PlanForm() {
-  const { state, dispatch } = useFormState()
+  const {state, dispatch} = useAppState()
   const location = useLocation()
-  const [currentStep, goForward, goBack] = useFormProgress()
+  const [goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)
+
+  let currentStep = state.step
 
   // start at first step
   if(location.pathname === "/form/" || location.pathname === "/form") {
     exists(window) && navigate("/form/vote")
   }
-  // if we are in the form, but not on the first step (without a current step)
-  if(currentStep === 0 && 
-    (location.pathname.split("/")[0] === "form" && location.pathname.split("/").pop() !== "vote")
-  ) {
-    exists(window) && navigate("/form/vote")
+  // if we are in the form, but the url doesn't match
+  if(currentStep !== 0) {
+    let stepPath = STEPS[currentStep][0].props.path
+    if (location.pathname !== `/form/${stepPath}`) {
+      exists(window) && navigate(stepPath)
+      // redirect to correct path
+    }
   }
 
   // make the back button work as expected
   useEffect(() => {
+    let triggerBack = () => goBack(currentStep, dispatch)
+
     if(exists(window)) {
-      window.addEventListener('popstate', goBack);
+      window.addEventListener('popstate', triggerBack);
       // unfortunately there's no event for "pushstate"
       // so we can't make forward work as well
     }
 
     return function cleanup() {
-      window.removeEventListener('popstate', goBack)
+      window.removeEventListener('popstate', triggerBack)
     }
-  }, [goBack])
+  }, [currentStep, dispatch, goBack])
 
   useEffect(() => {
     // capture source from url param
@@ -150,10 +154,11 @@ function PlanForm() {
     )
   }
 
-  if (state.isSubmissionReceived && state.uid) {
+  if (state.isSubmissionReceived) {
     exists(window) && navigate("/plan", { state: state })
   }
 
+  // eslint-disable-next-line no-unused-vars
   let [stepRender, stepValid, stepError] = STEPS[currentStep]
   let isValid = stepValid(state)
 
@@ -162,7 +167,7 @@ function PlanForm() {
       <ProgressBar value={currentStep} max={STEPS.length - 1} />
 
       <Router basepath="/form">
-        {stepRender}
+        { STEPS.map(([stepRender]) => stepRender) }
       </Router>
 
       <ButtonGroup className="nav-container">
@@ -181,7 +186,7 @@ function PlanForm() {
                 handleSubmit()
               } else {
                 setValidate(false)
-                goForward()
+                goForward(currentStep, dispatch)
               }
             }
           }}

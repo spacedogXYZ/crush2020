@@ -1,7 +1,9 @@
 import React, { createContext, useReducer, useContext } from "react"
 
-function formReducer(state, action) {
+function reducer(state, action) {
   switch (action.type) {
+    case "STEP_CHANGE":
+      return { ...state, step: action.payload }
     case "SOURCE_CHANGE":
       return { ...state, source: action.payload }
     case "VOTE_REGISTERED_CHANGE":
@@ -45,9 +47,10 @@ function formReducer(state, action) {
   }
 }
 
-const FormContext = createContext()
+export const Context = createContext()
 
 const initialState = {
+  step: 0,
   uid: false,
   source: '',
   registered: false,
@@ -72,22 +75,16 @@ const initialState = {
   isSubmissionReceived: false,
 }
 
-export const FormProvider = function ({ children }) {
-  const [state, dispatch] = useReducer(formReducer, initialState)
+export const Store = function ({ children }) {
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <FormContext.Provider value={{ state, dispatch }}>
+    <Context.Provider value={{ state, dispatch }}>
       {children}
-    </FormContext.Provider>
+    </Context.Provider>
   )
 }
 
-export function useFormState() {
-  const context = useContext(FormContext)
-
-  if (context === undefined) {
-    throw new Error("useFormState must be used within a FormContext")
-  }
-
-  return context
+export function useAppState() {
+  return useContext(Context)
 }

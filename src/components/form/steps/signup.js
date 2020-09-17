@@ -1,6 +1,6 @@
 import React from "react"
 
-import { useFormState } from "../context"
+import { useAppState } from "../../../state/context"
 import {
   Form,
   Fieldset,
@@ -14,7 +14,7 @@ export function SignupStep() {
   const {
     state: { name, contact },
     dispatch,
-  } = useFormState()
+  } = useAppState()
 
   return (
     <Form onSubmit={e => e.preventDefault()}>
