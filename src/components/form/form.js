@@ -26,25 +26,25 @@ const headers = {
 }
 
 const STEPS = [
-  [<VoteStep path="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
-  [<LocationStep path="location" />, state => !isEmpty(state.geocode),
+  [<VoteStep path="vote" key="vote" />, state => !isEmpty(state.registered) && !isEmpty(state.vbm)],
+  [<LocationStep path="location" key="location" />, state => !isEmpty(state.geocode),
     "Please select a location from the drop-down. Be specific, so we can find your voting district."
   ],
   [
-    <IssuesStep path="issues"  />,
+    <IssuesStep path="issues" key="issues" />,
     state => !isEmpty(state.issues) && state.issues.length <= 3,
     "Please select between one and three issues."
   ],
   [
-    <SkillsStep path="skills" />,
+    <SkillsStep path="skills" key="skills" />,
     state => !isEmpty(state.skills) && state.skills.length <= 3,
     "Please select between one and three skills."
   ],
-  [<TimeStep path="time" />, () => true],
-  [<MoneyStep path="money" />, () => true],
-  [<ReachStep path="reach" />, () => true],
+  [<TimeStep path="time" key="time" />, () => true],
+  [<MoneyStep path="money" key="money" />, () => true],
+  [<ReachStep path="reach" key="reach" />, () => true],
   [
-    <SignupStep path="signup" />,
+    <SignupStep path="signup" key="signup" />,
     state => !isEmpty(state.name) && !isEmpty(state.contact.email) && state.contact.email.includes("@"),
     "Please enter your name and email, so we can contact you about your plan."
   ],
