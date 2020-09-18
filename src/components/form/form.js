@@ -78,7 +78,7 @@ function PlanForm() {
   const [goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)
 
-  const currentStep = state.step
+  const currentStep = state.step || 0
   const isLast = currentStep === STEPS.length - 1
 
   // start at first step
@@ -86,12 +86,9 @@ function PlanForm() {
     exists(window) && navigate("/form/vote")
   }
   // if we are in the form, but the url doesn't match
-  if(currentStep !== 0) {
+  const pathParts = location.pathname.split('/')
+  if(pathParts && pathParts[1] === 'form' && currentStep) {
     let stepPath = STEPS[currentStep][0].props.path
-    if (state.uid) {
-      // we already have a plan
-      exists(window) && navigate('/plan/')
-    }
     if (location.pathname !== `/form/${stepPath}`) {
       exists(window) && navigate(`/form/${stepPath}`)
       // redirect to correct path
