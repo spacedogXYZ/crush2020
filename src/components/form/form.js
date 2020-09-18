@@ -131,18 +131,18 @@ function PlanForm() {
       headers: headers,
       body: JSON.stringify(submit),
     }).then(response => {
+      if (!response.ok) {
+        dispatch({ type: "SUBMISSION_RECEIVED", payload: false})
+        throw Error(response.statusText)
+      } else {
+        dispatch({ type: "SUBMISSION_RECEIVED", payload: submit.uid})
+      }
+    }).then(response => {
       return fetch("/.netlify/functions/signup ", {
         method: "POST",
         headers: headers,
         body: JSON.stringify(submit),
       })
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw Error(response.statusText)
-      } else {
-        dispatch({ type: "SUBMISSION_RECEIVED", payload: submit.uid})
-      }
     })
     .catch(err => {
       console.error(err)
