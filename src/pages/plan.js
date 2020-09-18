@@ -1,34 +1,31 @@
 import React, { useState, useEffect } from "react"
 import { Router, useLocation } from "@reach/router"
-
 import { useStaticQuery, graphql, navigate } from "gatsby"
 import { window, exists } from 'browser-monads'
+import { useCookies } from 'react-cookie'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Plan from "../components/plan"
 
-import { isEmpty } from "../utils/object"
+import { useAppState } from "../state/context"
 import { makePlan } from "../components/plan/reducer"
 
 const PlanPage = ({ location }) => {
-  const [form, setForm] = useState({})
+  const {state, dispatch} = useAppState()
   const [loaded, setLoaded] = useState(false)
+  const [cookies, setCookie] = useCookies(['crush2020_uid'])
   const pathParts = useLocation().pathname.split('/')
   var uid
-  if(pathParts.length >= 2) {
+  // check for uid in URL, or cookie
+  if(pathParts.length >= 2 && pathParts[1] === "plan") {
     uid = pathParts[2]
-  }
-
-  // try to pull state from location in redirect
-  let { state } = location
-  if (!isEmpty(state) && !loaded) {
-    setForm(state)
-    setLoaded(true)
+  } else if (cookies && cookies['crush2020_uid'] ) {
+    uid = cookies['crush2020_uid']
   }
 
   useEffect(() => {
-    if(uid) {
+    if(uid && !loaded) {
       // get state from database
       fetch(`/.netlify/functions/get-form?uid=${uid}`, {
         method: "GET",
@@ -39,20 +36,26 @@ const PlanPage = ({ location }) => {
         }
         return response.json()
       }).then(parsed => {
-        setForm(parsed.data)
+        dispatch({ type: "LOAD_FORM", payload: parsed.data})
         setLoaded(true)
+        setCookie('crush2020_uid', parsed.data.uid)
         // redirect to capture uid
-        exists(window) && navigate("/plan", { state: parsed.data })
+        exists(window) && navigate("/plan")
+        return false
       })
       .catch(err => {
         // unable to load
         console.error(err)
         exists(window) && navigate("/form")
       })
-    } else if (isEmpty(form)) {
+    } else if (state.uid) {
+      setCookie('crush2020_uid', state.uid)
+      setLoaded(true)
+    } else {
+      console.error('unable to load')
       exists(window) && navigate("/form")
     }
-  }, [uid, form])
+  }, [uid, state, loaded, dispatch, setCookie])
 
   const planQuery = useStaticQuery(graphql`
     query planQuery {
@@ -184,7 +187,7 @@ const PlanPage = ({ location }) => {
     return true
   })
 
-  const plan = makePlan(form, {
+  const plan = makePlan(state, {
     vote: voteAmericaObject,
     candidates: {
       federal: planQuery.allFecCandidatesCsv.nodes,
@@ -210,7 +213,7 @@ const PlanPage = ({ location }) => {
     <Layout>
       <SEO title="Your plan" />
       <Router basepath="/plan">
-        <Plan default path="/" form={form} plan={plan} />
+        <Plan default path="/" form={state} plan={plan} />
       </Router>
     </Layout>
   )

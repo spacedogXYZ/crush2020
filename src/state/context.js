@@ -42,6 +42,8 @@ function reducer(state, action) {
       return { ...state, isSubmitLoading: true }
     case "SUBMISSION_RECEIVED":
       return { ...state, isSubmitLoading: false, isSubmissionReceived: true, uid: action.payload }
+    case "LOAD_FORM":
+      return action.payload
     default:
       throw new Error('invalid action.type in formReducer')
   }

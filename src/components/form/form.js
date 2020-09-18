@@ -78,7 +78,8 @@ function PlanForm() {
   const [goForward, goBack] = useFormProgress()
   const [validate, setValidate] = useState(false)
 
-  let currentStep = state.step
+  const currentStep = state.step
+  const isLast = currentStep === STEPS.length - 1
 
   // start at first step
   if(location.pathname === "/form/" || location.pathname === "/form") {
@@ -87,8 +88,12 @@ function PlanForm() {
   // if we are in the form, but the url doesn't match
   if(currentStep !== 0) {
     let stepPath = STEPS[currentStep][0].props.path
+    if (state.uid) {
+      // we already have a plan
+      exists(window) && navigate('/plan/')
+    }
     if (location.pathname !== `/form/${stepPath}`) {
-      exists(window) && navigate(stepPath)
+      exists(window) && navigate(`/form/${stepPath}`)
       // redirect to correct path
     }
   }
@@ -98,7 +103,7 @@ function PlanForm() {
     let triggerBack = () => goBack(currentStep, dispatch)
 
     if(exists(window)) {
-      window.addEventListener('popstate', triggerBack);
+      window.addEventListener('popstate', triggerBack)
       // unfortunately there's no event for "pushstate"
       // so we can't make forward work as well
     }
@@ -115,8 +120,6 @@ function PlanForm() {
       dispatch({ type: "SOURCE_CHANGE", payload: urlParams.get('source')})
     }
   })
-
-  const isLast = currentStep === STEPS.length - 1
   
   function handleSubmit() {
     dispatch({ type: "SUBMIT" })
@@ -155,7 +158,7 @@ function PlanForm() {
   }
 
   if (state.isSubmissionReceived) {
-    exists(window) && navigate("/plan", { state: state })
+    exists(window) && navigate("/plan")
   }
 
   // eslint-disable-next-line no-unused-vars

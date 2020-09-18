@@ -42,7 +42,8 @@ export function Plan({ form, plan }) {
     !form ||
     !Object.keys(form).length ||
     !plan ||
-    !Object.keys(plan).length
+    !Object.keys(plan).length ||
+    !form.uid
   ) {
     return (
       <GridContainer className="form-container">
