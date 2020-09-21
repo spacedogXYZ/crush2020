@@ -3,7 +3,7 @@ import { Router, useLocation, navigate } from "@reach/router"
 import { window, exists } from "browser-monads"
 import "url-search-params-polyfill"
 
-import { GridContainer, Button, ButtonGroup } from "@trussworks/react-uswds"
+import { Button, ButtonGroup } from "@trussworks/react-uswds"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { nanoid } from 'nanoid'
 
@@ -148,9 +148,9 @@ function PlanForm() {
 
   if (state.isSubmitLoading) {
     return (
-      <GridContainer className="form-container" path="submit">
+      <div className="form-container" path="submit">
         <p>Loading...</p>
-      </GridContainer>
+      </div>
     )
   }
 
@@ -163,7 +163,7 @@ function PlanForm() {
   let isValid = stepValid(state)
 
   return (
-    <GridContainer className="form-container">
+    <div className="form-container">
       <ProgressBar value={currentStep} max={STEPS.length - 1} />
 
       <Router basepath="/form">
@@ -200,7 +200,7 @@ function PlanForm() {
           {stepError ? stepError : "Please select your answers"}
         </div>
       )}
-    </GridContainer>
+    </div>
   )
 }
 
