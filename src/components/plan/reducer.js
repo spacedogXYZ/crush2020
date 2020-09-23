@@ -228,6 +228,16 @@ function sortCandidates(candidates, state, district, type) {
           'CAND_PTY_AFFILIATION': 'R'
         }]
       }
+      if (state === "NY" && district === "17") {
+        // Open dem primary for this seat, Mondaire defeated Schliefer et al
+        return [{
+          'CAND_NAME': "JONES, MONDAIRE",
+          'CAND_PTY_AFFILIATION': 'D'
+        }, {
+          'CAND_NAME': "MCARDLE SCHULMAN, MAUREEN B",
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
       if (state === "MO" && district === "01") {
         // Cori Bush defeated incumbent Lacy Clay in Dem primary
         return [{
