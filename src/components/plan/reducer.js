@@ -176,6 +176,33 @@ function sortCandidates(candidates, state, district, type) {
         return winner
       })
 
+      // GA has two senate races
+      if (state === "GA" && district === "00") {
+        return [{
+          'CAND_NAME': 'OSSOF, JON',
+          'CAND_PTY_AFFILIATION': 'D'
+        },{
+          'CAND_NAME': 'PERDUE, DAVID',
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
+
+      if (state === "GA" && district === "SP") {
+        return [{
+          'CAND_NAME': 'WARNOCK, RAPHAEL',
+          'CAND_PTY_AFFILIATION': 'D'
+        },{
+          'CAND_NAME': 'LOEFFLER, KELLEY',
+          'CAND_PTY_AFFILIATION': 'R'
+        },{
+          'CAND_NAME': 'COLLINS, DOUG',
+          'CAND_PTY_AFFILIATION': 'R'
+        },{
+          'CAND_NAME': 'LIEBERMAN, MATT',
+          'CAND_PTY_AFFILIATION': 'D'
+        }]
+      }
+
       // check known list of primary upsets
       if (state === "CO" && district === "03") {
         // Lauren Boebert defeated incumbent Scott Tipton in Rep primary
@@ -285,6 +312,7 @@ export function makePlan(form, data) {
   const state = form.geocode.state
 
   const senate_candidates = sortCandidates(candidates.federal, state, "00", "FEDERAL")
+  const senate_candidates_special = sortCandidates(candidates.federal, state, "SP", "FEDERAL")
 
   const congressional_district = form.geocode.cd
   const congressional_district_code = padCode(congressional_district, 2, "0")
@@ -300,6 +328,7 @@ export function makePlan(form, data) {
   const state_senate_candidates = sortCandidates(candidates.stateleg, state, state_senate_district, "STATELEG")
 
   const senate_rating = ratings.senate.find(r => r.state === state)
+  const senate_rating_special = ratings.senate.find(r => r.state === `${state}-SP`)
   const house_rating = ratings.house.find(
     r => r.district === `${state}-${congressional_district_code}`
   )
@@ -470,7 +499,9 @@ export function makePlan(form, data) {
     ballot: {
       vote: data.vote[state],
       senate_candidates: senate_candidates,
+      senate_candidates_special : senate_candidates_special || [],
       senate_rating: senate_rating,
+      senate_rating_special: senate_rating_special,
       house_candidates: house_candidates,
       house_rating: house_rating,
       governor_rating: governor_rating,

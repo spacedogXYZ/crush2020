@@ -201,6 +201,27 @@ export function Plan({ form, plan }) {
                   </Card>
                 )}
 
+                {!isEmpty(plan.ballot.senate_rating_special) && (
+                  <Card gridLayout={{ tablet: { col: 4 } }}>
+                    <CardHeader>
+                      <h3 className="usa-card__heading">US Senate (Special)</h3>
+                    </CardHeader>
+                    <CardBody>
+                      <ul>
+                        {plan.ballot.senate_candidates_special.map(c => (
+                          <Candidate key={c.CAND_ID} data={c} />
+                        ))}
+                      </ul>
+                    </CardBody>
+                    <CardFooter>
+                      Current rating: {plan.ballot.senate_rating_special.rating}
+                      <div className="citation">
+                        Cook Political {plan.ballot.senate_rating_special.updated}
+                      </div>
+                    </CardFooter>
+                  </Card>
+                )}
+
                 {!isEmpty(plan.ballot.house_rating) && (
                   <Card gridLayout={{ tablet: { col: 4 } }}>
                     <CardHeader>
