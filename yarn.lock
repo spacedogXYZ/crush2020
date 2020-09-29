@@ -2297,6 +2297,14 @@
     "@sentry/utils" "5.24.2"
     tslib "^1.9.3"
 
+"@sentry/gatsby@^5.24.2":
+  version "5.24.2"
+  resolved "https://registry.yarnpkg.com/@sentry/gatsby/-/gatsby-5.24.2.tgz#3f5051d9dbca21d6b089d2c3f17d82bf939097c0"
+  integrity sha512-8/JRYlK+eODS97TLFdReTbFakPY7fEV8/QSc9WsJUjxC4KJ/GekorO+4UyhY9YstAwtyVxdvtvSPOdclrhG1KA==
+  dependencies:
+    "@sentry/react" "5.24.2"
+    "@sentry/tracing" "5.24.2"
+
 "@sentry/hub@5.22.3":
   version "5.22.3"
   resolved "https://registry.yarnpkg.com/@sentry/hub/-/hub-5.22.3.tgz#08309a70d2ea8d5e313d05840c1711f34f2fffe5"
@@ -2333,7 +2341,7 @@
     "@sentry/types" "5.24.2"
     tslib "^1.9.3"
 
-"@sentry/react@^5.24.2":
+"@sentry/react@5.24.2", "@sentry/react@^5.24.2":
   version "5.24.2"
   resolved "https://registry.yarnpkg.com/@sentry/react/-/react-5.24.2.tgz#781ae4274ad5c3148b8f80b613c1b0a73f763e47"
   integrity sha512-iVti69qCMFztgP2E0LMx6V+3+ppKdylMJalWnwMt4LyL9idnnuiwFzMCA9g3QEvXRCTSuqEO39Dk4XYXyxi8pA==
@@ -2345,7 +2353,7 @@
     hoist-non-react-statics "^3.3.2"
     tslib "^1.9.3"
 
-"@sentry/tracing@^5.24.2":
+"@sentry/tracing@5.24.2", "@sentry/tracing@^5.24.2":
   version "5.24.2"
   resolved "https://registry.yarnpkg.com/@sentry/tracing/-/tracing-5.24.2.tgz#a36b4f9bf699c5e07e99a148360091c8e727c51f"
   integrity sha512-1uDgvGGVF8lb3hRXbhNnns+8DBUKjhRKOFR5Z3RExjrDFYTDbHmoNtV73Q12Ra+Iht9HTZnIBOqYD3oSZIbJ0w==

@@ -87,24 +87,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-sentry",
+      resolve: "@sentry/gatsby",
       options: {
-        dsn: GATSBY_SENTRY_DSN,
-        integrations: [
-          new sentryTracing.Integrations.BrowserTracing(),
-        ],
-        tracesSampleRate: 1.0,
-        environment: process.env.NODE_ENV,
-        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)(),
-        beforeSend(event, hint) {
-          // Check if it is an exception, and if so, show the report dialog
-          if (event.exception) {
-            Sentry.showReportDialog({ eventId: event.event_id });
-          }
-          return event;
-        },
+          dsn: GATSBY_SENTRY_DSN,
+          tracesSampleRate: 1,
       }
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
