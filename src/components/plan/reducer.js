@@ -272,6 +272,16 @@ function sortCandidates(candidates, state, district, type) {
           'CAND_PTY_AFFILIATION': 'D'
         }]
       }
+      if (state === "TN" && district === "00") {
+        // Marquita Bradshaw defeated Hayes and Mackler in Dem primary
+        return [{
+          'CAND_NAME': 'BRADSHAW, MARQUITA',
+          'CAND_PTY_AFFILIATION': 'D'
+        },{
+          'CAND_NAME': 'HAGERTY, BILL',
+          'CAND_PTY_AFFILIATION': 'R'
+        }]
+      }
       if (state === "VA" && district === "05") {
         // Robert Good defeated Denver Riggleman in Rep primary
         return [{
