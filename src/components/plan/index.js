@@ -148,7 +148,7 @@ export function Plan({ form, plan }) {
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Apply to Vote by Mail in {state} {vbm_deadline}
+                            Apply to Vote by Mail in {state_name} {vbm_deadline}
                           </OutboundLink>
                         ))
                       )}
@@ -162,6 +162,14 @@ export function Plan({ form, plan }) {
                           Learn about Vote by Mail in {state_name}
                         </OutboundLink>
                       )}
+                      <OutboundLink
+                          href={`https://www.voteamerica.com/where-to-vote/?address=${form.geocode.line1}%20${form.geocode.city}%20${state}%20${form.geocode.zip}`}
+                          className="usa-button usa-button--outline"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Find your polling place
+                        </OutboundLink>
                     </ButtonGroup>
                   </CardBody>
                 </Card>
